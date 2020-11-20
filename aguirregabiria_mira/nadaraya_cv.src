@@ -1,0 +1,96 @@
+/*
+**   NADARAYA_CV.SRC
+**
+**   This procedure computes the non_parametric mean of Y
+**   conditional on x by using the Nadaraya-Watson regressor
+**   and by choosing the optimal window 'h' by the
+**   cross-validation method ('leave-one-out').
+**   It uses the Gaussian Kernel.
+**
+**   Written by:  Victor Aguirregabiria and Gustavo Vicentini
+**                May, 2005
+**
+**   Format:  {mest,hcv,cv} = nadaraya_cv(xobs,yobs,xpred,hgrid,figure)
+**
+**   Input      xobs    - (N x K) matrix of observations of the K
+**                        conditioning variables.
+**
+**              yobs    - (N x 1) vector of observations of the
+**                        dependent variable.
+**
+**              xpred   - (q x K) matrix of values for the conditioning
+**                        variables where the conditional expectation
+**                        will be estimated.
+**
+**              hgrid   - (numh x 1) vector with the values of the bandwidth 
+**                        to calculate the cross-validation criterion
+**
+**              figure  - 0=No graphs; 1=Graphs
+**
+**    Output    mest    - (q x 1) vector of estimates
+**              hcv     - optimal window under cross-validation
+**              cv      - (numh x 1) vector with the cross-validation function
+**
+*/
+
+proc (3) =  nadaraya_cv(xobs,yobs,xpred,hgrid,figure) ;
+  local myzero, nobs, numh, cv, i, j, m_cv, kern, ky, 
+        denom, hcv, mest ;
+  myzero = 1e-16 ;
+  nobs = rows(xobs) ;
+  numh = rows(hgrid) ;                
+
+  @ ------------------- @
+  @ 1. Cross-Validation @
+  @ ------------------- @
+  if (numh>1) ;
+    cv = zeros(numh,1) ;        
+    i=1 ;                        
+    do while i<=numh ;
+      m_cv = zeros(nobs,1) ;
+      j=1 ;
+      do while j<=nobs ;
+        kern = pdfn((xobs[j]-xobs)/hgrid[i]) ;
+        ky = kern.*yobs ;
+        denom = maxc((sumc(kern)-kern[j]) | myzero) ;
+        m_cv[j] = (sumc(ky)-ky[j])/denom  ;
+        j=j+1;
+      endo;
+      cv[i] = meanc((m_cv-yobs).^2) ;
+      i=i+1 ;
+    endo ;
+    hcv = hgrid[minindc(cv)] ;
+  else ;
+    hcv = hgrid ;
+    cv = 0 ;
+  endif ;
+
+  mest = zeros(rows(xpred),1) ;
+  j=1;
+  do while j<=rows(xpred) ;
+    kern = pdfn((xpred[j]-xobs)/hcv) ;
+    denom = maxc(sumc(kern) | myzero) ;
+    mest[j] = sumc(kern.*yobs)/denom ;
+    j=j+1;
+  endo;
+  
+  if (figure==1)AND(numh>1) ;
+    library pgraph ;
+    graphset ;
+    begwind;
+      window(2,1,0);
+      setwind(1);
+        title("CROSS-VALIDATION FOR 'h' (GAUSSIAN KERNEL)") ;
+        xlabel("Bandwidth 'h'") ;
+        ylabel("CV(h)") ;
+        xy(hgrid,cv) ;
+      nextwind;
+        title("KERNEL REGRESSION (GAUSSIAN) WITH OPTIMAL 'CV(h)' WINDOW") ;
+        xlabel("X") ;
+        ylabel("Y") ;
+        xy(xpred,mest) ;
+    endwind;
+  endif ;    
+
+retp(mest,hcv,cv) ;
+endp;

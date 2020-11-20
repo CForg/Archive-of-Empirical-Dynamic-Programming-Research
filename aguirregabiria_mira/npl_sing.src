@@ -1,0 +1,170 @@
+/*
+** ---------------------------------------------------------------
+** NPL_SING.SRC
+**  Maximum Likelihood Estimates of structural parameters 
+**  of a discrete choice single-agent dynamic programming 
+**  model using the NPL algorithm in 
+**  Aguirregabiria and Mira (Econometrica, 2002)
+**  
+** by Victor Aguirregabiria
+**
+**  First version: September 2001
+**  Last version: January 2007
+** ---------------------------------------------------------------
+**
+**  Format of the procedure:
+**
+** { tetaest , varest, pest } =
+**          npl_sing(inda,indx,zmat,pini,bdisc,fmat,names)
+**
+**  INPUTS:
+**          inda    - (nobs x 1) vector with indexes of discrete 
+**                    decision variable
+**
+**          indx    - (nobs x 1) vector with indexes of the state 
+**                    vector x
+**
+**          zmat    - (zmat1 ~ zmat2 ~ ... ~ zmatJ) matrix with the 
+**                    values of the variables z(a,x) 
+**
+**          pini    - (numx x J) vector with the initial estimates
+**                    of the choice probabilities Pr(a=j|x)
+**
+**          bdisc   - Discount factor (between 0 and 1)
+**
+**          fmat    - (fmat1 ~ fmat2 ~ ... ~ fmatJ) matrix with the 
+**                    conditional choice transition probs
+**
+**          names   - (npar x 1) vector with names of parameters
+**
+**  OUTPUTS:
+**          tetaest - (npar x 1) matrix with estimates of structural 
+**                    parameters for each of the K stages
+**
+**          varest  - (npar x npar*kstage) matrix with asymptotic covariance 
+**                    matrices of estimates for each of the K stages
+**
+**          pest    - (numx x kstage*J) matrix with the estimated choice
+**                    probabilities Pr(d=1|x),...,Pr(d=J|x) associated with 
+**                    each of the kstage estimators
+** ---------------------------------------------------------------
+**
+*/
+
+proc (3) = npl_sing(inda,indx,zmat,pini,bdisc,fmat,names) ;
+  local npar, nobs, nchoice, myzero, eulerc, numx, 
+        convcrit, convcons, tetaest0, tetaest1, varest, 
+        ks, sumpz, sumpe, i_fu, j, 
+        wz, we, ztilda, etilda, zobs, eobs,
+        teta0, var0 , flagc ;
+          
+  npar = rows(names) ;
+  nobs = rows(inda) ;
+  nchoice = maxc(inda) ;
+  if cols(zmat)/=(npar*nchoice) ;
+    "Error: The number of columns in 'zmat' does not agree" ;
+    "with the number of 'choices * number of parameters'" ;
+    end ;
+  endif ;
+    
+  myzero = 1e-12 ;
+  eulerc = 0.5772 ;
+  numx = rows(pini) ;
+  convcrit = 1000 ;
+  convcons = 1e-6 ;
+  tetaest0 = zeros(npar,1) ;
+   
+  "" ;
+  "     ---------------------------------------------------------" ;
+  "             ESTIMATION OF STRUCTURAL PARAMETERS" ;
+  "     ---------------------------------------------------------" ;
+  "" ;
+  ks=1 ;
+  do while (convcrit>=convcons) ;
+    "" ;
+    " -----------------------------------------------------" ;
+    " POLICY ITERATION ESTIMATOR: STAGE =" ;; ks ;
+    " -----------------------------------------------------" ;
+    "" ;    
+    @ ---------------------------------------------------------- @
+    @ 1. Obtaining matrices "A=(I-beta*Fu)" and "Bz=sumj{Pj*Zj}" @
+    @    and vector Be=sumj{Pj*ej}                               @
+    @ ---------------------------------------------------------- @
+/*
+    pini = (pini.>=myzero).*(pini.<=(1-myzero)).*pini
+         + (pini.<myzero).*myzero
+         + (pini.>(1-myzero)).*(1-myzero) ;
+*/         
+    i_fu = zeros(numx,numx) ;
+    sumpz = zeros(numx,npar) ;
+    sumpe = zeros(numx,1) ;  
+    j=1 ;
+    do while j<=nchoice ;
+      i_fu = i_fu + pini[.,j].*fmat[.,numx*(j-1)+1:numx*j] ;
+      sumpz = sumpz + pini[.,j].*zmat[.,npar*(j-1)+1:npar*j] ;
+      sumpe = sumpe + pini[.,j].*(eulerc - ln(pini[.,j])) ;
+      j=j+1 ;
+    endo ;
+    i_fu = eye(numx) - bdisc * i_fu ;
+    
+    @ ----------------------------------------------------------@
+    @ 2. Solving the linear systems "A*Wz = Bz" and "A*We = Be" @
+    @    using CROUT decomposition                              @
+    @ ----------------------------------------------------------@
+    i_fu = crout(i_fu) ;
+    wz = qrtsol(sumpz~sumpe,lowmat(i_fu)) ;
+    wz = qrsol(wz,upmat1(i_fu)) ;
+    clear i_fu, sumpz, sumpe ;
+    we = wz[.,npar+1] ;
+    wz = wz[.,1:npar] ;
+      
+    @ --------------------------------------------------------@
+    @ 3. Computing "ztilda(a,x) = z(a,x) + beta * F(a,x)'*Wz" @
+    @    and "etilda(a,x) = beta * F(a,x)'*We"                @
+    @ ------------------------------------------------------- @
+    ztilda = zeros(numx,nchoice*npar) ;
+    etilda = zeros(numx,nchoice) ;
+    j=1 ;
+    do while j<=nchoice ;
+      ztilda[.,npar*(j-1)+1:npar*j] = zmat[.,npar*(j-1)+1:npar*j] 
+                  + bdisc * fmat[.,numx*(j-1)+1:numx*j]*wz ;
+      etilda[.,j] = bdisc * fmat[.,numx*(j-1)+1:numx*j]*we ;      
+      j=j+1 ;
+    endo ;
+    clear wz, we ;    
+
+    @ ----------------------------------------------- @
+    @ 4. Sample observations of "ztilda" and "etilda" @
+    @ ----------------------------------------------- @
+    zobs = ztilda[indx,.] ;
+    eobs = etilda[indx,.] ;
+
+    @ ----------------------------------------@
+    @ 5. Pseudo Maximum Likelihood Estimation @
+    @ ----------------------------------------@
+    {tetaest1 , varest} = clogit(inda,zobs,eobs,names) ;    
+ 
+    @ ----------------------------- @
+    @ 6. Re-Computing probabilities @
+    @ ----------------------------- @
+    pini = zeros(numx,nchoice) ;
+    j=1 ;
+    do while j<=nchoice ;
+      pini[.,j] = ztilda[.,npar*(j-1)+1:npar*j]*tetaest1 + etilda[.,j] ;
+      j=j+1 ;
+    endo ;
+    pini = pini - maxc(pini') ;
+    pini = exp(pini)./sumc(exp(pini')) ;
+
+    @ -------------------------@
+    @ 7. Convergence Criterion @
+    @ -------------------------@
+    convcrit = maxc(abs(tetaest1-tetaest0)) ;
+    tetaest0 = tetaest1 ;
+    "NPL Criterion =";; convcrit ;
+
+    ks=ks+1 ;
+  endo ;
+
+  retp(tetaest1,varest,pini) ;
+endp ;

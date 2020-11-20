@@ -1,0 +1,134 @@
+/*
+** CLOGIT  -  Maximum Likelihood estimation of McFadden's Conditional Logit
+**            Some parameters can be restricted
+**            Optimization algorithm: Newton's method with analytical 
+**            gradient and hessian
+**
+** by Victor Aguirregabiria
+**      Last version:  December, 2001
+**
+** Format      {best,varest} = clogit(ydum,x,restx,namesb)
+**
+** Input        ydum    - (nobs x 1) vector of observations of dependet variable
+**                        Categorical variable with values: {1, 2, ..., nalt}
+**
+**              x       - (nobs x (k * nalt)) matrix of explanatory variables
+**                        associated with unrestricted parameters.
+**                        First k columns correspond to alternative 1, and so on
+**
+**              restx   - (nobs x nalt) vector of the sum of the explanatory
+**                        variables whose parameters are restricted to be
+**                        equal to 1.
+**
+**              namesb  - (k x 1) vector with names of parameters
+**
+**
+**  Output      best    - (k x 1) vector with ML estimates.
+**
+**              varest  - (k x k) matrix with estimate of covariance matrix
+**
+*/
+
+proc (2) = clogit(ydum,x,restx,namesb) ;
+  local cconvb, myzero, nobs, nalt, npar, xysum, j,
+        iter, criter, llike, b0, phat, sumpx, xxm, xbuff,
+        d1llike, d2llike, b1, Avarb, sdb, tstat, 
+        numyj, logL0, lrindex ;
+
+  cconvb = 1e-6 ;
+  myzero = 1e-16 ;
+  nobs = rows(ydum) ;
+  nalt = maxc(ydum) ;
+  npar = cols(x)/nalt ;
+  if npar/=rows(namesb) ;
+    "ERROR: Dimensions of x";; npar;; "and of names(b0)";; rows(namesb) ;;
+    "do not match " ;
+    end ;
+  endif;
+
+  xysum = 0 ;
+  j=1;
+  do while j<=nalt ;
+    xysum = xysum + sumc( (ydum.==j).*x[.,npar*(j-1)+1:npar*j] ) ;
+    j=j+1 ;
+  endo ;
+
+  iter=1 ;
+  criter = 1000 ;
+  llike = -nobs ;
+  b0 = ones(npar,1) ;
+
+  do while (criter>cconvb) ;
+  
+    "" ;
+    "Iteration                = " iter ;
+    "Log-Likelihood function  = " llike ;
+    "Norm of b(k)-b(k-1)      = " criter ;
+    "" ;
+  
+    @ Computing probabilities @
+    phat = zeros(nobs,nalt) ;
+    j=1 ;
+    do while j<=nalt ;
+      phat[.,j] = x[.,npar*(j-1)+1:npar*j]*b0 + restx[.,j] ;
+      j=j+1 ;
+    endo ;
+    phat = phat - maxc(phat') ;
+    phat = exp(phat)./sumc(exp(phat')) ;
+
+    @ Computing xmean @
+    sumpx = zeros(nobs,1) ;
+    xxm = 0 ;
+    llike = 0 ;
+    j=1;
+    do while j<=nalt ;
+      xbuff = x[.,npar*(j-1)+1:npar*j] ; 
+      sumpx = sumpx + phat[.,j] .*xbuff ;
+      xxm = xxm + (phat[.,j].*xbuff)'*xbuff ;
+      llike = llike
+            + sumc( (ydum.==j)
+                    .* ln( (phat[.,j].> myzero).*phat[.,j]
+                         + (phat[.,j].<=myzero).*myzero    ) ) ;
+      j=j+1 ;
+    endo ;
+
+    @ Computing gradient @
+    d1llike = xysum - sumc(sumpx) ;
+
+    @ Computing hessian @    
+    d2llike = - (xxm - sumpx'*sumpx) ;
+    
+    @ Gauss iteration @
+    b1 = b0 - inv(d2llike)*d1llike ;
+    criter = sqrt( (b1-b0)'*(b1-b0) ) ;
+    b0 = b1 ;
+    iter = iter + 1 ;
+  endo ;
+
+  Avarb  = inv(-d2llike) ;
+  sdb    = sqrt(diag(Avarb)) ;
+  tstat  = b0./sdb ;
+  
+  numyj  = sumc(ydum.==(seqa(1,1,nalt)')) ;
+  logL0  = sumc(numyj.*ln(numyj./nobs)) ;
+  lrindex = 1 - llike/logL0 ;
+
+  "---------------------------------------------------------------------";
+  "Number of Iterations     = " iter ;
+  "Number of observations   = " nobs ;
+  "Log-Likelihood function  = " llike ;
+  "Likelihood Ratio Index   = " lrindex ;
+  "---------------------------------------------------------------------";
+  "       Parameter         Estimate        Standard        t-ratios";
+  "                                         Errors" ;
+  "---------------------------------------------------------------------";
+  j=1;
+  do while j<=npar;
+    print $namesb[j];;b0[j];;sdb[j];;tstat[j];
+    j=j+1 ;
+  endo;
+  "---------------------------------------------------------------------";
+
+  retp(b0,Avarb) ;
+endp ;
+

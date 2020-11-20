@@ -1,0 +1,505 @@
+
+. save sip96t1
+file sip96t1.dta saved
+
+. 
+end of do-file
+
+. tab eeducate
+
+ ED: Highest Degree received or |
+                          grade |      Freq.     Percent        Cum.
+--------------------------------+-----------------------------------
+                Not in universe |     22,741       23.86       23.86
+            Less than 1st grade |        401        0.42       24.28
+     1st, 2nd, 3rd or 4th grade |        877        0.92       25.20
+               5th or 6th grade |      1,464        1.54       26.74
+               7th or 8th grade |      3,363        3.53       30.26
+                      9th grade |      2,922        3.07       33.33
+                     10th grade |      3,686        3.87       37.20
+                     11th grade |      3,338        3.50       40.70
+                     12th grade |      1,302        1.37       42.06
+    High school graduate - high |     22,270       23.36       65.43
+     Some college but no degree |     12,370       12.98       78.41
+  Diploma or certificate from a |      2,810        2.95       81.36
+  Associate degree in college - |      1,947        2.04       83.40
+  Associate Degree in college - |      2,115        2.22       85.62
+ Bachelors degree (For example: |      9,229        9.68       95.30
+  Master's degree (For example: |      3,136        3.29       98.59
+Professional School Degree (For |        806        0.85       99.44
+ Doctorate degree (For example: |        538        0.56      100.00
+--------------------------------+-----------------------------------
+                          Total |     95,315      100.00
+
+. list thhtwlth thhtnw thhdebt thhscdbt rhhuscbt
+variable thhtwlth not found
+r(111);
+
+. d aafnow
+variable aafnow not found
+r(111);
+
+. d aa*
+
+              storage  display     value
+variable name   type   format      label      variable label
+---------------------------------------------------------------------------------------------------------
+aaplfs          byte   %31.0g      aaplfs     TMR: Ever applied for Food Stamp Progr
+aaplafdc        byte   %31.0g      aaplafdc   TMR: Ever applied for AFDC/ADC Program
+aafdcstm        byte   %31.0g      aafdcstm   TMR: Month 1st received AFDC/ADC benef
+aafdcsty        byte   %31.0g      aafdcsty   TMR: Year 1st received AFDC/ADC benefi
+aafdclg1        byte   %31.0g      aafdclgy   TMR: Length of time recd AFDC/ADC(mth)
+aafdclg2        byte   %31.0g      aafdclgk   TMR: Length of time recd AFDC/ADC(yrs)
+aafdctim        byte   %31.0g      aafdctim   TMR: Number of times recd AFDC/ADC
+aaplssi         byte   %31.0g      aaplssi    TMR: Ever applied for SSI allocation f
+
+. d
+
+Contains data from sip96t1.dta
+  obs:        95,315                          
+ vars:           436                          4 Nov 2015 12:06
+ size:    46,704,350                          
+---------------------------------------------------------------------------------------------------------
+              storage  display     value
+variable name   type   format      label      variable label
+---------------------------------------------------------------------------------------------------------
+ssuseq          long   %12.0g                 SU: Sequence Number of Sample Unit - P
+ssuid           str12  %12s                   SU: Sample Unit Identifier
+spanel          int    %10.0g      spanel     SU: Sample Code - Indicates Panel Year
+swave           byte   %8.0g                  SU: Wave of data collection
+srotaton        byte   %8.0g                  SU: Rotation of data collection
+tfipsst         byte   %27.0g      tfipsst    SU: FIPS State Code for fifth month
+eoutcome        int    %32.0g      eoutcome   HH: Interview Status code for fifth mo
+shhadid         int    %8.0g                  SU: Hhld Address ID in fourth referenc
+sinthhid        int    %8.0g                  SU: Hhld Address ID of person in inter
+rfid            int    %8.0g                  FA: Family ID Number in month four
+rfid2           int    %27.0g      rfid2l     FA: Family ID excluding related subfam
+eppidx          int    %8.0g                  PE: Person index
+eentaid         str3   %9s                    PE: Address ID of hhld where person en
+epppnum         str4   %9s                    PE: Person number
+epopstat        byte   %32.0g      epopstat   PE: Population status based on age in
+eppintvw        byte   %32.0g      eppintvw   PE: Person's interview status at time
+eppmis4         byte   %13.0g      eppmis4l   PE: Person's 4th month interview statu
+esex            byte   %8.0g       esex       PE: Sex of this person
+erace           byte   %26.0g      erace      PE: Race of this person
+eorigin         byte   %27.0g      eorigin    PE: Origin of this person
+wpfinwgt        double %10.0g                 WW: Person weight
+errp            byte   %32.0g      errp       PE: Household relationship
+ems             byte   %23.0g      ems        PE: Marital status
+epnmom          int    %22.0g      epnmom     PE: Person number of mother
+epndad          int    %22.0g      epndad     PE: Person number of father
+epnguard        int    %25.0g      epnguard   PE: Person number of guardian
+epnspous        int    %32.0g      epnspous   PE: Person number of spouse
+rdesgpnt        byte   %15.0g      rdesgpnt   PE: Designated parent or guardian flag
+tage            byte   %25.0g      tage       PE: Age as of last birthday
+eeducate        byte   %31.0g      eeducate   ED: Highest Degree received or grade
+tlstwrky        int    %15.0g      tlstwrky   EM: Year last worked
+elstwrkm        byte   %15.0g      elstwrkm   EM: Month last worked
+tprvjbyr        int    %15.0g      tprvjbyr   EM: Year last worked, prior to referen
+eprvjbmn        byte   %15.0g      eprvjbmn   EM: Month last worked, prior to refere
+tfrmryr         int    %15.0g      tfrmryr    EM: Year last or previous job started
+efrmrmn         byte   %15.0g      efrmrmn    EM: Month last or previous job started
+tmakmnyr        int    %30.0g      tmakmnyr   EM: Year first worked 6 straight month
+emnreson        byte   %32.0g      emnreson   EM: Main reason never worked 6 straigh
+eyrsince        byte   %15.0g      eyrsince   EM: Worked annually at least 6 month/y
+eyrsinc2        byte   %16.0g      eyrsinck   EM: How many years has ... not worked
+ewrk35hr        byte   %15.0g      ewrk35hr   EM: Worked 35 or more hours per week
+eoff6mtn        byte   %15.0g      eoff6mtn   EM: Break in labor force because of
+tnowrkfr        int    %15.0g      tnowrkfr   EM: Most recent time of break in labor
+tnowrkto        int    %15.0g      tnowrkto   EM: Most recent time of break in labor
+eothtime        byte   %15.0g      eothtime   EM: Were there othr times when, didnt
+ecntothr        byte   %16.0g      ecntothr   EM: Number of additional breaks in the
+tfstyrfr        int    %15.0g      tfstyrfr   EM: First time period of break in labo
+tfstyrto        int    %16.0g      tfstyrto   EM: First time period of break in labo
+enwresn         byte   %26.0g      enwresn    EM: Care receiver of most recent careg
+efrstrsn        byte   %26.0g      efrstrsn   EM: Care receiver of 1st caregivng spe
+alstwrky        byte   %31.0g      alstwrky   EM: Year last worked allocation flag
+alstwrkm        byte   %31.0g      alstwrkm   EM: Month last worked allocation flag
+aprvjbyr        byte   %31.0g      aprvjbyr   EM: Yr last wrked,prior to ref period
+aprvjbmn        byte   %31.0g      aprvjbmn   EM: Month last worked, prior to ref pr
+afrmryr         byte   %31.0g      afrmryr    EM: Year last or previous job started
+afrmrmn         byte   %31.0g      afrmrmn    EM: Month last or previous job started
+amakmnyr        byte   %31.0g      amakmnyr   EM: Year first worked 6 straight month
+amnreson        byte   %31.0g      amnreson   EM: Main rsn nevr wrked 6 strght mth a
+ayrsince        byte   %31.0g      ayrsince   EM: Worked annually at least 6 mths/yr
+ayrsinc2        byte   %32.0g      ayrsinck   EM: Number of yrs not wrked 6 straight
+awrk35hr        byte   %31.0g      awrk35hr   EM: Worked 35 or more hours per week
+aoff6mtn        byte   %31.0g      aoff6mtn   EM: Break in labor force because of
+anowrkfr        byte   %20.0g      anowrkfr   EM: Most recent time of brk labor
+anowrkto        byte   %20.0g      anowrkto   EM: Most recnt time of brk labor force
+aothtime        byte   %22.0g      aothtime   EM: Were there othr times when, didnt
+acntothr        byte   %20.0g      acntothr   EM: Number of added breaks in labor fo
+afstyrfr        byte   %32.0g      afstyrfr   EM: 1st time period of brk in labor
+afstyrto        byte   %32.0g      afstyrto   EM: 1st time period of brk in labor
+anwresn         byte   %32.0g      anwresn    EM: Care receiver of recent caregivng
+afrstrsn        byte   %32.0g      afrstrsn   EM: Care receiver of 1st caregivng spe
+eystp21         byte   %28.0g      eystp21l   RC1: Stopped AFDC in month 4
+aystp21         byte   %31.0g      aystp21l   RC1: Stopped AFDC in month 4 allocatio
+eybg2101        byte   %31.0g      eybg210n   RC1: Rsn applied for AFDC (1=Needed th
+eybg2102        byte   %31.0g      eybg210k   RC1: Rsn applied for AFDC
+eybg2103        byte   %31.0g      eybg210l   RC1: Rsn applied for AFDC (3=Received
+eybg2104        byte   %31.0g      eybg210m   RC1: Rsn applied for AFDC
+eybg2105        byte   %31.0g      eybg210o   RC1: Rsn applied for AFDC (5=Loss of
+eybg2106        byte   %31.0g      eybg210p   RC1: Rsn applied for AFDC (6=Loss othe
+eybg2107        byte   %31.0g      eybg210q   RC1: Rsn applied for AFDC (7=Just lear
+eybg2108        byte   %31.0g      eybg210r   RC1: Rsn applied for AFDC (8=Just got
+eybg2109        byte   %31.0g      eybg210s   RC1: Rsn applied for AFDC (9=Became
+eybg2110        byte   %31.0g      eybg211n   RC1: Rsn applied for AFDC (10=Other)
+aybg21          byte   %31.0g      aybg21l    RC1: Rsn applied for AFDC allocation f
+eystp22         byte   %28.0g      eystp22l   EM: General Income Code
+aystp22         byte   %31.0g      aystp22l   RC1: Stopped AFDC in month 3 allocatio
+eybg2201        byte   %31.0g      eybg220n   RC1: Rsn applied for AFDC (1=Needed th
+eybg2202        byte   %31.0g      eybg220k   RC1: Rsn applied for AFDC
+eybg2203        byte   %31.0g      eybg220l   RC1: Rsn applied for AFDC (3=Received
+eybg2204        byte   %31.0g      eybg220m   RC1: Rsn applied for AFDC
+eybg2205        byte   %31.0g      eybg220o   RC1: Rsn applied for AFDC (5=Loss
+eybg2206        byte   %31.0g      eybg220p   RC1: Rsn applied for AFDC (6=Loss of o
+eybg2207        byte   %31.0g      eybg220q   RC1: Rsn applied for AFDC (7=Just lear
+eybg2208        byte   %31.0g      eybg220r   RC1: Rsn applied for AFDC (8=Just got
+eybg2209        byte   %31.0g      eybg220s   RC1: Rsn applied for AFDC (9=Became
+eybg2210        byte   %31.0g      eybg221n   RC1: Rsn applied for AFDC (10=Other)
+aybg22          byte   %31.0g      aybg22l    RC1: Rsn applied for AFDC allocation f
+eystp23         byte   %28.0g      eystp23l   RC1: Stopped AFDC in month 2
+aystp23         byte   %31.0g      aystp23l   RC1: Stopped AFDC in month 2
+eybg2301        byte   %31.0g      eybg230n   RC1: Rsn applied for AFDC (1=Needed th
+eybg2302        byte   %31.0g      eybg230k   RC1: Rsn applied for AFDC
+eybg2303        byte   %31.0g      eybg230l   RC1: Rsn applied for AFDC (3=Received
+eybg2304        byte   %31.0g      eybg230m   RC1: Rsn applied for AFDC
+eybg2305        byte   %31.0g      eybg230o   RC1: Rsn applied for AFDC (5=Loss
+eybg2306        byte   %31.0g      eybg230p   RC1: Rsn applied for AFDC (6=Loss of s
+eybg2307        byte   %31.0g      eybg230q   RC1: Rsn applied for AFDC (7=Just lear
+eybg2308        byte   %31.0g      eybg230r   RC1: Rsn applied for AFDC (8=Just got
+eybg2309        byte   %31.0g      eybg230s   RC1: Rsn applied for AFDC (9=Became
+eybg2310        byte   %31.0g      eybg231n   RC1: Rsn applied for AFDC (10=Other)
+aybg23          byte   %31.0g      aybg23l    RC1: Rsn applied for AFDC allocation f
+tybg120y        int    %15.0g      tybg120y   RC1: When did ... applied for AFDC tha
+eybg120m        byte   %15.0g      eybg120m   RC1: When did ... applied for AFDC tha
+aybg120m        byte   %31.0g      aybg120m   RC1: Month applied for AFDC allocation
+aybg120y        byte   %31.0g      aybg120y   RC1: Year applied for AFDC allocation
+eyb22001        byte   %31.0g      eyb2200y   RC1: Rsn applied for AFDC (1=Needed th
+eyb22002        byte   %31.0g      eyb2200k   RC1: Rsn applied for AFDC
+eyb22003        byte   %31.0g      eyb2200l   RC1: Rsn applied for AFDC (3=Received
+eyb22004        byte   %31.0g      eyb2200m   RC1: Rsn applied for AFDC
+eyb22005        byte   %31.0g      eyb2200n   RC1: Rsn applied for AFDC (5=Loss of
+eyb22006        byte   %31.0g      eyb2200o   RC1: Rsn applied for AFDC (6=Loss of o
+eyb22007        byte   %31.0g      eyb2200p   RC1: Rsn applied for AFDC (7=Just lear
+eyb22008        byte   %31.0g      eyb2200q   RC1: Rsn applied for AFDC (8=Just appl
+eyb22009        byte   %31.0g      eyb2200r   RC1: Rsn applied for AFDC (9=Became
+eyb22010        byte   %31.0g      eyb2201y   RC1: Rsn applied for AFDC (10=Other)
+aybg220         byte   %31.0g      aybg220l   RC1: Rsn applied for AFDC allocation f
+ewstp21         byte   %28.0g      ewstp21l   RC1: Rsn applied for WIC
+awstp21         byte   %31.0g      awstp21l   RC1: Rsn applied for WIC allocation fl
+ewbg2101        byte   %31.0g      ewbg210y   RC1: Rsn applied for WIC (1=Needed the
+ewbg2102        byte   %31.0g      ewbg210k   RC1: Rsn applied for WIC (2=Pregnancy/
+ewbg2103        byte   %31.0g      ewbg210l   RC1: Rsn applied for WIC (3 Received
+ewbg2104        byte   %31.0g      ewbg210m   RC1: Rsn applied for WIC
+ewbg2105        byte   %31.0g      ewbg210n   RC1: Rsn applied for WIC (5=Loss of
+ewbg2106        byte   %31.0g      ewbg210o   RC1: Rsn applied for WIC (6=Loss of ot
+ewbg2107        byte   %31.0g      ewbg210p   RC1: Rsn applied for WIC (7=Just learn
+ewbg2108        byte   %31.0g      ewbg210q   RC1: Rsn applied for WIC (8=Just got a
+ewbg2109        byte   %31.0g      ewbg210r   RC1: Rsn applied for WIC (9=Became dis
+ewbg2110        byte   %31.0g      ewbg211y   RC1: Rsn applied for WIC (10=Other)
+awbg21          byte   %31.0g      awbg21l    RC1: Rsn applied for WIC allocation fl
+ewstp22         byte   %28.0g      ewstp22l   RC1 Stopped receiving WIC in month 3
+awstp22         byte   %31.0g      awstp22l   RC1 Stopped receiving WIC allocation f
+ewbg2201        byte   %31.0g      ewbg220y   RC1: Rsn applied for WIC (1=Needed the
+ewbg2202        byte   %31.0g      ewbg220k   RC1: Rsn applied for WIC (2=Pregnancy/
+ewbg2203        byte   %31.0g      ewbg220l   RC1: Rsn applied for WIC (3=Received f
+ewbg2204        byte   %31.0g      ewbg220m   RC1: Rsn applied for WIC
+ewbg2205        byte   %31.0g      ewbg220n   RC1: Rsn applied for WIC (5=Loss of
+ewbg2206        byte   %31.0g      ewbg220o   RC1: Rsn applied for WIC (6=Loss of ot
+ewbg2207        byte   %31.0g      ewbg220p   RC1: Rsn applied for WIC (7=Just learn
+ewbg2208        byte   %31.0g      ewbg220q   RC1: Rsn applied for WIC (8=Just got a
+ewbg2209        byte   %31.0g      ewbg220r   RC1: Rsn applied for WIC (9=Became dis
+ewbg2210        byte   %31.0g      ewbg221y   RC1: Rsn applied for WIC (10=Other)
+awbg22          byte   %31.0g      awbg22l    RC1: Rsn applied for WIC allocation fl
+ewstp23         byte   %28.0g      ewstp23l   RC1: Rsn stopped receiving WIC in mont
+awstp23         byte   %31.0g      awstp23l   RC1: Rsn stopped receiving WIC in mont
+ewbg2301        byte   %31.0g      ewbg230y   RC1: Rsn applied for WIC (1=Needed the
+ewbg2302        byte   %31.0g      ewbg230k   RC1: Rsn applied for WIC (2=Pregnancy/
+ewbg2303        byte   %31.0g      ewbg230l   RC1: Rsn applied for WIC (3=Received f
+ewbg2304        byte   %31.0g      ewbg230m   RC1: Rsn applied for WIC
+ewbg2305        byte   %31.0g      ewbg230n   RC1: Rsn applied for WIC (5=Loss of
+ewbg2306        byte   %31.0g      ewbg230o   RC1: Rsn applied for WIC (6=Loss of ot
+ewbg2307        byte   %31.0g      ewbg230p   RC1: Rsn applied for WIC (7=Just learn
+ewbg2308        byte   %31.0g      ewbg230q   RC1: Rsn applied for WIC (8=Just got a
+ewbg2309        byte   %31.0g      ewbg230r   RC1: Rsn applied for WIC (9=Became dis
+ewbg2310        byte   %31.0g      ewbg231y   RC1: Rsn applied for WIC (10=Other)
+awbg23          byte   %31.0g      awbg23l    RC1: Rsn applied for WIC allocation fl
+ewbg120m        byte   %15.0g      ewbg120m   RC1: Month applied for WIC that time
+twbg120y        int    %15.0g      twbg120y   RC1: Year applied for WIC that time
+awbg120m        byte   %31.0g      awbg120m   RC1: Month applied for WIC that time
+awbg120y        byte   %31.0g      awbg120y   RC1: Year applied for WIC that time
+ewb22001        byte   %31.0g      ewb2200y   RC1: Rsn applied for WIC (1=Needed the
+ewb22002        byte   %31.0g      ewb2200k   RC1: Rsn applied for WIC (2=Pregnancy/
+ewb22003        byte   %31.0g      ewb2200l   RC1: Rsn applied for WIC (3=Received f
+ewb22004        byte   %31.0g      ewb2200m   RC1: Rsn applied for WIC
+ewb22005        byte   %31.0g      ewb2200n   RC1: Rsn applied for WIC (5=Loss job/i
+ewb22006        byte   %31.0g      ewb2200o   RC1: Rsn applied for WIC (6=Loss of ot
+ewb22007        byte   %31.0g      ewb2200p   RC1: Rsn applied for WIC (7=Just learn
+ewb22008        byte   %31.0g      ewb2200q   RC1: Rsn applied for WIC (8=Just got a
+ewb22009        byte   %31.0g      ewb2200r   RC1: Rsn applied for WIC (9=Became dis
+ewb22010        byte   %31.0g      ewb2201y   RC1: Rsn applied for WIC (10=Other)
+awbg220         byte   %31.0g      awbg220l   RC1: Rsn applied for WIC allocation fl
+efstp21         byte   %28.0g      efstp21l   RC1: Rsn stopped receiving Food Stamps
+afstp21         byte   %31.0g      afstp21l   RC1: Rsn stopped receiving FStamps-mth
+efbg2101        byte   %31.0g      efbg210y   RC1: Rsn applied for Food Stamps (1=Ne
+efbg2102        byte   %31.0g      efbg210k   RC1: Rsn applied for Food Stamps
+efbg2103        byte   %31.0g      efbg210l   RC1: Rsn applied for FStamps (3=Receiv
+efbg2104        byte   %31.0g      efbg210m   RC1: Rsn applied for Food Stamps
+efbg2105        byte   %31.0g      efbg210n   RC1: Rsn applied for Food Stamps (5=Lo
+efbg2106        byte   %31.0g      efbg210o   RC1: Rsn applied for Food Stamps (6=Lo
+efbg2107        byte   %31.0g      efbg210p   RC1: Rsn applied for FStamps (7=Just l
+efbg2108        byte   %31.0g      efbg210q   RC1: Rsn applied for FStamps (8=Just
+efbg2109        byte   %31.0g      efbg210r   RC1: Rsn applied for Food Stamps (9=Be
+efbg2110        byte   %31.0g      efbg211y   RC1: Rsn applied for Food Stamps (10=O
+afbg21          byte   %31.0g      afbg21l    RC1: Rsn applied for Food Stamps alloc
+efstp22         byte   %28.0g      efstp22l   RC1: Rsn stopped receiving Food Stamps
+afstp22         byte   %31.0g      afstp22l   RC1: Rsn stopped receiving FS - month
+efbg2201        byte   %31.0g      efbg220y   RC1: Rsn applied for Food Stamps (1=Ne
+efbg2202        byte   %31.0g      efbg220k   RC1: Rsn applied for Food Stamps
+efbg2203        byte   %31.0g      efbg220l   RC1: Rsn applied for FStamps(3=Receive
+efbg2204        byte   %31.0g      efbg220m   RC1: Rsn applied for Food Stamps
+efbg2205        byte   %31.0g      efbg220n   RC1: Rsn applied for Food Stamps (5=Lo
+efbg2206        byte   %31.0g      efbg220o   RC1: Rsn applied for Food Stamps (6=Lo
+efbg2207        byte   %31.0g      efbg220p   RC1: Rsn applied for Food Stamps (8=Ju
+efbg2208        byte   %31.0g      efbg220q   RC1: Rsn applied for Food Stamps (8=Ju
+efbg2209        byte   %31.0g      efbg220r   RC1: Rsn applied for Food Stamps (9=Be
+efbg2210        byte   %31.0g      efbg221y   RC1: Rsn applied for Food Stamps (10=O
+afbg22          byte   %31.0g      afbg22l    RC1: Rsn applied for Food Stamps alloc
+efstp23         byte   %28.0g      efstp23l   RC1: Rsn stopped receiving Food Stamps
+afstp23         byte   %31.0g      afstp23l   RC1: Rsn stopped receiving FStamps-mth
+efbg2301        byte   %31.0g      efbg230y   RC1: Rsn applied for Food Stamps (1=Ne
+efbg2302        byte   %31.0g      efbg230k   RC1: Rsn applied for Food Stamps
+efbg2303        byte   %31.0g      efbg230l   RC1: Rsn applied for FStamps (3=Receiv
+efbg2304        byte   %31.0g      efbg230m   RC1: Rsn applied for Food Stamps
+efbg2305        byte   %31.0g      efbg230n   RC1: Rsn applied for Food Stamps (5=Lo
+efbg2306        byte   %31.0g      efbg230o   RC1: Rsn applied for Food Stamps (6=Lo
+efbg2307        byte   %31.0g      efbg230p   RC1: Rsn applied for Food Stamps (7=Ju
+efbg2308        byte   %31.0g      efbg230q   RC1: Rsn applied for Food Stamps (8=Ju
+efbg2309        byte   %31.0g      efbg230r   RC1: Rsn applied for Food Stamps (9=Be
+efbg2310        byte   %31.0g      efbg231y   RC1: Rsn applied for Food Stamps (10=O
+afbg23          byte   %31.0g      afbg23l    RC1: Rsn applied for Food Stamps alloc
+efbg120m        byte   %15.0g      efbg120m   RC1: Month applied for Food Stamps tha
+tfbg120y        int    %15.0g      tfbg120y   RC1: Year applied for Food Stamps that
+afbg120m        byte   %31.0g      afbg120m   RC1: Month applied for Food Stamps
+afbg120y        byte   %31.0g      afbg120y   RC1: Year applied for Food Stamps allo
+efb22001        byte   %31.0g      efb2200y   RC1: Rsn applied for Food Stamps (1=Ne
+efb22002        byte   %31.0g      efb2200k   RC1: Rsn applied for Food Stamps
+efb22003        byte   %31.0g      efb2200l   RC1: Rsn applied for Food Stamps(3=Rec
+efb22004        byte   %31.0g      efb2200m   RC1: Rsn applied for Food Stamps
+efb22005        byte   %31.0g      efb2200n   RC1: Rsn applied for Food Stamps (5=Lo
+efb22006        byte   %31.0g      efb2200o   RC1: Rsn applied for Food Stamps (6=Lo
+efb22007        byte   %31.0g      efb2200p   RC1: Rsn applied for Food Stamps (7=Ju
+efb22008        byte   %31.0g      efb2200q   RC1: Rsn applied for Food Stamps (8=Ju
+efb22009        byte   %31.0g      efb2200r   RC1: Rsn applied for Food Stamps (9=Be
+efb22010        byte   %31.0g      efb2201y   RC1: Rsn applied for Food Stamps (10=O
+afb220          byte   %31.0g      afb220l    RC1: Rsn applied for Food Stamps alloc
+estp03m4        byte   %28.0g      estp03my   RC2: Rsn stopped receiving in month 4
+astp03m4        byte   %31.0g      astp03my   RC2: Rsn stopped receiving in month 4
+estp04m4        byte   %28.0g      estp04my   RC2: Rsn stopped receiving in month 4
+astp04m4        byte   %31.0g      astp04my   RC2: Rsn stopped receiving in month 4
+estp21m4        byte   %28.0g      estp21my   RC2: Rsn stopped receiving in month 4
+astp21m4        byte   %31.0g      astp21my   RC2: Rsn stopped receiving in month 4
+estp24m4        byte   %28.0g      estp24my   RC2: Rsn stopped receiving in month 4
+astp24m4        byte   %31.0g      astp24my   RC2: Rsn stopped receiving in month 4
+eb2101m4        byte   %31.0g      eb2101my   RC2: Rsn applied for other Welfare(1=N
+eb2102m4        byte   %31.0g      eb2102my   RC2: Rsn applied for Gen Ast/Gen
+eb2103m4        byte   %31.0g      eb2103my   RC2: Rsn applied for Gen Ast/GRelf(3=A
+eb2104m4        byte   %31.0g      eb2104my   RC2: Rsn applied for
+eb2105m4        byte   %31.0g      eb2105my   RC2: Rsn applied for GA/GR(5=Loss of
+eb2106m4        byte   %31.0g      eb2106my   RC2: Rsn applied for Gen Ast/Gen relf(
+eb2107m4        byte   %31.0g      eb2107my   RC2: Rsn applied for Gen Ast/Gen relf(
+eb2108m4        byte   %31.0g      eb2108my   RC2: Rsn applied for Gen Ast/Gen relf(
+eb2109m4        byte   %31.0g      eb2109my   RC2: Rsn applied for Gen Ast/Gen
+eb2110m4        byte   %31.0g      eb2110my   RC2: Rsn applied for Gen Ast/Gen
+ab21m4          byte   %31.0g      ab21m4l    RC2: Rsn applied for Gen Ast/Gen Relf
+eb2401m4        byte   %31.0g      eb2401my   RC2: Rsn applied for other Welfare(1=N
+eb2402m4        byte   %31.0g      eb2402my   RC2: Rsn applied for other
+eb2403m4        byte   %31.0g      eb2403my   RC2: Rsn applied for other Welfare(3=A
+eb2404m4        byte   %31.0g      eb2404my   RC2: Rsn applied for other
+eb2405m4        byte   %31.0g      eb2405my   RC2: Rsn applied for other Welfare (5=
+eb2406m4        byte   %31.0g      eb2406my   RC2: Rsn applied for other Welfare(6=L
+eb2407m4        byte   %31.0g      eb2407my   RC2: Rsn applied for other Welfare(7=J
+eb2408m4        byte   %31.0g      eb2408my   RC2: Rsn applied for other Welfare(8=J
+eb2409m4        byte   %31.0g      eb2409my   RC2: Rsn applied for other
+eb2410m4        byte   %31.0g      eb2410my   RC2: Rsn applied for other Welfare(10=
+ab24m4          byte   %31.0g      ab24m4l    RC2: Rsn applied for other Welfare
+eb03s1m4        byte   %31.0g      eb03s1my   RC2: Rsn applied for Fed SSI in mth 4(
+eb03s2m4        byte   %31.0g      eb03s2my   RC2: Rsn applied for Fed SSI in mth
+eb03s3m4        byte   %31.0g      eb03s3my   RC2: Rsn applied for Fed SSI in month
+eb03s4m4        byte   %31.0g      eb03s4my   RC2: Rsn applied for Fed SSI in month
+ab03sm4         byte   %31.0g      ab03sm4l   RC2: Rsn applied for Fed SSI in mth 4
+eb04s1m4        byte   %31.0g      eb04s1my   RC2: Rsn applied for State SSI-mth
+eb04s2m4        byte   %31.0g      eb04s2my   RC2: Rsn applied for State SSI-mth
+eb04s3m4        byte   %31.0g      eb04s3my   RC2: Rsn applied for State SSI in mont
+eb04s4m4        byte   %31.0g      eb04s4my   RC2: Rsn applied for State SSI in mont
+ab04sm4         byte   %31.0g      ab04sm4l   RC2: Rsn applied for State SSI in mont
+estp03m3        byte   %30.0g      estp03mk   RC2: Stopped receiving Fed SSI in mont
+astp03m3        byte   %31.0g      astp03mk   RC2: Stopped receiving Fed SSI in mont
+estp04m3        byte   %30.0g      estp04mk   RC2: Stopped receiving State SSI in mo
+astp04m3        byte   %31.0g      astp04mk   RC2: Stopped receiving State SSI in mt
+estp21m3        byte   %30.0g      estp21mk   RC2: Stopped receiving Gen Ast/Gen rel
+astp21m3        byte   %31.0g      astp21mk   RC2: Stopped receiving Gen Ast/Gen rel
+estp24m3        byte   %30.0g      estp24mk   RC2: Stopped receiving other Welfare i
+astp24m3        byte   %31.0g      astp24mk   RC2: Stopped receiving other Welfare i
+eb2101m3        byte   %31.0g      eb2101mk   RC2: Rsn applied for GA/GR in mth 3(1=
+eb2102m3        byte   %31.0g      eb2102mk   RC2: Rsn applied for GA/GR - mth
+eb2103m3        byte   %31.0g      eb2103mk   RC2: Rsn applied for GA/GR-mth 3(3=Rec
+eb2104m3        byte   %31.0g      eb2104mk   RC2: Rsn applied for GA/GR-mth
+eb2105m3        byte   %31.0g      eb2105mk   RC2: Rsn applied GA/GR - mth 3(5=Loss
+eb2106m3        byte   %31.0g      eb2106mk   RC2: Rsn applied GA/GR - month 3(6=Los
+eb2107m3        byte   %31.0g      eb2107mk   RC2: Rsn for GA/GR - month 3(7=Just le
+eb2108m3        byte   %31.0g      eb2108mk   RC2: Rsn applied GA/GR in month 3(8=Ju
+eb2109m3        byte   %31.0g      eb2109mk   RC2: Rsn applied GA/GR in month 3(9=Be
+eb2110m3        byte   %31.0g      eb2110mk   RC2: Rsn applied for GA/GR in month
+ab21m3          byte   %31.0g      ab21m3l    RC2: Rsn applied for GA/GR in month 3
+eb2401m3        byte   %31.0g      eb2401mk   RC2: Rsn applied for othr Welfare-mth
+eb2402m3        byte   %31.0g      eb2402mk   RC2: Rsn applied for other Welfare-mth
+eb2403m3        byte   %31.0g      eb2403mk   RC2: Rsn applied for oth Welfare-mth
+eb2404m3        byte   %31.0g      eb2404mk   RC2: Rsn applied for oth Welfare-mth
+eb2405m3        byte   %31.0g      eb2405mk   RC2: Rsn applied other Welfare-mth 3(5
+eb2406m3        byte   %31.0g      eb2406mk   RC2: Rsn applied other Welfare-mth 3(6
+eb2407m3        byte   %31.0g      eb2407mk   RC2: Rsn for other Welfare-mth 3(7=Jus
+eb2408m3        byte   %31.0g      eb2408mk   RC2: Rsn applied other Welfare - month
+eb2409m3        byte   %31.0g      eb2409mk   RC2: Rsn applied othr Welfare - mth
+eb2410m3        byte   %31.0g      eb2410mk   RC2: Rsn applied for other Welfare in
+ab24m3          byte   %31.0g      ab24m3l    RC2: Rsn applied for other Welfare-mth
+eb03s1m3        byte   %31.0g      eb03s1mk   RC2: Rsn applied for Fed SSI-mth 3(1=N
+eb03s2m3        byte   %31.0g      eb03s2mk   RC2: Rsn applied for Fed SSI-mth
+eb03s3m3        byte   %31.0g      eb03s3mk   RC2: Rsn applied for Fed SSI in month
+eb03s4m3        byte   %31.0g      eb03s4mk   RC2: Rsn applied for Fed SSI in month
+ab03sm3         byte   %31.0g      ab03sm3l   RC2: Rsn applied for Fed SSI - mth 3
+eb04s1m3        byte   %31.0g      eb04s1mk   RC2: Rsn applied for State SSI-mth
+eb04s2m3        byte   %31.0g      eb04s2mk   RC2: Rsn applied for State SSI-mth
+eb04s3m3        byte   %31.0g      eb04s3mk   RC2: Rsn applied for State SSI in mont
+eb04s4m3        byte   %31.0g      eb04s4mk   RC2: Rsn applied for State SSI in mont
+ab04sm3         byte   %31.0g      ab04sm3l   RC2: Rsn applied for State SSI in mont
+estp03m2        byte   %30.0g      estp03ml   RC2: Stopped receiving Fed SSI in mont
+astp03m2        byte   %31.0g      astp03ml   RC2: Stopped receiving Fed SSI - mth 2
+estp04m2        byte   %32.0g      estp04ml   RC2: Stopped receiving State SSI in mo
+astp04m2        byte   %31.0g      astp04ml   RC2: Stopped receiving State SSI - mth
+estp21m2        byte   %32.0g      estp21ml   RC2: Stopped receiving GA/GR in month
+astp21m2        byte   %31.0g      astp21ml   RC2: Stopped receiving GA/GR-mth 2
+estp24m2        byte   %32.0g      estp24ml   RC2:Stopped receiving other Welfare in
+astp24m2        byte   %31.0g      astp24ml   RC2:Stopped receiving other Welfare-mt
+eb2101m2        byte   %31.0g      eb2101ml   RC2: Rsn applied GA/GR-mth 2(1=Needed
+eb2102m2        byte   %31.0g      eb2102ml   RC2: Rsn applied for GA/GR-mth
+eb2103m2        byte   %31.0g      eb2103ml   RC2: Rsn applied GA/GR-mth 2(3=Receive
+eb2104m2        byte   %31.0g      eb2104ml   RC2: Rsn applied GA/GR in month
+eb2105m2        byte   %31.0g      eb2105ml   RC2: Rsn applied GA/GR in mth 2(5=Loss
+eb2106m2        byte   %31.0g      eb2106ml   RC2: Rsn applied GA/GR in mth 2(6=Loss
+eb2107m2        byte   %31.0g      eb2107ml   RC2: Rsn applied GA/GR in mth 2(7=Just
+eb2108m2        byte   %31.0g      eb2108ml   RC2: Rsn applied GA/GR in mth 2(8=Just
+eb2109m2        byte   %31.0g      eb2109ml   RC2: Rsn applied for GA/GR in mth 2(9=
+eb2110m2        byte   %31.0g      eb2110ml   RC2: Rsn applied for GA/GR in mth
+ab21m2          byte   %31.0g      ab21m2l    RC2: Rsn applied GA/GR in mth 2 alloca
+eb2401m2        byte   %31.0g      eb2401ml   RC2: Rsn applied other Welfare-mth
+eb2402m2        byte   %31.0g      eb2402ml   RC2: Rsn applied for other Welfare-mth
+eb2403m2        byte   %31.0g      eb2403ml   RC2: Rsn applied other Welfare-mth 2(3
+eb2404m2        byte   %31.0g      eb2404ml   RC2: Rsn applied other Welfare-mth
+eb2405m2        byte   %31.0g      eb2405ml   RC2: Rsn applied other Welfare-mth 2(5
+eb2406m2        byte   %31.0g      eb2406ml   RC2: Rsn applied othr Welfare-mth 2(6=
+eb2407m2        byte   %31.0g      eb2407ml   RC2: Rsn applied othr Welfare-mth 2(7=
+eb2408m2        byte   %31.0g      eb2408ml   RC2: Rsn applied othr Welfare-mth 2(8=
+eb2409m2        byte   %31.0g      eb2409ml   RC2: Rsn applied othr Welfare-mth 2(9=
+eb2410m2        byte   %31.0g      eb2410ml   RC2: Rsn applied for othr Welfare-mth
+ab24m2          byte   %31.0g      ab24m2l    RC2: Rsn applied othr Welfare-mth 2
+eb03s1m2        byte   %31.0g      eb03s1ml   RC2: Rsn applied for Fed SSI-mth 2(1=N
+eb03s2m2        byte   %31.0g      eb03s2ml   RC2: Rsn applied for Fed SSI-mth 2(2=B
+eb03s3m2        byte   %31.0g      eb03s3ml   RC2: Rsn applied for Fed SSI in month
+eb03s4m2        byte   %31.0g      eb03s4ml   RC2: Rsn applied for Fed SSI in month
+ab03sm2         byte   %31.0g      ab03sm2l   RC2: Rsn applied for Fed SSI in month
+eb04s1m2        byte   %31.0g      eb04s1ml   RC2: Rsn applied for State SSI-mth
+eb04s2m2        byte   %31.0g      eb04s2ml   RC2: Rsn applied for State SSI-mth
+eb04s3m2        byte   %31.0g      eb04s3ml   RC2: Rsn applied for State SSI in mont
+eb04s4m2        byte   %31.0g      eb04s4ml   RC2: Rsn applied for State SSI in mont
+ab04sm2         byte   %31.0g      ab04sm2l   RC2: Rsn applied for State SSI-month 2
+eb2101m1        byte   %31.0g      eb2101mm   RC2: Rsn applied GA/GR-mth 1(1=Needed
+eb2102m1        byte   %31.0g      eb2102mm   RC2: Rsn applied GA/GR-mth 1(2=Preg/bi
+eb2103m1        byte   %31.0g      eb2103mm   RC2: Rsn applied GA/GR-mth 1(3=Receive
+eb2104m1        byte   %31.0g      eb2104mm   RC2: Rsn applied GA/GR-mth
+eb2105m1        byte   %31.0g      eb2105mm   RC2: Rsn applied GA/GR-mth 1(5=Loss of
+eb2106m1        byte   %31.0g      eb2106mm   RC2: Rsn applied GA/GR-mth 1(6=Loss of
+eb2107m1        byte   %31.0g      eb2107mm   RC2: Rsn applied GA/GR-mth 1(7=Just le
+eb2108m1        byte   %31.0g      eb2108mm   RC2: Rsn applied GA/GR-mth 1(8=Just
+eb2109m1        byte   %31.0g      eb2109mm   RC2: Rsn applied GA/GR-mth 1(9=Became
+eb2110m1        byte   %31.0g      eb2110mm   RC2: Rsn applied for GA/GR-mth 1(10=Ot
+ab21m1          byte   %31.0g      ab21m1l    RC2: Rsn applied for GA/GR in mth 1
+eb2401m1        byte   %31.0g      eb2401mm   RC2: Rsn applied other Welfare-mth
+eb2402m1        byte   %31.0g      eb2402mm   RC2: Rsn applied other Welfare-mth
+eb2403m1        byte   %31.0g      eb2403mm   RC2: Rsn applied other Welfare-mth 1(3
+eb2404m1        byte   %31.0g      eb2404mm   RC2: Rsn applied other Welfare-mth
+eb2405m1        byte   %31.0g      eb2405mm   RC2: Rsn applied other Welfare-mth 1(5
+eb2406m1        byte   %31.0g      eb2406mm   RC2: Rsn applied GA/GR-mth 1(6=Loss of
+eb2407m1        byte   %31.0g      eb2407mm   RC2: Rsn applied GA/GR-mth 1(7=Just le
+eb2408m1        byte   %31.0g      eb2408mm   RC2: Rsn applied other Welfare-mth 1(8
+eb2409m1        byte   %31.0g      eb2409mm   RC2: Rsn applied other Welfare-mth
+eb2410m1        byte   %31.0g      eb2410mm   RC2: Rsn applied for other Welfare in
+ab24m1          byte   %31.0g      ab24m1l    RC2: Rsn applied other Welfare-mth 1
+eb03s1m1        byte   %31.0g      eb03s1mm   RC2: Rsn applied for Fed SSI-mth 1(1=N
+eb03s2m1        byte   %31.0g      eb03s2mm   RC2: Rsn applied Fed SSI-mth 1(2=Becam
+eb03s3m1        byte   %31.0g      eb03s3mm   RC2: Rsn applied for Fed SSI in month
+eb03s4m1        byte   %31.0g      eb03s4mm   RC2: Rsn applied for Fed SSI in month
+ab03sm1         byte   %31.0g      ab03sm1l   RC2: Rsn applied for Fed SSI in month
+eb04s1m1        byte   %31.0g      eb04s1mm   RC2: Rsn applied State SSI mth 1(1=Nee
+eb04s2m1        byte   %31.0g      eb04s2mm   RC2: Rsn applied State SSI mth 1(2=Bec
+eb04s3m1        byte   %31.0g      eb04s3mm   RC2: Rsn applied State SSI-mth 1(3=Ove
+eb04s4m1        byte   %31.0g      eb04s4mm   RC2: Rsn applied for State SSI-mth
+ab04sm1         byte   %31.0g      ab04sm1l   RC2: Rsn applied for State SSI in mont
+ecovb1m         byte   %15.0g      ecovb1m    RC2: Month applied for Social Security
+tcovb1y         int    %15.0g      tcovb1y    RC2: Year applied for Social Security
+acovb1m         byte   %31.0g      acovb1m    RC2: Month applied for Social Security
+acovb1y         byte   %31.0g      acovb1y    RC2: Year applied for Social Security
+ecovb3m         byte   %15.0g      ecovb3m    RC2: Month applied for Fed SSI that ti
+tcovb3y         int    %15.0g      tcovb3y    RC2: Year applied for Fed SSI that tim
+acovb3m         byte   %31.0g      acovb3m    RC2: Month applied for Fed SSI that ti
+acovb3y         byte   %31.0g      acovb3y    RC2: Year applied for Fed SSI that tim
+ecovb4m         byte   %15.0g      ecovb4m    RC2: Month applied for State SSI that
+tcovb4y         int    %15.0g      tcovb4y    RC2: Year applied for EGICODE that tim
+acovb4m         byte   %31.0g      acovb4m    RC2: Month applied for State SSI that
+acovb4y         byte   %31.0g      acovb4y    RC2: Year applied for State SSI that t
+eaplfs          byte   %15.0g      eaplfs     TMR: Ever applied for Food Stamp Progr
+aaplfs          byte   %31.0g      aaplfs     TMR: Ever applied for Food Stamp Progr
+erecvfs         byte   %15.0g      erecvfs    TMR: Authorized to receive Food Stamp
+arecvfs         byte   %31.0g      arecvfs    TMR: Authorized to receive Food Stamp
+efsstrmn        byte   %15.0g      efsstrmn   TMR: Month first received food stamp
+afsstrmn        byte   %31.0g      afsstrmn   TMR: Month first received food stamp
+tfsstryr        int    %15.0g      tfsstryr   TMR: Year first received food stamp
+afsstryr        byte   %31.0g      afsstryr   TMR: Year first received food stamp
+efslong1        byte   %15.0g      efslongr   TMR: Length of time received food
+afslong1        byte   %31.0g      afslongr   TMR: Length of time received FStamps(m
+efslong2        byte   %15.0g      efslongk   TMR: Length of time received food
+afslong2        byte   %31.0g      afslongk   TMR: Length of time received FStamp(yr
+efstimes        byte   %15.0g      efstimes   TMR: Number of times received food sta
+afstimes        byte   %31.0g      afstimes   TMR: Number of times received FStamps
+eaplafdc        byte   %15.0g      eaplafdc   TMR: Ever applied for AFDC/ADC Program
+aaplafdc        byte   %31.0g      aaplafdc   TMR: Ever applied for AFDC/ADC Program
+ercvafdc        byte   %15.0g      ercvafdc   TMR: Authorized to receive AFDC/ADC
+arcvafdc        byte   %31.0g      arcvafdc   TMR: Authorized to receive AFDC/ADC
+eafdcstm        byte   %15.0g      eafdcstm   TMR: Month first received AFDC/ADC ben
+aafdcstm        byte   %31.0g      aafdcstm   TMR: Month 1st received AFDC/ADC benef
+tafdcsty        int    %15.0g      tafdcsty   TMR: Year first received AFDC/ADC bene
+aafdcsty        byte   %31.0g      aafdcsty   TMR: Year 1st received AFDC/ADC benefi
+eafdclg1        byte   %15.0g      eafdclgy   TMR: Length of time received
+aafdclg1        byte   %31.0g      aafdclgy   TMR: Length of time recd AFDC/ADC(mth)
+eafdclg2        byte   %15.0g      eafdclgk   TMR: Length of time received AFDC/ADC(
+aafdclg2        byte   %31.0g      aafdclgk   TMR: Length of time recd AFDC/ADC(yrs)
+eafdctim        byte   %15.0g      eafdctim   TMR: Number of times received AFDC/ADC
+aafdctim        byte   %31.0g      aafdctim   TMR: Number of times recd AFDC/ADC
+eaplssi         byte   %15.0g      eaplssi    TMR: Ever applied for SSI program
+aaplssi         byte   %31.0g      aaplssi    TMR: Ever applied for SSI allocation f
+erecvssi        byte   %15.0g      erecvssi   TMR: Authorized to receive SSI
+arecvssi        byte   %31.0g      arecvssi   TMR: Authorized to receive SSI allocat
+essistrm        byte   %15.0g      essistrm   TMR: Month first received SSI benefits
+assistrm        byte   %31.0g      assistrm   TMR: Month first received SSI benefits
+tssistry        int    %15.0g      tssistry   TMR: Year first received SSI benefits
+assistry        byte   %31.0g      assistry   TMR: Year first received SSI benefits
+essilng1        byte   %15.0g      essilngy   TMR: Length of time received SSI(month
+assilng1        byte   %31.0g      assilngy   TMR: Length of time received SSI(month
+essilng2        byte   %15.0g      essilngk   TMR: Length of time received SSI(years
+assilng2        byte   %31.0g      assilngk   TMR: Length of time received SSI(years
+---------------------------------------------------------------------------------------------------------
+Sorted by:  
+
+. exit, clear

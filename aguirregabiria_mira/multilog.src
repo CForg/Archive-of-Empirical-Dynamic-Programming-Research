@@ -1,0 +1,144 @@
+/*
+** MULTILOG - Estimation of a Multinomial Logit Model by Maximum Likelihood
+**            The optimization algorithm is a Newton's method.
+**
+** by Victor Aguirregabiria
+**      First version 1997
+**      Last revision: March, 2001
+**
+** Format      { best, varest } = multilog(yobs,xobs)
+**
+** Input        yobs    - (nobs x 1) vector with observations dependent var.
+**                        i.e., indicator of discrete choice, 1, 2,..., nalt
+**
+**              xobs    - (nobs x k) matrix with explanatory variables
+**
+**  Output      best    - (k*(nalt-1) x 1 ) vector with parameter estimates,
+**                        where nalt is the number of discrete alternatives.
+**
+**              varest  - (k*(nalt-1) x (k*(nalt-1)) matrix with estimated
+**                        covariance matrix of parameters
+**
+*/
+
+proc (3) = loglike(yd,x,Fx) ;
+  local myzero, nalt, kpar, llik, d1l, d2l, j, k,
+        indj1, indj2, indk1, indk2 ;
+  myzero = 1E-16 ;
+  nalt = cols(Fx) ;
+  kpar = cols(x) ;
+
+  llik = 0 ;
+  j=1 ;
+  do while j<=nalt ;
+    llik = llik + sumc((yd.==j).*ln(Fx[.,j]+myzero)) ;
+    j=j+1 ;
+  endo ;
+
+  d1l = zeros(kpar*(nalt-1),1) ;
+  d2l = zeros(kpar*(nalt-1),kpar*(nalt-1)) ;
+  j=2 ;
+  do while j<=nalt ;
+    indj1 = (j-2)*kpar + 1 ;
+    indj2 = (j-1)*kpar ;
+    d1l[indj1:indj2] = sumc( x.*( (yd.==j) - Fx[.,j] ) ) ;
+    k=2 ;
+    do while k<=nalt ;
+      indk1 = (k-2)*kpar + 1 ;
+      indk2 = (k-1)*kpar ;
+      if (j/=k) ;
+        d2l[indj1:indj2,indk1:indk2] = (x.*Fx[.,j])'*(x.*Fx[.,k]) ;
+      endif ;
+      if (j==k) ;
+        d2l[indj1:indj2,indk1:indk2] = (x.*Fx[.,j])'*(x.*Fx[.,k])
+                                     - (x.*Fx[.,j])'*x ;
+      endif ;
+      k=k+1 ;
+    endo ;
+    j=j+1 ;
+  endo ;
+  retp(llik,d1l,d2l) ;
+endp ;
+
+proc (1) = pchoice(nalt,x,b) ;
+  local xb, sumexpe, pxb ;
+  b = zeros(cols(x),1) ~ ( reshape(b,nalt-1,cols(x))' ) ;
+  xb = x * b ;
+  xb = xb - maxc(xb') ;
+  sumexpe = sumc(exp(xb')) ;
+  pxb = exp(xb)./sumexpe ;
+  retp(pxb) ;
+endp ;
+
+
+proc (2) = multilog(yobs,xobs) ;
+  local nobs, nparam, kparam, nalt, eps1, eps2, namesb,
+        j, matxx, b0, iter, criter1, criter2,
+        Fxb0, llike, d1like, d2like, b1, Avarb, sdb, tstat,
+        b0buff, sdbbuff, tbuff, k ;
+
+  nobs = rows(yobs) ;
+  kparam = cols(xobs) ;
+  nalt = maxc(yobs) ;
+  nparam = kparam*(nalt-1) ;
+  eps1 = 1E-6 ;
+
+  namesb = 0 $+ "b" $+ (ftocv(seqa(1,1,nalt),1,0)')
+         $+ "_x" $+ ftocv(seqa(1,1,kparam),1,0) ;
+
+  iter=1 ;
+  criter1 = 1000 ;
+  criter2 = 1000 ;
+  b0 = zeros(kparam*(nalt-1),1) ;
+
+  do while (criter1>eps1) ;
+    Fxb0 = pchoice(nalt,xobs,b0) ;
+    { llike, d1like, d2like } = loglike(yobs,xobs,Fxb0) ;
+/*    
+    "" ;
+    "Iteration                = " iter ;
+    "Log-Likelihood function  = " llike ;
+    "Norm of b(k)-b(k-1)      = " criter1 ;
+    "" ;
+*/    
+    b1 = b0 - inv(d2like)*d1like ;
+    criter1 = sqrt( (b1-b0)'*(b1-b0) ) ;
+    b0 = b1 ;
+    iter = iter + 1 ;
+  endo ;
+
+  Fxb0 = pchoice(nalt,xobs,b0) ;
+  { llike, d1like, d2like } = loglike(yobs,xobs,Fxb0) ;
+
+  Avarb  = inv(-d2like) ;
+  sdb    = sqrt(diag(Avarb)) ;
+  tstat  = b0./sdb ;
+  b0buff  = zeros(kparam,1) ~ ( reshape(b0,nalt-1,kparam)' ) ;
+  sdbbuff = zeros(kparam,1) ~ ( reshape(sdb,nalt-1,kparam)' ) ;
+  tbuff   = zeros(kparam,1) ~ ( reshape(tstat,nalt-1,kparam)' ) ;
+
+  "" ;
+  "Number of Iterations     = " iter ;
+  "Log-Likelihood function  = " llike ;
+  "" ;
+  "-----------------------------------------------------------";
+  "-----------------------------------------------------------";
+  "       Parameter   Estimate    Standard    t-ratios";
+  "                                Errors" ;
+  "-----------------------------------------------------------";
+  j=2;
+  do while j<=nalt ;
+    k=1 ;
+    do while k<=kparam ;
+      print $namesb[k,j];;b0buff[k,j];;sdbbuff[k,j];;tbuff[k,j] ;
+      k=k+1 ;
+    endo ;
+  "-----------------------------------------------------------";
+    j=j+1 ;
+  endo;
+  "-----------------------------------------------------------";
+
+  retp(b0,Avarb) ;
+endp ;
+
+

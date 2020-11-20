@@ -1,0 +1,67 @@
+
+. save sip96t1x
+file sip96t1x.dta saved
+
+. 
+end of do-file
+
+. d
+
+Contains data from sip96t1x.dta
+  obs:        95,315                          
+ vars:            46                          4 Nov 2015 11:52
+ size:     8,197,090                          
+---------------------------------------------------------------------------------------------------------
+              storage  display     value
+variable name   type   format      label      variable label
+---------------------------------------------------------------------------------------------------------
+ssuseq          long   %12.0g                 SU: Sequence Number of Sample Unit - P
+ssuid           str12  %12s                   SU: Sample Unit Identifier
+spanel          int    %10.0g      spanel     SU: Sample Code - Indicates Panel Year
+swave           byte   %8.0g                  SU: Wave of data collection
+srotaton        byte   %8.0g                  SU: Rotation of data collection
+tfipsst         byte   %27.0g      tfipsst    SU: FIPS State Code for fifth month
+shhadid         int    %8.0g                  SU: Hhld Address ID in fourth referenc
+sinthhid        int    %15.0g      sinthhid   SU: Hhld Address ID of person in inter
+eoutcome        int    %32.0g      eoutcome   HH: Interview Status code for fifth mo
+rfid            int    %8.0g                  FA: Family ID Number in month four
+rfid2           int    %27.0g      rfid2l     FA: Family ID excluding related subfam
+eppidx          int    %8.0g                  PE: Person index
+eentaid         str3   %9s                    PE: Address ID of hhld where person en
+epppnum         str4   %9s                    PE: Person number
+epopstat        byte   %32.0g      epopstat   PE: Population status based on age in
+eppintvw        byte   %32.0g      eppintvw   PE: Person's interview status at time
+eppmis4         byte   %13.0g      eppmis4l   PE: Person's 4th month interview statu
+esex            byte   %8.0g       esex       PE: Sex of this person
+erace           byte   %26.0g      erace      PE: Race of this person
+eorigin         byte   %27.0g      eorigin    PE: Origin of this person
+wpfinwgt        double %10.0g                 WW: Person weight
+errp            byte   %32.0g      errp       PE: Household relationship
+tage            byte   %25.0g      tage       PE: Age as of last birthday
+ems             byte   %23.0g      ems        PE: Marital status
+epnspous        int    %32.0g      epnspous   PE: Person number of spouse
+epnmom          int    %22.0g      epnmom     PE: Person number of mother
+epndad          int    %22.0g      epndad     PE: Person number of father
+epnguard        int    %25.0g      epnguard   PE: Person number of guardian
+rdesgpnt        byte   %15.0g      rdesgpnt   PE: Designated parent or guardian flag
+eeducate        byte   %31.0g      eeducate   ED: Highest Degree received or grade
+tcdbegyr        int    %15.0g      tcdbegyr   HIR: In what year did ... become cover
+acdbegyr        byte   %31.0g      acdbegyr   HIR: Allocation flag for TCDBEGYR
+ecdbegmo        byte   %15.0g      ecdbegmo   HIR: In what month did ... become cove
+acdbegmo        byte   %31.0g      acdbegmo   HIR: Allocation flag for ECDBEGMO
+ehiallcv        byte   %15.0g      ehiallcv   HIR: Has ... always been covered by he
+ahiallcv        byte   %31.0g      ahiallcv   HIR: Allocation flag for EHIALLCV
+thinoyr         int    %15.0g      thinoyr    HIR: In what year was ... last not cov
+ahinoyr         byte   %31.0g      ahinoyr    HIR: Allocation flag for THINOYR
+ehinomth        byte   %15.0g      ehinomth   HIR: In what month was ... last not co
+ahinomth        byte   %31.0g      ahinomth   HIR: Allocation flag for EHINOMTH
+ehievrcv        byte   %15.0g      ehievrcv   HIR: Has ... ever been covered by heal
+ahievrcv        byte   %31.0g      ahievrcv   HIR: Allocation flag for EHIEVRCV
+thicvyr         int    %15.0g      thicvyr    HIR: In what year was ... last covered
+ahicvyr         byte   %31.0g      ahicvyr    HIR: Allocation flag for THICVYR
+ehicvmth        byte   %15.0g      ehicvmth   HIR:In what month was ... last covered
+ahicvmth        byte   %31.0g      ahicvmth   HIR: Allocation flag for EHICVMTH
+---------------------------------------------------------------------------------------------------------
+Sorted by:  
+
+. exit, clear

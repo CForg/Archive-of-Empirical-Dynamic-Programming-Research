@@ -1,0 +1,26 @@
+c:\gauss8.0\myprocs\disckpie.src
+    disckpie                         : proc
+
+c:\gauss8.0\myprocs\discthre.src
+    discthre                         : proc
+
+c:\gauss8.0\myprocs\tranprob.src
+    tranprob                         : proc
+
+c:\gauss8.0\myprocs\kernel1.src
+    kernel1                          : proc
+
+
+c:\gauss8.0\myprocs\pctiles.src
+    pctiles                          : proc
+
+c:\gauss8.0\myprocs\multilog.src
+    loglike                          : proc
+    pchoice                          : proc
+    multilog                         : proc
+
+c:\gauss8.0\myprocs\npl_sing.src
+    npl_sing                         : proc
+
+c:\gauss8.0\myprocs\clogit.src
+    clogit                           : proc

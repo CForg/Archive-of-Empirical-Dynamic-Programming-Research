@@ -1,0 +1,245 @@
+fx0= fx
+
+
+
+fv=0
+do ia=1,age; do ix=1,nx; do ic=1,nc
+fv(1)= fv(1) + sum(weight(p1:p5,ia))* (mean(wt3(p1:p5,ia,ix,ic))- mean(smwt3(p1:p5,ia,ix,ic)))**2 / sum(weight(p1:p5,:)) /nx *40
+
+enddo; enddo; enddo;
+
+do ip=p1,p5;  do ix=1,nx; do ie=1,ne;do ic=1,nc
+fv(2)= fv(2) + (sum(weight(ip,:)*wt5(ip,:,ix,ie,ic))/sum(weight(ip,:))- sum(weight(ip,:)*smwt5(ip,:,ix,ie,ic))/sum(weight(ip,:)) )**2 /nx /(p5-p1+1) *40
+
+
+enddo; enddo; enddo; enddo
+
+fa1=6; fa2=25
+
+FV(3)=0
+do ip=p1,p5;  do ix=1,nx; do ik=1,nk;do ic=1,nc
+fv(3)= fv(3) + (sum(weight(ip,fa1:fa2)*sum(wt7(ip,fa1:fa2,ix,:,ik,ic),2))/sum(weight(ip,fa1:fa2))- sum(weight(ip,fa1:fa2)*sum(smwt7(ip,fa1:fa2,ix,:,ik,ic),2))/sum(weight(ip,fa1:fa2)) )**2 /nx /(p5-p1+1) *40
+enddo; enddo; enddo; enddo
+
+
+! education distribution	
+
+age2=age
+
+FV(4)=0
+do ix=1,2; do ia=1,age2; do ip=p1,p4-2
+
+FV(4)=FV(4)			&
++weight(ip,ia)*((sum(SMWT4(ip,ia,ix, 0:11))-sum(WT4(ip,ia,ix, 0:11)) )**2			&
++(sum(SMWT4(ip,ia,ix,12:12))-sum(WT4(ip,ia,ix,12:12)) )**2			&
++(sum(SMWT4(ip,ia,ix,13:15))-sum(WT4(ip,ia,ix,13:15)) )**2			&
++(sum(SMWT4(ip,ia,ix,16:16))-sum(WT4(ip,ia,ix,16:16)) )**2			&
++(sum(SMWT4(ip,ia,ix,17:18))-sum(WT4(ip,ia,ix,17:18)) )**2 )		&
+/sum(weight(ip,1:age2))		&
+/nx *10  /(p4-2-p1 +1)
+enddo; enddo; enddo; 
+
+! capital stock
+FV(6)= mean((ka(61:p5,:,uu)-aka(61:p5,:))**2) *40
+
+
+age2=15
+
+do i16=0,1; do ix=1,2; do ia=1,age2;  do ic=1,nc; 
+FV(7)=FV(7) + (SMCD162(ia,ix,i16,ic)- acd16(ia,ix,i16,ic))**2 /age2 /nx /2 *5
+enddo; enddo; enddo; enddo; 
+
+fa1=6
+fa2=45
+do ip=p1,p5; do ix=1,nx
+fv(8)=fv(8) + ( wmean(sum(wt3(ip,fa1:fa2,ix,1:3),1), ws(ip,ix,1:3)) - wmean(sum(smwt3(ip,fa1:fa2,ix,1:3),1),smws(ip,ix,1:3)) )**2 /(p5-p1+1) /nx	*20			&
++			  ( wmean(sum(wt3(ip,fa1:fa2,ix,4:6),1), ws(ip,ix,4:6)) - wmean(sum(smwt3(ip,fa1:fa2,ix,4:6),1),smws(ip,ix,4:6)) )**2 /(p5-p1+1) /nx  *20
+
+enddo; enddo
+
+
+do ip=p1,p5;  do ix=1,nx; do ie=1,ne
+FV(9)= FV(9) + sum(weight(ip,:)*sum(wt5(ip,:,ix,ie,1:ns),2))*(we2(ip,ix,ie)-smwe2(ip,ix,ie)+smwe(ip,ix,ie)**2-me)**2 / sum(weight(ip,:)*wt9(ip,:,ix)) /(p5-p1+1) /nx *40
+
+enddo; enddo; enddo
+
+
+do ip=p1,p5;  do ix=1,nx;do is=1,ns
+FV(10)= FV(10) + sum(weight(ip,:)*wt3(ip,:,ix,is))*(ws2(ip,ix,is)-smws2(ip,ix,is)+smws(ip,ix,is)**2-me)**2 /sum(weight(ip,:)*wt9(ip,:,ix))/(p5-p1+1) /nx *40
+
+enddo; enddo; enddo
+
+
+
+fa1=6
+fa2=age
+FV(11)=0
+do ia=fa1,fa2; do ix=1,nx
+FV(11)= FV(11) + sum(wt9(p1:p5,ia,ix))*(mean(wa(p1:p5,ia,ix)-smwa(p1:p5,ia,ix)))**2 /sum(wt9(p1:p5,fa1:fa2,ix)) /nx *40 
+
+enddo; enddo; 
+
+
+
+FV(12)=0
+do ip=p1,p5;  do ix=1,nx; do ie=1,ne
+FV(12)= FV(12) + sum(weight(ip,:)*sum(wt5(ip,:,ix,ie,1:ns),2))*(we(ip,ix,ie)-smwe(ip,ix,ie))**2 / sum(weight(ip,:)*wt9(ip,:,ix)) /(p5-p1+1) /nx *40
+
+enddo; enddo; enddo
+
+
+
+do ip=p1,p5;  do ix=1,nx;do is=1,ns
+FV(13)= FV(13) + sum(weight(ip,:)*wt3(ip,:,ix,is))*(ws(ip,ix,is)-smws(ip,ix,is))**2 /sum(weight(ip,:)*wt9(ip,:,ix))/(p5-p1+1) /nx *4 * 3 *2
+enddo; enddo; enddo
+
+
+
+
+fv(16)=0
+do ix=1,nx; do ic2=1,nc; do ic1=1,nc
+fv(16)= fv(16) + mean(pwgt(p6:p7-1,ix,ic2)/(p7-p6)*(pcd(p6:p7-1,ix, ic1, ic2) - smpcd(p6:p7-1,ix,ic1,ic2)))**2 /nx *10
+
+enddo; enddo; enddo; 
+
+
+age2=45
+do ix=1,nx
+do ia=1,age2
+do ic2=1,5
+do ic1=1,5
+if (ic2==4 .and. ia>10) cycle
+fv(17)= fv(17) + owgt(ia,ix,ic2)*(ocd(ia,ix, ic1, ic2) - smocd(ia,ix,ic1,ic2))**2 /age2 /nx /2 /5
+enddo; enddo; enddo; enddo
+
+
+do ix=1,nx; do ia=1,age2; do ic2=1,4 ; do ic1=1,4
+if (ic2==3 .and. ia>10) cycle
+fv(18)= fv(18) + iwgt(ia,ix,ic2)*(icd(ia,ix, ic1, ic2) - smicd(ia,ix,ic1,ic2))**2 /age2 /nx  /2 /4
+enddo; enddo; enddo; enddo
+
+
+do ix=1,nx; do ic=1,6
+fv(19)= fv(19) + sum((mean(relxcum(p3:p4,ix,ic,:),1)- arelxcum(ix,ic,:))**2) /6/nx *10
+enddo; enddo; 
+
+
+do ix=1,nx; do ic=1,6; do ia=0,age4
+enddo; enddo; enddo
+
+
+do ip=p1,p5;  
+do ix=1,nx; ;do ic=1,nc
+fv(20)= fv(20) + (wmean(weight(ip,:),wt3(ip,:,ix,ic)-smwt3(ip,:,ix,ic)))**2 /nx /(p5-p1+1) *200
+enddo; enddo; enddo;
+
+
+
+
+
+do ix=1,nx; do iexp=0,4; do is=1,ns; do ic=1,ns
+fv(21)= fv(21) + sum(wcd6(:, iexp, is, ix))* (cd6(ic, iexp, is, ix) - acd6(ic, iexp, is, ix))**2 / sum(wcd6) * 20
+enddo; enddo; enddo; enddo
+
+
+
+!!!!!!!!!!!!!! this has some problem with weights
+do ix=1,nx; do iexp=0,4; do is=1,ns; do ic=1,ns
+fv(22)= fv(22) + sum(wcd6(:, iexp, is, ix))* (logw6(ic, iexp, is, ix) - alogw6(ic, iexp, is, ix))**2  / sum(wcd6) /5*2
+enddo; enddo; enddo; enddo
+
+
+
+do ix=1,nx; do ic=1,ns; do ic2=1,ns
+fv(23)=fv(23) + wdlw(ic, ic2, ix)* (dlw(ic, ic2, ix)- adlw(ic, ic2, ix))**2 /sum(wdlw) *20
+enddo; enddo; enddo
+
+do ix=1,nx; do ic=1,ns; do ia=1,10
+fv(24)=fv(24) + wdlwa2(ic, ia, ix)* (dlwa2(ic, ia, ix)- adlwa2(ic, ia, ix))**2 /sum(wdlwa2) *80
+enddo; enddo; enddo
+
+FV2=sum(FV(1:25)) -fv(15) 
+
+OLDFV=MIN(OLDFV, FV2)
+
+
+IF (oldFV==FV2 .or. iter==1) then
+
+pr=0
+
+
+pr(1:8,1)=c0(:,1,1)
+
+
+pr(1:6,2)=c0(1:6,2,1)-c0(1:6,1,1)
+pr(1:6,3)=c0(1:6,1,2)-c0(1:6,1,1)
+pr(1:6,4)=c0(1:6,1,3)-c0(1:6,1,1)
+pr(1:6,5)=c0(1:6,1,4)-c0(1:6,1,1)
+
+pr(7:8,2)=c0(7:8,2,1)
+pr(7:8,3)=log(c0(7:8,1,2)/c0(7:8,1,1))
+pr(7:8,4)=log(c0(7:8,1,3)/c0(7:8,1,1))
+pr(7:8,5)=log(c0(7:8,1,4)/c0(7:8,1,1))
+
+pr(9,1:6)=c2
+pr(10,1:2)=ck
+pr(10,3)=c7(1)
+pr(10,4)=c7(1)+c7(2)		! graduate tuition
+
+
+pr(10,5:6)=hr
+
+pr(11,1)=df
+pr(12,3:4)=erp
+
+pr(14,1:4)=ap(1:4,1,60)
+pr(14,5:8)=ap(1:4,2,60)
+
+pr(15,1:4)=ap(1:4,1,80)
+pr(15,5:8)=ap(1:4,2,80)
+
+pr(16,1:4)=ap(1:4,1,pp)
+pr(16,5:8)=ap(1:4,2,pp)
+
+pr(17,1:6)=sdr(:,1)
+
+
+pr(21,1:4)=tp(1,1:4,1)
+pr(21,5:8)=tp(1,1:4,2)
+
+pr(22,1:4)=tp(2,1:4,1)
+pr(22,5:8)=tp(2,1:4,2)
+
+pr(23,1:2)=1/(1-sm(1,:))
+pr(23,3:4)=1/(1-sm(2,:))
+
+pr(24,1)=c5(0,1,1)
+pr(24,2)=c5(40,1,1)
+pr(24,3)=c5(0,1,2)
+pr(24,4)=c5(40,1,2)
+
+pr(26:31,1:6)=c1
+
+
+pr(32,1:6)=cs
+
+pr(33,1:8)=std(:,1)
+pr(34,7:8)=std(7:8,2)
+
+pr(34:35,1:6)=transpose(nb(1:6,1:2))
+
+pr(36:43, 1:8) = c4(:,:,1)
+pr(44:51, 1:8)=c4(:,:,2)
+
+
+
+open(1, file='pr487.txt')
+
+do i=1,51
+WRITE(1, '(500f15.6)') pr(i,:)
+enddo; 
+write(1,*) ""
+
+WRITE(1, '(500f20.6)') FV2, FV
+
+endif

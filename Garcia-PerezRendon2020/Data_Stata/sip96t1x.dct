@@ -1,0 +1,85 @@
+dictionary using sipp96t1x.dat  { 
+*This program reads the 1996 SIPP Wave 1x Topical Module Data File
+*Note:  This program is distributed under the GNU GPL. See end of
+*this file and http://www.gnu.org/licenses/ for details.
+*by Jean Roth Tue Nov  4 11:37:55 EST 2003
+*Please report errors to jroth@nber.org
+*run with do sip96t1x
+*Change output file name/location as desired in the first line of the .dct file
+*If you are using a PC, you may need to change the direction of the slashes, as in C:\
+*  or "\\Nber\home\data\sipp/1996\sip96t1x.dat"
+* The following changes in variable names have been made, if necessary:
+*      '$' to 'd';            '-' to '_';              '%' to 'p';
+* Note:  Variable names in Stata are case-sensitive
+
+_column(1   )   long ssuseq      %5f "SU: Sequence Number of Sample Unit - P"
+_column(6   )  str12 ssuid      %12s "SU: Sample Unit Identifier"            
+_column(18  )    int spanel      %4f "SU: Sample Code - Indicates Panel Year"
+_column(22  )   byte swave       %2f "SU: Wave of data collection"           
+_column(24  )   byte srotaton    %1f "SU: Rotation of data collection"       
+_column(25  )   byte tfipsst     %2f "SU: FIPS State Code for fifth month"   
+_column(27  )    int shhadid     %3f "SU: Hhld Address ID in fourth referenc"
+_column(30  )    int sinthhid    %3f "SU: Hhld Address ID of person in inter"
+_column(33  )    int eoutcome    %3f "HH: Interview Status code for fifth mo"
+_column(36  )    int rfid        %3f "FA: Family ID Number in month four"    
+_column(39  )    int rfid2       %3f "FA: Family ID excluding related subfam"
+_column(42  )    int eppidx      %3f "PE: Person index"                      
+_column(45  )   str3 eentaid     %3s "PE: Address ID of hhld where person en"
+_column(48  )   str4 epppnum     %4s "PE: Person number"                     
+_column(52  )   byte epopstat    %1f "PE: Population status based on age in "
+_column(53  )   byte eppintvw    %2f "PE: Person's interview status at time "
+_column(55  )   byte eppmis4     %1f "PE: Person's 4th month interview statu"
+_column(56  )   byte esex        %1f "PE: Sex of this person"                
+_column(57  )   byte erace       %1f "PE: Race of this person"               
+_column(58  )   byte eorigin     %2f "PE: Origin of this person"             
+_column(60  ) double wpfinwgt %10.4f "WW: Person weight"                     
+_column(70  )   byte errp        %2f "PE: Household relationship"            
+_column(72  )   byte tage        %2f "PE: Age as of last birthday"           
+_column(74  )   byte ems         %1f "PE: Marital status"                    
+_column(75  )    int epnspous    %4f "PE: Person number of spouse"           
+_column(79  )    int epnmom      %4f "PE: Person number of mother"           
+_column(83  )    int epndad      %4f "PE: Person number of father"           
+_column(87  )    int epnguard    %4f "PE: Person number of guardian"         
+_column(91  )   byte rdesgpnt    %2f "PE: Designated parent or guardian flag"
+_column(93  )   byte eeducate    %2f "ED: Highest Degree received or grade"  
+_column(95  )    int tcdbegyr    %4f "HIR: In what year did ... become cover"
+_column(99  )   byte acdbegyr    %1f "HIR: Allocation flag for TCDBEGYR"     
+_column(100 )   byte ecdbegmo    %2f "HIR: In what month did ... become cove"
+_column(102 )   byte acdbegmo    %1f "HIR: Allocation flag for ECDBEGMO"     
+_column(103 )   byte ehiallcv    %2f "HIR: Has ... always been covered by he"
+_column(105 )   byte ahiallcv    %1f "HIR: Allocation flag for EHIALLCV"     
+_column(106 )    int thinoyr     %4f "HIR: In what year was ... last not cov"
+_column(110 )   byte ahinoyr     %1f "HIR: Allocation flag for THINOYR"      
+_column(111 )   byte ehinomth    %2f "HIR: In what month was ... last not co"
+_column(113 )   byte ahinomth    %1f "HIR: Allocation flag for EHINOMTH"     
+_column(114 )   byte ehievrcv    %2f "HIR: Has ... ever been covered by heal"
+_column(116 )   byte ahievrcv    %1f "HIR: Allocation flag for EHIEVRCV"     
+_column(117 )    int thicvyr     %4f "HIR: In what year was ... last covered"
+_column(121 )   byte ahicvyr     %1f "HIR: Allocation flag for THICVYR"      
+_column(122 )   byte ehicvmth    %2f "HIR:In what month was ... last covered"
+_column(124 )   byte ahicvmth    %1f "HIR: Allocation flag for EHICVMTH"     
+
+}
+/*
+Copyright 2003 shared by the National Bureau of Economic Research and Jean Roth
+
+National Bureau of Economic Research.
+1050 Massachusetts Avenue
+Cambridge, MA 02138
+jroth@nber.org
+
+This program and all programs referenced in it are free software. You
+can redistribute the program or modify it under the terms of the GNU
+General Public License as published by the Free Software Foundation;
+either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307
+USA.
+*/
