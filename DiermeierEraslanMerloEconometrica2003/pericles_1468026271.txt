@@ -1,0 +1,23 @@
+
+TY  - JOUR
+AU  - Diermeier, Daniel
+AU  - Eraslan, Hülya
+AU  - Merlo, Antonio
+TI  - A Structural Model of Government Formation
+JO  - Econometrica
+VL  - 71
+IS  - 1
+SN  - 0012-9682
+UR  - https://doi.org/10.1111/1468-0262.00389
+DO  - https://doi.org/10.1111/1468-0262.00389
+SP  - 27
+EP  - 70
+KW  - political stability
+KW  - bargaining
+KW  - coalitions
+KW  - government formation
+KW  - government dissolution
+KW  - comparative constitutional design
+PY  - 2003
+AB  - In this paper we estimate a bargaining model of government formation in parliamentary democracies. We use the estimated structural model to conduct constitutional experiments aimed at evaluating the impact of institutional features of the political environment on the duration of the government formation process, the type of coalitions that form, and their relative stability.
+ER  - 

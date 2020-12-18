@@ -1,0 +1,41 @@
+NOBS = 1199 WHITE MALES
+
+
+"X79_QE.TXT"
+
+1 NPER 
+2 NSIB 
+3 NUCLEAR 
+4 SOUTH 
+5 RURAL 
+6 HGCF 
+7 HGCM 
+8 HINCOME_st(STANDADIZED INCOME
+
+"cognitive79_QE"
+
+1 READ_RES_ST  (AVERAGE OF "Word Knowledge" AND "Paragraph Comprehension",          STANDARDIZED RESIDUE FROM REGRESSION ON EDUCATION of the test year)
+2 MATH1_RES_ST (AVERAGE OF "numerical operations" AND "arithmetic reasoning",       STANDARDIZED RESIDUE FROM REGRESSION ON EDUCATION of the test year)
+3 MATH2_RES_ST (AVERAGE OF "general science", "numerical operations", 
+                "arithmetic reasoning", "coding speed" AND "mathematics knowledge", STANDARDIZED RESIDUE FROM REGRESSION ON EDUCATION of the test year)
+4 OTHER_RES_ST (AVERAGE OF "auto and shop information", "mechanical comprehension" 
+                AND "electronics information ",                                     STANDARDIZED RESIDUE FROM REGRESSION ON EDUCATION of the test year)
+
+"noncognitive79_QE"
+
+1 ROTTER_RES_ST (ROTTER LOCUS OF CONTROL      SCALE STANDARDIZED RESIDUE FROM REGRESSION ON EDUCATION of the test year)
+2 ROSE_RES_ST   (ROSENBERG SELF-ESTEEM        SCALE STANDARDIZED RESIDUE FROM REGRESSION ON EDUCATION of the test year)
+
+
+"h1_79"      0<h<=2000
+"h2_79"   2000<h<=2500
+"h3_79"        h>2500
+
+"ach1_79"      accumulated "h1" status
+"ach2_79"      accumulated "h2" status
+"ach3_79"      accumulated "h3" status
+
+
+"leis79" leisure (not working and not in school)
+
+"acl79"  accumulated leisure status
