@@ -1,0 +1,28 @@
+#! /bin/ksh
+cd $PWD
+g64pth="-L/opt/gpc/20051104/lib/gcc/sparc-sun-solaris2.10/3.4.3/sparcv9 -L/opt/SUNWhpc/lib/sparcv9 -I/opt/SUNWhpc/include/v9 "
+m64opt="-mcpu=ultrasparc3 -m64"
+if [ "$1" ] 
+then
+  echo "Compiling Fmopt for $1$ in directory $PWD"
+  echo "Executable: $1.out" 
+  echo "Execution mode: $2 "
+  echo "Compile options (ex: -gstabs+): $3 "
+  echo "Files to include: $4"
+  if [ "$2" != "SERIAL" ] 
+  then
+    gpc $m64opt -c -D HPCVL -D $2 $g64pth  $FMPATH/fmopt_mpi_interface.c -lgpc -lm -lmpi
+  fi
+  gpc $m64opt $g64pth $3 -c -D HPCVL -D $2  --automake  $FMPATH/fmopt.pas --unit-path=$FMPATH -I$FMPATH -I$PWD 
+  gpc $3 $m64opt $g64pth  -c -D HPCVL -D $2  --automake  $4 -I$FMPATH --unit-path=$FMPATH -I$PWD 
+  if [ "$2" = "SERIAL" ] 
+  then
+    gpc  $m64opt $g64pth -o $1.out *.o 
+  else
+    gpc $m64opt $g64pth -gstabs+ -o $1.out *.o  -lgpc -lm -lmpi
+  fi 
+else
+  echo "mkfmopt <object> <SERIAL/MPI> <gpcoptions> <source files>"
+fi
+echo "here $g64pth "
+

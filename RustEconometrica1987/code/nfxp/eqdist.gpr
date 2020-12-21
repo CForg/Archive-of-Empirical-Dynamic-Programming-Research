@@ -1,0 +1,68 @@
+print;
+print "EQDIST.GPR: equilibirum distribution of controlled markov process";
+print "Version 1, September 1985. By John Rust, Econ Dept, Univ of Wisconsin";
+print;
+if n > 90; print "EQDIST.GPR only handles problems of 90 dimensions or less";
+goto fin; endif;
+swj="pk"; if typecv(swj) == 0;
+print "VARIABLES NOT DEFINED. Must run NFXP.GPR before this program";
+goto fin; endif;
+print "This program computes the equilibrium distribution of the controlled";
+print "stochastic process P(i(t)|x(t))p(x(t)|x(t-1),i(t-1)). The equilibrium";
+print "distribution pp is an (1,n) matrix, where n is the number of discrete";
+print "mileage cells: pp=pp*P, where P is the transition probability matrix";
+print "for the (nxn) merged state process, where states with i=1 are ";
+print "identified with the state x=1. Estimates of the complete (1,2*n)";
+print "equilibrium distribution are then uncovered from pp. For a more";
+print "accurate computation of the complete equilibrium distribution, run";
+print "EQUIL.GPR instead."; print;
+print "By final value theorem, (1-z)*inv(I-z*P) is a matrix with rows";
+print "approximately equal to the stationary distribution of the markov";
+print "process with transition probability P when z is close to 1.";
+print;
+print "enter z<1 with z close to 1 (i.e. z=.999999999)";; y=con(1,1);
+print "enter convergence tolerance for stationary distribution";;
+ctol=con(1,1); print;
+#include "pmx.gpr"; tt=hsec;
+pp=((1-y)*ones(n,1)/n)/
+(eye(n)-y*((1-sumc((p[.,2:n].*pk[2:n,1]')'))~(p[.,2:n].*pk[2:n,1]')))';
+pp=pp'/sumc(pp);
+p=(1-sumc((p[.,2:n].*pk[2:n,1]')'))~(p[.,2:n].*pk[2:n,1]');
+tol=maxc(abs(pp-pp*p)'); print "tolerance for initial estimate of pp";; tol;;
+print "time";; hsec-tt;
+if tol < ctol; goto endloop; endif; print;
+print "updating estimate of pp by successive approximations"; print;
+loop: i=1;
+do until i > 100; pp=pp*p; i=i+1; endo;
+tol=maxc(abs(pp-pp*p)'); print "tolerance after 100 iterations";; tol;
+endloop:
+if tol > ctol; goto loop; else; print; print "convergence achieved"; endif;
+print;
+pp1=pp; pp1[1,1]=p0*pp[1,1]*pk[1,1];
+pp2=(pp1.*(1-pk)')./pk';
+print "Pr{x,i=0}"; pp1;
+print "Pr{x,i=1}"; pp2; print;
+print "fraction of bus engines replaced each month";; sumc(pp2');
+print "mean lifetime of bus engine (months)       ";; 1/sumc(pp2');
+print "mean mileage at overhaul                   ";;
+a0*sumc(x.*pp2')/(n*sumc(pp2'));
+print "mean mileage since last replacement        ";;
+a0*sumc(x.*pp1')/(n*sumc(pp1'));
+print; print "enter delay time for plots (seconds)";; maxtime=con(1,1);
+rx="mileage (000's)"; ry="equilibrium Pr{x|i=0}"; x=a0*x/(1000*n);
+inn=1;
+start:
+#include "plot.inc";
+plot:
+px=x;
+if inn == 1; py=pp1'/sumc(pp1');
+elseif inn == 2; py=pp2'/sumc(pp2'); ry="equilibrium Pr{x|i=1}"; endif;
+return;
+endplot:
+inn=inn+1;
+if inn == 2; goto start; endif;
+format /m3 /ro 14, 6; x=seqa(1,1,rows(x));
+p=zeros(5,1); p[1,1]=p0; p[2,1]=p1; p[3,1]=1-p0-p1;
+fin:
+
+

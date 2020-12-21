@@ -1,0 +1,13 @@
+cp sport11.con /hwy61/lib/optmum5.con
+cp sport11.typ /hwy61/lib/optmum5.typ
+cp sport11.def /hwy61/lib/optmum5.def
+xlp -lmass -${1} -c /hwy61/lib/optmum5new.pas
+mv optmum5new.o sport11_opt.o
+xlp -lmass -lm -${1} -c /hwy61/lib/matrix5.pas
+mv matrix5.o sport11_mat.o
+xlp -lmass -${1} -c /hwy61/lib/cdfn5.pas 
+mv cdfn5.o sport11_cdfn.o
+xlp -lmass -${1} -c sp11*.pas
+rm sp11runem.o
+xlp *.o
+mv a.out sport11.out

@@ -1,0 +1,75 @@
+70       maxstarts
+500      nfuncmax
+0.4    gstep
+5E-7    function tolerance
+b       optimization option
+0       hessian initialization
+1       search call
+1       gradient call
+1E-5    geps ???
+1       scaling option
+1      write out
+******* Masking and Constraining Variables  
+1u     homefield base
+1u     homefield bask
+1u     homefield hock
+1u     record base
+1u     record bask
+1u     record hock
+1u     experience base
+1u     experience bask
+1u     experience hock
+1u     sigma base
+1u     sigma bask
+1u     sigma hock
+1u     r base
+1u     r bask
+1u     r hock
+0u     3-0 base
+0u     3-0 bask
+0u     3-0 hock
+0u     3-1 base
+0u     3-1 bask
+0u     3-1 hock
+0u     3-2 base
+0u     3-2 bask
+0u     3-2 hock
+!
+6      maxstarts
+6    nfuncmax
+0.01      gstep
+5E-7    function tolerance
+b       optimization option
+1       hessian initialization
+1       search call
+1       gradient call
+5E-5    geps ???
+0       scaling option
+0       write out
+******* Masking and Constraining Variables  
+1u     homefield base
+1u     homefield bask
+1u     homefield hock
+1u     record base
+1u     record bask
+1u     record hock
+1u     experience base
+1u     experience bask
+1u     experience hock
+1u     sigma base
+1u     sigma bask
+1u     sigma hock
+0u     r base
+0u     r bask
+0u     r hock
+0u     3-0 base
+0u     3-0 bask
+0u     3-0 hock
+0u     3-1 base
+0u     3-1 bask
+0u     3-1 hock
+0u     3-2 base
+0u     3-2 bask
+0u     3-2 hock
+!
+

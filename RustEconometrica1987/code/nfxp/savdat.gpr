@@ -1,0 +1,43 @@
+print "SAVDAT.GPR: Program to save estimated value and hazard functions";
+print "Version 1, September 1985. By John Rust, Econ Dept Univ of Wisconsin";
+@ *** DATA STORED IN ASCII FILE ON DEFAULT DISK WITH NAME CHOSEN BY USER @
+print; rx="mileage (000's)"; ry="Jerry Garcia"; x=a0*x/(n*1000);
+print "print results on screen? (0=no 1=yes)";; swj=con(1,1);
+print "store results in a disk file? (0=no 1=yes)";; a1=con(1,1);
+if a1 == 1; print "enter name for file with drive prefix and .PRN extension";
+name=cons; endif;
+print "enter delay time (seconds) for plot";; maxtime=con(1,1);
+if swj == 1;
+print "hazard function"; (1-pk)';
+print "cost function"; (c-c[1,1])';
+if bet > 0;
+print "value function"; (c-bet*ev-c[1,1]+bet*ev[1,1])';
+print "expected value function"; (-bet*ev+bet*ev[1,1])'; endif; endif;
+if a1 == 1;
+format /m1 /ld 15, 7; screen off;
+output file=^name reset;
+if bet > 0;
+print ((c-bet*ev-c[1,1]+bet*ev[1,1])~
+(c-c[1,1])~
+(bet*ev[1,1]-bet*ev)~
+(1-pk)); else;  uf=-u(c);
+print ((c-c[1,1])~(1-pk)~(uf-uf[1,1])); endif;
+output off; screen on; endif;
+inn=1;
+start:
+#include "plot.inc";
+plot:
+px=x;
+if inn == 1; py=(1-pk); ry="hazard function";
+elseif inn ==2; py=(c-c[1,1]); ry="cost function";
+elseif inn == 3; py=(c-bet*ev-c[1,1]+bet*ev[1,1]); ry="value function";
+else; py=(bet*ev[1,1]-bet*ev); ry="expected value function"; endif;
+return;
+endplot:
+inn=inn+1; if (inn > 2) and (bet == 0); goto fin;
+elseif inn > 4; goto fin; endif;
+goto start;
+fin:
+format /m3 /ro 14, 6; x=seqa(1,1,rows(x));
+
+

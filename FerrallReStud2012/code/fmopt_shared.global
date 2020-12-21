@@ -1,0 +1,19 @@
+        { --------------------- Begin user set values ---------------------}
+const       (* Constants and types shared by optsp2 and the problem, user set *)
+  rword             =    sizeof(real);
+  n_untyp           =    L;                 {user set}       (* # of unobserved types*)
+  n_obtyp           =    OBsize;            {user set}       (* # of demographic types *)
+  n_eqtyp           =    1;                 {user set}       (* # of equivalent observed types *)
+  np_model          =    DPpars;            {user set}       (* # of model parameters *)
+  np_common         =    DPcmpars;
+  mxobsv            =    THsize;            {user set}       (* max # of obs in any observed group *)
+  n_obsv            =    EMsize;            {user set}       (* # of observations  *)
+  solve_sz          =    sizeof(mysolve_type) DIV rword;
+  my_col            =    max(n_rstates,max_compressed);            {user set}
+  eval_sz           =    sizeof(myeval_type) DIV rword;
+  use_gmm           =    1;                                  (* If true, room for weighting matrix ... can be large *)
+  use_bhhh          =    0;                                  (* If true, room for BHHH matrix ... can be large *)
+
+
+
+        { --------------------- End user set values ---------------------}

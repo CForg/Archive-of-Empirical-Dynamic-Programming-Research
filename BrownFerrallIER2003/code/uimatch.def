@@ -1,0 +1,42 @@
+
+(*  These headers must be located in the outer level of the calling program *)
+
+    (* normal density routines - compiled into cdfnsp2.o 
+       This INCLUDE statement must be in your copy of this file for compilation 
+       to work properly
+     *)
+%include /hwy61/lib/cdfnsp2.def
+
+    (* matrix operation routines - defined in matsp2.pas *)
+procedure mat_mult(var a,b,c : hess_type; n1,n2,n3 : integer); external;
+procedure mult_trans(var a,c : hess_type; n1 : integer); external;
+procedure mat_inv(var a,b : hess_type; l,n : integer; 
+                  var d : real;var invexist:BOOLEAN); external;
+   
+     (* optimization routine *)
+procedure optsp2(var fy : real; var xo : param_type); External;
+
+       (* user-supplied routines *)
+function like(inx : param_type): real;                     External;
+function vlike(inx : param_type; var lkval : like_type): real;  external;
+
+        (* Parallel interface routines *)
+  (* These routine headers are located in mpi_external.def *)
+
+ 
+procedure worker(var resk: resk0_type; var indxf: indx_type;
+                var vnwk: vnwk_type; var vwk: vwk_type;
+                var palp: TransArray; var wage: wage_type); 
+          EXTERNAL;                    
+ 
+function sim_moments(par: param_type): moment_type; EXTERNAL; 
+
+procedure simulate(var resk: resk0_type; var indxf: indx_type; 
+var dec: dec_type;
+             var ps: TransArray; var moments: moment_type; 
+             var wrpersrate: integer; var wage: wage_type); EXTERNAL;
+
+               
+procedure firm(var dec: dec_type;  var ps: TransArray; 
+              var wage,pdwg: wage_type); EXTERNAL;
+

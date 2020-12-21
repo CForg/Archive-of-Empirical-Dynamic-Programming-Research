@@ -1,0 +1,23 @@
+  np               =    15+9;
+      max_obs = 40000;
+  msg_size         =    max_obs;   (* must be max(np,max_obs)  *)
+
+
+      endrun       =  '!';
+      mxgames      = 25;                 (* maximum number of games *)
+      mxawin       = (mxgames+1) DIV 2;
+      mxpaths      = 127;
+      nser         = 168;               (* number of series *)
+      nactobs      = 953;               (* total actual observations *)
+      mxobs        = max_obs;           (* maximum simulated observations *)
+      npts         = 17;                (* number of points for romberg *)
+      mxalph       = 3.0;
+      mx_exp       = 110.0;
+      mn_par       = 1.0E-20;
+      mn_ln        = 1.0E-50;
+      mn_mz        = 1.0E-8;
+      pi           = 3.141592653589793;  (* distribution constants *)
+      sqrt3        = 1.7320508;
+      l_co         = sqrt3/pi;
+      u_co         = 3.4641016;
+

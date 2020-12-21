@@ -1,0 +1,40 @@
+  (*CF This file must contain ALL variables that are globally visible. *)
+beliefs: belief_rec;  (* must be here to carry through iterations lb may27/96 *)
+fname_vec: fname_vec_type;
+option: opt_type;      (* in main *)
+opt_def: array[1..50] of string(60);
+act, momwgt : moment_type;  (* simulated and actual moments to match to *)
+         nw,
+       neps, 
+     simcnt,
+ extremeval: integer;
+  minlike : real;
+
+   fileout, fileout1, filedump,
+   infile, outfile
+     : text;
+   fileck: file of boolean;
+   filein: file of real;  (* CHANGE to correct record format *)
+   filek : file of resk0_type; 
+   filei  : file of indx_type;
+   filev: file of vwk_type;
+   filevn: file of vnwk_type;
+
+ (* filequit: file of quit_type;*)
+   filed : file of dec_type;
+
+  filestat: file of emp_type;
+
+      (* CF  these are the structural parameters of the model *)
+  mu,
+  sigma,
+  lamd,
+  beta,
+  betaw,
+  c,
+  cw,
+  ld,      (* probability each period that a job will disappear *)
+  shm,       (* share of match value received by worker *)
+  maxep : real;
+
+  prf : StateArray;

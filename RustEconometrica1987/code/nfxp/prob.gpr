@@ -1,0 +1,179 @@
+print "PROB.GPR: statistical analysis of monthly mileage data for Madison";
+print "Metropolitan Buses. Program computes pj=Prob{x(t+1)=x(t)+j}, j=0,1,2";
+print "for each bus group selected by the user. The program also computes a";
+print "`within group' homogeneity test, i.e. it computes the Chi-squared and";
+print "likelihood ratio test statistics of the hypothesis that buses in each";
+print "group are homogeneous, i.e., the pj's are the same for each bus in the";
+print "group.  The program also presents a `between group' homogeneity test";
+print "i.e., it tests the hypothesis that all bus groups in the sample have";
+print "the same pj's. The user also has an option to print out a detailed ";
+print "analysis of mileage, showing the average monthly mileage before";
+print "and after each successive bus engine replacement.";
+
+ string=cdir("");
+ string=strsect(string,1,strlen(string)-4);
+ #IFUNIX
+    string=string$+"/dat";
+ #ELSE
+    string=string$+"\\dat";
+ #ENDIF
+
+ load path=^string;
+
+@ *** INITIALIZE VARIABLES, SELECT SUBSAMPLE OF DATA                   @
+pps=zeros(3,1); llsav=0; rro=0; rr=0; swj=zeros(8,1); msav=0;
+rlsav=0; chisav=0;
+print; print "enter desired number of intervals to discretize data (max 150)";
+n=con(1,1);
+print "enter upper bound odometer value (recommend 450000)"; a1=con(1,1);
+print "implied size of discrete mileage range";; a1/n;
+print "print out mileage analysis (1=yes, 0=no)"; bt=con(1,1); print;
+ print "bus group g870: 1983 Grumman model 870 buses (15 buses total)";
+ print "(1=include, 0=leave out)";; swj[1,1]=con(1,1);
+ print "bus group a530872: 1972 GMC model 5308 buses (18 buses total)";
+ print "(1=include, 0=leave out)";; swj[7,1]=con(1,1);
+ print "bus group a530874: 1974 GMC model 5308 buses (12 buses total)";
+ print "(1=include, 0=leave out)";; swj[5,1]=con(1,1);
+ print "bus group a452374: 1974 GMC model 4523 buses (10 buses total)";
+ print "(1=include, 0=leave out)";; swj[8,1]=con(1,1);
+ print "bus group a530875: 1975 GMC model 5308 buses (37 buses total)";
+ print "(1=include, 0=leave out)";; swj[4,1]=con(1,1);
+ print "bus group t8h203: 1979 GMC model t8h203 buses (48 buses total)";
+ print "(1=include, 0=leave out)";; swj[3,1]=con(1,1);
+ print "bus group rt50: 1981 Chance RT-50 buses (4 buses total)";
+ print "(1=include, 0=leave out)";; swj[2,1]=con(1,1);
+ print "bus group a452372: 1972 GMC model 4523 buses (18 buses total)";
+ print "(1=include, 0=leave out)";; swj[6,1]=con(1,1);  bg=swj;
+start: if (swj == 0|0|0|0|0|0|0|0); goto fin; endif;
+@ *** LOAD RAW DATA FOR ANALYSIS                                       @
+print; print; print "bus group  ";;
+if swj[1,1] == 1; load dt=g870; swj[1,1]=0; print "g870"; goto dtstor;
+endif;
+if swj[2,1] == 1; load dt=rt50; swj[2,1]=0; print "rt50"; goto dtstor;
+endif;
+if swj[3,1] == 1; load dt=t8h203; print "t8h203"; swj[3,1]=0; goto dtstor;
+endif;
+if swj[4,1] == 1; load dt=a530875; print "530875"; swj[4,1]=0; goto dtstor;
+endif;
+if swj[5,1] == 1; load dt=a530874; print "530874"; swj[5,1]=0; goto dtstor;
+endif;
+if swj[6,1] == 1; load dt=a452372; print "452372"; swj[6,1]=0; goto dtstor;
+endif;
+if swj[7,1] == 1; load dt=a530872; print "530872"; swj[7,1]=0; goto dtstor;
+endif;
+if swj[8,1] == 1; load dt=a452374; print "452374"; swj[8,1]=0; goto dtstor;
+endif;
+@ *** COMPUTATION OF WITHIN GROUP ESTIMATES OF MILEAGE PROCESS, LIKELIHOOD @
+dtstor:
+ov1=dt[6,.]; ov2=dt[9,.];
+nr=rows(dt); m=cols(dt); rr=(nr-12)*m+rro;
+dtc=(dt[12:nr,.] .>= ov1 .and ov1 .> 0)+(dt[12:nr,.] .>= ov2 .and
+ov2 .> 0);
+dtx=dt[12:nr,.]+ov1.*dtc.*(dtc-2)-.5*ov2.*dtc.*(dtc-1);
+dtx=ceil(n*dtx/a1);
+mil=(dtc[2:nr-11,.]-dtc[1:nr-12,.])|zeros(1,m);
+mil=(dtx[2:nr-11,.]-dtx[1:nr-12,.])+dtx[1:nr-12,.].*mil[1:nr-12,.];
+p0=meanc((mil .== 0)); p1=meanc((mil .== 1)); p2=meanc((mil .==2));
+if bg[1,1] >= 0;
+print; print "individual bus mileage transition probabilities";
+print "p0"; p0'; print "p1"; p1'; print "p2"; p2';
+pp=meanc(p0~p1~p2);
+print "average probs for group"; pp';
+print "standard error"; sqrt(pp.*(1-pp)/((nr-12)*m))';
+pps=((nr-12)*m*pp+rro*pps)/rr; rro=rr;
+print "cumulative average probs"; pps';
+print "standard error"; sqrt(pps.*(1-pps)/rr)';
+p2=p2+(p2 .== 0); p1=p1+(p1 .== 0); pp=pp+(pp .== 0); pps=pps+(pps .== 0);
+ll=sumc((mil .== 0).*ln(p0')+(mil .== 1).*ln(p1')
++(mil .== 2).*ln(p2')); llsav=llsav+sumc(ll);
+print "cumulative unrestricted log likelihood";; llsav;
+print "current group unrestricted log likelihood";; sumc(ll);
+rll=sumc((mil .== 0)*ln(pp[1,1])+(mil .== 1)*ln(pp[2,1])
++(mil .== 2)*ln(pp[3,1]));
+print "current group restricted log likelihood";; sumc(rll);
+pp=pp-(pp .== 1); pps=pps-(pps .== 1); p2=p2-(p2 .== 1); p1=p1-(p1 .== 1);
+else; rll=sumc((mil .== 0)*ln(pps[1,1])+(mil .== 1)*ln(pps[2,1])
++(mil .== 2)*ln(pps[3,1]+(pps[3,1] == 0))); rlsav=sumc(rll)+rlsav; msav=msav+m;
+print "current group restricted loglikelihood";; sumc(rll);
+print "cumulative between groups restricted loglikelihood";; rlsav; endif;
+@ *** WITHIN GROUP HOMOGENEITY TEST (LR AND CHI-SQUARE TESTS)          @
+if bg[1,1] >= 0;
+print "within group lr-ratio test";
+print "  -2*loglikelihood ratio";; stat=-2*(sumc(rll)-sumc(ll)); stat;
+print "  marginal significance level";;
+if pp[3,1] > 0; cdfchic(stat,(m-1)*3); else; cdfchic(stat,(m-1)*2); endif;
+print "  degrees of freedom";;
+if pp[3,1] > 0; (m-1)*3; else; (m-1)*2; endif;
+if pp[3,1] > 0;
+stat=(nr-12)*(sumc(((p0-pp[1,1]).^2)/pp[1,1]+((p1-pp[2,1]).^2)/pp[2,1]));
+else;
+stat=(nr-12)*(sumc(((p0-pp[1,1]).^2)/pp[1,1])); endif;
+print "within group chi-square statistic";; stat;
+print "  marginal significance level";;
+if pp[3,1] > 0; cdfchic(stat,(m-1)*2); else; cdfchic(stat,(m-1)); endif;
+print "  degrees of freedom";; if pp[3,1] > 0; (m-1)*2; else; (m-1); endif;
+else;
+if pps[3,1] > 0;
+stat=(nr-12)*(sumc(((p0-pps[1,1]).^2)/pps[1,1]+((p1-pps[2,1]).^2)/pps[2,1]));
+else;
+stat=(nr-12)*(sumc(((p0-pps[1,1]).^2)/pps[1,1])); endif;
+print "current group chi-square statistic";; stat;
+print "cumulative chi-square statistic";; chisav=chisav+stat; chisav; endif;
+@ *** ANALYSIS OF RAW MILEAGE DATA                                     @
+if bg[1,1] < 0; goto fin; elseif bt == 0; goto skip; endif;
+ovm=ov1.*(ov1 .> 0)+dt[nr,.].*(ov1 .== 0);
+index=maxindc(((dtc[2:nr-11,.]-dtc[1:nr-12,.])|ones(1,m)));
+avm1=(ovm-dt[12,.])'./(index-1);
+print "average monthly mileage before 1st engine replacement";
+avm1'; print "number of observations"; (index-1)';
+r1p=zeros(m,3); r2p=zeros(m,3); r3p=zeros(m,3);
+j=1; do until j > 3;
+r1p[.,j]=sumc(.5*(dtc[2:nr-11,.]-1).*(dtc[2:nr-11,.]-2).*(mil .== j-1)
+./(index-1)');
+j=j+1; endo;
+ovm2=ov2.*(ov2 .> 0)+dt[nr,.].*(ov2 .== 0);
+index=(nr-12-
+maxindc(rev((dtc[2:nr-11,.]-dtc[1:nr-12,.])))-index+1).*(ov2 .> 0)'
++(nr-11-index).*(ov2 .== 0)';
+index=index+(ov1 .== 0)';
+avm2=(ovm2-ovm)'./index;
+print "average monthly mileage between 1st and 2nd engine replacements"; avm2';
+print "number of observations"; index';
+j=1; do until j > 3;
+r2p[.,j]=sumc(dtc[2:nr-11,.].*(2-dtc[2:nr-11,.]).*(mil .== j-1)./index');
+j=j+1; endo;
+index=(maxindc(rev((dtc[2:nr-11,.]-dtc[1:nr-12,.])))).*(ov2 .> 0)'
++(ov2 .== 0)';
+avm3=(dt[nr,.]-ovm2)'./index;
+print "average monthly mileage after the 2nd engine replacement"; avm3';
+print "number of observations"; index';
+j=1; do until j > 3;
+r3p[.,j]=sumc(.5*dtc[2:nr-11,.].*(dtc[2:nr-11,.]-1).*(mil .== j-1)./index');
+j=j+1; endo;
+print "discrete mileage distribution before 1st engine replacement"; r1p';
+print "discrete mileage distribution between 1st and 2nd replacements"; r2p';
+print "discrete mileage distribution after 2nd engine replacement"; r3p';
+skip: goto start;
+@ *** BETWEEN GROUP HOMOGENEITY TEST                                   @
+fin: if bg[1,1] >= 0; swj=bg; bg[1,1]=-1; print; print;
+print "recomputing likelihood function using cumulative average probabilities";
+pps'; print; goto start;
+elseif not(swj == 0|0|0|0|0|0|0|0); goto start; endif;
+print; print "Between group heterogeneity test"; print;
+print "cumulative unrestricted loglikelihood";; llsav;
+print "cumulative restricted   loglikelihood";; rlsav;
+print "between group lr-ratio test";
+print "   -2*loglikelihood ratio";; stat=-2*(rlsav-llsav); stat;
+print "marginal significance level";;
+if pps[3,1] > 0; cdfchic(stat,(msav-1)*3); else; cdfchic(stat,(msav-1)*2);
+endif; print "  degrees of freedom";;
+if pps[3,1] > 0; (msav-1)*3; else; (msav-1)*2; endif;
+print "between group chi-square statistic";; chisav;
+print "  marginal significance level";;
+if pps[3,1] > 0; cdfchic(chisav,(msav-1)*2); else; cdfchic(chisav,(msav-1));
+endif; print "  degrees of freedom";;
+if pps[3,1] > 0; (msav-1)*2; else; (msav-1); endif;
+clear mil, dtx, dtc, dt, avm1, avm2, avm3, r1p, r2p, r3p, index;
+
+
+

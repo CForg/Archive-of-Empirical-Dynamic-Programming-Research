@@ -1,0 +1,91 @@
+print;
+print "NPMLE.GPR: computes non-parametric mle estimate of the hazard function";
+print "Version 1, September 1985. By John Rust, Econ Dept, Univ of Wisconsin";
+print;
+
+ string=cdir("");
+ string=strsect(string,1,strlen(string)-4);
+ #IFUNIX
+    string=string$+"/dat";
+ #ELSE
+    string=string$+"\\dat";
+ #ENDIF
+
+ load path=^string;
+
+@ *** INITIALIZE VARIABLES                                       @
+print "do you want print out of intermediate calculations (1=yes, 0=no)";
+bg=con(1,1);
+print "enter desired number of intervals to discretize mileage data (175 max)";
+n=con(1,1);
+ll=0; nt=zeros(n,1); rt=zeros(n,1); nc=zeros(n,1); rc=zeros(n,1);
+swj=zeros(8,1);
+print "enter upper bound odometer value (recommend 450000)"; a1=con(1,1);
+print "implied size of discrete mileage range";; a1/n; print;
+@ *** SELECT SUBSAMPLE OF DATA                                   @
+print "bus group g870: 1983 Grumman model 870 buses (15 buses total)";
+print "(1=include, 0=leave out)";; swj[1,1]=con(1,1);
+print "bus group rt50: 1981 Chance RT-50 buses (4 buses total)";
+print "(1=include, 0=leave out)";; swj[2,1]=con(1,1);
+print "bus group t8h203: 1979 GMC model t8h203 buses (48 buses total)";
+print "(1=include, 0=leave out)";; swj[3,1]=con(1,1);
+print "bus group a530875: 1975 GMC model a5308 buses (37 buses total)";
+print "(1=include, 0=leave out)";; swj[4,1]=con(1,1);
+print "bus group a530874: 1974 GMC model a5308 buses (12 buses total)";
+print "(1=include, 0=leave out)";; swj[5,1]=con(1,1);
+print "bus group a452374: 1974 GMC model a4523 buses (10 buses total)";
+print "(1=include, 0=leave out)";; swj[6,1]=con(1,1);
+print "bus group a452372: 1972 GMC model a4523 buses (18 buses total)";
+print "(1=include, 0=leave out)";; swj[7,1]=con(1,1);
+print "bus group a530872: 1972 GMC model a5308 buses (18 buses total)";
+print "(1=include, 0=leave out)";; swj[8,1]=con(1,1);
+start:
+print; print; print "bus group  ";;
+if swj[1,1] == 1; load dt=g870; swj[1,1]=0; print "g870"; goto dtstor;
+endif;
+if swj[2,1] == 1; load dt=rt50; swj[2,1]=0; print "rt50"; goto dtstor;
+endif;
+if swj[3,1] == 1; load dt=t8h203; swj[3,1]=0; print "t8h203"; goto dtstor;
+endif;
+if swj[4,1] == 1; load dt=a530875; swj[4,1]=0; print "a530875"; goto dtstor;
+endif;
+if swj[5,1] == 1; load dt=a530874; swj[5,1]=0; print "a530874"; goto dtstor;
+endif;
+if swj[6,1] == 1; load dt=a452374; swj[6,1]=0; print "a452374"; goto dtstor;
+endif;
+if swj[7,1] == 1; load dt=a452372; swj[7,1]=0; print "a452372"; goto dtstor;
+endif;
+if swj[8,1] == 1; load dt=a530872; swj[8,1]=0; print "a530872"; goto dtstor;
+endif;
+@ *** COMPUTATION OF NONPARAMETRIC MAXIMUM LIKELIHOOD ESTIMATE OF HAZARD  @
+dtstor:
+ov1=dt[6,.]; ov2=dt[9,.];
+nr=rows(dt); m=cols(dt);
+dtc=(dt[12:nr,.] .>= ov1 .and ov1 .> 0)+(dt[12:nr,.] .>= ov2 .and
+ov2 .> 0);
+dtx=dt[12:nr,.]+ov1.*dtc.*(dtc-2)-.5*ov2.*dtc.*(dtc-1);
+dtx=ceil(dtx/5000);
+dtc=(dtc[2:nr-11,.]-dtc[1:nr-12,.])|zeros(1,m);
+i=1;
+do until i > n; dt=(dtx .== i); nc[i,1]=sumc(sumc(dt));
+rc[i,1]=sumc(sumc(dt.*dtc)); nt[i,1]=nc[i,1]+nt[i,1];
+rt[i,1]=rc[i,1]+rt[i,1]; i=i+1; endo;
+npk=rt./(nt-(nt .== 0));
+if bg == 1;
+print; print "current estimates";
+print "total observations in each mileage range"; nc';
+print "number of engines replaced in each mileage range"; rc';
+print "non-parametric hazard estimate"; (rc./(nc-(nc .== 0)))';
+print; print "cumulative estimates";
+print "cumulative observations in each mileage range"; nt';
+print "cumulative engines replaced in each mileage range"; rt';
+print "cumulative non-parametric hazard"; npk';
+endif;
+lp=submat(1-npk,vec(dtx),0); ll=ll+sumc(ln(lp+(1-2*lp).*vec(dtc)));
+if not(swj == 0|0|0|0|0|0|0|0); goto start; endif;
+print "total number of observations in each mileage range"; nt';
+print "cumulative number of engines replaced in each mileage range"; rt';
+print "non-parametric maximum likelihood estimate of hazard function"; npk';
+print; print "loglikelihood of non-parametric model";; ll;
+
+

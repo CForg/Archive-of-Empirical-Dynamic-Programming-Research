@@ -1,0 +1,177 @@
+const
+   missing     = -99;                (* code for missing values - don't fit to *)
+   infeas      = -1E10;              (* code for infeasible choices *)
+   vnum        = '44';
+   lag         = 2;                  (* lagging for IA information *)
+   money_unit  = 100.0;             (* express moments in $000 *)
+
+   rZed        =0.0;
+   Zed         = 0;
+   One         = 1;
+   Two         = 2;
+   perm_state  = -1;
+   SIMREPS     = 100;
+   max_compressed = 500;
+                                   (* State Variable Limits *)
+   D           = Two;                        (* lagged working status *)
+   X           = 4;                          (* eXperience *)
+   Z           = 4;                         (* potential transfers *)
+   N           = 6;                          (* X wage offers *)
+   U           = 4;                          (* Upper bound on M *)
+               laidoff     =One;
+               contue      =Two;
+
+   H           = 3;                          (* Household states *)
+   F           = 6;                          (* number of policy PHases *)
+               reality   = F;
+               yr3       = 5;
+               yr2       = 4;
+               yr1       = 3;
+               qualify   = 2;
+               enter     = 1;
+               eligible  = [yr1..yr3];
+
+   Tmax        = 18;                      (* max phase length *)
+
+                                   (* Action Variable Limits *)
+   W           = Two;                        (* receive Welfare benefits *)
+   M           = 6;                          (* labor Market states *)
+               mxhome    = Two;
+               mxpttm    = mxhome + (M-mxhome) DIV Two;
+               athome    = [One..mxhome];                   (* includes OLF and UE *)
+               search    = [Two..mxhome];
+               parttime  = [mxhome+One..mxpttm];
+               fulltime  = [mxpttm+One..M];                 (* for SSP criterion *)
+                                   (* Agent Type Limits *)
+   C           = Two;                        (* number of children *)
+   G           = 3;                          (* experimental Groups *)
+               control=G;     treatment=G-1;   ssp_plus=One;
+   R           = Two;                        (* Regions / markets   *)
+               brit_col = R;  new_brun =R-1;
+   E           = Two;                        (* Experiment samples *)
+               one_year=E; entry=E-1;
+   L           = 4;                        (* Latent types (unobserved) *)
+
+                                    (* Data Variable Limits *)
+   Dmin        =  -19 ;               (* -17 - one period for pre-values *)
+   Dsimmax     =  72;
+                                    (* Offsets for State variables *)
+   cD          = 1;
+   cO          = D * cD;
+   cU          = N * cO;
+   cX          = U * cU;
+   cZ          = X * cX;
+   cH          = Z * cZ;
+   cT          = H * cH ;
+   cF          = Tmax * cT;
+   cY          = (F-1) * cF;            (* keep track of separate treatments *)
+   low_real    = 1+(G-1)*cY;            (* sub-range that applies to the real world *)
+   hi_real     = low_real+cT-1;         (* ignores ng & nt in reality *)
+   Ssize       = hi_real+1;         (* state space for a agent/market/pol type *)
+   n_rstates   = hi_real-low_real+1;
+   hhi_real    = hi_real + cT;
+
+                                   (* Offsets for action variables *)
+   cM          = 1;
+   cW          = M*cM;
+   Asize       = W*cW;                  (* action space for agent/market/pol type *)
+   onIA        = [1+cW..Asize];           (*   onIA = [1..Asize]; *)
+
+                                   (* Sample-type variables *)
+   cG          = 1;
+   cE          = G*cG;
+   Thsize      = E*cE;             (* Max Number of experimental types *)
+   cC          = Thsize;
+   cR          = C*cC;
+   EMsize      = R*cR;             (* Max Number of Controls *)
+   cL          = EMsize;
+   PBsize      = L*cL;              (* Number of Different Problems *)
+   DPsize      = PBsize DIV Thsize;
+   OBsize      = EMsize DIV Thsize;
+
+   DPpars      =  16;                 (* Number of model parameters for eachproblem *)
+   DPcmpars    =  3;                  (* Number of params common across problems *)
+
+type
+                                    (* Variable Range Types *)
+   short       =  real;             { shortreal; }
+   view_type   = (asrec,asvec);
+   vmax_range  =  One..Two;
+   binary      =  Zed..Two;
+   d_range     =  Zed..D;
+   n_range     =  Zed..N;              (* State variable ranges *)
+   u_range     =  Zed..U;
+   x_range     =  Zed..X;
+   z_range     =  Zed..Z;
+   h_range     =  Zed..H;
+   t_range     =  Zed..Tmax;
+   l_range     =  Zed..L;
+   lvec_range  =  One..L;
+   f_range     =  Zed..F;
+   s_range     =  One..Ssize;           (* state's index takes on *)
+   real_range  =  low_real..hi_real;
+   hreal_range =  low_real..hhi_real;
+
+   w_range     =  Zed..W;
+   m_range     =  Zed..M;              (* action variable ranges *)
+   a_range     =  Zed..Asize;
+
+   g_range     =  Zed..G;              (* agent type variable ranges *)
+   y_range     =  g_range;             (* added Feb 2006 *)
+   r_range     =  Zed..R;
+   e_range     =  Zed..E;
+   c_range     =  Zed..C;
+   th_range    =  One..THsize;
+   em_range    =  One..EMsize;
+   dp_range    =  One..DPsize;
+   pb_range    =  One..PBsize;
+   ob_range    =  One..OBsize;
+
+   dd_range    = Dmin..Dsimmax;
+
+   sim_range   = One..SIMREPS;
+   compressed_range  = 1..max_compressed;
+
+
+   moment_base = real;
+   income_type = record
+                 earn,
+                 earnsq,
+                 welfare,
+                 welfsq,
+                 subsidy : moment_base;
+                 end;
+   lforce_type= record
+                onwelf,
+                minwg,
+                lostjb,
+                leftjb,
+                fulltm,
+                parttm,
+                onXem  : moment_base;
+                end;
+   aux_type=    record
+                transfer,
+                utility,
+                pdv     : moment_base;
+                end;
+   moment_type= record
+                money  : income_type;
+                lforce : lforce_type;
+                aux    : aux_type;
+                leakage: moment_base;
+                end;
+
+
+   momentptr   =^moment_type;
+   expected_type=array[dd_range] of moment_type;
+
+   mysolve_type        = array[th_range] of expected_type;
+
+   { myeval_type         = mysolve_type;                      }
+
+   compressed_type     = array[compressed_range] of real;
+   myeval_type         = array[th_range] of  compressed_type;
+
+   mysolveptr          = ^mysolve_type;
+   myevalptr           = ^myeval_type;

@@ -1,0 +1,28 @@
+print "PLOT.GPR: program to plot estimated hazard, cost and value functions";
+print "Version 1, September 1985. By John Rust Dept of Econ Univ of Wisconsin";
+print;
+print "This program displays successive plots of:"; print;
+print "1) the hazard function: (1-pk) where pk=Prob{i(t)=1|x}";
+print "2) the value  function: v=c-bet*ev, v(x) is total discounted cost at x";
+print "3) the cost   function: c, c(x) is montly operating cost at mileage x";
+print "4) the ev     function: -bet*ev, ev(x) is the expectation of v at x";
+rx="mileage (000's)";  ry="jerry";  x=a0*x/(n*1000);
+print;
+print "enter delay time (seconds) for plot";; maxtime=con(1,1);
+inn=1;
+start:
+#include "plot.inc";
+plot:
+px=x;
+if inn == 1; py=(1-pk); ry="hazard function";
+elseif inn ==2; py=(c-bet*ev); ry="value function";
+elseif inn == 3; py=c; ry="cost function";
+else; py=-bet*ev; ry="expected value function"; endif;
+return;
+endplot:
+inn=inn+1;
+if inn == 2; goto start;
+elseif inn == 3; goto start; elseif inn == 4; goto start; endif;
+format /m3 /ro 14, 6;  x=seqa(1,1,rows(x));
+
+

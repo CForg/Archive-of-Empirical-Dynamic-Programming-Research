@@ -1,0 +1,90 @@
+      feas         :        feas_type;
+
+      freq         :        allpath_type;
+      pred         :        path_type;
+
+      pars         :        param_type;
+      nobs         :        obs_ind;
+      ngames,
+      ntowin       :        g_type;
+
+      maxsprt      :        isport_type;
+      mnexp0,
+      mnexp1,
+      sdrec
+                   :        rsport_type;
+
+      hadv         :            game_type;
+      vsigma, 
+      vr,
+      vv1          :            rsport_type;
+      vbeta        :            vbeta_type;
+      stbeta       :            sp_state_type;
+      beta         :            beta_type;
+      wts,
+      pts          :            alph_type;
+      alpha,                    (* random effect *)
+      sigma,                    (* standard deviation of random effect *)
+      r,                        (* cost of effort parameter *)
+      v1,                       (* marginal value of final score difference *)
+
+      homedf,                   (* difference in home records in series *)
+      recdf,                    (* difference in season records *)
+      expdf                     (* difference in series experience *)
+                  :    real;
+      dist        :    dist_type;  (*indicates normal, logit, or uniform *)
+      estmeth     :    est_option;
+      simorest    :    run_option;  (* either estimate or simulate *)
+
+      sport,                    (* sports index *)
+      year,                     (* year of series *)
+      gnum,                     (* game number *)
+      awns,                     (* number of wins by team a *)
+      winner,                    (* winner of game *)
+      bwns                      (* number of wins by team b *)
+                  :   idata_type;
+      lkvals,
+      rwin,
+      hdf,                       (* home difference *)
+      rdf,                       (* season difference *)
+      edf,                       (* experience difference *)
+      last                       (* who won last game index *)
+                  :    rdata_type;
+      bootn       :    array[obs_ind] of obs_ind;
+      nseries     :    isport_type;
+      endpt       :    endpt_type;
+      imboot,
+      nptsdo,
+      pid,
+      initseed,
+      gams,
+      nrepl1,
+      nrepl2,
+      nserstot,
+      ilo,
+      ihi         :    integer;
+      h : hessptr;
+      outx,
+      g  : param_type;
+      fy,
+      l : real;
+
+      out_file,    
+      in_file,
+      mc_file,
+      sm_file,
+      mx_file,
+      dmp_file,
+      x_file,
+      opt_file    :     text;
+
+ 
+    cdmin,
+    cdmax,
+    totwt        : real;
+    contchar     : char;
+    lst_call     : boolean;
+    pstr         :string(5);
+
+
+ 

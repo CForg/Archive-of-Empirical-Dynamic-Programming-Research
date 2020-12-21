@@ -1,0 +1,282 @@
+"LLN_CLT.GPR: program to illustrate the operation of the LLN and CLT";
+"";
+"	      John Rust, Department of Economics, Yale University";
+"";
+
+
+
+   /* Sampling process: draw S samples of size N from a given
+      distribution */
+
+     "This program generates samples of S sample means and standardized";
+     "sample means, each of size N from certain predefined population";
+     "distributions. That is, the program draws N IID (independent and";
+     "identically distributed) random variables (X_1,...,X_N) from a ";
+     "population density f(x) and then computes the average (sample mean)";
+     "of these N random variables and also the standardized sample mean,";
+     "formed by subtracting the true population expectation from the";
+     "sample mean (so the standardized sample mean has expectation 0),";
+     "and dividing by the standard deviation of the sample mean (so the";
+     "standardized sample mean has variance and standard deviation of 1)";
+     "";
+     "The Law of Large Numbers (LLN) states that the sample mean converges";
+     "in probability to the underlying `true' population mean of f(x)";
+     "The Central Limit Theorem (CLT) states that the standardized sample";
+     "mean converges in distribution to a N(0,1) random variable";
+     "";
+     "This program illustrates the operation of the LLN and CLT by drawing";
+     "S draws of the sample mean and the standardized sample mean, both of";
+     "which are random variables. If the LLN is correct, we should see the";
+     "distribution of the sample mean converging to a `degenerate' random";
+     "variable with expectation equal to the true population mean and with"; 
+     "variance 0, i.e. in the limit the sample mean equals the true population";
+     "mean with probability 1. If the CLT is correct, we should see the";
+     "distribution of the standardized mean converge to the distribution of";
+     "a N(0,1) random variable.";
+
+     "";
+     "This program shows that this does in fact happen for 3 different";
+     "choices of population density f(x):";
+     "";
+     "1. Uniform f(x)";
+     "2. Lognormal f(x)";
+     "3. Exponential f(x)";
+     "";
+     "Enter your choice of population density: ";; ch=con(1,1);
+
+
+     /* plot out true population density f(x) */
+
+     ngrids=1000;
+     lambda=.5;
+
+  if (ch == 1);
+     x=seqa(-.5,2/ngrids,ngrids+1);
+     trueden=(x.>=0).*(x.<=1);
+     typeden="Uniform";
+  elseif (ch == 2);
+     x=seqa(0,5/ngrids,ngrids);
+     typeden="Lognormal";
+  else; 
+     x=seqa(0,4/ngrids,ngrids);
+     trueden=lambda*exp(-lambda*x);
+     typeden="Exponential";
+  endif;
+
+      library pgraph;
+
+  _pdate="";
+  xlabel("");
+  ylabel("Probability Density");
+  strng=typeden$+" Population Density";
+  title(strng);
+  _pltype=6|3|1|5;
+  _plegctl=0;
+  scale(x,trueden);
+  if (ch == 1);
+    ytics(0,1.2,.1,0);
+    xtics(-.5,1.5,.5,0);
+  elseif (ch == 2);
+    xtics(0,5,.5,0);
+  else;
+    scale(x,trueden);
+    xtics(-1,4,.5,0);
+  endif;
+  xy(x,trueden);
+
+
+     "Enter size of random sample to be drawn from population distribution ";;
+     n=con(1,1);
+
+     S=1000;
+     data=zeros(S,2);
+
+     /* Main do-loop for calculating S independent draws of the 
+	sample mean and standardized sample mean of size N from
+	a population density f(x). These realizations form a
+	"meta-sample" whose distributions we will tabulate to 
+	see if the predictions of the LLN and CLT are true */
+
+     i=1; do until i > S;
+
+	  /* draw sample of size N from population density f(x) */
+
+          if (ch == 1);
+            tmp=rndu(n,1);
+          elseif (ch == 2);
+	    tmp=exp(1+rndn(n,1));
+          else;
+	    tmp=ln(ones(n,1)-rndu(n,1))/lambda;
+          endif;
+
+	  /* compute sample mean of the N draws from f(x) */
+
+	  data[i,1]=meanc(tmp);  
+
+	  /* Compute standardized sample mean by subtracting off 
+	     population mean and dividing by the standard deviation
+	     of the sample mean. These are different quantities
+	     for each choice of population density f(x) */
+
+	  if (ch == 1);
+	    data[i,2]=sqrt(N)*(data[i,1]-(.5))/sqrt(1/12);
+	  elseif (ch == 2);
+	    data[i,2]=sqrt(N)*(data[i,1]-(.5))/sqrt(1/12);
+          else;
+	    data[i,2]=sqrt(N)*lambda*(data[i,1]-(1/lambda));
+          endif;
+
+     i=i+1; endo;
+
+
+  /* No plot Empirical CDF */
+
+
+    
+     if (ch == 1);
+       x=seqa(0,1/ngrids,ngrids+1);
+       truecdf=(x.>=(.5));
+       empcdf=zeros(ngrids+1,1);
+     elseif (ch == 2);
+  
+     else;
+       x=seqa(0,4/(ngrids+1),ngrids+1);
+       truecdf=(x.>=(1/lambda));
+       empcdf=zeros(ngrids+1,1);
+     endif;
+
+     i=1; do until i > ngrids+1;
+
+	empcdf[i,1]=meanc(data[.,1].<=x[i]);
+
+     i=i+1; endo;
+
+
+      library pgraph;
+
+
+
+  _pdate="";
+  xlabel("");
+  ylabel("Cumulative Probability");
+  strng="Illustration of the Law of Large Numbers\L Sampling from "$+typeden$+"Distribution";
+  title(strng);
+  _pltype=6|3|1|5;
+  _plegctl=2~5~1~4.8;
+  _plegstr="Limiting CDF\000Empirical CDF";
+  _pmsgstr="Sample size  : "$+ftos(N,"lf",5,0)$+"\000"$+
+           "True Mean    : "$+ftos(.5,"lf",5,2)$+"\000"$+
+           "True Variance: "$+ftos(1/12,"lf",5,2)$+"\000"$+
+           "Average Mean : "$+ftos(meanc(data[.,1]),"lf",5,4)$+"\000"$+
+           "Variance     : "$+ftos(stdc(data[.,1])^2,"lf",5,4)$+"\000"$+
+           "Maximum Mean : "$+ftos(maxc(data[.,1]),"lf",5,2)$+"\000"$+
+           "Minimum Mean : "$+ftos(minc(data[.,1]),"lf",5,2);
+ 
+    _pmsgctl=(5.0~1.8~.15~0~2~4~0)|
+             (5.0~1.6~.15~0~2~4~0)|
+             (5.0~1.4~.15~0~2~4~0)|
+             (5.0~1.2~.15~0~2~4~0)|
+             (5.0~1.0~.15~0~2~4~0)|
+             (5.0~0.8~.15~0~2~4~0)|
+             (5.0~0.6~.15~0~2~4~0);
+ 
+
+  scale(x,truecdf~empcdf);
+  xtics(0,1,.1,0);
+  xy(x,truecdf~empcdf);
+
+
+   /* Now plot nonparametric kernel density estimate of sample mean */
+
+h=1.06/(rows(data[.,1])^(.2));
+s=stdc(data[.,1]);
+nr=rows(data[.,1]);
+npden=zeros(rows(x),1);
+
+i=1; do until i > rows(x);
+  npden[i]=sumc(exp((-(x[i]-data[.,1])^2)/(2*h*h*s*s)))/(s*sqrt(2*pi)*h*nr);
+i=i+1; endo;
+
+title("Estimated Density Function for the Sample Mean\L Sampling from a Uniform Distribution");
+ylabel("Density");
+_pmsgstr="Sample size: "$+ftos(N,"lf",5,0);
+_pmsgctl=(.9~5.5~.15~0~2~4~0);
+_plegstr="";
+_plegctl=0;
+
+
+scale(x,npden);
+xtics(0,1,.1,0);
+xy(x,npden);
+
+
+     ngrids=1000;
+     x=seqa(-4,8/ngrids,ngrids);
+     empcdf=zeros(ngrids,1);
+
+     truecdf=cdfn(x);
+
+     i=1; do until i > ngrids;
+
+	empcdf[i]=meanc(data[.,2].<=x[i]);
+
+     i=i+1; endo;
+
+
+
+
+  _pdate="";
+  xlabel("");
+  ylabel("Cumulative Probability");
+  title("Illustration of the Central Limit Theorem\L Sampling from Uniform Distribution");
+  _pltype=6|3|1|5;
+  _plegctl=2~5~1~4.8;
+  _plegstr="Limiting Normal CDF\000Empirical CDF";
+  _pmsgstr="Sample size          : "$+ftos(N,"lf",5,0)$+"\000"$+
+           "True Mean            : "$+ftos(0,"lf",5,2)$+"\000"$+
+           "True Variance        : "$+ftos(1,"lf",5,2)$+"\000"$+
+           "Average Stdized Mean : "$+ftos(meanc(data[.,2]),"lf",5,4)$+"\000"$+
+           "Variance Stdized Mean: "$+ftos(stdc(data[.,2])^2,"lf",5,4)$+"\000"$+
+           "Maximum Stdized Mean : "$+ftos(maxc(data[.,2]),"lf",5,2)$+"\000"$+
+           "Minimum Stdized Mean : "$+ftos(minc(data[.,2]),"lf",5,2);
+ 
+    _pmsgctl=(4.5~1.8~.15~0~2~4~0)|
+             (4.5~1.6~.15~0~2~4~0)|
+             (4.5~1.4~.15~0~2~4~0)|
+             (4.5~1.2~.15~0~2~4~0)|
+             (4.5~1.0~.15~0~2~4~0)|
+             (4.5~0.8~.15~0~2~4~0)|
+             (4.5~0.6~.15~0~2~4~0);
+
+  scale(x,truecdf~empcdf);
+  xtics(-4.0,4.0,1.0,0);
+  xy(x,truecdf~empcdf);
+
+
+/* Now plot nonparametric kernel density estimate of standardized sample mean */
+
+h=1.06/(rows(data[.,2])^(.2));
+s=stdc(data[.,2]);
+nr=rows(data[.,2]);
+npden=zeros(rows(x),1);
+normalden=npden;
+
+i=1; do until i > rows(x);
+  npden[i]=sumc(exp((-(x[i]-data[.,2])^2)/(2*h*h*s*s)))/(s*sqrt(2*pi)*h*nr);
+  normalden[i]=exp(-(x[i]^2)/2)/sqrt(2*pi);
+i=i+1; endo;
+
+title("Illustration of the Central Limit Theorem\L Sampling from a Uniform Distribution");
+ylabel("Density");
+_plegstr="Standard Normal\000Empirical Density";
+_plegctl=2~5~1~4.7;
+_pmsgstr="(Sample size: "$+ftos(N,"lf",5,0)$+")";
+_pmsgctl=(1~4.4~.15~0~2~4~0);
+
+
+scale(x,normalden~npden);
+xtics(-4.0,4.0,1.0,0);
+xy(x,normalden~npden);
+
+	
+

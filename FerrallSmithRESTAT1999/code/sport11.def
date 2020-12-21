@@ -1,0 +1,29 @@
+
+(*  These headers must be located in the outer level of the calling program *)
+
+    (* normal density routines - compiled into cdfnsp2.o 
+       This INCLUDE statement must be in your copy of this file for compilation 
+       to work properly
+     *)
+%include /hwy61/lib/cdfnsp2.def
+
+    (* matrix operation routines - defined in matsp2.pas *)
+procedure mat_mult(var a,b,c : hess_type; n1,n2,n3 : integer); external;
+procedure mult_trans(var a,c : hess_type; n1 : integer); external;
+procedure mat_inv(var a,b : hess_type; l,n : integer; 
+                  var d : real;var invexist:BOOLEAN); external;
+   
+     (* optimization routine *)
+procedure optsp2(var fy : real; var xo : param_type); External;
+
+       (* user-supplied routines *)
+function like(inx : param_type): real;                     External;
+function vlike(inx : param_type; var lkval : like_type): real;  external;
+
+        (* Parallel interface routines *)
+  (* These routine headers are located in mpi_external.def *)
+
+procedure dosport (runopt: run_option); external;
+procedure doyear(var yind: integer; var lyear : real; runopt : run_option; sp : sports ); external;
+procedure init; external;
+

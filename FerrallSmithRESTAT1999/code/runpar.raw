@@ -1,0 +1,10 @@
+0       options: 0=estimate, 1=simulate, 2=monte (simulate&estimate) 3=boot
+1       options: 0=normal, 1=logit, 2=uniform
+0       options: 0=structure, 1=reduced form, 2=min. chi-square
+70      maximize baseball  (0=don't, x=number of series in sample)
+40      maximize basketball
+50      maximize hockey
+7       number of games
+2       number of monte carlo replications
+500    number of bootstrap replications
+!

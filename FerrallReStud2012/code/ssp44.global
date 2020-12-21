@@ -1,0 +1,363 @@
+const
+
+   Nmoments   = sizeof(moment_type) DIV sizeof(moment_base);
+   imeans     = -3;
+   mask       = -2;
+   observed   = -1;
+   predicted  = 0;
+   MaxXno     = 5;
+
+type
+   long_string = string(500);
+   cond_type   = (un,off,on);
+   source_type = imeans..Nmoments;
+                                   (* Array types *)
+   h_type      = array[h_range] of real;
+   x_type      = array[x_range] of real;
+   z_type      = array[z_range] of real;
+   w_type      = array[w_range] of real;
+   m_type      = array[m_range] of real;
+   hm_type     = array[h_range] of m_type;
+   u_type      = array[u_range] of m_range;
+   of_type     = array[n_range] of x_type;
+   earn_type   = array[m_range] of of_type;
+   px_type     =  array[x_range] of array[x_range] of m_type;
+   pz_type     =  array[x_range] of z_type;
+   ph_type     =  array[h_range] of h_type;
+   pu_type     = array[boolean] of  array[u_range] of array[u_range] of m_type;
+   dist_type   = array[s_range] of real;
+   distptr     = ^dist_type;
+   rdist_type  = array[real_range] of real;
+   rdistptr    = ^rdist_type;
+
+   pact_type   = array[a_range] of real;
+   pactptr     = ^pact_type;
+
+   vcond_type  = array[cond_type] of real;
+
+
+   ssp_type    = record
+                 sspiapct,                      (* pct of real IA for treated group *)
+                 ssprate,                       (* tax-back rate  *)
+                 ssprange,                     (* target income as multiple of mininc *)
+                 sspbeta                       (* increase in monitoring of income *)
+                 : real;
+                 T        : array[f_range] of t_range;
+                 end;
+   ia_type     = record
+                 iaval,                        (* level of IA benefits *)
+                 setaside,                     (* Income setaside for iabenefits *)
+                 mininc                        (* minwage * 30 hrs/wk * 4 wks *)
+                         : real;
+                 end;
+   Demo_type   = record
+                 iav     : ia_type;
+                 ssp     : ssp_type;
+                 end;
+   dlist_type   =   array[ob_range] of demo_type;
+   dexplist     =   array[0..MaxXno] of dlist_type;
+   sample_type =record
+                ne       : e_range;
+                ng       : g_range;
+                nc       : c_range;
+                nr       : r_range;
+                nl       : l_range;
+                obind    : ob_range;
+                emind    : em_range;
+                dpind    : dp_range;
+                thind    : th_range;
+                pbind    : pb_range;
+                cnt      : integer;
+                wght     : real;
+                end;
+   sampleptr   =^sample_type;
+   Treat_type  =record
+                 Tmin,
+                 Tstart  : integer;     (* experimental months corres. to selection period*)
+                 minF,                  (* Phases to loop through *)
+                 maxF    : f_range;
+                 tfirst  : t_range;
+                 end;
+   tlist_type  =array[th_range] of treat_type;
+   texplist    =array[0..MaxXno] of tlist_type;
+   latent_type =record
+                 stigma,
+                 tau,
+                 report,
+                 beta                   (* discount factor *)
+                         : real;
+                 nprob   : of_type;
+                 ssprecd,
+                 iarecd,
+                 iatrtmt,
+                 vearn   : earn_type;
+                 disutil : hm_type;
+                 px      : px_type;     (* skill apprec/deprec probability *)
+                 pz      : pz_type;
+                 ph      : ph_type;     (* prob. of household change *)
+                 pu      : pu_type;     (* prob. of job upper bound *)
+                 end;
+
+   act_type =    record
+                 nw    : w_range;
+                 nm    : m_range;
+                 end;
+   aset_type   = set of a_range;
+   vact_type   = array[a_range] of act_type;
+   mcond_type  = array[cond_type] of momentptr;
+
+   var_range   = One..Nmoments;
+   momarray_type= array[var_range] of moment_base;
+
+   momarrayptr = ^momarray_type;
+   moms_type   = array[source_type] of momentptr;
+
+   momexp_type = array[dd_range]of momarray_type;
+
+   expmatrix_type = array[compressed_range] of compressed_type;
+   expmatptr    = ^expmatrix_type;
+
+   expmat_array = array[em_range] of expmatptr;
+
+   { myevalarray = array[th_range] of momexp_type;
+     myevalarrayptr = ^myevalarray; }
+
+   myineval_type       = array[unvec_ind] of mysolve_type;
+   myinevalptr         = ^myineval_type;
+
+   myinagg_type    = array[ob_range] of mysolve_type;
+   myinaggptr      = ^myinagg_type;
+   { myinaggarray    = array[ob_range] of myevalarray; }
+
+   month_id    = record
+                 mth,
+                 src,
+                 smpa,
+                 smpb,
+                 nobs      : integer;
+                 mdelt     : real;
+                 end;
+   month_type  = record
+                 id        : month_id;
+                 moms      : moms_type;
+                 end;
+   em_type      =record
+                  moments : array[dd_range] of month_type;
+                  Tstop,
+                  Tobsmin,
+                  Tobsmax  : dd_range;
+                  optmat   : expmatptr;
+                  offset   : integer;
+                  n_emmoms : compressed_range;
+                  comp_imean,
+                  smpwght  : ^solve_type;
+                  avgmom   : moment_type;
+                  selprop,
+                  prop     : prob_type;
+                  end;
+   emptr      =^em_type;
+   emlist_type=array[em_range] of emptr;
+
+   clock_type = record
+                nd  :  d_range;
+                no  :  n_range;
+                nu  :  u_range;
+                nx  :  x_range;
+                nz  :  z_range;
+                nh  :  h_range;
+                nt  :  t_range;
+                nf  :  f_range;
+                ny  :  y_range;
+                ind :  integer;
+                end;
+   stateptr   = ^state_type;
+   problemptr =^problem_type;
+   state_type = record
+                nid    : integer;
+                st     : clock_type;
+                problem: problemptr;
+                aind   : a_range;        (* choice index *)
+                prob   : real;           (* cond. prob of state *)
+                next   : stateptr;       (* next state if in a list *)
+                end;
+   statelist_type= record
+                   head,tail : stateptr;
+                   stcnt     : integer;
+                   end;
+   tlreal_type = array[hreal_range] of array[a_range] of statelist_type;
+   optimal_type=record
+                pact   : pact_type;
+                cprob  : vcond_type;
+                mom    : mcond_type;
+                equiv  : integer;
+                vmax   : array[boolean] of real;
+                end;
+   bellman_type=array[s_range] of optimal_type;
+   dp_type       = record
+                   bellman  : bellman_type;  (* man_type;        value- and policy- function arrays *)
+                   rdist    : rdist_type;
+                   invertok,
+                   today,
+                   converged,
+                   justconverged,
+                   do_real,
+                   sp0old   : boolean;          (* initial distn should be updated *)
+                   end;
+   dpptr         =^dp_type;
+   dplist_type   = array[dp_range] of dpptr;
+   histogram_type = record
+                    hgo  :  array[n_range] of real;
+                    hgx  :  array[x_range] of real;
+                    hgz  :  array[z_range] of real;
+                    hgh  :  array[h_range] of real;
+                    end;
+   histptr       = ^histogram_type;
+
+   simrecord_type= record
+                    added     : integer;
+                    simsamp   : sample_type;
+                    simpath   : compressed_type;
+                   end;
+   problem_type  =record
+                  inthedata: boolean;
+                  sample   : sample_type;
+                  demo     : demo_type;
+                  treat    : treat_type;
+                  latent   : latent_type;
+                  expected : expected_type;
+                  histptrs : array[dd_range] of histptr;
+                  dp       : dpptr;
+                  em       : emptr;
+                  end;
+   problems_type = array[pb_range] of problemptr;
+   pgmparptr     = ^pgmpar_type;
+   pgmpar_type=record
+                max_un  : l_range;
+                bigmask : moment_type;
+                nactivemoments,
+                xnum,
+                fillgap,
+                totsmpb : integer;
+                Dfit,
+                Dsim    : dd_range;
+                useoptmat,
+                writeoptout,
+                outgmmvcm,
+                onlyentry,
+                simmax,
+                holdvalue,
+                holdreal,
+                outpars,
+                outmom,
+                outdist   : boolean;
+                cv_offset : array[em_range] of integer;
+                smpwght,
+                compvec : gradvecptr;
+                smlog,
+                smexp,               (* limits for probability smoothing *)
+                vtol                 (* tolerance on infinite horizon convergence *)
+                         : real;
+                next     : pgmparptr;
+                end;
+
+
+const
+      isample            : sample_type = (Zed,Zed,Zed,Zed,One,One,One,One,One,One,Zed);
+      maxM               : u_type = (Zed,mxhome,mxhome,mxpttm,M);
+      ssppars            : ssp_type = (1.0,0.5,3.90,0.0,(Zed,12,12,12,12,12,One));
+      shortflat          : ssp_type = (1.0,1.0,3.90,0.0,(Zed,12,12,4,1,1,One));
+      carrotstick        : ssp_type = (0.8,0.5,3.90,0.0,(Zed,12,12,12,12,12,One));
+      ianb1              : ia_type =  (7.12,2.00,6.50);
+      ianb2              : ia_type =  (7.55,2.00,6.50);
+      iabc1              : ia_type =  (9.82,2.00,7.80);
+      iabc2              : ia_type =  (11.75,2.00,7.80);                     { decimal place fixed Oct2004: 11.75 was 1.175 }
+      trtentry           : Treat_type =  (-17,-11,enter,enter,2);              {8/02: added init. r, fixed}
+      ctrlentry          : Treat_type =  (-17,-11,reality,reality,1);
+      trtrecp            : Treat_type =  (-11,0,qualify,yr3,1);
+      ctrlrecp           : Treat_type =  (-11,0,reality,reality,1);
+(*
+      expprofile         : tlist_type =  (trtentry,trtentry,ctrlentry,trtrecp,trtrecp,ctrlrecp);
+      dlist              : dexplist= (
+                                ( {0: Baseline}
+                                (ianb1,ssppars),
+                                (ianb2,ssppars),
+                                (iabc1,ssppars),
+                                (iabc2,ssppars)
+                                ),
+                                (  {1: Missing Samples}
+                                (ianb1,ssppars),
+                                (ianb2,ssppars),
+                                (iabc1,ssppars),
+                                (iabc2,ssppars)
+                                ),
+                                (   {2: Stocks vs. Flows}
+                                (ianb1,ssppars),
+                                (ianb2,ssppars),
+                                (iabc1,ssppars),
+                                (iabc2,ssppars)
+                                ),
+                                (   {3: Short-lived Flat Bonus }
+                                (ianb1,shortflat),
+                                (ianb2,shortflat),
+                                (iabc1,shortflat),
+                                (iabc2,shortflat)
+                                ),
+                                (   {4: Bonus with 80% Welfare Payments}
+                                (ianb1,carrotstick),
+                                (ianb2,carrotstick),
+                                (iabc1,carrotstick),
+                                (iabc2,carrotstick)
+                                )
+                                );
+
+     trtlist             : texplist= ( expprofile,expprofile,expprofile,expprofile,expprofile );
+*)
+      expprofile         : tlist_type =  ((-17,-11,enter,enter,2),(-17,-11,enter,enter,2),(-17,-11,reality,reality,1),(-11,0,qualify,yr3,1),(-11,0,qualify,yr3,1),(-11,0,reality,reality,1));
+
+      dlist              : dexplist= (
+                                ( {0: Baseline}
+                                ((7.12,2.00,6.50),(1.0,0.5,3.90,0.0,(Zed,12,12,12,12,12,One))),
+                                ((7.55,2.00,6.50),(1.0,0.5,3.90,0.0,(Zed,12,12,12,12,12,One))),
+                                ((9.82,2.00,7.80),(1.0,0.5,3.90,0.0,(Zed,12,12,12,12,12,One))),
+                                ((11.75,2.00,7.80),(1.0,0.5,3.90,0.0,(Zed,12,12,12,12,12,One)))
+                                ),
+                                (  {1: Missing Samples}
+                                ((7.12,2.00,6.50),(1.0,0.5,3.90,0.0,(Zed,12,12,12,12,12,One))),
+                                ((7.55,2.00,6.50),(1.0,0.5,3.90,0.0,(Zed,12,12,12,12,12,One))),
+                                ((9.82,2.00,7.80),(1.0,0.5,3.90,0.0,(Zed,12,12,12,12,12,One))),
+                                ((11.75,2.00,7.80),(1.0,0.5,3.90,0.0,(Zed,12,12,12,12,12,One)))
+                                ),
+                                (   {2: Stocks vs. Flows}
+                                ((7.12,2.00,6.50),(1.0,0.5,3.90,0.0,(Zed,12,12,12,12,12,One))),
+                                ((7.55,2.00,6.50),(1.0,0.5,3.90,0.0,(Zed,12,12,12,12,12,One))),
+                                ((9.82,2.00,7.80),(1.0,0.5,3.90,0.0,(Zed,12,12,12,12,12,One))),
+                                ((11.75,2.00,7.80),(1.0,0.5,3.90,0.0,(Zed,12,12,12,12,12,One)))
+                                ),
+                                (   {3: Short-lived Flat Bonus }
+                                ((7.12,2.00,6.50),(1.0,1.0,3.90,0.0,(Zed,12,12,4,1,1,One))),
+                                ((7.55,2.00,6.50),(1.0,1.0,3.90,0.0,(Zed,12,12,4,1,1,One))),
+                                ((9.82,2.00,7.80),(1.0,1.0,3.90,0.0,(Zed,12,12,4,1,1,One))),
+                                ((11.75,2.00,7.80),(1.0,1.0,3.90,0.0,(Zed,12,12,4,1,1,One)))
+                                ),
+                                (   {4: Bonus with 80% Welfare Payments}
+                                ((7.12,2.00,6.50),(0.8,0.5,3.90,0.0,(Zed,12,12,12,12,12,One))),
+                                ((7.55,2.00,6.50),(0.8,0.5,3.90,0.0,(Zed,12,12,12,12,12,One))),
+                                ((9.82,2.00,7.80),(0.8,0.5,3.90,0.0,(Zed,12,12,12,12,12,One))),
+                                ((11.75,2.00,7.80),(0.8,0.5,3.90,0.0,(Zed,12,12,12,12,12,One)))
+                                ),
+                                (   {5: Increased Surveillance, SSP+ but no SSP subsidy }
+                                ((7.12,2.00,6.50),(1.0,0.0,3.90,1.0,(Zed,12,12,12,12,12,One))),
+                                ((7.55,2.00,6.50),(1.0,0.0,3.90,1.0,(Zed,12,12,12,12,12,One))),
+                                ((9.82,2.00,7.80),(1.0,0.0,3.90,1.0,(Zed,12,12,12,12,12,One))),
+                                ((11.75,2.00,7.80),(1.0,0.0,3.90,1.0,(Zed,12,12,12,12,12,One)))
+                                )
+
+                                );
+
+
+     trtlist             : texplist= ( ((-17,-11,enter,enter,2),(-17,-11,enter,enter,2),(-17,-11,reality,reality,1),(-11,0,qualify,yr3,1),(-11,0,qualify,yr3,1),(-11,0,reality,reality,1)),
+                                       ((-17,-11,enter,enter,2),(-17,-11,enter,enter,2),(-17,-11,reality,reality,1),(-11,0,qualify,yr3,1),(-11,0,qualify,yr3,1),(-11,0,reality,reality,1)),
+                                       ((-6,-5,enter,enter,2),(-6,-5,enter,enter,2),(-6,-5,reality,reality,1),(-5,0,qualify,yr3,1),(-5,0,qualify,yr3,1),(-5,0,reality,reality,1)),
+                                       ((-17,-11,enter,enter,2),(-17,-11,enter,enter,2),(-17,-11,reality,reality,1),(-11,0,qualify,yr3,1),(-11,0,qualify,yr3,1),(-11,0,reality,reality,1)),
+                                       ((-17,-11,enter,enter,2),(-17,-11,enter,enter,2),(-17,-11,reality,reality,1),(-11,0,qualify,yr3,1),(-11,0,qualify,yr3,1),(-11,0,reality,reality,1)),
+                                       ((-17,-11,enter,enter,2),(-17,-11,enter,enter,2),(-17,-11,reality,reality,1),(-11,0,qualify,yr3,1),(-11,0,qualify,yr3,1),(-11,0,reality,reality,1)) );

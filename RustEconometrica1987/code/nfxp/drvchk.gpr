@@ -1,0 +1,44 @@
+"DRVCHK.GPR: derivative checker for NFXP.GPR";
+"Version 4, October, 2000. By John Rust, Yale University";
+
+nstep=10; 
+{modnum,nvec,cstr}=display(modnum); dm=modnum[1,8];
+print "fixed point dimension= ";; n;
+closeall; ndlp=zeros(dm,1); rtol=.00001; ndchk=1; cstp=0;
+if modnum[1,4] == 0; print "beta value 0<bet<1             ";; bet; endif;
+if modnum[1,3] == 1; print "transition probabilities";; p[1:modnum[1,5],1]';
+endif;
+print "derivative check at parameter vector";  q';
+print "enter delta value for numerical derivatives";; del=con(1,1);
+if bet > 0;
+print "enter initial number of contraction steps  ";; cstp=con(1,1); endif;
+print; lcstp=cstp; minstp=lcstp; i=0; x=seqa(1,1,n);
+open f1=bdt for read; nr=rowsf(f1); pass=(nr-(nr%t))/t; nr=nr%t;
+
+start: 
+
+function;
+if bet == 0; pk=1/(1+exp(c-tr-c[1,1])); goto core; endif;
+fpmx;
+ffxp;
+
+core: dll=zeros(dm,1); ll=0; ii=1;
+do until eof(f1); if ii > pass; nt=nr; else; nt=t; endif;
+dt=readr(f1,t); ii=ii+1;
+if modnum[1,7] == 0; call eval; else; call eval1; endif;
+endo; y=seekr(f1,1);
+
+if i == 0; oll=ll; nstep=1; cstp=4;
+print "analytical gradients"; dll'; sll=dll;
+print "initial likelihood";; oll;
+q[1,1]=q[1,1]+del; minstp=2;
+i=-1; goto start;
+elseif -i <= dm;
+ndlp[-i,1]=(ll-oll)/del; print; print "numerical deriv";; -i;; ndlp[-i,1];
+print "likelihood";; ll;
+q[-i,1]=q[-i,1]-del;
+if -i < dm; q[-i+1,1]=q[-i+1,1]+del; i=i-1; goto start; endif; endif;
+print "analytical gradients at del";; del; sll';
+print "numerical gradients"; ndlp';
+print "difference"; (sll-ndlp)'; closeall;
+

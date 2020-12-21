@@ -1,0 +1,7 @@
+@ U.GPR: Calculates underlying utility function from estimated value function @
+@ Version 1, February, 1987. By John Rust, University of Wisconsin, Madison   @
+@                                                                             @
+proc u(v,b); local v,v1;
+v1=exp(-tr-v[1,1]);
+retp(-v-b*e(ln(exp(-v)+v1))); endp;
+

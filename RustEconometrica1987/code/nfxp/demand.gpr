@@ -1,0 +1,81 @@
+"DEMAND.GPR: computes mean demand for bus engines as function of price";
+"            Version 3, October 2000. By John Rust, Yale University";
+
+swj="q"; if typecv(swj) == 0;
+"VARIABLES NOT DEFINED. Must run SETUP.GPR to initialize variables";
+goto fin; endif; swj=0;
+"This program computes the expected demand for bus engines over a fixed";
+"interval of time as a function of the price of new bus engines, tr.";
+"The estimated demand function depends on the discount factor and the ";
+"parameters of the cost function specified in the program SETUP.GPR, or";
+"estimated by the program NFXP.GPR. The program also computes expected";
+"mileage at overhaul as a function of tr. In fact, the program computes";
+"the entire equilibrium distribution for (x,i) as a function of tr, so";
+"the user can trace out how the entire distribution of demand for bus";
+"engines shifts as a function of tr.";
+"";
+"By final value theorem, (1-z)*inv(I-z*P) is a matrix with rows";
+"approximately equal to the stationary distribution of the markov";
+"process with transition probability P when z is close to 1. You";
+"must specify a value of z close to 1 to generate initial estimates.";
+"";
+"enter z<1 with z close to 1 (i.e. z=.999999999)";; y=con(1,1);
+"enter convergence tolerance for stationary distribution";;
+ctol=con(1,1); print; tr=q[1,1];
+"enter period (months) for mean demand calculation ";; lfe=con(1,1);
+"enter lower bound for replacement cost, tr        ";; df0=con(1,1);
+"enter upper bound for replacement cost, tr        ";; df1=con(1,1);
+"enter number of points to evaluate demand function";; nr=con(1,1);
+print;
+"enter number of contraction iterations            ";; cstp=con(1,1);
+print; minstp=cstp-2; rtol=.000001;
+dt=zeros(nr,3); dt[.,1]=(seqa(1,1,nr)-1)*(df1-df0)/(nr-1)+df0;
+#include "pmx.gpr";
+g=1; do until g > nr; tr=dt[g,1];
+if (g > 1) and (abs(dt[g,1]-dt[g-1,1]) < .01); cstp=4; minstp=2;
+elseif nwt > 2 and swj >= cstp; cstp=cstp+10; minstp=2;
+elseif nwt > 2 and swj < cstp; rtol=.5*rtol; minstp=minstp+10;
+elseif ftol < .0000001 and swj >= cstp; cstp=cstp-10; minstp=2;
+elseif ftol < .0000001 and swj < cstp; rtol=2*rtol; minstp=2; endif;
+if cstp > 100; cstp=100; elseif cstp < 0; cstp=0; endif;
+"argument number";; g;; "replacement cost";; tr;
+if bet == 0; pk=1/(1+exp(c-tr-c[1,1])); goto eval;
+else; #include "fp.gpr"; print; endif;
+eval:
+pl=(1-sumc((p[.,2:n].*pk[2:n,1]')'))~(p[.,2:n].*pk[2:n,1]');
+pp=((1-y)*ones(n,1)/n)/(eye(n)-y*pl)';
+pp=pp'/sumc(pp); print;
+tol=maxc(abs(pp-pp*pl)'); "tolerance for initial estimate of pp";; tol;
+if tol < ctol; goto endloop; endif; print;
+"updating estimate of pp by successive approximations"; print;
+loop: i=1;
+do until i > 100; pp=pp*pl; i=i+1; endo;
+tol=maxc(abs(pp-pp*pl)'); "tolerance after 100 iterations";; tol;
+if tol > ctol; goto loop; else; print; "convergence achieved"; endif;
+print;
+endloop:
+pp1=pp; pp1[1,1]=p0*pp[1,1]*pk[1,1];
+pp2=(pp1.*(1-pk)')./pk';
+"expected number of bus engines replaced    ";; ls=lfe*sumc(pp2'); ls;
+"mean lifetime of bus engine (months)       ";; 1/sumc(pp2');
+"mean mileage at overhaul                   ";;
+lll=a0*sumc(x.*pp2')/(n*sumc(pp2')); lll;
+"mean mileage since last replacement        ";;
+a0*sumc(x.*pp1')/(n*sumc(pp1'));
+print; dt[g,2]=ls; dt[g,3]=lll; g=g+1; endo;
+clear pl; tr=q[1,1]; print;
+"enter delay time for plots (seconds)";; maxtime=con(1,1);
+rx="replacement cost"; ry="expected replacement demand";
+inn=1;
+start:
+#include "plot.inc";
+plot:
+px=dt[.,1];
+if inn == 1; py=dt[.,2];
+elseif inn == 2; py=dt[.,3]; ry="mean mileage at overhaul"; endif;
+return;
+endplot:
+inn=inn+1;
+if inn == 2; goto start; endif;
+format /m3 /ro 14, 6; p=zeros(5,1); p[1,1]=p0; p[2,1]=p1; p[3,1]=1-p0-p1;
+fin:

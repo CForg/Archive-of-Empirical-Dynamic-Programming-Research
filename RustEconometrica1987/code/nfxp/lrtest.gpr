@@ -1,0 +1,52 @@
+print;
+print "LRTEST.GPR: computes likelihood ratio and chi-squared specification";
+print "tests of hypothesis that discretized mileage process is homogeneous";
+print "Preliminary version, John Rust, September, 1985.";
+
+ string=cdir("");
+ string=strsect(string,1,strlen(string)-4);
+ #IFUNIX
+    string=string$+"/dat";
+ #ELSE
+    string=string$+"\\dat";
+ #ENDIF
+
+ load path=^string;
+
+tt=hsec; bt=9; bg=1; rlsav=0; msav=0; chisav=0;
+start:
+if bg == 1; load dt=b:g870; print "bus group g870";;
+elseif bg > 4; goto fin;
+elseif bg == 5; load dt=b:a530874; print "bus group 5308-74";;
+elseif bg == 4; load dt=b:a530875; print "bus group 5308-75";;
+elseif bg == 3; load dt=b:t8h203; print "bus group t8h203";;
+elseif bg == 2; load dt=b:rt50; print "bus group rt50";;
+else; goto fin; endif; print "time";; hsec-tt;
+ov1=dt[6,.]; ov2=dt[9,.];
+n=rows(dt); m=cols(dt); msav=msav+m;
+dtx=ceil(dt[12:n,.]/5000);
+dtx=dtx[2:n-11,.]-dtx[1:n-12,.];
+p0=meanc((dtx .== 0)); p1=meanc((dtx .== 1));
+rll=sumc((dtx .== 0)*ln(pps[1,1])+(dtx .== 1)*ln(pps[2,1])
++(dtx .== 2)*ln(pps[3,1]));
+print "current group restricted loglikelihood";; sumc(rll);
+print "cumulative restricted loglikelihood";; rlsav=rlsav+sumc(rll); rlsav;
+chistat=(n-12)*(sumc(((p0-pps[1,1]).^2)/pps[1,1]+((p1-pps[2,1]).^2)/pps[2,1]));
+print "current group chi-square statistic";; chistat;
+print "cumulative chi-square statistic";; chisav=chisav+chistat; chisav;
+bg=bg+1; goto start;
+fin:
+print "cumulative unrestricted loglikelihood";; llsav;
+print "cumulative restricted   loglikelihood";; rlsav;
+print "between group lr-ratio test";
+print "  -2*loglikelihood ratio";; stat=-2*(rlsav-llsav); stat;
+print "  marginal significance level";; cdfchic(stat,(msav-1)*3);
+print "  degrees of freedom";; (msav-1)*3;
+print "between group chi-square statistic";; chisav;
+print "  marginal significance level";; cdfchic(chisav,(msav-1)*2);
+print "  degrees of freedom";; (msav-1)*2;
+print "total time";; hsec-tt;
+
+
+
+

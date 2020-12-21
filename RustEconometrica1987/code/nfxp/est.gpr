@@ -1,0 +1,24 @@
+new;
+"MNLEST.GPR: program to compute maximum likelihood estimates of
+             a trinomial logit model of reactor operating status
+             transitions using data produced by fdat.gpr and
+	     variables in fdat.lst
+
+             John Rust, Yale University, July, 1997. ";
+
+   load path=\gauss;
+              
+   infile="gov";
+   inlist="gov.lst";
+   outfile="gov.out";
+   qsav="gov";
+
+   {iloc,ivar,dvar,dloc,cloc}=select(inlist);
+
+   q=zeros(rows(ivar),1);
+
+/*   call drvchk(dloc,iloc,cloc,q,infile,15000,outfile,qsav,&evalblg);
+*/
+   call max(dvar,dloc,ivar,iloc,cloc,q,infile,500,outfile,qsav,&evalblg);
+  
+

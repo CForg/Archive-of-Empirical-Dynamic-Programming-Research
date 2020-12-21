@@ -1,0 +1,36 @@
+simp x
+each eval z
+  z
+  z
+!
+simp x
+unscale grad  each eval gmat z
+  z
+  z
+!
+simp x
+each z
+n38 r10 z
+x0.2 z
+*
+simp x
+each z
+n38 r12 z
+x-0.15  z
+*
+simp x
+each grad z
+n9999 r99 z
+x0.05  z
+!
+grad x
+unscale eval gmat each z
+b6  z
+x0.15 z
+!
+grad x
+grad each z
+b6  z
+x0.15 z
+!
+

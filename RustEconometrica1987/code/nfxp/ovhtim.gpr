@@ -1,0 +1,80 @@
+print "OVHTIM.GPR: program which computes basic sample statistics on the";
+print "time and mileage at which bus engine overhaul occurs";
+print "Version 1, September 1985. By John Rust, Econ Dept Univ of Wisconsin";
+
+ string=cdir("");
+ string=strsect(string,1,strlen(string)-4);
+ #IFUNIX
+    string=string$+"/dat";
+ #ELSE
+    string=string$+"\\dat";
+ #ENDIF
+
+ load path=^string;
+
+bg=1;
+start:
+if bg == 1; load dt=g870; print "bus group 870";
+elseif bg == 2; load dt=rt50; print "bus group rt50";
+elseif bg == 3; load dt=t8h203; print "bus group t8h203";
+elseif bg == 4; load dt=a530875; print "bus group a530875";
+elseif bg == 5; load dt=a530872; print "bus group a530872";
+elseif bg == 6; load dt=a452372; print "bus group a452372";
+elseif bg == 7; load dt=a452374; print "bus group a452374";
+else; load dt=a530874; print "bus group a530874"; endif;
+nrow=rows(dt);
+byr=dt[3,.]; bmon=dt[2,.]; ov1yr=dt[5,.]; ov1mon=dt[4,.];
+ov2yr=dt[8,.]; ov2mon=dt[7,.]; ov1mil=dt[6,.]; ov2mil=dt[9,.];
+ov2mil=(ov2mil-ov1mil).*(ov2mil .> 0);
+ovtim1=(ov1yr .> byr).*(12*(ov1yr-byr-1)+13+ov1mon-bmon)+
+(ov1yr .== byr).*(ov1mon-bmon+1);
+ovtim2=(ov2yr .> ov1yr).*(12*(ov2yr-ov1yr-1)+13+ov2mon-ov1mon)+
+(ov2yr .== ov1yr).*(ov2mon-ov1mon+1);
+ovtim2=ovtim2.*(ov2yr .> 0);
+covmil=((dt[nrow,.].*(ov1yr .== 0))+((dt[nrow,.]-dt[9,.]).*(ov2yr .> 0))+
+((dt[nrow,.]-ov1mil).*(ov2yr .== 0 .and ov1yr .> 0)))';
+covmil=packr(miss(covmil,0));
+covtim=(((12*(84-byr)+18-bmon).*(ov1yr .== 0))+((12*(84-ov2yr)+18-ov2mon).*
+(ov2yr .> 0))+((12*(84-ov1yr)+18-ov1mon).*(ov2yr .== 0 .and ov1yr .> 0)))';
+covtim=packr(miss(covtim,0));
+ovmil=ov1mil'|ov2mil';
+ovtim=ovtim1'|ovtim2';
+ovmil=packr(miss(ovmil,0)); ovtim=packr(miss(ovtim,0));
+print "uncensored data: nobs=";; rows(ovmil);
+print "max, min overhaul mileage";; maxc(ovmil);; minc(ovmil);
+print "mean overhaul mileage";;
+meanc(ovmil); k=(maxc(ovmil) > minc(ovmil));
+if k > 0; print "standard deviation";; stdc(ovmil); endif;
+print "max, min overhaul time";; maxc(ovtim);; minc(ovtim);
+print "mean overhaul time";;
+meanc(ovtim); k=(maxc(ovtim) > minc(ovtim));
+if k > 0; print "standard deviation";; stdc(ovtim); endif;
+print "censored data: nobs=";; rows(covmil);
+print "max, min censored mileage";; maxc(covmil);; minc(covmil);
+print "mean censored mileage";; meanc(covmil); k=(maxc(covmil) > minc(covmil));
+if k > 0; print "standard deviation";; stdc(covmil); endif;
+print "max, min censored time";; maxc(covtim);; minc(covtim);
+print "mean censored time";; meanc(covtim); k=(maxc(covtim) > minc(covtim));
+if k > 0; print "standard deviation";; stdc(covtim); endif;
+if bg == 1; sovmil=ovmil; sovtim=ovtim; scovmil=covmil; scovtim=covtim;
+else; sovmil=sovmil|ovmil; sovtim=sovtim|ovtim;
+scovmil=scovmil|covmil; scovtim=scovtim|covtim; endif;
+bg=bg+1; if bg < 9; goto start; endif;
+print "full sample statistics";
+sovmil=packr(miss(sovmil,0)); sovtim=packr(miss(sovtim,0));
+scovmil=packr(miss(scovmil,0)); scovtim=packr(miss(scovtim,0));
+print "uncensored data: nobs=";; rows(sovmil);
+print "max, min overhaul mileage";; maxc(sovmil);; minc(sovmil);
+print "mean overhaul mileage";; meanc(sovmil); k=(maxc(sovmil) > minc(sovmil));
+if k > 0; print "standard deviation";; stdc(sovmil); endif;
+print "max, min overhaul time";; maxc(sovtim);; minc(sovtim);
+print "mean overhaul time";; meanc(sovtim); k=(maxc(sovtim) > minc(sovtim));
+if k > 0; print "standard deviation";; stdc(sovtim); endif;
+print "censored data: nobs=";; rows(scovmil);
+print "max, min censored mileage";; maxc(scovmil);; minc(scovmil);
+print "mean censored mileage";; meanc(scovmil);
+print "standard deviation";; stdc(scovmil);
+print "max, min censored time";; maxc(scovtim);; minc(scovtim);
+print "mean censored time";; meanc(scovtim);
+print "standard deviation";; stdc(scovtim);
+

@@ -1,0 +1,30 @@
+README file for bus data
+
+This directory contains data on odometer readings and dates of
+bus engine replacements of 162 buses in the fleet of the Madison
+Metropolitan Bus Company that were in operation sometime during 
+the period December, 1974 to May, 1985. The documentation of
+the  contents of the files is described in more detail in chapter
+4 of the documentation manual. 
+
+The directory contains the following files, each
+corresponding to a different model/vintage of bus
+in the Madison Metro fleet:
+
+D309.ASC     110x4 matrix for Davidson model 309 buses
+G870.ASC     36x15 matrix for Grumman model 870 buses
+RT50.ASC     60x4  matrix for Chance model RT50 buses 
+T8H203.ASC   81x48 matrix for GMC model T8H203 buses
+A452372.ASC 137x18 matrix for GMC model A4523 buses, model year 1972 
+A452374.ASC 137x10 matrix for GMC model A4523 buses, model year 1974 
+A530872.ASC 137x18 matrix for GMC model A5308 buses, model year 1972 
+A530874.ASC 137x12 matrix for GMC model A5308 buses, model year 1974 
+A530875.ASC 128x37 matrix for GMC model A5308 buses, model year 1975 
+
+The data in each file are vectorized into  a single column: e.g.
+D309.ASC is a 440x1 vector consisting of the columns
+of a 110x4 matrix stacked on top of each other consecutively. 
+
+The program config.gpr converts these  ascii files into Gauss
+data matrix files (with fmt file extensions) for subsequent
+use by the NFXP algorithm.

@@ -1,0 +1,33 @@
+print;
+print "BANACH.GPR: computes the `cylinder distributions' about the estimated";
+print "hazard and value functions by Monte Carlo simulation.";
+print "Version 1, September 1985. By John Rust Econ Dept Univ of Wisconsin";
+print;
+sig=chol(h); sp=zeros(2*n,1); pp=0; ppk=0; interval=zeros(2*n,1);
+print "confidence interval simulation for value function";
+print "number of simulations";; nsim=con(1,1);
+interval[1:n,1]=seqa(1,1,n)/40; interval[n+1:2*n,1]=seqa(1,1,n)/2000;
+print "value function intervals"; interval[1:n,1]';
+print "hazard function intervals"; interval[n+1:2*n,1]';
+dv=((zeros(n,1)~dc)-dev[.,1:2]-meanc((zeros(n,1)~dc)-dev[.,1:2])');
+dpk=pk.*(pk-1).*((dv[1,.]-dv)+(1~0));
+stdp=sqrt(diag(dpk*h[1:2,1:2]*dpk'));
+stdv=sqrt(diag(dv*h[1:2,1:2]*dv'));
+print "one standard deviation band for value function"; stdv';
+print "one standard deviation band for hazard function"; stdp';
+j=1; print "begin simulations"; ttt=hsec;
+do until j > nsim;
+sim=(dv|dpk)*sig*rndn(2,1);
+sp[1:n,1]=(maxc(abs(sim[1:n,1])) .< interval[1:n,1])+sp[1:n,1];
+sp[n+1:2*n,1]=(maxc(abs(sim[n+1:2*n,1])) .< interval[n+1:2*n,1])+sp[n+1:2*n,1];
+pp=(abs(sim[1:n,1]) < stdv)+pp;
+ppk=(abs(sim[n+1:2*n,1]) < stdp)+ppk;
+j=j+1; endo;
+print "total execution time";; hsec-ttt;
+print "number of simulations";; nsim;
+print "hazard confidence band probability";; ppk=ppk/nsim; ppk;
+print "value function confidence band probability";; pp=pp/nsim; pp;
+print "cylinder distribution: value function"; sp=sp/nsim; sp[1:n,1]';
+print "cylinder distribution: hazard function"; sp[n+1:2*n,1]';
+
+

@@ -1,0 +1,16 @@
+@PMX.GPR: parameter update of markov transition probability matrix @
+@Version 1, September 1985. By John Rust, Econ Dept. UW-Madison    @
+l=1; p0=p[1,1]; p1=p[2,1]; p=zeros(n,n);
+a3=p0~p1~(1-p0-p1);
+a2=p0~(1-p0);
+do until l > n;
+if l < n-1; p[l:l,l:l+2]=a3;
+elseif l == n-1; p[l:l,l:n]=a2;
+elseif l == n; p[l:l,l:n]=1;
+endif;
+l=l+1;
+endo;
+
+
+
+

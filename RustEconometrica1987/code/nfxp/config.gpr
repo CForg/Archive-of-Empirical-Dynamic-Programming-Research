@@ -1,0 +1,82 @@
+/* CONFIG.GPR: program to configure data sets for Unix or Intel formats
+               Version 1, November 1995, John Rust University of Wisconsin */
+
+
+ string=cdir("");
+ string=strsect(string,1,strlen(string)-4);
+ #IFUNIX
+    string=string$+"/dat";
+ #ELSE
+    string=string$+"\\dat";
+ #ENDIF
+
+ "Reading bus data from "$+string;
+ "Converting to Gauss FMT files";
+
+ load path=^string;
+ save path=^string;
+
+ format /rd,5,0;
+
+ "d309 buses";
+ load d309[]=d309.asc;
+ if (rows(d309) /= 4*110); "Error in d309.asc: expecting rows=";; 4*110;
+ endif;
+ d309=reshape(d309,4,110)';
+ save d309;
+
+ "g870 buses";
+ load g870[]=g870.asc;
+ if (rows(g870) /= 15*36); "Error in g870.asc: expecting rows=";; 15*36;
+ endif;
+ g870=reshape(g870,15,36)';
+ save g870;
+ 
+ "rt50 buses";
+ load rt50[]=rt50.asc;
+ if (rows(rt50) /= 60*4); "Error in rt50.asc: expecting rows=";; 60*4;
+ endif;
+ rt50=reshape(rt50,4,60)';
+ save rt50;
+
+ "t8h303 buses";
+ load t8h203[]=t8h203.asc;
+ if (rows(t8h203) /= 81*48); "Error in t8h203.asc: expecting rows=";; 81*48;
+ endif;
+ t8h203=reshape(t8h203,48,81)';
+ save t8h203;
+
+ "a452372 buses";
+ load a452372[]=a452372.asc;
+ if (rows(a452372) /= 18*137); "Error in a452372.asc: expecting rows=";; 18*137;
+ endif;
+ a452372=reshape(a452372,18,137)';
+ save a452372;
+
+ "a452374 buses";
+ load a452374[]=a452374.asc;
+ if (rows(a452374) /= 10*137); "Error in a452374.asc: expecting rows=";; 10*137;
+ endif;
+ a452374=reshape(a452374,10,137)';
+ save a452374;
+
+ "a530872 buses";
+ load a530872[]=a530872.asc;
+ if (rows(a530872) /= 18*137); "Error in a530872.asc: expecting rows=";; 18*137;
+ endif;
+ a530872=reshape(a530872,18,137)';
+
+ "a530874 buses";
+ load a530874[]=a530874.asc;
+ if (rows(a530874) /= 12*137); "Error in a530874.asc: expecting rows=";; 12*137;
+ endif;
+ a530874=reshape(a530874,12,137)';
+ save a530874;
+
+ "a530875 buses";
+ load a530875[]=a530875.asc;
+ if (rows(a530875) /= 128*37); "Error in a530875.asc: expecting rows=";; 128*37;
+ endif;
+ a530875=reshape(a530875,37,128)';
+ save a530875;
+

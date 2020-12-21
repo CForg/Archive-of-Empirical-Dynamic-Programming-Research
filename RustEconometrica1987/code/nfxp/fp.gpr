@@ -1,0 +1,46 @@
+@ FP.GPR: contraction fixed point algorithm: stripped-down version    @
+@ Version 1, September 1985. By John Rust, Econ Dept. UW-Madison      @
+@                                                                     @
+@ *** PHASE 1: CONTRACTION ITERATIONS                                 @
+@                                                                     @
+print "   begin contraction iterations"; tt=hsec; nwt=0; j=0;
+tol1=1; mm=-meanc(c)+bet*meanc(ev); c=c+mm*(1-bet); ev=ev-mm;
+begin: j=j+2;
+ev1=ln(exp(-c+bet*ev)+exp(-tr-c[1,1]+bet*ev[1,1]));
+ev1=p*ev1;
+mm=-meanc(c)+bet*meanc(ev1); c=c+mm*(1-bet); ev1=ev1-mm;
+ev=ln(exp(-c+bet*ev1)+exp(-tr-c[1,1]+bet*ev1[1,1]));
+ev=p*ev;
+tol=maxc(abs(ev-ev1)); mm=tol/tol1; tol1=tol;
+if pr == 1; tol;; mm;; j; endif;
+if tol < .001; goto newt; elseif j <= minstp; goto begin;
+elseif (j < cstp and mm < bet*bet-rtol); goto begin; endif;
+@                                                                     @
+@ *** PHASE 2: NEWTON-KANTOROVICH ITERATIONS                          @
+@                                                                     @
+newt: if pr == 0; tol;; mm;; j; endif; nwt=1; swj=j;
+print "   begin Newton-Kantorovich iterations at time";; hsec-tt;
+mm=-meanc(c)+bet*meanc(ev); c=c+mm*(1-bet); ev=ev-mm;
+ev1=ln(exp(-c+bet*ev)+exp(-tr-c[1,1]+bet*ev[1,1]));
+ev1=p*ev1;
+qmat: pk=1/(1+exp(c-bet*ev-tr-c[1,1]+bet*ev[1,1]));
+ev1=ev-(ev-ev1)/
+(eye(n)-bet*((1-sumc((p[.,2:n].*pk[2:n,1]')'))~(p[.,2:n].*pk[2:n,1]')));
+tol=maxc(abs(ev-ev1));
+mm=-meanc(c)+bet*meanc(ev1); c=c+mm*(1-bet); ev1=ev1-mm;
+ev=ln(exp(-c+bet*ev1)+exp(-tr-c[1,1]+bet*ev1[1,1]));
+ev=p*ev;
+tol;; tol=maxc(abs(ev-ev1)); tol; if nwt == 1; ftol=tol; endif;
+if tol < .0000000001; goto fin; endif; nwt=nwt+1;
+pk=1/(1+exp(c-bet*ev1-tr-c[1,1]+bet*ev1[1,1]));
+ev=ev1-(ev1-ev)/
+(eye(n)-bet*((1-sumc((p[.,2:n].*pk[2:n,1]')'))~(p[.,2:n].*pk[2:n,1]')));
+tol=maxc(abs(ev-ev1));
+mm=-meanc(c)+bet*meanc(ev); c=c+mm*(1-bet); ev=ev-mm;
+ev1=ln(exp(-c+bet*ev)+exp(-tr-c[1,1]+bet*ev[1,1])); ev1=p*ev1;
+tol;; tol=maxc(abs(ev-ev1)); tol;
+if tol < .0000000001; goto fin; else; nwt=nwt+1; goto qmat; endif;
+fin:
+print "   fix point time";; hsec-tt;
+
+

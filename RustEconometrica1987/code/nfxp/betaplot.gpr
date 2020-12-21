@@ -1,0 +1,83 @@
+/* BETAPLOT.GPR: program to plot posterior distributions from
+		 a Bernoulli-Beta conjugate family. 
+
+		 John Rust, Yale University, January, 1997 */
+
+library pgraph;
+graphset;
+
+    x=seqa(.001,.001,999);    /* points on the x axis to plot prior distribution */
+
+    a=3;  /* set hyperparameters of Beta distribution */
+    b=1;
+
+ /* now compute beta prior distribution over the grid of x points */
+
+    betaden=gamma(a+b)*(x^(a-1)).*((1-x)^(b-1))/(gamma(a)*gamma(b));
+
+    truethet=.3;
+
+    n1=5;
+    n2=50;
+    n3=150;
+
+ /* now compute beta posterior distribution over the grid of x points */
+
+    randat=rndu(maxc(n1|n2|n3),1);
+
+    d=(randat[1:n1].<=truethet);
+    a1=a+sumc(d);
+    b1=b+n1-sumc(d);
+    postden1=gamma(a1+b1)*(x^(a1-1)).*((1-x)^(b1-1))/(gamma(a1)*gamma(b1));
+
+    d=(randat[1:n2].<=truethet);
+    a1=a+sumc(d);
+    b1=b+n2-sumc(d);
+    postden2=gamma(a1+b1)*(x^(a1-1)).*((1-x)^(b1-1))/(gamma(a1)*gamma(b1));
+
+    d=(randat[1:n3].<=truethet);
+    a1=a+sumc(d);
+    b1=b+n3-sumc(d);
+    postden3=gamma(a1+b1)*(x^(a1-1)).*((1-x)^(b1-1))/(gamma(a1)*gamma(b1));
+
+    /* Now plot out the prior and posterior densities */
+
+#IFUNIX  /* this part is only necessary if you are running on
+	    a Unix system (like I am). It creates the window
+	    where the plot is printed. You don't need to worry
+	    about this code for Dos/Windows systems */
+
+   let v = 100 100 640 480 0 0 1 6 15 0 0 2 2;
+      wxy = WinOpenPQG(v,"XY Plot","XY");
+	 call WinSetActive(wxy);
+
+#ENDIF
+
+   _pdate="";
+   title("Beta-Bernoulli Prior and Posterior Densities\L True Theta="$+ftos(truethet,"*.*lf",4,2));
+   ylabel("Density at x");
+   xlabel("X value");
+          /* the following commands put legends on the plot so you
+	     can tell which density curve is which */
+   _plegctl=2~5~4.2~4.3;
+   _plegstr="Prior density (a="$+ftos(a,"*.*lf",4,2)$+", b="$+ftos(b,"*.*lf",4,2)$+") \000Posterior density (n="$+ftos(n1,"*.*lf",3,0)$+")";
+   _plegstr=_plegstr$+"\000Posterior density (n="$+ftos(n2,"*.*lf",3,0)$+")\000Posterior density (n="$+ftos(n3,"*.*lf",3,0)$+")";
+          /* these commands specify the plotting bounds for the
+	     x and y axes */
+
+   y=betaden~postden1~postden2~postden3;
+   xtics(0,1,.1,3);
+   ytics(0,maxc(maxc(y)),1,1);
+
+	 /* finally this command actually does the plot */
+
+   xy(x,y);
+
+#IFUNIX
+ 
+ call WinSetActive(1);
+  
+#ENDIF
+
+
+

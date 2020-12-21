@@ -1,0 +1,238 @@
+"";
+"CHGMOD.GPR: change model parameters of nested fixed point algorithm";
+"Version 3, December 1988. By John Rust, University of Wisconsin";
+
+format /rz, 8,8;
+""; print "model selection:"; print; a1=-1;
+
+@                                                                             @
+@ *** INITIALIZE VARIABLES                                                    @
+@                                                                             @
+
+swj="p"; if typecv(swj) == 0;
+print "WARNING: Must run STORDAT.GPR in order to create data set BDT.DAT.";
+else; swj="itol1"; if typecv(swj) == 0; maxstp=20; modnum[1,1:4]=2~1~1~0; d=.5;
+t=500; maxls=6; minls=0; ss2=1; itol1=.999; bet=.9999; swj=1; itol2=1e-12;
+ctol=itol2; spr=0; hpr=1; nstep=10; maxlfe=200; dm=2;
+q=11|3; qmax=1000|1000; qtol=.01|.01; qtol1=10|10;
+mincstp=2; maxcstp=100; ltol=1e-5; i=1; ttt=0; tt=0; endif; endif; swj=1;
+
+@                                                                            @
+@ ***  PRINT OUT EXISTING VARIABLE SETTINGS                                  @
+@                                                                            @
+
+
+"fixed point dimension";; n; if modnum[1,3] == 1;
+"estimating partial likelihood function P(i|x)"; else;
+"estimating full likelihood function P(i|x)p(x|x(-1),i(-1))"; endif;
+"maximum value of [x(t)-x(t-1)] in BDT.DAT data set";; modnum[1,5];
+if modnum[1,4] == 0; print "beta parameter fixed at bet=";; bet; endif;
+if modnum[1,1] <= 0; modnum[1,1]=2; endif;
+
+{modnum,nvec,cstr}=display(modnum);
+
+start:
+
+dm=modnum[1,8]; ""; "";
+"are these the settings you want? (1=yes 0=no)";; swj=con(1,1); "";"";
+
+
+if swj == 0;
+
+"enter 1 if you wish to estimate partial likelihood P(i|x)";
+"enter 2 if you wish to estimate full likelihood P(i|x)p(x|x(-1),i(-1))";
+modnum[1,3]=con(1,1);
+"do you want to estimate discount factor `bet'? (1=yes, 0=no)";;
+modnum[1,4]=con(1,1); if modnum[1,4] == 0; "";
+"beta fixed: enter value 0<bet<1";; bet=con(1,1); endif;
+
+"enter desired number of parameters for cost function c(x): 1,2,3,4:";;
+modnum[1,2]=con(1,1); modnum[1,1]=0; "";
+
+{modnum,nvec,cstr}=display(modnum);
+goto start;
+
+endif;
+
+@                                                                            @
+@ *** DISPLAY CURRENT TOLERANCE SETTINGS                                     @
+@                                                                            @
+
+""; "Tolerance settings for NFXP algorithm:"; "";
+
+setting:
+
+"Jacobian update factor d, 0<d<1 for fixed point algorithm";
+"  d=1 corresponds to Newton-Kantorovich method";
+"  d=0 corresponds to Stirling's method        ";
+"  d=.5 corresponds to Werner's method         ";
+"Jacobian update factor d, 0<d<1           ";; d;
+"# rows of data set BDT.DAT read per pass  ";; t;
+"maximum number of lf evaluations          ";; maxlfe;
+"maximum stepsize                          ";; maxstp;
+"maximum linesearch iterations             ";; maxls;
+"minimum linesearch iterations             ";; minls;
+"maximum contraction iterations            ";; maxcstp;
+"minimum contraction iterations            ";; mincstp;
+"maximum number of NK iterations           ";; nstep;
+"switch to step size 1 when grad*direc <   ";; itol2;
+"lf ratio to terminate line search         ";; itol1;
+"initial stepsize                          ";; ss2;
+"outer convergence tolerance               ";; ctol;
+"inner convergence tolerance               ";; ltol;
+"low memory option?     (1=on, 0=off)      ";; lm;
+"print value function?  (1=yes, 0=no)      ";; spr; pr=spr;
+"print hessian matrix?  (1=yes, 0=no)      ";; hpr;
+
+@                                                                            @
+@ *** PROMPT USER FOR NEW TOLERANCE SETTINGS                                 @
+@                                                                            @
+
+"are these settings OK? (1=yes, 0=no)      ";; swj=con(1,1); "";
+
+if swj == 0;
+"enter new parameter values";
+"Jacobian update factor d, 0<d<1              ";; d=con(1,1);
+"# rows of data set BDT.DAT read per pass     ";; t=con(1,1);
+"maximum number of lf evaluations             ";; maxlfe=con(1,1);
+"maximum stepsize                             ";; maxstp=con(1,1);
+"maximum linesearch iterations                ";; maxls=con(1,1);
+"minimum linesearch iterations                ";; minls=con(1,1);
+"maximum contraction iterations               ";; maxcstp=con(1,1);
+"minimum contraction iterations               ";; mincstp=con(1,1);
+"maximum number of NK iterations              ";; nstep=con(1,1);
+"switch to step size 1 if grad*direc <        ";; itol2=con(1,1);
+"lf ratio to terminate line search            ";; itol1=con(1,1);
+"initial stepsize                             ";; ss2=con(1,1);
+"outer convergence tolerance                  ";; ctol=con(1,1);
+"inner convergence tolerance                  ";; ltol=con(1,1);
+"low memory option?      (1=on, 0=off)        ";; lm=con(1,1);
+"print value function?   (1=yes, 0=no)        ";; spr=con(1,1);
+"print hessian matrix?   (1=yes, 0=no)        ";; hpr=con(1,1);
+ "";
+ goto setting;
+endif;
+
+@                                                                            @
+@  *** DISPLAY AND SELECT INITIAL PARAMETER ESTIMATES                        @
+@                                                                            @
+
+m=floor(n/2); clear q11,q22;
+if not(rows(q) == dm); ev=zeros(n,1);
+q=zeros(dm,1); qmax=zeros(dm,1); qtol=zeros(dm,1); qtol1=qtol; endif;
+
+if modnum[1,3] == 2;
+q[dm-modnum[1,5]-modnum[1,7]+1:dm-modnum[1,7],1]=p[1:modnum[1,5],1]; endif;
+"enter 1 to input starting values for q or 0 to use current values";;
+a1=con(1,1);
+
+redo:
+
+if a1 == 1; "";
+
+ "Parameter vector q (enter letter 'l' to leave as is)";
+
+qinpt:
+  $nvec'; q';
+  "are current values OK? (1=yes,0=no) ";; a1=con(1,1);
+  if a1 == 0;
+  i=1; do until i > rows(q);
+  $nvec[i];;q[i];; a1=cons; "";
+  if (a1 $/= "l"); q[i]=stof(a1); endif;
+  i=i+1; endo;
+  goto qinpt;
+  endif;
+  "";"";
+
+
+ "absolute parameter bounds (enter 'l' to leave as is) ";
+  qmax=100*ones(rows(q),1);
+
+qmaxinpt:
+  $nvec'; qmax';
+ "are these values OK? (1=yes,0=no) ";; a1=con(1,1);
+  if a1 == 0;
+  i=1; do until i > rows(q);
+  $nvec[i];;qmax[i];; a1=cons; "";
+  if (a1 $/= "l"); qmax[i]=stof(a1); endif;
+  i=i+1; endo;
+  goto qmaxinpt;
+  endif;
+  "";"";
+
+ "Set minimum contraction steps if q changes less than ('l' to leave as is)";
+  qtol=.1*ones(rows(q),1);
+
+qtolinpt:
+  $nvec'; qtol';
+  "are these values OK? (1=yes, 0=no) ";; a1=con(1,1);
+  if a1 == 0;
+  i=1; do until i > rows(q);
+  $nvec[i];;qtol[i];; a1=cons; "";
+  if (a1 $/= "l"); qtol[i]=stof(a1); endif;
+  i=i+1; endo;
+  goto qtolinpt;
+  endif;
+  "";"";
+
+ "Set maximum contraction steps if q changes by more than ('l' to leave as is)";
+  qtol1=ones(rows(q),1);
+
+qtl1inpt:
+  $nvec'; qtol1';
+  "are these values OK? (1=yes, 0=no) ";; a1=con(1,1);
+  if a1 == 0;
+  i=1; do until i > rows(q);
+  $nvec[i];;qtol1[i];; a1=cons; "";
+  if (a1 $/= "l"); qtol1[i]=stof(a1); endif;
+  i=i+1; endo;
+  goto qtl1inpt;
+  endif;
+  "";"";"";
+
+endif;
+
+ if modnum[1,3:4] == 2~1; print "implied bet value ";;
+   1/(1+exp(q[dm+1-modnum[1,5]-modnum[1,7],1]));
+ elseif modnum[1,3:4] == 1~1; print "implied bet value ";;
+   1/(1+exp(q[dm-modnum[1,7],1]));
+ endif;
+
+   "";"parameter vector q                                "; $nvec'; q';
+   "";"absolute parameter bounds for parameter space     "; $nvec'; qmax';
+   "";"set cstp=mincstp if all components of q are within"; $nvec'; qtol';
+   "";"set cstp=maxcstp if any component of q exceeds    "; $nvec'; qtol1';
+
+if modnum[1,3] == 1;
+      "transition probability estimates ";; p[1:modnum[1,5],1]';
+endif; "";
+
+if modnum[1,4] == 0;
+      "beta value 0<bet<1           :";; bet;
+endif; "";
+
+"are these the values you want? (1=yes, 0=no)"; a1=con(1,1); "";
+
+if a1 == 0; a1=1; goto redo; endif;
+
+""; "SETUP complete: ready to run";;
+if (missrv(typecv("xy"),-1) == 8);  " graphics version, NFXP.GRF";
+else;                    " NFXP.GPR";
+endif;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

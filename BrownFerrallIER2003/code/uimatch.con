@@ -1,0 +1,16 @@
+  np               =    11;
+  max_obs          =    np;   (* not used for this application *)
+  msg_size         =    np;   (* must be max(np,max_obs)  *)
+
+max_nw=40;
+max_neps=30;
+yrwk=13;
+rho=0.977;
+kappa=3;
+n_moments=18;
+
+seed=25;
+
+obs=100000;
+mxperiod=5000; 
+

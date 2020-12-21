@@ -1,0 +1,90 @@
+print;
+print "SIMDAT.GPR: creates simulated data set BDT.DAT from an a priori model";
+print "Version 1, September 1985. By John Rust, Econ Dept. Univ of Wisconsin";
+print;
+@                                                                     @
+@ *** SELECTION OF A PRIORI STRUCTURAL MODEL TO GENERATE DATA         @
+@                                                                     @
+print "1. select an a priori structural model to generate data";
+swj="pk"; if typecv(swj) == 0; n=90; dm=2; q=13|6; bet=.95; p0=.70;
+p1=.30; modnum=2~1~1~0~2~1~0~0; qmax=1000|1000; qtol=.01|.01; itol1=.999;
+itol2=1e-11; ctol=itol2; spr=0; pr=0; hpr=1; ndchk=1; i=1; err=0;
+maxstp=20; minls=0; maxls=6; ss2=1; endif; swj=1;
+print; print "current model:"; print;
+start:
+modnum=display(modnum); dm=modnum[1,8];
+if swj == 1; print "parameter values"; q'; else;
+print "enter q vector using Gauss's matrix editor, enter semicolon to stop";
+q=editm(q); print; print; print; endif;
+if swj == 0; swj=1; print; print; goto start; endif;
+print "fixed point dimension (175 max)";; n;
+print "discount factor                ";; bet;
+print "transition probabilities       ";; p';
+print; print "is this model OK? (1=yes, 0=no)    ";; swj=con(1,1);
+if swj == 0; modnum[1,1]=0; print;
+print "enter p0 estimate                         ";; p[1,1]=con(1,1);
+print "enter p1 estimate                         ";; p[2,1]=con(1,1);
+print "enter p2 estimate                         ";; p[3,1]=con(1,1);
+print "enter p3 estimate                         ";; p[4,1]=con(1,1);
+print "enter p4 estimate                         ";; p[5,1]=con(1,1);
+print "enter p5 estimate                         ";; p[6,1]=con(1,1);
+modnum[1,5]=minindc(p); if modnum[1,5] == 1; modnum[1,5]=2; endif;
+print "enter discount factor                     ";; bet=con(1,1);
+print "enter fixed point dimension (175 max)      ";; n=con(1,1);
+print "number of cost function parameters (3 max)";; modnum[1,2]=con(1,1);
+goto start; endif;
+@                                                                     @
+@ ***  COMPUTE FIXED POINT FOR STRUCTURAL MODEL                       @
+@                                                                     @
+print;
+print "compute new fixed point for current model? (1=yes, 0=no)";;
+swj=con(1,1); if swj == 1;
+print "enter initial number of contraction steps               ";;
+cstp=con(1,1);
+print "use last fixed point? (1=yes, 0=no)                     ";;
+swj=con(1,1);
+if swj == 0; ev=zeros(n,1); ev1=ev; endif;
+x=seqa(1,1,n); minstp=cstp-2; dm=rows(q); rtol=.0000001; print;
+call function; call fpmx; call ffxp; endif;
+@                                                                     @
+@ ***  ENTER NUMBER OF BUSES AND DURATION OF SIMULATION               @
+@                                                                     @
+print;
+print; print "2. select number of buses and duration of simulation"; print;
+print "enter number of buses to be simulated";; nr=con(1,1);
+print "length of simulation (months)        ";; t=con(1,1); print;
+print "did you supply initial states {i(0),x(0)} for each bus? (1=yes, 0=no)";;
+swj=con(1,1); if swj == 0;
+print "using default initial conditions i(0)=0, x(0)=1 for each bus";
+dtx=ones(nr,1); dtc=zeros(nr,1); endif; print;
+print "enter 0 to store data on B drive, enter 1 to store data on C drive   ";;
+modnum[1,6]=con(1,1);
+@                                                                     @
+@ ***  CREATE SIMULATED DATA AND WRITE OUT TO FILE BDT.DAT            @
+@                                                                     @
+closeall; if modnum[1,6] == 1; create f1=c:bdt with bdt, 3, 2;
+else; create f1=b:bdt with bdt, 3, 2; endif;
+print "begin monte carlo simulations"; tt=hsec; lfe=0;
+ev1=(p0~(p0+p1)).*ones(n,2);
+ev1[n,1:2]=1~1; ev1[n-1,1:2]=p0~1;
+i=1; a2=0~0;
+do until i > t;
+u=rndu(nr,1);
+mil=sumc(ceil(u-submat(ev1,(dtx.*(1-dtc)+dtc),0))');
+swj=maxc(mil); if a2[1,1] < swj; a2[1,1]=swj; endif;
+swj=minc(mil); if a2[1,2] > swj; a2[1,2]=swj; endif;
+rws=writer(f1,(dtc~dtx~mil)); lfe=lfe+rws;
+p0=p0+sumc(mil .== 0); p1=p1+sumc(mil .== 1);
+print "month";; i;
+print "total rows written";; lfe;
+dtx=dtx.*(1-dtc)+dtc+mil;
+u=rndu(nr,1);
+dtc=sumc(ceil(u-submat(pk,dtx,0))');
+i=i+1; endo;
+print; print "maximum, minimum value of monthly mileage";; a2; print;
+print "simulation estimates of p0, p1";; p0=p0/lfe; p0;; p1=p1/lfe; p1;
+if a2[1,1] == 2; modnum[1,5]=2; elseif a2[1,1] == 1; modnum[1,5]=1; endif;
+print "SIMDAT.GPR successfully created file BDT.DAT, total time:";; hsec-tt;
+print; print "ready to run SETUP.GPR or NFXP.GPR"; t=1000;
+
+

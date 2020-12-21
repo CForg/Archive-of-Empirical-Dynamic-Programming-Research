@@ -1,0 +1,459 @@
+"NFXP.GPR: nested fixed point maximum likelihood algorithm";
+"Version 8, October 2000. By John Rust, Yale University";
+
+/* DISPLAY TOLERANCE AND INITIAL PARAMETER SETTINGS */ 
+
+let fmt[6,3]="-*.*lf" 6 0
+             "-*.*s" 8 8
+             "*.*lf" 14 6
+             "*.*lf" 14 6
+             "*.*lf" 14 6
+             "*.*lf" 14 6;
+format /m1,/rz 12,8;
+
+
+declare npk,dt,lnp,invp,c,dc,tr,ev,ev1,rtol,pr,cstp,pk,cdtp,dev,dtp,q11,q22;
+declare dll0,h0;
+declare modnum ?= 0;
+
+setup:
+if ((rows(modnum) == 1) or (modnum[1] == 0));
+  "";
+  "NFXP algorithm and model parameters have not been initialized";
+  "Run SETUP.GPR to initialize algorithm and model settings";
+  #include "setup.gpr";
+   if swj < 0;
+   goto abort; 
+   endif;
+endif; 
+
+{modnum,nvec,cstr}=display(modnum); 
+"fixed point dimension n=";; n;
+
+if ss2 == 0; ss2=1; endif;
+
+settings:
+
+if modnum[4] == 0;
+"beta value, 0<bet<1                   ";; bet; endif;
+if modnum[3] == 1;
+"transition probabilities";; p[1:1+modnum[5],1]'; endif;
+"jacobian index, d (0<d<1)             ";; d;
+"maximum number of lf evaluations      ";; maxlfe;
+"maximum number of NK steps            ";; nstep;
+"maximum stepsize                      ";; maxstp;
+"maximum linesearch iterations         ";; maxls;
+"minimum linesearch iterations         ";; minls;
+"maximum contraction iterations        ";; maxcstp;
+"minimum contraction iterations        ";; mincstp;
+"switch to step size 1 when grad*direc<";; itol2;
+"lf ratio to terminate line search     ";; itol1;
+"initial stepsize                      ";; ss2;
+"outer convergence tolerance           ";; ctol;
+"inner convergence tolerance           ";; ltol;
+"switch to Broyden when grad*direc <   ";; stol;
+"check derivatives of lf? (1=yes, 0=no)";; drvchk; 
+"print hessian matrix?  (1=yes, 0=no)  ";; hpr;
+"print fixed point info? (1=yes, 0=no) ";; pr;
+"are these settings OK? (1=yes, 0=no)  ";; swj=con(1,1);
+
+if swj == 0;
+   "Run  SETUP.GPR to change settings";
+   goto setup;
+endif;
+
+if bet > 0;
+ cstp=maxcstp; 
+ tcstp=cstp;
+ ev=zeros(n,1); 
+ "set cstp=maxcstp when (q-q0) > : ";; qtol1';
+ "set cstp=mincstp when (q-q0) < : ";; qtol'; 
+endif;
+
+"absolute parameter bounds  ";; qmax';
+"initial parameter estimates";; q';
+
+if modnum[3:4] == 2|1;
+      "(implied beta value)";;  1/(1+exp(q[dm-modnum[5],1]));
+elseif modnum[3:4] == 1|1;
+      "(implied bet value)";; 1/(1+exp(q[dm,1]));
+endif;
+
+"number of rows read per pass";; t; "";
+
+"plot hazard and value functions? (1=yes,0=no)   ";;
+ grf=con(1,1); "";
+
+ if grf; load npk; endif;
+
+
+/* INITIALIZE VARIABLES USED IN PROGRAM */
+
+ttt=hsec; i=1; ss1=0; nwt=0; ftol=1; ls=0; lfe=0; ll=0; idf0=2*stol;
+m=floor(.5*n); q11=zeros(m,m+modnum[5]); q22=zeros(n-m,n-m);
+q0=zeros(dm,1); lcstp=cstp; dm=rows(q); direc=ones(dm,1); dparm=direc;
+
+if bet < .98; rtol=.0001; else; rtol=.0000001; endif; 
+
+if drvchk;
+
+   "Enter delta value for numerical derivatives ";; delta=con(1,1);
+   oll=0;
+
+endif;
+
+/* OPEN FILE BDT.DAT FOR READ  */
+
+closeall; f1=0; open f1=bdt for read;
+nr=rowsf(f1); swj=0; err=0;
+"number of rows of data      "$+ftos(nr,"*.*lf",5,0); 
+ pass=(nr-(nr%t))/t; nr=nr%t;
+
+/* BEGIN OUTER BHHH OPTIMIZATION ALGORITHM */
+
+bhhhstart:
+
+lfe=lfe+1; 
+if lfe >= maxlfe;
+   "terminate at lf evaluation limit";;maxlfe;
+    goto term;
+endif;
+if ls > 0; pr=0; endif;
+if ls == 1; cstp=lcstp;  endif;
+
+/* UPDATE COST FUNCTION c FOR CURRENT PARAMETER ESTIMATES */
+
+function; 
+clear d1v, lp, dt;
+if bet == 0; 
+   pk=1/(1+exp(c-tr-c[1,1])); 
+   goto core; 
+endif; 
+"";
+
+/* ADAPTIVE DETERMINATION OF SWITCHPOINT FROM CONTRACTION TO 
+   Newton-Kantorovich iterations */
+
+if sumc(abs(dparm) .> qtol1) > 0; tcstp=maxcstp; endif;
+
+if  (abs(dparm) < qtol); tcstp=mincstp;
+    if ftol < ltol; nstep=1;
+       elseif ftol >= ltol; nstep=4;
+    endif;
+elseif ftol > ltol and nstep == 1; 
+    nstep=4;
+endif;
+
+if lfe > 1 and (ftol > ltol); tcstp=cstp+10; endif;
+
+if nwt > 2 and swj >= cstp; 
+   tcstp=cstp+10;
+elseif nwt > 2 and swj < cstp; 
+   rtol=.5*rtol;
+elseif ftol < ltol and swj >= cstp; 
+   tcstp=cstp-10;
+elseif ftol < ltol and swj < cstp; 
+   rtol=2*rtol;
+endif;
+
+cstp=tcstp;
+
+if cstp > maxcstp; cstp=maxcstp; elseif cstp < mincstp; cstp=mincstp; endif;
+
+/* UPDATE TRANSITION MATRIX P FOR CURRENT PARAMETER ESTIMATES */
+
+if not(modnum[3] == 1 and i > 1); 
+   q11=eq11; q22=eq22;
+endif;
+
+/* CALL INNER FIXED POINT ALGORITHM */
+
+ffxp;
+
+if pr; ""; "return to outer BHHH algorithm"; endif;
+
+/* CORE OF BHHH ALGORITHM: CALCULATION OF DIRECTION AND STEPSIZE */
+
+core:
+
+tt=hsec; h=zeros(dm,dm); dll=zeros(dm,1); ll=0; ii=1;
+
+do until eof(f1); 
+
+   if ii > pass; nt=nr; else; nt=t; endif;
+
+   /* read in a chunk of data into the matrix dt  */
+
+   dt=readr(f1,t); ii=ii+1;  
+
+   /* EVALUATE LOGLIKELIHOOD FUNCTION AND DERIVATIVES for data in dt 
+      call eval if no lagged dependent variable, otherwise call eval1 */
+
+   if modnum[7] == 0; 
+       eval; 
+   else; 
+       eval1; 
+   endif;
+
+
+   /* CUMULATE MOMENT MATRIX                               */
+
+   if ls == 0; 
+       h=h+moment(d1v,1); 
+   endif; 
+   
+endo; 
+
+y=seekr(f1,1);  /* reposition pointer at beginning of data file for
+		   next call to evaluate the likelihood */
+
+   /* Conduct derivative check if drvchk = 1  */
+
+   if drvchk;
+
+      if (i == 1);
+
+	 q0=q;
+         ndll=zeros(dm,1);
+	 oll=ll;
+	 "Numerical check of derivatives at the followin initial parameters";
+         "    Parameter      Estimates     direction     gradient      t-stat";
+         err=printfm(seqa(1,1,dm)~nvec~q~direc~dll~(q./(sqrt(diag(h)))),
+	             ones(dm,1)~zeros(dm,1)~ones(dm,4),fmt);
+         "";
+
+         if modnum[3:4] == 2|1;
+            "(implied bet value)";; 1/(1+exp(q[dm-modnum[5],1]));
+         elseif modnum[3:4] == 1|1;
+            "(implied bet value)";; 1/(1+exp(q[dm,1]));
+         endif; "";
+
+         "log likelihood ss=0 "$+ftos(ll,"*.*lg",12,8);;
+         " grad*direc ";; idf0=dll'*direc; ftos(idf0,"*.*lg",12,8);
+         "Iteration  "$+ftos(i,"*.*lf",3,0)$+" evaluation number ";;
+         ftos(lfe,"*.*lf",3,0);
+      
+      elseif ((i > 1) and (i <= dm+1));
+
+	 q[i-1]=q0[i-1];
+	 ndll[i-1]=(ll-oll)/delta;
+
+      else;
+
+	 "Comparison of analytical and numerical gradients with delta=";;
+	 ftos(delta,"*.*lg",12,9);
+    "    Parameter        Value        analytic     numerical     difference";
+         err=printfm(seqa(1,1,dm)~nvec~q~dll~ndll~abs(dll-ndll),
+	     ones(dm,1)~zeros(dm,1)~ones(dm,4),fmt);
+
+	 goto abort;
+
+      endif;
+  
+      if (i <= dm);
+
+          q[i]=q0[i]+delta;
+          i=i+1;
+	  goto bhhhstart;
+
+      else;
+       
+          i=i+1;
+          goto bhhhstart;
+
+      endif;
+
+   endif;
+
+/* MEMORIZE NUMBER OF CONTRACTION STEPS, BRANCH TO LINE SEARCH  */
+
+if ls == 1; lcstp=cstp; endif;
+
+if ls > 0; goto lsrch; endif;
+
+/* CALCULATE NEW DIRECTION VECTOR, CHECK FOR NUMERICAL ERRORS   */
+
+if hpr > 0; "Cumulated outer product of first derivatives"; h; endif;
+
+
+if idf0 > stol;  /* start out using BHHH  */
+
+    h=invpd(h);
+    h0=h; 
+
+else;            /* update h recursively using BFGS iterations */
+
+   qk=(dll0-dll); 
+   rk=ss2*direc;
+   h=h0;
+   if rk'qk > 0;
+       "using BFGS update for h ";
+       h=(h-h*qk*qk'h/(qk'h*qk))*rk'qk/(qk'h*qk)+rk*(rk')/(rk'qk);
+       /* Davidon-Fletcher-Powell update formula is
+       h=h+rk*(rk')/(rk'rk)-h*qk*qk'h/(qk'h*qk);       */
+   else;  
+      "BFGS failed: using last h";; rk'qk;
+       h0=h;  
+   endif;
+
+endif;
+
+if hpr > 0; h; endif;
+
+direc=h*dll;
+
+if ss2 > 2; ss2=1; endif;
+
+q0=q; 
+
+q=q0+ss2*direc;   /* update new parameter vector as previous value time
+		     the stepsize ss2 times the direction vector */
+
+tt=hsec-tt;
+
+if abs(q) >= qmax;
+   ss2=minc(.9*qmax./abs(q0+direc)); q=q0+ss2*direc;
+   "parameter out of bounds ss=";; ss2;
+endif;
+
+/* PRINT OUT SUMMARY OF CURRENT ITERATION                      */
+
+"";
+"    Parameter estimates for cost function "$+cstr; "";
+"    Parameter      Estimates     direction     gradient      t-stat";
+     err=printfm(seqa(1,1,dm)~nvec~q~direc~dll~(q./(sqrt(diag(h)))),
+	 ones(dm,1)~zeros(dm,1)~ones(dm,4),fmt);
+"";
+
+if modnum[3:4] == 2|1;
+   "(implied bet value)";; 1/(1+exp(q[dm-modnum[5],1]));
+elseif modnum[3:4] == 1|1;
+   "(implied bet value)";; 1/(1+exp(q[dm,1]));
+endif; "";
+
+"log likelihood ss=0 "$+ftos(ll,"*.*lg",12,8);;
+" grad*direc ";; idf0=dll'*direc; ftos(idf0,"*.*lg",12,8);
+"Iteration  "$+ftos(i,"*.*lf",3,0)$+" evaluation number ";;
+ ftos(lfe,"*.*lf",3,0);
+"Cpu time to cumulate moment matrix "$+ftos(tt,"*.*lf",4,0); "";
+
+i=i+1;  /* increment iteration counter */
+
+if idf0 < ctol;
+     goto term;
+elseif idf0 < itol2;
+     ls=0; ss2=1; lcstp=cstp;
+else;
+     ss0=0; ss1=ss2; df0=idf0; dll0=dll; lll=ll; ls=1; dparm=ss2*direc;
+endif;
+
+if grf;
+
+delay0=hsec; delay1=hsec; do until ((delay1-delay0)/100 > 2); delay1=hsec; endo;
+
+library pgraph;
+pqgwin many;
+fonts("simplex complex microb simgrma");
+_pdate="";
+_ptitle="Estimated Hazard Functions: NFXP Iteration "$+ftos(i,"*.*lf",4,0);
+_pylabel="Probability of Replacement";
+_pltype=6|3|1|5;
+_plegctl=2~4.6~1~5.1;
+_plegstr="DP Model Hazard\000Non-Parametric Hazard";
+/*
+#IFUNIX
+
+      let v = 100 100 640 480 0 0 1 6 15 0 0 2 2;
+      if (i == 2);
+      wxy = WinOpenPQG(v,"Estimated Hazard Functions","XY");
+      else;
+	 call WinClear(wxy);
+      endif;
+      call WinSetActive(wxy);
+
+#ENDIF */
+xy(ogrid,(1-pk)~npk);
+/*
+#IFUNIX
+   call WinSetActive(1);
+#ENDIF
+*/
+
+_ptitle="Estimated Cost/Value Functions: NFXP Iteration "$+ftos(i,"*.*lf",4,0);
+_pylabel="Normalized Cost/Value Functions";
+_plegstr="c\000\204b\201EV\000c+\204b\201EV";
+_pltype=1|3|6|5;
+_plegctl=2~4.6~1~5;
+/*
+#IFUNIX
+      let v = 100 100 640 480 0 0 1 6 15 0 0 2 2;
+      if (i == 2);
+      wxz = WinOpenPQG(v,"Estimated Value Functions","XY");
+      else;
+	 call WinClear(wxz);
+      endif;
+      call WinSetActive(wxz);
+#ENDIF
+*/
+/* xy(ogrid,(c-c[1])~(-bet*ev+bet*ev[1])~(c-bet*ev-c[1]+bet*ev[1])); */
+/*
+#IFUNIX
+   call WinSetActive(1);
+#ENDIF
+*/
+
+
+endif;
+
+
+goto bhhhstart;
+
+/* LINESEARCH ALGORITHM BY SECANT METHOD            */
+
+lsrch:
+
+"linesearch";; ls;; print "derivative time";; hsec-tt;
+
+"likelihood ss=";; ss2;; ll;
+  df1=dll'*direc;
+ "df1,df0";; df1;; df0;
+  ss2=ss1-df1*(ss0-ss1)/(df0-df1);
+
+if ss2 < 0;
+  "negative step";; ss2; ss2=ss1; ls=0;
+  q=q0+ss2*direc; dparm=zeros(dm,1); goto bhhhstart;
+endif;
+
+if ss2 > maxstp;
+  "step exceeds maximum";; ss2;
+   ss2=ss1; ls=0;
+   q=q0+ss2*direc; dparm=zeros(dm,1); goto bhhhstart;
+endif;
+
+if ls > maxls;
+  "line search limit ss=";; ss2;
+   ls=0; q=q0+ss2*direc;
+   dparm=(ss2-ss1)*direc; goto bhhhstart;
+endif;
+
+if (ll/lll > itol1 and ls > minls) or ss2 > maxstp;
+  "last step ss=";; ss2;
+   ls=0; q=q0+ss2*direc; dparm=(ss2-ss1)*direc;
+   goto bhhhstart;
+endif;
+
+q=q0+ss2*direc; dparm=(ss2-ss1)*direc;
+ls=ls+1; df0=df1;
+lll=ll; ss0=ss1; ss1=ss2;
+
+goto bhhhstart;
+
+/* TERMINATION OF PROGRAM                                     */
+
+term:
+
+closeall; 
+""; "NFXP converged: total execution time";; hsec-ttt;
+
+abort:
+
