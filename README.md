@@ -1,6 +1,6 @@
 ---
 # front matter tells Jekyll to process Liquid
-show_sidebar: 
+show_sidebar: TRUE
 ---
 # Archive of Empirical Dynamic Programming
  AEDP is a collection of published papers that estimate dynamic programming models
