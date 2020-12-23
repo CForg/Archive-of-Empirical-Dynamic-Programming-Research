@@ -1,0 +1,27 @@
+:root {
+  --rcolor: blue;
+  --gcolor: darkblue;
+  --bgcolor: yellow;
+  --acolor : whitesmoke;
+  --sfontsz : 18pt;
+  --pfontsz : 12pt;
+  --slineht : 18pt;
+  --plineht : 18pt;
+  --swidth  : 1350px;
+}
+
+body {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    color: white;
+    font-family: "Ubuntu", "Verdana", "Times", sans-serif;
+    text-align: justify;
+    background-color:darkred;
+    font-size: 24px;
+    }
+
+
+  th, td {
+    border-width: 1px;
+  }

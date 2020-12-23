@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<link href='http://fonts.googleapis.com/css?family=PT+Mono|Open+Sans:400italic,700italic,400,700,800,300&subset=latin,latin-ext,greek-ext,greek' rel='stylesheet' type='text/css'><link rel="icon" href="icons/favicon16.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="doc.css">
+<link rel="stylesheet" type="text/css" href="screen.css">
+<link rel="stylesheet" type="text/css" media="print" href="print.css">
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config( {
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]], processEscapes: true},
+    CommonHTML: {
+        scale : 90
+        },
+    TeX: {
+        packages: ['base','eplain'],
+        equationNumbers: {autoNumber:"none" },
+        extensions: ["color.js"],
+        Macros: {
+            RR: "{\\bf R}",
+            bold: ["{\\bf #1}",1],
+            th : "\\theta", al : "\\alpha",
+            thmle : "\\hat\\theta^{mle}",
+            thp : "\\theta^{\\,\\prime}",
+            vv : "v(\\alpha,\\theta)",
+            st : "(\\theta^{\\,\\prime};\\alpha,\\theta)",
+            Pstar : "P^{\\star}(\\alpha;\\theta)",
+            ar : ["{\\overrightarrow #1}",1],
+            rr : "\\rightarrow\\rightarrow",
+            eps: "\\epsilon",
+            l : "\\left",
+            r : "\\right",
+            pdist : "{\\ {\\buildrel  pseudo \\over \\sim}\\ }",
+            iid : "{\\ {\\buildrel  iid \\over \\sim}\\ }",
+            Dto : "{\\ {\\buildrel D \\over \\to}\\ }",
+            Pto : "{\\ {\\buildrel P \\over \\to}\\ }",
+            sc : ["{\\buildrel #1 \\over \\to}",1],
+            uu : ["{u_{#1}(a_{#1}^{\\sigma^\\star},s_{#1}^{\\sigma^\\star})}",1],
+            ll : ["{\\ln \\mathcal{L}}"]
+                }
+    }});
+    </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+<title>Archive of Empirical Dynamic Programming</title>
+</head>
+<body>
+  <div style="background-color: darkblue; padding-bottom: 10px; color:white">
+    <div><UL class="menu">
+      <LI><a href="">Submit</a></LI>
+      <LI><a href="">Fork</a><LI>
+        <LI><a href="">View</a></LI>
+    </UL></div>
+$$\forall\ \theta\in\Theta,\
+ V(\theta)\  =\
+ \int_{\zeta}{\ \max_{\ \alpha\in A(\theta)\ }\left\{\ U\left(\alpha,\theta\right) + \zeta_\alpha + \delta E_{\,\alpha,\theta\,}V\left(\theta^\prime\right)\ \right\}
+ \ f\left(\zeta\right)d\zeta}$$
+</div>
+<h1 class="counter-skip">Archive of Empirical Dynamic Programming</h1>
+<p>&nbsp;</p>
+<h2 class="counter-skip">How does a Work gets into the Archive?</h2>
+<UL class="faq"><LI>An item  begins as a folder named using the convention <code>Author1Author2JournalYYYY</code> in the AEDP
+  github repository.
+    <DD>For example, <code>WolpinJPE1984</code> is the folder for <a target=_blank href="http://www.jstor.org/stable/1831086?origin=JSTOR-pdf">Wolpin (1984)</a>.</DD></LI>
+  <LI>A BibTex citation in a file with extension <code>.ark</code> is placed in the folder.
+  <DD>For example, <Details><summary>Click here to see the <em>original</em> (not necessarily current) contents of the ark file in WolpinJPE1984</summary>
+  <pre>  @article{10.2307/1831086,
+     ISSN = {00223808, 1537534X},
+     URL = {http://www.jstor.org/stable/1831086},
+     abstract = {This paper develops a finite-horizon dynamic stochastic model of discrete choice with respect to life-cycle fertility within an environment where infant survival is uncertain. The model yields implications for the number, timing, and spacing of children. A tractable estimation method is developed for the linear constraint-quadratic utility case that is intimately tied to the dynamic optimization problem, and the method is applied to Malaysian household data. Estimation is based on integrating the numerical solution of the dynamic programming model of behavior with a maximum likelihood procedure.},
+     author = {Kenneth I. Wolpin},
+     journal = {Journal of Political Economy},
+     number = {5},
+     pages = {852--874},
+     publisher = {University of Chicago Press},
+     title = {An Estimable Dynamic Stochastic Model of Fertility and Child Mortality},
+     volume = {92},
+     year = {1984}
+    }</pre></details>
+    </LI>
+  <LI>Software recreates the database regularly based on the contents of the <code>.ark</code> files
+<DD>The current archive entry for Wolpin (1984) is <a target="_blank" href="??#??">here</a></DD>
+  </LI>
+  </UL>
+  <h2 class="counter-skip">How is AEDP More Than an Elaborate Bibliography?</h2>
+  <UL  class="faq">
+  <LI>Details about the the DP model are added to the citation in the ark file.</LI>
+  <LI>These changes and additions can be made by:
+     <DD>a <a href="">AEDP Team</a> member</DD>
+     <DD>Any user of github through a <dfn title="def">pull request</dfn></DD>
+     <DD>Anyone on the internet by filling out this <a href="form">form</a></dd></LI>
+  <LI>Works are classified by <a href="#">Research Area</a>, and each area as a "branch" in the
+    git repository. Each areas has curators to ensure a coherent organization. Areas can be split,
+    merged, and added.</LI>
+  </UL>
+  <h2 class="counter-skip">How can it help me understand empirical DP or do it myself?</h2>
+  <UL  class="faq">
+  <LI>Code, data and other supplementary information can be added to the Work's folder. </LI>
+  <LI>Based on the information available in the <code>.ark</code> file,
+      <em>starter code</em> for solving the paper's model(s)
+      using <a href="https://ferrall.github.io/niqlow/">niqlow</a> is generated.</LI>
+    <LI>Other packages like <a href="">VFI Tookkit</a> can also add starter code folders.</LI>
+    <LI>Users can push edits of the starter code to the repository.  Eventually, code can qualify
+      for includion in the  <a href="https://ferrall.github.io/niqlow/">niqlow replications</a> folder.</LI>
+    <LI>Github <a href="#">Issue</a> and <a href="#">Discussion</a> posts can be used to ask for help
+      by people in the AEDP community.</LI>
+  </UL>
+<h2 class="counter-skip">What Criteria are used for Including a Work?</h2>
+<UL class="faq">
+  <li>Includes one or more dynamic programs as part of a model</LI>
+  <li>Published:<DD> in an Economics-related journal or volume archived in <a href="http://jstor.org">JSTOR.org</a></DD></li>
+  <li>Computed: <DD> results not based solely on closed form solutions</DD></li>
+  <LI>Non-trivial:
+      <DD>$\delta\gt 0$ (static optimization only excluded)</dd></li>
+  <li>Empirical: <DD>predictions of the DP are related to <b>external data</b> through
+    <dfn title="definition of calibration">calibration</dfn> or <dfn title="estimation">estimation</dfn></DD></li>
+  </UL>
+
+</body>
+</html>
