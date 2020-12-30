@@ -1,0 +1,14 @@
+@article{10.2307/3663495,
+ ISSN = {00206598, 14682354},
+ URL = {http://www.jstor.org/stable/3663495},
+ abstract = {We estimate the parameters of a dynamic multiperiod model where parents with one child periodically decide whether their child uses mental health services. In this model, parents receive utility from household consumption and from their child's mental health. Mental health services may improve the child's mental health, but may be costly in terms of reduced household consumption and direct disutility. We find that mental health services can slightly improve a child's mental health, but the use of services accounts for a small fraction of the improvement of the mental health of the children in our sample.},
+ author = {Morris A. Davis and E. Michael Foster},
+ journal = {International Economic Review},
+ number = {3},
+ pages = {837--866},
+ publisher = {[Economics Department of the University of Pennsylvania, Wiley, Institute of Social and Economic Research, Osaka University]},
+ title = {A Stochastic Dynamic Model of the Mental Health of Children},
+ volume = {46},
+ year = {2005}
+}
+

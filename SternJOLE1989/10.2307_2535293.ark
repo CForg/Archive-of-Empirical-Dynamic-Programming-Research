@@ -1,0 +1,14 @@
+@article{10.2307/2535293,
+ ISSN = {0734306X, 15375307},
+ URL = {http://www.jstor.org/stable/2535293},
+ abstract = {The primary goal of this article is to specify and estimate a structural simultaneous search model and then determine the empirical importance of simultaneous search. The results indicate that new labor force entrants search simultaneously. A secondary goal is to identify and estimate job offer arrival rates and wage offer rejection probabilities separately. The results indicate that a significant portion of unemployment spells are caused by slow arrival rates, but policies intended to speed arrival rates would increase the average length of unemployment spells.},
+ author = {Steven Stern},
+ journal = {Journal of Labor Economics},
+ number = {3},
+ pages = {348--369},
+ publisher = {[University of Chicago Press, Society of Labor Economists, NORC at the University of Chicago]},
+ title = {Estimating a Simultaneous Search Model},
+ volume = {7},
+ year = {1989}
+}
+

@@ -1,0 +1,14 @@
+@article{10.2307/25621385,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/25621385},
+ abstract = {We propose a new methodology for structural estimation of infinite horizon dynamic discrete choice models. We combine the dynamic programming (DP) solution algorithm with the Bayesian Markov chain Monte Carlo algorithm into a single algorithm that solves the DP problem and estimates the parameters simultaneously. As a result, the computational burden of estimating a dynamic model becomes comparable to that of a static model. Another feature of our algorithm is that even though the number of grid points on the state variable is small per solution-estimation iteration, the number of effective grid points increases with the number of estimation iterations. This is how we help ease the "curse of dimensionality." We simulate and estimate several versions of a simple model of entry and exit to illustrate our methodology. We also prove that under standard conditions, the parameters converge in probability to the true posterior distribution, regardless of the starting values.},
+ author = {Susumu Imai and Neelam Jain and Andrew Ching},
+ journal = {Econometrica},
+ number = {6},
+ pages = {1865--1899},
+ publisher = {[Wiley, The Econometric Society]},
+ title = {Bayesian Estimation of Dynamic Discrete Choice Models},
+ volume = {77},
+ year = {2009}
+}
+

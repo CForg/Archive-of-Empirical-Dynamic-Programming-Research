@@ -1,0 +1,14 @@
+@article{10.2307/2109768,
+ ISSN = {00346535, 15309142},
+ URL = {http://www.jstor.org/stable/2109768},
+ abstract = {Over the past decade, a substantial literature on methods for the estimation of discrete choice dynamic programming (DDP) models of behavior has developed. However, the implementation of these methods can impose major computational burdens because solving for agents' decision rules often involves high dimensional integrations that must be performed at each point in the state space. In this paper we develop an approximate solution method that consists of: 1) using Monte Carlo integration to stimulate the required multiple integrals at a subset of the state points, and 2) interpolating the non-simulated values using a regression function. The overall performance of this approximation method appears to be excellent.},
+ author = {Michael P. Keane and Kenneth I. Wolpin},
+ journal = {The Review of Economics and Statistics},
+ number = {4},
+ pages = {648--672},
+ publisher = {The MIT Press},
+ title = {The Solution and Estimation of Discrete Choice Dynamic Programming Models by Simulation and Interpolation: Monte Carlo Evidence},
+ volume = {76},
+ year = {1994}
+}
+

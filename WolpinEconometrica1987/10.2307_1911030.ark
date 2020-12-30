@@ -1,0 +1,14 @@
+@article{10.2307/1911030,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/1911030},
+ abstract = {This paper presents a finite horizon job search model that is econometrically implemented using all of the restrictions implied by the theory. Following a sample of male high school graduates from the youth cohort of the National Longitudinal Surveys from graduation to employment, search parameters such as the cost of search, the probability of receiving an offer, the discount factor, and those from the wage offer distribution are estimated. Reservation wages and offer probabilities are estimated to be quite low. Simulations are performed of the impact of the parameters on the expected duration of unemployment. For example, it is estimated that an offer probability of unity, as opposed to the estimate of approximately only one per cent per week, would reduce the expected duration of unemployment from 46 weeks to 20 weeks.},
+ author = {Kenneth I. Wolpin},
+ journal = {Econometrica},
+ number = {4},
+ pages = {801--817},
+ publisher = {[Wiley, Econometric Society]},
+ title = {Estimating a Structural Search Model: The Transition from School to Work},
+ volume = {55},
+ year = {1987}
+}
+

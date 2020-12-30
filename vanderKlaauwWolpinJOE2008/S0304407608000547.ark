@@ -1,0 +1,15 @@
+@article{VANDERKLAAUW200821,
+title = "Social security and the retirement and savings behavior of low-income households",
+journal = "Journal of Econometrics",
+volume = "145",
+number = "1",
+pages = "21 - 42",
+year = "2008",
+note = "The use of econometrics in informing public policy makers",
+issn = "0304-4076",
+doi = "https://doi.org/10.1016/j.jeconom.2008.05.004",
+url = "http://www.sciencedirect.com/science/article/pii/S0304407608000547",
+author = "Wilbert {van der Klaauw} and Kenneth I. Wolpin",
+keywords = "Retirement, Social security, Structural estimation",
+abstract = "In this paper, we develop and estimate a model of retirement and savings incorporating limited borrowing, stochastic wage offers, health status and survival, social security benefits, Medicare and employer-provided health insurance coverage, and intentional bequests. The model is estimated on a sample of relatively poor households from the first three waves of the Health and Retirement Study (HRS), for whom we would expect social security income to be of particular importance. The estimated model is used to simulate the responses to changes in social security rules, including changes in benefit levels, in the payroll tax, in the social security earnings tax and in early and normal retirement ages. Welfare and budget consequences are estimated."
+}

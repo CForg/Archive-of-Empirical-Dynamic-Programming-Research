@@ -1,0 +1,14 @@
+@article{10.2307/1392300,
+ ISSN = {07350015},
+ URL = {http://www.jstor.org/stable/1392300},
+ abstract = {To study how the design of unemployment insurance (UI) affects people leaving school to find jobs, a model of job search in the presence of UI is developed and estimated for the United States and Canada. The level of UI benefits depends on previous earnings, which creates opposing incentives for unemployed people not receiving benefits. Which of these opposing incentives dominates the other is found to differ across demographic groups within each country. Changes in UI policy therefore can have very different effects on different individuals. The major differences found in the transition from school to work in Canada and the United States are a lower rate of job-offer arrivals and a lower rate of offer rejections in Canada. Within each country, offer-arrival rates differ across individuals much more than offer-rejection rates.},
+ author = {Christopher Ferrall},
+ journal = {Journal of Business & Economic Statistics},
+ number = {2},
+ pages = {115--129},
+ publisher = {[American Statistical Association, Taylor & Francis, Ltd.]},
+ title = {Unemployment Insurance Eligibility and the School-to-Work Transition in Canada and the United States},
+ volume = {15},
+ year = {1997}
+}
+

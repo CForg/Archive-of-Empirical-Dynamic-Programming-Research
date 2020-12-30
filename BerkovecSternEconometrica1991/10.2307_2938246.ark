@@ -1,0 +1,14 @@
+@article{10.2307/2938246,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/2938246},
+ abstract = {We estimate a dynamic programming model of job exit behavior and retirement using the method of simulated moments. The model and estimation method allow for both unobserved individual effects and unobserved job-specific "match" effects. The model is estimated using two different assumptions about individual discount factors. First, a static model, with the discount factor β equal to zero, is estimated. Then a dynamic model, with β = .95, is estimated. In both models, it is found that bad health, age, and lack of education increase the probability of retirement. The dynamic model performs better than the static model and has different implications for retirement behavior. The job-specific effects are an important source of unobserved heterogeneity.},
+ author = {James Berkovec and Steven Stern},
+ journal = {Econometrica},
+ number = {1},
+ pages = {189--210},
+ publisher = {[Wiley, Econometric Society]},
+ title = {Job Exit Behavior of Older Men},
+ volume = {59},
+ year = {1991}
+}
+

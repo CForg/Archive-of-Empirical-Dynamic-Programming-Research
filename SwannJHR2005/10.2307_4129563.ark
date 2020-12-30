@@ -1,0 +1,14 @@
+@article{10.2307/4129563,
+ ISSN = {0022166X},
+ URL = {http://www.jstor.org/stable/4129563},
+ abstract = {In 1996 the Aid to Families with Dependent Children program was replaced with the Temporary Assistance for Needy Families (TANF) program. This paper considers the effects of two specific components of TANF, time limits and work requirements, on employment, marriage, and welfare participation. I use a discrete-choice dynamic programming model and obtain parameter estimates using data from the Panel Study of Income Dynamics. Policy simulations show that a five-year lifetime time limit results in a 60 percent reduction in welfare use and that a substantial part of this reduction occurs because recipients are forward-looking.},
+ author = {Christopher A. Swann},
+ journal = {The Journal of Human Resources},
+ number = {1},
+ pages = {31--56},
+ publisher = {[University of Wisconsin Press, Board of Regents of the University of Wisconsin System]},
+ title = {Welfare Reform When Recipients Are Forward-Looking},
+ volume = {40},
+ year = {2005}
+}
+

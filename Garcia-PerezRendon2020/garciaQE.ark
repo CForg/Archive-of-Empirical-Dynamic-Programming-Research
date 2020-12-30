@@ -1,0 +1,14 @@
+@article{https://doi.org/10.3982/QE1092,
+author = {García-Pérez, J. Ignacio and Rendon, Sílvio},
+title = {Family job search and wealth: The added worker effect revisited},
+journal = {Quantitative Economics},
+volume = {11},
+number = {4},
+pages = {1431-1459},
+keywords = {Job search, asset accumulation, household economics, consumption, nonemployment, estimation of dynamic structural models, C33, E21, E24, J64},
+doi = {https://doi.org/10.3982/QE1092},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.3982/QE1092},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.3982/QE1092},
+abstract = {We propose and estimate a model of family job search and wealth accumulation with data from the Survey of Income and Program Participation (SIPP). This dataset reveals a very asymmetric labor market for household members who share that their job finding is stimulated by their partners' job separation. We uncover a job search-theoretic basis for this added worker effect, which occurs mainly during economic downturns, but also by increased nonemployment transfers. Thus, our analysis shows that the policy goal of increasing nonemployment transfers to support a worker's job search is partially offset by the spouse's cross effect of decreased nonemployment and wages. The added worker effect is robust to having more children and more education in the household and does not just result as a composition of heterogeneous individuals. We also show that the interdependency between household members is understated if wealth and savings are not considered. Finally, we show that gender equality in the labor market not only improves women's labor market performance, but it also increases men's accepted wages and nonemployment rates.},
+year = {2020}
+}

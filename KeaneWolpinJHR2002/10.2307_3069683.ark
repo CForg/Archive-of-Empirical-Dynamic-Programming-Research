@@ -1,0 +1,14 @@
+@article{10.2307/3069683,
+ ISSN = {0022166X},
+ URL = {http://www.jstor.org/stable/3069683},
+ abstract = {In this paper, we provide estimates of welfare benefit effects on a set of behaviors that includes welfare participation, fertility, marriage, work and schooling using approximations to the decision rules that would be derived from an explicit dynamic optimization problem. We use the stylized model and associated simulations from Part I as a guide in specifying the approximate decision rules that we estimate here. The estimates are based on data from the 1979 youth cohort of the National Longitudinal Surveys of Labor Market Experience (NLSY79).},
+ author = {Michael P. Keane and Kenneth I. Wolpin},
+ journal = {The Journal of Human Resources},
+ number = {3},
+ pages = {600--622},
+ publisher = {[University of Wisconsin Press, Board of Regents of the University of Wisconsin System]},
+ title = {Estimating Welfare Effects Consistent with Forward-Looking Behavior. Part II: Empirical Results},
+ volume = {37},
+ year = {2002}
+}
+

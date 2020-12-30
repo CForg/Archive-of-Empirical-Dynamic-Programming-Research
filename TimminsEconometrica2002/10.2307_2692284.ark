@@ -1,0 +1,14 @@
+@article{10.2307/2692284,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/2692284},
+ abstract = {Evidence suggests that municipal water utility administrators in the western US price water significantly below its marginal cost and, in so doing, inefficiently exploit aquifer stocks and induce social surplus losses. This paper empirically identifies the objective function of those managers, measures the deadweight losses resulting from their price-discounting decisions, and recovers the efficient water pricing policy function from counterfactual experiments. In doing so, the estimation uses a "continuous-but-constrained-control" version of a nested fixed-point algorithm in order to measure the important intertemporal consequences of groundwater pricing decisions.},
+ author = {Christopher Timmins},
+ journal = {Econometrica},
+ number = {2},
+ pages = {603--629},
+ publisher = {[Wiley, Econometric Society]},
+ title = {Measuring the Dynamic Efficiency Costs of Regulators' Preferences: Municipal Water Utilities in the Arid West},
+ volume = {70},
+ year = {2002}
+}
+

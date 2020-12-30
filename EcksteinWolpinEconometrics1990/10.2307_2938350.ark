@@ -1,0 +1,14 @@
+@article{10.2307/2938350,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/2938350},
+ abstract = {In this paper we demonstrate the feasibility of estimating a Nash labor market equilibrium model using only information on workers. The equilibrium model is adapted from Albrecht and Axell (1984) and is based on workers who are homogeneous in terms of market productivity and heterogeneous in terms of nonmarket productivity, and on firms which are heterogeneous in terms of productive efficiency. The equilibrium model is contrasted in terms of its fit to the data with an unrestricted version of the model which is based on a mixture of negative binomial distributions. The equilibrium model fails to conform to the data in exactly the dimension of its major focus, namely it implies that measurement error accounts for almost all of the dispersion in observed wages. The equilibrium model also does not do well in fitting the unemployment duration distribution compared to the unrestricted model. The problem is that the duration distribution itself does not support the existence of significant heterogeneity, as evidenced by the estimates of the unrestricted model. The paper also illustrates the use of such models for policy analysis by simulating the welfare effects of a minimum wage.},
+ author = {Zvi Eckstein and Kenneth I. Wolpin},
+ journal = {Econometrica},
+ number = {4},
+ pages = {783--808},
+ publisher = {[Wiley, Econometric Society]},
+ title = {Estimating a Market Equilibrium Search Model from Panel Data on Individuals},
+ volume = {58},
+ year = {1990}
+}
+

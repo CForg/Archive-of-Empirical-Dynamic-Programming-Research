@@ -1,0 +1,14 @@
+@article{10.2307/145853,
+ ISSN = {0022166X},
+ URL = {http://www.jstor.org/stable/145853},
+ abstract = {This paper presents a utility maximization model of workers who make decisions to work or not over a lifetime. The objective is to maximize the presented discounted value of utility arising from the participation decisions. In addition to duration dependence introduced through time-variant job offer and layoff probabilities, state dependence enters the model by the existence of a different risk while working, namely, the dismissal risk, than the one while not working, namely, the possibility of no job offers. A dynamic programming algorithm is solved and estimated within a maximum likelihood routine, with data from the National Longitudinal Surveys youth cohort.},
+ author = {Füsun Gönül},
+ journal = {The Journal of Human Resources},
+ number = {2},
+ pages = {195--220},
+ publisher = {[University of Wisconsin Press, Board of Regents of the University of Wisconsin System]},
+ title = {Dynamic Labor Force Participation Decisions of Males in the Presence of Layoffs and Uncertain Job Offers},
+ volume = {24},
+ year = {1989}
+}
+

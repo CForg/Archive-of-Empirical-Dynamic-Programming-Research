@@ -1,0 +1,14 @@
+@article{10.2307/826969,
+ ISSN = {00206598, 14682354},
+ URL = {http://www.jstor.org/stable/826969},
+ abstract = {We analyze an equilibrium search model with three sources for wage and unemployment differentials among workers with the same (observed) human capital but different appearance (race): unobserved productivity, search intensities, and discrimination due to an appearance-based employer disutility factor. We show that the structural parameters are identified using labor market survey data. Estimation results for a black and white high school graduate sample imply: black productivity is 3.3% lower than white productivity; the employer's disutility factor is 31% of the white's productivity level; and 56% of firms have a disutility factor toward blacks.},
+ author = {Audra J. Bowlus and Zvi Eckstein},
+ journal = {International Economic Review},
+ number = {4},
+ pages = {1309--1345},
+ publisher = {[Economics Department of the University of Pennsylvania, Wiley, Institute of Social and Economic Research, Osaka University]},
+ title = {Discrimination and Skill Differences in an Equilibrium Search Model},
+ volume = {43},
+ year = {2002}
+}
+

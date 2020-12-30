@@ -1,0 +1,15 @@
+@article{BOUND2010106,
+title = "Health, economic resources and the work decisions of older men",
+journal = "Journal of Econometrics",
+volume = "156",
+number = "1",
+pages = "106 - 129",
+year = "2010",
+note = "Structural Models of Optimization Behavior in Labor, Aging, and Health",
+issn = "0304-4076",
+doi = "https://doi.org/10.1016/j.jeconom.2009.09.010",
+url = "http://www.sciencedirect.com/science/article/pii/S0304407609002097",
+author = "John Bound and Todd Stinebrickner and Timothy Waidmann",
+keywords = "Retirement behavior, Disability insurance, Social security, Dynamic programming, Latent variable models",
+abstract = "We specify a dynamic programming model that addresses the interplay among health, financial resources, and the labor market behavior of men late in their working lives. We model health as a latent variable, for which self-reported disability status is an indicator, and allow self-reported disability to be endogenous to labor market behavior. We use panel data from the Health and Retirement Study. While we find large impacts of health on behavior, they are substantially smaller than in models that treat self-reports as exogenous. We also simulate the impacts of several potential reforms to the Social Security program."
+}

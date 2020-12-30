@@ -1,0 +1,14 @@
+@article{10.2307/1241783,
+ ISSN = {00029092, 14678276},
+ URL = {http://www.jstor.org/stable/1241783},
+ abstract = {The Faustmann-Samuelson solution for optimal asset rotation is extended to consider both asset rejuvenation and nonconstant prices. A dynamic theoretical model is developed in terms of an optimal control problem with discontinuous control variables, and numerical solution procedures are outlined. The model is applied to layer hen replacement where hen rejuvenation by forced molting is a common industrial practice. Results indicate a sensitivity between the decision to rejuvenate or replace a hen and the egg price cycle, suggesting a mixed rotation strategy.},
+ author = {John W. McClelland and Michael E. Wetzstein and Richard K. Noles},
+ journal = {American Journal of Agricultural Economics},
+ number = {1},
+ pages = {147--157},
+ publisher = {[Agricultural & Applied Economics Association, Oxford University Press]},
+ title = {Optimal Replacement Policies for Rejuvenated Assets},
+ volume = {71},
+ year = {1989}
+}
+

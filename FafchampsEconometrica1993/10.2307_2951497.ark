@@ -1,0 +1,14 @@
+@article{10.2307/2951497,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/2951497},
+ abstract = {This paper reports estimates of the structural parameters of a stochastic control model that describes the labor decisions of small farmers in Burkina Faso, West Africa. The focus of the estimation is on measuring flexibility in production and intertemporal substitutability in consumption. Full information maximum likelihood estimates of the primitive parameters of the model are computed even though optimal labor decision rules cannot be derived analytically. Vuong's non-nested model specification test shows that this method yields parameter estimates that are superior to those derived by assuming that farmers solve a deterministic control problem. The low levels of agricultural labor effort commonly observed in the survey area are shown to be a consequence both of the low productivity of labor in archaic rainfed agriculture and of farmers' awareness that, in the absence of a labor market, overly ambitious production plans lead to seasonal manpower constraints. To meet rainfed farmers' concerns, agricultural research institutes and extension services should factor flexibility into their research agendas.},
+ author = {Marcel Fafchamps},
+ journal = {Econometrica},
+ number = {5},
+ pages = {1173--1197},
+ publisher = {[Wiley, Econometric Society]},
+ title = {Sequential Labor Decisions Under Uncertainty: An Estimable Household Model of West-African Farmers},
+ volume = {61},
+ year = {1993}
+}
+

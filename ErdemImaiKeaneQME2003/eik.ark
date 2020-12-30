@@ -1,0 +1,14 @@
+@Article{RePEc:kap:qmktec:v:1:y:2003:i:1:p:5-64,
+  author={Tülin Erdem and Susumu Imai and Michael Keane},
+  title={{Brand and Quantity Choice Dynamics Under Price Uncertainty}},
+  journal={Quantitative Marketing and Economics (QME)},
+  year=2003,
+  volume={1},
+  number={1},
+  pages={5-64},
+  month={March},
+  keywords={price expectations; pricing; scanner data; dynamic programming; simulation; discrete choice; stock p},
+  doi={10.1023/A:1023536326497},
+  abstract={We develop a model of household demand for frequently purchased consumer goods that are branded, storable and subject to stochastic price fluctuations. Our framework accounts for how inventories and expectations of future prices affect current period purchase decisions. We estimate our model using scanner data for the ketchup category. Our results indicate that price expectations and the nature of the price process have important effects on demand elasticities. Long-run cross price elasticities of demand are more than twice as great as short-run cross price elasticities. Temporary price cuts (or “deals”) primarily generate purchase acceleration and category expansion, rather than brand switching. Copyright Kluwer Academic Publishers 2003},
+  url={https://ideas.repec.org/a/kap/qmktec/v1y2003i1p5-64.html}
+}

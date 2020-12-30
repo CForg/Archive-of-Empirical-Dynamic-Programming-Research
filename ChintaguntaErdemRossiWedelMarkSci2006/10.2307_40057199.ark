@@ -1,0 +1,14 @@
+@article{10.2307/40057199,
+ ISSN = {07322399, 1526548X},
+ URL = {http://www.jstor.org/stable/40057199},
+ abstract = {The recent marketing literature reflects a growing interest in structural models, stemming from (1) the desire to test a variety of behavioral theories with market data, and (2) recent developments that facilitate estimation of and inference for these models. Whether one should always go through the effort of developing such tightly parameterized models with the associated computational burden of estimating them and whether it pays off to make strict behavioral assumptions in terms of better decisions remain open questions. To shed some light on these issues, we provide examples of structural approaches to consumer choice and demand as well as examples where the goal is to study the nature of competition in the marketplace. From that review comes our discussion of issues in the development and application of structural models, including their estimation, testing, and validation, their applicability in the practice of marketing, and their usefulness for normative as well as descriptive purposes.},
+ author = {Pradeep Chintagunta and Tülin Erdem and Peter E. Rossi and Michel Wedel},
+ journal = {Marketing Science},
+ number = {6},
+ pages = {604--616},
+ publisher = {INFORMS},
+ title = {Structural Modeling in Marketing: Review and Assessment},
+ volume = {25},
+ year = {2006}
+}
+

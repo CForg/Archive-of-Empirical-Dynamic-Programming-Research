@@ -1,0 +1,14 @@
+@article{10.1086/262080,
+ ISSN = {00223808, 1537534X},
+ URL = {http://www.jstor.org/stable/10.1086/262080},
+ abstract = {This paper provides structural estimates of a dynamic model of schooling, work, and occupational choice decisions based on 11 years of observations on a sample of young men from the 1979 youth cohort of the National Longitudinal Surveys of Labor Market Experience (NLSY). The structural estimation framework that we adopt fully imposes the restrictions of the theory and permits an investigation of whether such a theoretically restricted model can succeed in quantitatively fitting the observed data patterns. We find that a suitably extended human capital investment model can in fact do an excellent job of fitting observed data on school attendance, work, occupational choices, and wages in the NLSY data on young men and also produces reasonable forecasts of future work decisions and wage patterns.},
+ author = {Michael P. Keane and Kenneth I. Wolpin},
+ journal = {Journal of Political Economy},
+ number = {3},
+ pages = {473--522},
+ publisher = {The University of Chicago Press},
+ title = {The Career Decisions of Young Men},
+ volume = {105},
+ year = {1997}
+}
+

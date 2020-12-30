@@ -1,0 +1,14 @@
+@article{10.2307/41057441,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/41057441},
+ abstract = {This paper develops a tractable econometric model of optimal migration, focusing on expected income as the main economic influence on migration. The model improves on previous work in two respects: it covers optimal sequences of location decisions (rather than a single once-for-all choice) and it allows for many alternative location choices. The model is estimated using panel data from the National Longitudinal Survey of Youth on white males with a high-school education. Our main conclusion is that interstate migration decisions are influenced to a substantial extent by income prospects. The results suggest that the link between income and migration decisions is driven both by geographic differences in mean wages and by a tendency to move in search of a better locational match when the income realization in the current location is unfavorable.},
+ author = {John Kennan and James R. Walker},
+ journal = {Econometrica},
+ number = {1},
+ pages = {211--251},
+ publisher = {[Wiley, Econometric Society]},
+ title = {THE EFFECT OF EXPECTED INCOME ON INDIVIDUAL MIGRATION DECISIONS},
+ volume = {79},
+ year = {2011}
+}
+

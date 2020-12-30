@@ -1,0 +1,14 @@
+@article{10.2307/2999563,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/2999563},
+ abstract = {In this paper, we develop and structurally estimate a sequential model of high school attendance and work decisions. The model's estimates imply that youths who drop out of high school have different traits than those who graduate-they have lower school ability and/or motivation, they have lower expectations about the rewards from graduation, they have a comparative advantage at jobs that are done by nongraduates, and they place a higher value on leisure and have a lower consumption value of school attendance. We also found that working while in school reduces school performance. However, policy experiments based on the model's estimates indicate that even the most restrictive prohibition on working while attending high school would have only a limited impact on the high school graduation rates of white males.},
+ author = {Zvi Eckstein and Kenneth I. Wolpin},
+ journal = {Econometrica},
+ number = {6},
+ pages = {1295--1339},
+ publisher = {[Wiley, Econometric Society]},
+ title = {Why Youths Drop Out of High School: The Impact of Preferences, Opportunities, and Abilities},
+ volume = {67},
+ year = {1999}
+}
+

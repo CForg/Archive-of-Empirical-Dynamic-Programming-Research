@@ -1,0 +1,14 @@
+@article{10.2307/1911259,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/1911259},
+ abstract = {This paper formulates a simple regenerative optimal stopping model of bus engine replacement to describe the behavior of Harold Zurcher, superintendent of maintenance at the Madison (Wisconsin) Metropolitan Bus Company. The null hypothesis is that Zurcher's decisions on bus engine replacement coincide with an optimal stopping rule: a strategy which specifies whether or not to replace the current bus engine each period as a function of observed and unobserved state variables. The optimal stopping rule is the solution to a stochastic dynamic programming problem that formalizes the trade-off between the conflicting objectives of minimizing maintenance costs versus minimizing unexpected engine failures. The model depends on unknown "primitive parameters" which specify Zurcher's expectations of the future values of the state variables, the expected costs of regular bus maintenance, and his perceptions of the customer goodwill costs of unexpected failures. Using ten years of monthly data on bus mileage and engine replacements for a subsample of 104 buses in the company fleet, I estimate these primitive parameters and test whether Zurcher's behavior is consistent with the model. Admittedly, few people are likely to take particular interest in Harold Zurcher and bus engine replacement per se. I focus on a specific individual and capital good because it provides a simple, concrete framework to illustrate two ideas: (i) a "bottom-up" approach for modelling replacement investment, and (ii) a "nested fixed point" algorithm for estimating dynamic programming models of discrete choice.},
+ author = {John Rust},
+ journal = {Econometrica},
+ number = {5},
+ pages = {999--1033},
+ publisher = {[Wiley, Econometric Society]},
+ title = {Optimal Replacement of GMC Bus Engines: An Empirical Model of Harold Zurcher},
+ volume = {55},
+ year = {1987}
+}
+

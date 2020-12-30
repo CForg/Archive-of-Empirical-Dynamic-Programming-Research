@@ -1,0 +1,14 @@
+@article{10.2307/2138730,
+ ISSN = {00223808, 1537534X},
+ URL = {http://www.jstor.org/stable/2138730},
+ abstract = {This paper studies the transition from school to full-time employment and subsequent labor mobility during the first five postschooling years for several recent cohorts of black and white male "terminal" high school graduates using unique data from the 1979 youth cohort of the National Longitudinal Surveys of Labor Market Experience. A constrained optimization model of labor force dynamics is implemented empirically integrating features of models previously described in the literature. The estimates of the model provide quantitative evidence on underlying structural differences in labor market constraints faced by blacks and whites. For example, while blacks have overall a substantially smaller wage return to work experience and face a less disperse wage offer distribution, blacks face a higher probability of receiving job offers.},
+ author = {Kenneth I. Wolpin},
+ journal = {Journal of Political Economy},
+ number = {3},
+ pages = {535--560},
+ publisher = {University of Chicago Press},
+ title = {The Determinants of Black-White Differences in Early Employment Careers: Search, Layoffs, Quits, and Endogenous Wage Growth},
+ volume = {100},
+ year = {1992}
+}
+

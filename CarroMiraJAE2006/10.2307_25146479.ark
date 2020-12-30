@@ -1,0 +1,14 @@
+@article{10.2307/25146479,
+ ISSN = {08837252, 10991255},
+ URL = {http://www.jstor.org/stable/25146479},
+ abstract = {We propose a simple dynamic stochastic model of sterilization and contraceptive use and we estimate its structural parameters using a sample of married couples from the 1995 Spanish Family and Fertility Survey. The estimated structural model improves on previous studies in terms of its ability to rationalize observed behaviour. Allowing for simple forms of permanent unobserved heterogeneity across couples in their ability to conceive has important implications for estimates of utility and cost parameters. Estimates of child valuation parameters imply that most Spanish couples would have two children, but significant deviations from this goal are brought about by imperfect and costly fertility control. We perform simulations to quantify the impact on fertility of the availability of sterilization and other technologies which improve fertility control.},
+ author = {Jesús M. Carro and Pedro Mira},
+ journal = {Journal of Applied Econometrics},
+ number = {7},
+ pages = {955--980},
+ publisher = {Wiley},
+ title = {A Dynamic Model of Contraceptive Choice of Spanish Couples},
+ volume = {21},
+ year = {2006}
+}
+

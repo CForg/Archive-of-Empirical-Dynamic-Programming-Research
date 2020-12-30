@@ -1,0 +1,14 @@
+@article{10.2307/1831993,
+ ISSN = {00223808, 1537534X},
+ URL = {http://www.jstor.org/stable/1831993},
+ abstract = {This paper presents a model of job matching the generalizes the existing literature by allowing for different jobs types, or occupations. Such differences affect the value of job-specific experience, inducing a career profile where certain types are sampled before others. More specifically, the analysis shows that it is optimal for the young and inexperienced to gravitate toward jobs exhibiting a certain kind of risk. Then, after deriving the equilibrium job turnover rate for an economy in which people do not switch occupations, panel data are used to estimate its underlying parameters. The hypothesis that people do not switch occupations is rejected against the alternative that they do, thus providing empirical support for the theoretical extension undertaken here.},
+ author = {Robert A. Miller},
+ journal = {Journal of Political Economy},
+ number = {6},
+ pages = {1086--1120},
+ publisher = {University of Chicago Press},
+ title = {Job Matching and Occupational Choice},
+ volume = {92},
+ year = {1984}
+}
+

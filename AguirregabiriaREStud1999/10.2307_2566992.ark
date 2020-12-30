@@ -1,0 +1,14 @@
+@article{10.2307/2566992,
+ ISSN = {00346527, 1467937X},
+ URL = {http://www.jstor.org/stable/2566992},
+ abstract = {This paper is concerned with the interaction between price and inventory decisions in retailing firms and its implications for the dynamics of markups and the existence of sales promotions. We consider a model where a monopolistically competitive retailer decides price and inventories, and assumes lump-sum costs when placing orders or changing nominal prices. In this model, the existence of stockout probabilities and fixed ordering costs generate a cyclical price behaviour characterized by long periods without nominal price changes and short periods with very low prices (i.e. sales promotions). We estimate this model using a unique longitudinal dataset with information about retail and wholesale prices, inventories, orders, and sales for several brands in a supermarket chain. Based on the estimated model we perform several counterfactual experiments that show the important role that inventories and fixed ordering costs play in the dynamics of retail prices and the frequency of sales promotions in this dataset.},
+ author = {Victor Aguirregabiria},
+ journal = {The Review of Economic Studies},
+ number = {2},
+ pages = {275--308},
+ publisher = {[Oxford University Press, Review of Economic Studies, Ltd.]},
+ title = {The Dynamics of Markups and Inventories in Retailing Firms},
+ volume = {66},
+ year = {1999}
+}
+

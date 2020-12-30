@@ -1,0 +1,14 @@
+@article{10.2307/30034980,
+ ISSN = {00028282},
+ URL = {http://www.jstor.org/stable/30034980},
+ abstract = {This paper uses data from a randomized social experiment in Mexico to estimate and validate a dynamic behavioral model of parental decisions about fertility and child schooling, to evaluate the effects of the PROGRESA school subsidy program, and to perform a variety of counterfactual experiments of policy alternatives. Our method of validation estimates the model without using post-program data and then compares the model's predictions about program impacts to the experimental impact estimates. The results show that the model's predicted program impacts track the experimental results. Our analysis of counterfactual policies reveals an alternative subsidy schedule that would induce a greater impact on average school attainment at similar cost to the existing program},
+ author = {Petra E. Todd and Kenneth I. Wolpin},
+ journal = {The American Economic Review},
+ number = {5},
+ pages = {1384--1417},
+ publisher = {American Economic Association},
+ title = {Assessing the Impact of a School Subsidy Program in Mexico: Using a Social Experiment to Validate a Dynamic Behavioral Model of Child Schooling and Fertility},
+ volume = {96},
+ year = {2006}
+}
+

@@ -1,0 +1,14 @@
+@article{10.2307/2297955,
+ ISSN = {00346527, 1467937X},
+ URL = {http://www.jstor.org/stable/2297955},
+ abstract = {The paper presents a micro-econometric model of capital utilization and retirement. Estimates of a firm's discrete decision problem with regard to an existing piece of capital-whether to operate, hold idle or retire it-are obtained, in the context of the U.S. cement industry, by solving a discrete-choice stochastic dynamic programming model. The estimates are then used to simulate the effects of product and input price changes, and changes in the size and age of a cement kiln on a firm's propensity to operate, hold idle and retire a kiln.},
+ author = {Sanghamitra Das},
+ journal = {The Review of Economic Studies},
+ number = {2},
+ pages = {277--297},
+ publisher = {[Oxford University Press, Review of Economic Studies, Ltd.]},
+ title = {A Micro-Econometric Model of Capital Utilization and Retirement: The Case of the U.S. Cement Industry},
+ volume = {59},
+ year = {1992}
+}
+

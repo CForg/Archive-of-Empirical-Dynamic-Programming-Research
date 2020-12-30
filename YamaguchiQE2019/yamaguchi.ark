@@ -1,0 +1,14 @@
+@article{https://doi.org/10.3982/QE965,
+author = {Yamaguchi, Shintaro},
+title = {Effects of parental leave policies on female career and fertility choices},
+journal = {Quantitative Economics},
+volume = {10},
+number = {3},
+pages = {1195-1232},
+keywords = {Parental leave, female labor supply, discrete choice model, structural estimation, J13, J22, J24},
+doi = {https://doi.org/10.3982/QE965},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.3982/QE965},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.3982/QE965},
+abstract = {This paper constructs and estimates a dynamic discrete choice structural model of female employment and fertility decisions that incorporates job protection and cash benefits of parental leave legislation. The structural model is used for ex ante evaluation of policies that change the duration of job protection and/or the arrangement for cash benefits. Counterfactual simulations indicate that introducing an initial 1-year job protection policy increases maternal employment significantly, but extending the existing job protection period from 1 to 3 years has little effect. In addition, the employment effects of cash benefits seem modest. Overall, parental leave policies have little effect on fertility.},
+year = {2019}
+}

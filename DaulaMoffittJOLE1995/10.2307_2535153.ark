@@ -1,0 +1,14 @@
+@article{10.2307/2535153,
+ ISSN = {0734306X, 15375307},
+ URL = {http://www.jstor.org/stable/2535153},
+ abstract = {We estimate the effect of financial incentives for reenlistment on military retention rates using a stochastic dynamic programming model. We show that the computational burden of the model is relatively low even when estimated on panel data with unobserved heterogeneity. The estimates of the model show strong effects of military compensation, especially of retirement pay, on retention rates. We also compare our model with simpler-to-compute models and find that all give approximately the same fit but that our dynamic programming model gives more plausible predictions of policy measures that affect military and civilian compensation at future dates.},
+ author = {Thomas Daula and Robert Moffitt},
+ journal = {Journal of Labor Economics},
+ number = {3},
+ pages = {499--523},
+ publisher = {[University of Chicago Press, Society of Labor Economists, NORC at the University of Chicago]},
+ title = {Estimating Dynamic Models of Quit Behavior: The Case of Military Reenlistment},
+ volume = {13},
+ year = {1995}
+}
+

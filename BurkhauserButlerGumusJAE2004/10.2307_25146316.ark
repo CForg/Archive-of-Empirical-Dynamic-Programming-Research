@@ -1,0 +1,14 @@
+@article{10.2307/25146316,
+ ISSN = {08837252, 10991255},
+ URL = {http://www.jstor.org/stable/25146316},
+ abstract = {This paper develops a dynamic programming model of the Social Security Disability Insurance (SSDI) application timing decision. We estimate the time to application from the point at which a health condition first begins to affect the kind or amount of work that a currently employed person can do. We use Health and Retirement Study (HRS) and restricted access Social Security earnings data for estimation. Our results show that the type of work-limiting health condition, presence of employer accommodation, and the relative value of income in the application state to income in the work state significantly affect the timing of SSDI application.},
+ author = {Richard V. Burkhauser and J. S. Butler and Gulcin Gumus},
+ journal = {Journal of Applied Econometrics},
+ number = {6},
+ pages = {671--685},
+ publisher = {Wiley},
+ title = {Dynamic Programming Model Estimates of Social Security Disability Insurance Application Timing},
+ volume = {19},
+ year = {2004}
+}
+

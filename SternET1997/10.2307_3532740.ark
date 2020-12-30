@@ -1,0 +1,14 @@
+@article{10.2307/3532740,
+ ISSN = {02664666, 14694360},
+ URL = {http://www.jstor.org/stable/3532740},
+ abstract = {This paper examines the properties of various approximation methods for solving stochastic dynamic programs in structural estimation problems. The problem addressed is evaluating the expected value of the maximum of available choices. The paper shows that approximating this by the maximum of expected values frequently has poor properties. It also shows that choosing a convenient distributional assumptions for the errors and then solving exactly conditional on the distributional assumption leads to small approximation errors even if the distribution is misspecified.},
+ author = {Steven Stern},
+ journal = {Econometric Theory},
+ number = {3},
+ pages = {392--405},
+ publisher = {Cambridge University Press},
+ title = {Approximate Solutions to Stochastic Dynamic Programs},
+ volume = {13},
+ year = {1997}
+}
+

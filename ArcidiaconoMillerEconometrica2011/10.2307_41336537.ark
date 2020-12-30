@@ -1,0 +1,14 @@
+@article{10.2307/41336537,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/41336537},
+ abstract = {We adapt the expectation-maximization algorithm to incorporate unobserved heterogeneity into conditional choice probability (CCP) estimators of dynamic discrete choice problems. The unobserved heterogeneity can be time-invariant or follow a Markov chain. By developing a class of problems where the difference in future value terms depends on a few conditional choice probabilities, we extend the class of dynamic optimization problems where CCP estimators provide a computationally cheap alternative to full solution methods. Monte Carlo results confirm that our algorithms perform quite well, both in terms of computational time and in the precision of the parameter estimates.},
+ author = {Peter Arcidiacono and Robert A. Miller},
+ journal = {Econometrica},
+ number = {6},
+ pages = {1823--1867},
+ publisher = {[Wiley, Econometric Society]},
+ title = {CONDITIONAL CHOICE PROBABILITY ESTIMATION OF DYNAMIC DISCRETE CHOICE MODELS WITH UNOBSERVED HETEROGENEITY},
+ volume = {79},
+ year = {2011}
+}
+

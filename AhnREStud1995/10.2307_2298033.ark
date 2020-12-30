@@ -1,0 +1,14 @@
+@article{10.2307/2298033,
+ ISSN = {00346527, 1467937X},
+ URL = {http://www.jstor.org/stable/2298033},
+ abstract = {One of the important determinants of fertility is the value of children as perceived by parents. This paper estimates gender- and age-specific values of children using a dynamic programming model. The underlying hypothesis is that observed fertility outcome for any couple is the solution to their life-cycle optimization problem. Findings from the Korean data indicate that children impose net costs when young and net benefits when old. Both the early costs and the later benefits are larger for male children than female children, and for better-educated women than lower-educated women. Simulation studies which use estimated values of children suggest that a decrease in the costs of abortion and pre-natal gender-screening tests may raise the male-birth ratio through gender-selective abortions.},
+ author = {Namkee Ahn},
+ journal = {The Review of Economic Studies},
+ number = {3},
+ pages = {361--379},
+ publisher = {[Oxford University Press, Review of Economic Studies, Ltd.]},
+ title = {Measuring the Value of Children by Sex and Age Using a Dynamic Programming Model},
+ volume = {62},
+ year = {1995}
+}
+

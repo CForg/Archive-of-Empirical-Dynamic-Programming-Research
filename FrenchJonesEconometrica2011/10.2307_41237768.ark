@@ -1,0 +1,14 @@
+@article{10.2307/41237768,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/41237768},
+ abstract = {This paper provides an empirical analysis of the effects of employer-provided health insurance, Medicare, and Social Security on retirement behavior. Using data from the Health and Retirement Study, we estimate a dynamic programming model of retirement that accounts for both saving and uncertain medical expenses. Our results suggest that Medicare is important for understanding retirement behavior, and that uncertainty and saving are both important for understanding the labor supply responses to Medicare. Half the value placed by a typical worker on his employer-provided health insurance is the value of reduced medical expense risk. Raising the Medicare eligibility age from 65 to 67 leads individuals to work an additional 0.074 years over ages 60-69. In comparison, eliminating 2 years worth of Social Security benefits increases years of work by 0.076 years.},
+ author = {Eric French and John Bailey Jones},
+ journal = {Econometrica},
+ number = {3},
+ pages = {693--732},
+ publisher = {[Wiley, Econometric Society]},
+ title = {THE EFFECTS OF HEALTH INSURANCE AND SELF-INSURANCE ON RETIREMENT BEHAVIOR},
+ volume = {79},
+ year = {2011}
+}
+

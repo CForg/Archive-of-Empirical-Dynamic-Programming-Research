@@ -1,0 +1,14 @@
+@article{10.2307/2285286,
+ ISSN = {08837252, 10991255},
+ URL = {http://www.jstor.org/stable/2285286},
+ abstract = {We develop and estimate a simple regenerative optimal stopping model of aircraft engine maintenance that attempts to describe the behaviour of airline maintenance personnel. The model assumes that the decision to send an engine to the shop for overhaul is the solution to a stochastic dynamic programming problem that trades off the expected cost of continuing operation with the attendant risk of engine failure with the cost of performing the overhaul. We estimate the model using 42 engine histories from Pratt & Whitney, Inc. Estimation results indicate that such a model does not explain observed engine histories before deregulation, but does fit the data in the era since deregulation. The model also provides insight into the perceived relative costs of engine maintenance, in-flight shutdown, and ordinary operation.},
+ author = {D. Mark Kennet},
+ journal = {Journal of Applied Econometrics},
+ number = {4},
+ pages = {351--368},
+ publisher = {Wiley},
+ title = {A Structural Model of Aircraft Engine Maintenance},
+ volume = {9},
+ year = {1994}
+}
+

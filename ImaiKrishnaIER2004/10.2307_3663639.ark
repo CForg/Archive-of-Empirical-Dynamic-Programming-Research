@@ -1,0 +1,14 @@
+@article{10.2307/3663639,
+ ISSN = {00206598, 14682354},
+ URL = {http://www.jstor.org/stable/3663639},
+ abstract = {Using maximum likelihood techniques and monthly panel data we solve and estimate an explicitly dynamic model of criminal behavior where current criminal activity impacts future labor market outcomes. We show that the threat of future adverse effects in the labor market when arrested acts as a strong deterrent to crime. Moreover, such forward-looking behavior is estimated to be important. Hence, policies that weaken this deterrence will be much less effective in fighting crime. This suggests that prevention is more powerful than redemption since anticipated redemption allows criminals to look forward to negating the consequences of their crimes.},
+ author = {Susumu Imai and Kala Krishna},
+ journal = {International Economic Review},
+ number = {3},
+ pages = {845--872},
+ publisher = {[Economics Department of the University of Pennsylvania, Wiley, Institute of Social and Economic Research, Osaka University]},
+ title = {Employment, Deterrence, and Crime in a Dynamic Model},
+ volume = {45},
+ year = {2004}
+}
+

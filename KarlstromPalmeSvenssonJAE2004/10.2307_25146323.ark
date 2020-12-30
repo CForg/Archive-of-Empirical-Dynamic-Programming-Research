@@ -1,0 +1,14 @@
+@article{10.2307/25146323,
+ ISSN = {08837252, 10991255},
+ URL = {http://www.jstor.org/stable/25146323},
+ abstract = {This paper presents an empirical analysis of how Sweden's public old age pension system affects the retirement decision. We focus on male blue-collar workers whose dominant income source as retired comes from the public old age pension system. We develop a dynamic programming model using the rules for the public pension system. In addition to the effects of economic incentives through the pension systems the DP model also measures the effect of the mandatory retirement age of 65-which applies to most parts of Sweden's labour market-on retirement behaviour. The estimated model fits within-sample retirement patterns remarkably well. A simulation of a hypothetical reform, where all retirement incentives in the pension schemes are delayed by three years, shows that economic incentives affect retirement behaviour.},
+ author = {Anders Karlstrom and Marten Palme and Ingemar Svensson},
+ journal = {Journal of Applied Econometrics},
+ number = {6},
+ pages = {795--807},
+ publisher = {Wiley},
+ title = {A Dynamic Programming Approach to Model the Retirement Behaviour of Blue-Collar Workers in Sweden},
+ volume = {19},
+ year = {2004}
+}
+

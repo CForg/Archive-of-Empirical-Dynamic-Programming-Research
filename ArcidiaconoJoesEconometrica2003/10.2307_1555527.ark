@@ -1,0 +1,14 @@
+@article{10.2307/1555527,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/1555527},
+ abstract = {A popular way to account for unobserved heterogeneity is to assume that the data are drawn from a finite mixture distribution. A barrier to using finite mixture models is that parameters that could previously be estimated in stages must now be estimated jointly: using mixture distributions destroys any additive separability of the log-likelihood function. We show, however, that an extension of the EM algorithm reintroduces additive separability, thus allowing one to estimate parameters sequentially during each maximization step. In establishing this result, we develop a broad class of estimators for mixture models. Returning to the likelihood problem, we show that, relative to full information maximum likelihood, our sequential estimator can generate large computational savings with little loss of efficiency.},
+ author = {Peter Arcidiacono and John Bailey Jones},
+ journal = {Econometrica},
+ number = {3},
+ pages = {933--946},
+ publisher = {[Wiley, Econometric Society]},
+ title = {Finite Mixture Distributions, Sequential Likelihood and the EM Algorithm},
+ volume = {71},
+ year = {2003}
+}
+

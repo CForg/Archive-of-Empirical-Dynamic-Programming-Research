@@ -1,0 +1,14 @@
+@article{10.2307/2285013,
+ ISSN = {08837252, 10991255},
+ URL = {http://www.jstor.org/stable/2285013},
+ abstract = {Throughout the US dairy farm industry, observed rates of dairy cow replacement consistently exceed the rates prescribed as optimal by dairy economists. We attempt to uncover the causes of this discrepancy by estimating a series of dynamic discrete choice models of dairy cow replacement using historical farm-level data. We also advance the methods used to estimate dynamic discrete choice models by demonstrating how orthogonal polynomial projection methods can be effectively combined with standard maximum likelihood techniques to estimate structural models of dynamic decision making.},
+ author = {Mario J. Miranda and Gary D. Schnitkey},
+ journal = {Journal of Applied Econometrics},
+ number = {},
+ pages = {S41--S55},
+ publisher = {Wiley},
+ title = {An Empirical Model of Asset Replacement in Dairy Production},
+ volume = {10},
+ year = {1995}
+}
+

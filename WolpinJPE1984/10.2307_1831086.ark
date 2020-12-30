@@ -1,0 +1,14 @@
+@article{10.2307/1831086,
+ ISSN = {00223808, 1537534X},
+ URL = {http://www.jstor.org/stable/1831086},
+ abstract = {This paper develops a finite-horizon dynamic stochastic model of discrete choice with respect to life-cycle fertility within an environment where infant survival is uncertain. The model yields implications for the number, timing, and spacing of children. A tractable estimation method is developed for the linear constraint-quadratic utility case that is intimately tied to the dynamic optimization problem, and the method is applied to Malaysian household data. Estimation is based on integrating the numerical solution of the dynamic programming model of behavior with a maximum likelihood procedure.},
+ author = {Kenneth I. Wolpin},
+ journal = {Journal of Political Economy},
+ number = {5},
+ pages = {852--874},
+ publisher = {University of Chicago Press},
+ title = {An Estimable Dynamic Stochastic Model of Fertility and Child Mortality},
+ volume = {92},
+ year = {1984}
+}
+

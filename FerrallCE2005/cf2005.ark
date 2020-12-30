@@ -1,0 +1,14 @@
+@Article{RePEc:kap:compec:v:25:y:2005:i:4:p:343-379,
+  author={Christopher Ferrall},
+  title={{Solving Finite Mixture Models: Efficient Computation in Economics Under Serial and Parallel Execution}},
+  journal={Computational Economics},
+  year=2005,
+  volume={25},
+  number={4},
+  pages={343-379},
+  month={June},
+  keywords={heterogeneous agent models; numerical optimization},
+  doi={10.1007/s10614-005-6413-3},
+  abstract={Many economic models are completed by finding a parameter vector θ that optimizes a function f(θ), a task that can only be accomplished by iterating from a starting vector θ 0 . Use of a generic iterative optimizer to carry out this task can waste enormous amounts of computation when applied to a class of problems defined here as finite mixture models. The finite mixture class is large and important in economics and eliminating wasted computations requires only limited changes to standard code. Further, the approach described here greatly increases gains from parallel execution and opens possibilities for re-writing objective functions to make further efficiency gains. Copyright Springer Science + Business Media, Inc. 2005},
+  url={https://ideas.repec.org/a/kap/compec/v25y2005i4p343-379.html}
+}

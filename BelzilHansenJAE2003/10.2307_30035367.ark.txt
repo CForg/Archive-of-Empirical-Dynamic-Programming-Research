@@ -1,0 +1,14 @@
+@article{10.2307/30035367,
+ ISSN = {08837252, 10991255},
+ URL = {http://www.jstor.org/stable/30035367},
+ abstract = {Using a structural dynamic programming model, we investigate the relative importance of family background variables and individual specific abilities in explaining cross-sectional differences in schooling attainments and wages. Each type of ability is the sum of one component correlated with family background variables and a residual (orthogonal) component which is purely individual specific. Household background variables (especially parents' education) account for 68% of the explained cross-sectional variations in schooling attainments, while ability correlated with background variables accounts for 17% and pure individual specific ability accounts for 15%. Interestingly, individual differences in wages are mostly explained by pure individual specific abilities as they account for as much as 73% of the explained variations in wages. Family background variables account for only 19%, while ability endowments correlated with family background account for 8%.},
+ author = {Christian Belzil and Jörgen Hansen},
+ journal = {Journal of Applied Econometrics},
+ number = {6},
+ pages = {679--696},
+ publisher = {Wiley},
+ title = {Structural Estimates of the Intergenerational Education Correlation},
+ volume = {18},
+ year = {2003}
+}
+

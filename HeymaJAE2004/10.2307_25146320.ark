@@ -1,0 +1,14 @@
+@article{10.2307/25146320,
+ ISSN = {08837252, 10991255},
+ URL = {http://www.jstor.org/stable/25146320},
+ abstract = {This study focuses on determinants of elderly labour force participation and retirement decisions in the Netherlands. This is analysed by a dynamic programming model for the simultaneous choice of retirement age and route, which includes social insurance and private pensions, eligibility conditions for early retirement, lifecycle wage and health profiles, and layoffs. Special attention is given to opportunities for and the effect of participation policies. Results show that institutional structures of benefit and pension programmes are prime determinants of retirement, particularly eligibility conditions and potential substitution between exit routes, and that dynamic aspects are relevant for understanding retirement behaviour.},
+ author = {Arjan Heyma},
+ journal = {Journal of Applied Econometrics},
+ number = {6},
+ pages = {739--759},
+ publisher = {Wiley},
+ title = {A Structural Dynamic Analysis of Retirement Behaviour in the Netherlands},
+ volume = {19},
+ year = {2004}
+}
+

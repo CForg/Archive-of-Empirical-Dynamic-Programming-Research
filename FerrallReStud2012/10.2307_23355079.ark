@@ -1,0 +1,14 @@
+@article{10.2307/23355079,
+ ISSN = {00346527, 1467937X},
+ URL = {http://www.jstor.org/stable/23355079},
+ abstract = {This paper studies the self-sufficiency project (SSP), a controlled randomized experiment concerning welfare, by estimating a model of endogenous skill accumulation, multidimensional job opportunities, and time-varying opportunity costs of labour market time. Methods for estimating dynamic programming models with unobserved heterogeneity are extended to account for unexpected policy interventions and endogenous sample selection and initial conditions. Parameters are identified and consistently estimated by imposing optimal responses to the exact form of the SSP earnings supplement and the experimental program, which induces exogenous variation between treatment groups and within groups as treatment progresses. The estimated model tracks primary outcomes well in and out of sample, except for underestimating trends in the sample of new welfare applicants. Predictions from counterfactual experiments run counter to non-structural results reported elsewhere, and they suggest that details of the SSP's design are critical for interpretation of results. The separate SSP Plus treatment may have longer lasting and more generalized impacts than the in-sample impacts suggest.},
+ author = {CHRISTOPHER FERRALL},
+ journal = {The Review of Economic Studies},
+ number = {4},
+ pages = {1495--1526},
+ publisher = {[Oxford University Press, Review of Economic Studies, Ltd.]},
+ title = {Explaining and Forecasting Results of the Self-sufficiency Project},
+ volume = {79},
+ year = {2012}
+}
+

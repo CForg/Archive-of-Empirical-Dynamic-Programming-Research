@@ -1,0 +1,14 @@
+@article{10.2307/3805915,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/3805915},
+ abstract = {Building upon a continuous-time model of search with Nash bargaining in a stationary environment, we analyze the effect of changes in minimum wages on labor market outcomes and welfare. Although minimum wage increases may or may not lead to increases in unemployment in our model, they can be welfare-improving to labor market participants on both the supply and demand sides of the labor market. We discuss identification of the model using Current Population Survey data on accepted wages and unemployment durations, and show that by incorporating a limited amount of information from the demand side of the market it is possible to obtain credible and precise estimates of all primitive parameters. We show that the optimal minimum wage in 1996 depends critically on whether or not contact rates can be considered to be exogenous and we note that the limited variation in minimum wages makes testing this assumption problematic.},
+ author = {Christopher J. Flinn},
+ journal = {Econometrica},
+ number = {4},
+ pages = {1013--1062},
+ publisher = {[Wiley, Econometric Society]},
+ title = {Minimum Wage Effects on Labor Market Outcomes under Search, Matching, and Endogenous Contact Rates},
+ volume = {74},
+ year = {2006}
+}
+

@@ -1,0 +1,14 @@
+@article{10.2307/4541992,
+ ISSN = {00206598, 14682354},
+ URL = {http://www.jstor.org/stable/4541992},
+ abstract = {This article examines the links betweeninfant mortality and fertility in an environment with unobserved heterogeneity in infant mortality risk across mothers. In such an environment, replacement behavior (i.e., the fertility response to an experienced child death) might be influenced by mothers' learning about a family-specific component of infant mortality risk. I explicitly introduce learning by mothers in a dynamic stochastic model of life-cycle marital fertility, and I estimate the model's structural parameters using Malaysian panel data. The framework is used to estimate replacement rates and to correct for birth selectivity in the estimation of the relationship between infant mortal risk and "health inputs."},
+ author = {Pedro Mira},
+ journal = {International Economic Review},
+ number = {3},
+ pages = {809--846},
+ publisher = {[Economics Department of the University of Pennsylvania, Wiley, Institute of Social and Economic Research, Osaka University]},
+ title = {Uncertain Infant Mortality, Learning, and Life-Cycle Fertility},
+ volume = {48},
+ year = {2007}
+}
+

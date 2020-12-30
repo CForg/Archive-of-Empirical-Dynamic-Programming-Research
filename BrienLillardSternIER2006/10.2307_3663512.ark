@@ -1,0 +1,14 @@
+@article{10.2307/3663512,
+ ISSN = {00206598, 14682354},
+ URL = {http://www.jstor.org/stable/3663512},
+ abstract = {The objective of this research is to further our understanding of how and why individuals enter and leave coresidential relationships. We develop and estimate an economic model of nonmarital cohabitation, marriage, and divorce that is consistent with current data on the formation and dissolution of relationships. Jovanovic's (Journal of Political Economy 87 (1979), 972-90) theoretical matching model is extended to help explain household formation and dissolution behavior. Implications of the model reveal what factors influence the decision to start a relationship, what form this relationship will take, and the relative stability of the various types of unions. The structural parameters of the model are estimated using longitudinal data from a sample of female high school seniors from the United States. New numerical methods are developed to reduce computational costs associated with estimation. The empirical results have interesting interpretations given the structural model. They show that a significant cause of cohabitation is the need to learn about potential partners and to hedge against future bad shocks. The estimated parameters are used to conduct several comparative dynamic experiments. For example, we show that policy experiments changing the cost of divorce have little effect on relationship choices.},
+ author = {Michael J. Brien and Lee A. Lillard and Steven Stern},
+ journal = {International Economic Review},
+ number = {2},
+ pages = {451--494},
+ publisher = {[Economics Department of the University of Pennsylvania, Wiley, Institute of Social and Economic Research, Osaka University]},
+ title = {Cohabitation, Marriage, and Divorce in a Model of Match Quality},
+ volume = {47},
+ year = {2006}
+}
+

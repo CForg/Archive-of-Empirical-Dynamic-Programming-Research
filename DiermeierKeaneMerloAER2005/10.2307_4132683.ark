@@ -1,0 +1,14 @@
+@article{10.2307/4132683,
+ ISSN = {00028282},
+ URL = {http://www.jstor.org/stable/4132683},
+ abstract = {Our main goal is to quantify the returns to a career in the United States Congress. We specify a dynamic model of career decisions of a member of Congress and estimate this model using a newly collected dataset. Given estimates of the structural model, we assess reelection probabilities, estimate the effect of congressional experience on private and public sector wages, and quantify the value of a congressional seat. Moreover, we assess how an increase in the congressional wage or the imposition of term limits would affect the career decisions of politicians and the returns from a career in Congress.},
+ author = {Daniel Diermeier and Michael Keane and Antonio Merlo},
+ journal = {The American Economic Review},
+ number = {1},
+ pages = {347--373},
+ publisher = {American Economic Association},
+ title = {A Political Economy Model of Congressional Careers},
+ volume = {95},
+ year = {2005}
+}
+

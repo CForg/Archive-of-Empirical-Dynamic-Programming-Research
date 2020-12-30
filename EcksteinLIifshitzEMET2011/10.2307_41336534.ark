@@ -1,0 +1,14 @@
+@article{10.2307/41336534,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/41336534},
+ abstract = {The increase in female employment and participation rates is one of the most dramatic changes to have taken place in the economy during the last century. However, while the employment rate of married women more than doubled during the last 50 years, that of unmarried women remained almost constant. To empirically analyze these trends, we estimate a female dynamic labor supply model using an extended version of Eckstein and Wolpin (1989) to compare the various explanations in the literature for the observed trends. This dynamic model provides a much better fit to the life-cycle employment pattern than a static version of the model and a standard static reduced form model (Heckman (1979)). The main finding using the dynamic model is that the rise in education levels accounts for about 33 percent of the increase in female employment, and the rise in wages and narrowing of the gender wage gap account for another 20 percent, while about 40 percent remains unexplained by observed household characteristics. We show that this unexplained portion can be empirically attributed to cohort-specific changes in preferences or the costs of child-rearing and household maintenance. Finally, the decline in fertility and the increase in divorce rates account for only a small share of the increase in female employment rates.},
+ author = {Zvi Eckstein and Osnat Lifshitz},
+ journal = {Econometrica},
+ number = {6},
+ pages = {1675--1726},
+ publisher = {[Wiley, Econometric Society]},
+ title = {DYNAMIC FEMALE LABOR SUPPLY},
+ volume = {79},
+ year = {2011}
+}
+

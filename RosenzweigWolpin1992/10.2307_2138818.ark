@@ -1,0 +1,14 @@
+@article{10.2307/2138818,
+ ISSN = {00223808, 1537534X},
+ URL = {http://www.jstor.org/stable/2138818},
+ abstract = {In this paper we formulate and estimate a finite-horizon, structural dynamic model of agricultural investment behavior that incorporates the major features of low-income agricultural environments: income uncertainty, constraints on borrowing and rental markets, and the use of investment assets to generate income and smooth consumption. The model is fit to longitudinal Indian household data on farm profits, bullock stocks, and pump sets. The estimated structural parameters are used to assess the effects on the life cycle accumulation of bullocks, agricultural profits, and welfare associated with complete markets and bullock liquidity and with second-best policies that provide assured sources of income to farmers and weather insurance.},
+ author = {Mark R. Rosenzweig and Kenneth I. Wolpin},
+ journal = {Journal of Political Economy},
+ number = {2},
+ pages = {223--244},
+ publisher = {University of Chicago Press},
+ title = {Credit Market Constraints, Consumption Smoothing, and the Accumulation of Durable Production Assets in Low-Income Countries: Investments in Bullocks in India},
+ volume = {101},
+ year = {1993}
+}
+

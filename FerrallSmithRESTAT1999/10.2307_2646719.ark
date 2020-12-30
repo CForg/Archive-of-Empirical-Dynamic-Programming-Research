@@ -1,0 +1,14 @@
+@article{10.2307/2646719,
+ ISSN = {00346535, 15309142},
+ URL = {http://www.jstor.org/stable/2646719},
+ abstract = {Using data from professional baseball, basketball, and hockey, we estimate the parameters of a sequential game model of best-of-n championship series controlling for measured and unmeasured differences in team strength and bootstrapping the maximum-likelihood estimates to improve their small sample properties. We find negligible strategic effects in all three sports: teams play as well as possible in each game regardless of the game's importance in the series. We also estimate negligible unobserved heterogeneity after controlling for regular season records and past appearance in the championship series: Teams are estimated to be exactly as strong as they appear on paper.},
+ author = {Christopher Ferrall and Anthony A. Smith},
+ journal = {The Review of Economics and Statistics},
+ number = {4},
+ pages = {704--719},
+ publisher = {The MIT Press},
+ title = {A Sequential Game Model of Sports Championship Series: Theory and Estimation},
+ volume = {81},
+ year = {1999}
+}
+

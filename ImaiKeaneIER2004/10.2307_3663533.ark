@@ -1,0 +1,14 @@
+@article{10.2307/3663533,
+ ISSN = {00206598, 14682354},
+ URL = {http://www.jstor.org/stable/3663533},
+ abstract = {We solve and estimate a dynamic model that allows agents to optimally choose their labor hours and consumption and that allows for both human capital accumulation and savings. Estimation results and simulation exercises indicate that the intertemporal elasticity of substitution is much higher than the conventional estimates and the downward bias comes from the omission of the human capital accumulation effect. The human capital accumulation effect renders the life-cycle path of the shadow wage relatively flat, even though wages increase with age. Hence, a rather flat life-cycle labor supply path can be reconciled with a high intertemporal elasticity of substitution.},
+ author = {Susumu Imai and Michael P. Keane},
+ journal = {International Economic Review},
+ number = {2},
+ pages = {601--641},
+ publisher = {[Economics Department of the University of Pennsylvania, Wiley, Institute of Social and Economic Research, Osaka University]},
+ title = {Intertemporal Labor Supply and Human Capital Accumulation},
+ volume = {45},
+ year = {2004}
+}
+

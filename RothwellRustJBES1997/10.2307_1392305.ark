@@ -1,0 +1,14 @@
+@article{10.2307/1392305,
+ ISSN = {07350015},
+ URL = {http://www.jstor.org/stable/1392305},
+ abstract = {We present an empirical model of optimal operation of nuclear power plants. The optimal lifetime is the solution to an optimal stopping problem: The plant is closed when the expected discounted losses from continued operation exceed the discounted costs of decommissioning. We forecast the evolution of the nuclear power industry under the current regime of 40-year operating licenses and for a policy allowing 20-year license extensions. We conclude that the extension would double the expected discounted value of U.S. nuclear power plants and double the undiscounted electrical power output of the U.S. nuclear industry over its remaining lifetime.},
+ author = {Geoffrey Rothwell and John Rust},
+ journal = {Journal of Business & Economic Statistics},
+ number = {2},
+ pages = {195--208},
+ publisher = {[American Statistical Association, Taylor & Francis, Ltd.]},
+ title = {On the Optimal Lifetime of Nuclear Power Plants},
+ volume = {15},
+ year = {1997}
+}
+
