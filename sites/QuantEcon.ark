@@ -1,0 +1,6 @@
+@site{QuantEcon,
+URL = {http://site.com}
+author = {Michigan J. Frog}
+title = {One Froggy Evening}
+language = {Python}
+}

@@ -1,0 +1,7 @@
+@package{VFI-Toolkit,
+ URL = {http://vfitoolkit.com/},
+ author = {Robert D. Kirby},
+ title = {A Toolkit for Macroeconomic Models using Value Function Iteration},
+ language = {Matlab}
+ area = {Macro}
+}
