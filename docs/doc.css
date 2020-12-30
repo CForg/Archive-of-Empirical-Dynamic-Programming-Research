@@ -1,0 +1,619 @@
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+
+            ul.menu {
+              list-style-type: none;
+              margin: 10px;
+              padding: 50px;
+              overflow: hidden;
+            }
+          ul.menu > li {
+            list-style-type: none;
+            float: right;
+            padding-right: 8px;
+
+          }
+          .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+          }
+
+          /* Tooltip text */
+          .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+
+            /* Position the tooltip text - see examples below! */
+            position: absolute;
+            z-index: 1;
+          }
+
+          /* Show the tooltip text when you mouse over the tooltip container */
+          .tooltip:hover .tooltiptext {
+            visibility: visible;
+          }
+          ul.menu > li a:link, a:visited {
+              display: block;
+              background-color: white;
+              padding: 5px 5px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              color : darkblue;
+            }
+ul.faq {
+  padding:30px;
+  background-color: 	silver;
+   color : black;
+   margin-top : 0px;
+ }
+ ul.faq li {
+   line-height : 24pt;
+ }
+a[href^="#"] {
+  text-decoration: none;
+  color: var(--rcolor);
+  content: attr(href, url);
+    }
+a[href^="#"].r {
+  text-decoration: none;
+  color: var(--rcolor);
+  content: attr(href, url);
+  }
+a[href^="#"].r::before {    content: ""; }
+a[href^="#"].r::after {    content: ''; }
+
+a[href^="#"].seg {
+  color: var(--rcolor);
+  text-decoration: none;
+  content: attr(href, url);
+  }
+a[href^="#"].seg::before {
+      content: "["; }
+a[href^="#"].seg::after {
+      content: ']'; }
+
+a[href^="#"].section {
+    /*content: ;  target-counter(attr(href), section)*/
+    color: var(--rcolor);
+    text-decoration: none;
+    }
+a[href^="#"].section::before {
+      content: "Section (";
+      }
+a[href^="#"].section::after {
+      content: ')';
+      }
+a[href^="#"].subsection {
+    /*content: target-counter(attr(href, url), section) "." target-counter(attr(href, url), subsection); */
+  color: var(--rcolor);
+  text-decoration: none;
+    }
+
+a[href^="#"].subsection::before {
+      content: "Section (";
+      }
+a[href^="#"].subsection::after {
+      content: ')'; }
+a[href^="#"].subsubsubsection {
+    /*content: target-counter(attr(href, url), section) "." target-counter(attr(href, url), subsection) "." target-counter(attr(href, url), subsubsection) "." target-counter(attr(href, url), subsubsubsection); */
+    color: var(--rcolor);
+    text-decoration: none;
+    }
+a[href^="#"].subsubsubsection::before {
+    content: "Section ("; }
+a[href^="#"].subsubsubsection::after {
+      content: ')';
+    }
+a[href^="#"].fig {
+    /* content: target-counter(attr(href), figure); */
+    color: var(--rcolor);
+    text-decoration: none;
+    }
+a[href^="#"].fig::before {
+      content: "Figure "; }
+a[href^="#"].fig::after {
+      content: ''; }
+a[href^="#"].alg {
+    color: var(--rcolor);
+    text-decoration: none;
+    }
+a[href^="#"].alg::before {
+      content: "Algorithm "; }
+a[href^="#"].alg::after {
+      content: ''; }
+a[href^="#"].table {
+    color: var(--rcolor);
+    text-decoration: none;
+    content: target-counter(attr(href, url), table);
+    }
+a[href^="#"].table::before {
+      content: "Table "; }
+a[href^="#"].table::after {
+      content: ''; }
+
+h1 {
+    background: darkred;
+    border-bottom: 1px solid #cccccc;
+    font-family: "Ubuntu", arial, helvetica, sans-serif;
+    font-size: 32pt;
+    font-weight: bold;
+    padding: 4px;
+    height: 40px;
+    margin-top: 0;
+    color:white;
+     text-align: center;
+}
+
+h2 {
+  background: darkblue;
+  border-bottom: 1px solid #cccccc;
+  font-family: "Ubuntu", arial, helvetica, sans-serif;
+  font-size: 24pt;
+  font-weight: bold;
+  padding: 4px;
+  height: 40px;
+  margin-bottom: 0px;
+  color:white;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  break-after: avoid;
+  font-family: "Times", Times, serif;
+  font-weight: bold;
+  hyphens: none; }
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin: 0 0 4pt; }
+  caption::before {
+    content: "Table " counter(table) ". "; }
+
+cite {
+  break-inside: avoid;
+  counter-increment: reference;
+  display: block;
+  font-style: normal;
+  margin-left: 2.5em;
+  position: relative;
+  text-align: left; }
+  cite::before {
+    content: "[" counter(reference) "]";
+    display: inline-block;
+    margin-left: -2.5em;
+    position: absolute; }
+  cite a {
+    text-decoration: none; }
+
+dd > PRE {
+    background: var(--acolor);
+    break-inside: avoid;
+    margin : 10px 10px 5px 10px;
+    width: min-content;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 12px 24px 12px 24px;
+/*    line-height: 14pt;
+    font-family: "Inconsolata", monospace; */
+	}
+
+.codeseg {
+  counter-increment: codesegment;
+    }
+
+.codeseg::before {
+  float: right;
+  font-size: smaller;
+  font-family: italic;
+  content:  " [" counter(codesegment,upper-alpha) "]";
+  }
+
+
+td {
+    vertical-align: top;
+    }
+td > dd PRE {
+    padding: 0px;
+    border-radius: 0px;
+    }
+
+figure {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    }
+
+figure.alg {
+  counter-increment: algorithm;
+  margin: 2em 2em;
+  text-align: left;
+  }
+
+figure:not(.alg){
+  counter-increment: figure;
+  margin: 2em ;
+  text-align: center; }
+
+figure.alg td {
+     text-align: left;
+    }
+
+hr {
+    height:2px;
+    border-width:0;
+    color:black;
+    background-color:black;
+    }
+
+figcaption {
+  font-weight: bold; }
+
+figcaption.fig::before {
+    content: "Figure " counter(figure) ". "; }
+
+figcaption.alg::before {
+    content: "Algorithm " counter(algorithm) ". "; }
+
+figcaption.Aalg::before {
+    content: "Algorithm A" counter(algorithm) ". "; }
+
+figcaption.Afig::before {
+    content: "Figure A" counter(figure) ". "; }
+
+  h1:not(.counter-skip)::before,
+  h2:not(.counter-skip)::before,
+  h3:not(.counter-skip)::before,
+  h4:not(.counter-skip)::before,
+  h5:not(.counter-skip)::before,
+  h6:not(.counter-skip)::before {
+    margin-right: .5em; }
+
+h2 {  line-height: 24pt;    }
+
+.nobreak {
+    /*different browsers recognize different versions*/
+    -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+    }
+
+div.alg {
+    background: whitesmoke;
+    margin : auto;
+    width : 95%;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size : small;
+    }
+
+/*p {
+  margin: 0 0 0.5em;
+  text-indent: 0; }*/
+p {
+   margin-bottom: -12pt;
+   text-indent : 2em;
+  }
+p.noindent {
+   margin-top: 18pt;
+    text-indent : 0em;
+    }
+q::before {
+  content: '“'; }
+
+q::after {
+  content: '”'; }
+
+q > q::before {
+  content: '‘'; }
+
+q > q::after {
+  content: '’'; }
+
+.small {
+  font-size: x-small;
+  line-height: 10pt;
+  }
+
+table.data {
+  border-collapse: collapse;
+  counter-increment: table;
+  margin: 1.667em 0 1em;
+  width: 100%;
+  break-inside: avoid;
+  background-color: var(--acolor);
+  }
+
+table.niqsum {
+  border-collapse: collapse;
+  margin: 1.667em 0 1em;
+  width: 100%;
+  background-color: transparent;
+
+  }
+
+table.niqsum td {
+    height: 24pt;
+    text-align: left;
+    vertical-align: center;
+    padding: 0px 3px 0px 3px;
+      }
+table.niqsum td.r {
+    text-align: right;
+    }
+table.niqsum th.r{
+    text-align: center;
+    }
+table.niqsum tr:nth-child(even) {
+    background-color: var(--acolor);
+    }
+
+table.data  th, td {
+  border: 0px;  /*0.5px solid #000;*/
+  padding: 0px;
+  text-align: center;
+  height : 10pt;
+  }
+
+td.foot {
+    font-size: x-small;
+    line-height: 10pt;
+    padding-left:40px;
+    text-align : left;
+    }
+
+a[href^="#"].f {
+  color: var(--rcolor);
+  text-decoration: none;
+  counter-increment: footnote;
+  font-size: 66%;
+  line-height: none;
+  }
+
+div.footnotes  {
+    counter-reset: footnote;
+    }
+div.note {
+    margin-left: 1em;
+    text-indent: -1em;
+    }
+span.footnote {
+  /*float: prince-column-footnote;
+  margin-left: .333em;
+  padding-left: .667em; */
+  }
+a[href^="#"].f::after{
+    vertical-align: super;
+    content: counter(footnote);
+    }
+  .footnote::footnote-call {
+    content: counter(footnote);
+    font-size: 66%;
+    line-height: none;
+    vertical-align: super; }
+  .footnote::footnote-marker {
+    content: counter(footnote);
+    font-size: 66%;
+    footnote-style-position: inside; }
+
+
+
+.cites > :not(:first-child)::before {
+  content: none; }
+
+.cites > :not(:last-child)::after {
+  content: ", "; }
+
+.col-1 {  column-count: 1; }
+.col-2 {  column-count: 2; }
+.col-3 {  column-count: 3; }
+.col-4 {  column-count: 4; }
+.col-span {  column-span: all; }
+.col-break-after {  break-after: always; }
+.col-break-before {  break-after: always; }
+
+.counter-skip h1::before,
+.counter-skip h2::before,
+.counter-skip h3::before,
+.counter-skip h4::before,
+.counter-skip h5::before,
+.counter-skip h6::before {
+  content: "" !important;
+  margin-right: 0 !important; }
+
+h1:not(.counter-skip) {
+  counter-increment: section;
+  counter-reset: subsection;
+  }
+
+h2:not(.counter-skip) {
+  counter-increment: subsection;
+  counter-reset: subsubsection;
+  }
+
+h3:not(.counter-skip) {
+  counter-increment: subsubsection;
+  counter-reset: subsubsubsection;
+    }
+
+h4:not(.counter-skip) {
+  counter-increment: subsubsection; }
+
+h5:not(.counter-skip) {
+  counter-increment: subsubsubsection; }
+
+h6:not(.counter-skip) {
+  counter-increment: subsubsubsubsection; }
+
+h1.counter-reset {
+  counter-increment: section; }
+
+h2.counter-reset {
+  counter-increment: subsection;
+  }
+
+h3.counter-reset {
+  counter-increment: subsubsection; }
+
+h4.counter-reset {
+  counter-increment: subsubsection; }
+
+h5.counter-reset {
+  counter-increment: subsubsubsection; }
+
+h6.counter-reset {
+  counter-increment: subsubsubsubsection; }
+
+h1:not(.counter-skip)::before {
+  content: "" "" counter(section, decimal) ""; }
+
+h2:not(.counter-skip)::before {
+  content: "" "" counter(subsection, decimal) ""; }
+
+h3:not(.counter-skip)::before {
+  content: "" ""  counter(subsubsection, decimal) ""; }
+
+h4:not(.counter-skip)::before {
+  content: "" "" counter(section, decimal) "." counter(subsection, decimal) "." counter(subsubsection, decimal) "." counter(subsubsection, decimal) ""; }
+
+h5:not(.counter-skip)::before {
+  content: "" "" counter(section, decimal) "." counter(subsection, decimal) "." counter(subsubsection, decimal) "." counter(subsubsection, decimal) "." counter(subsubsubsection, decimal) ""; }
+
+h6:not(.counter-skip)::before {
+  content: "" "" counter(section, decimal) "." counter(subsection, decimal) "." counter(subsubsection, decimal) "." counter(subsubsection, decimal) "." counter(subsubsubsection, decimal) "." counter(subsubsubsubsection, decimal) ""; }
+
+.page-break-after {
+  break-after: always !important; }
+
+.page-break-before {
+  break-before: always !important; }
+
+h1 {
+  /* text-transform: uppercase; */
+   font-variant: small-caps;
+  }
+
+h1:not(.counter-skip)::before {
+  content: "" counter(section) "."; }
+
+h1 + h2,
+h1 + * > h2:first-child {
+  margin-top: 0; }
+
+h3,
+h4 {
+  font-style: italic;
+  font-weight: normal;
+  margin: 2em 0 0; }
+
+header {
+  column-span: all;
+  font-family: "Verdana", sans-serif;
+  margin-bottom: 4em; }
+  header h2 {
+    font-size: 1.333em;
+    font-weight: normal;
+    margin: 2em 0;
+    text-align: center; }
+
+.title {
+  column-span: all;
+  font-family: "Verdana", sans-serif;
+  font-size: 18pt;
+  margin: 0 0 .333em;
+  text-align: center;
+  text-transform: none;
+  line-height : 24pt;}
+
+.authors {
+  column-gap: 0; }
+  .authors + .authors {
+    margin-top: 6pt; }
+
+.author {
+  break-inside: avoid;
+  break-after: always;
+  font-size: 12pt;
+  text-align: center; }
+  .author a {
+    color: inherit;
+    text-decoration: none; }
+
+  .author > :first-child,
+  .author > :last-child {
+    font-size: 12pt; }
+
+.copyright {
+  float: column-bottom;
+  font-size: 8pt;
+  height: 1.5in; }
+  .copyright > * {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 3.333in; }
+
+.appendix {
+  counter-reset: section;
+  counter-reset: algorithm;
+  counter-reset: figure;
+  }
+
+.appendix h1:not(.counter-skip)::before {
+    content: "" counter(section, upper-alpha) ""; }
+.appendix h2:not(.counter-skip)::before {
+    content: "" counter(section, upper-alpha) "." counter(subsection, decimal) ""; }
+.appendix h3:not(.counter-skip)::before {
+    content: "" counter(section, upper-alpha) "." counter(subsection, decimal) "." counter(subsubsection, decimal) ""; }
+
+OL.asteps > li {
+	list-style-type: lower-alpha !important;
+    border-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top:   12px;
+    margin-bottom: 18px;
+    background: transparent;
+    font-weight: normal;
+    color: black;
+	}
+
+
+OL.steps > li {
+	list-style-type: decimal !important;
+    border-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top:   12px;
+    margin-bottom: 12px;
+    background: transparent;
+    font-weight: normal;
+    color: black;
+	}
+
+OL.CapAsteps > li {
+	list-style-type: upper-alpha !important;
+    border-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top:   12px;
+    margin-bottom: 12px;
+    background: transparent;
+    font-weight: normal;
+    color: black;
+	}
