@@ -1,0 +1,14 @@
+@article{10.2307/26527899,
+ ISSN = {00028282, 19447981},
+ URL = {https://www.jstor.org/stable/26527899},
+ abstract = {We document in the Survey of Income and Program Participation covering the period 1990–2013 that a surprisingly large share of workers return to their previous employer after a jobless spell, and experience very different unemployment and employment outcomes than job switchers. The probability of recall is much less procyclical and volatile than the probability of finding a new employer. We add to a quantitative, and otherwise canonical, search-and-matching model of the labor market a recall option, which can be activated freely following aggregate and job-specific productivity shocks. Recall and search effort significantly amplify the cyclical volatility of new job-finding and separation probabilities.},
+ author = {Shigeru Fujita and Giuseppe Moscarini},
+ journal = {The American Economic Review},
+ number = {12},
+ pages = {3875--3916},
+ publisher = {American Economic Association},
+ title = {Recall and Unemployment},
+ volume = {107},
+ year = {2017}
+}
+

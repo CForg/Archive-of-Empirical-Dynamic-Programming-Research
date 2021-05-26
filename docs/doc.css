@@ -1,19 +1,25 @@
     -webkit-column-count: 1;
        -moz-column-count: 1;
             column-count: 1;
-
-            ul.menu {
+    a {
+              text-decoration: none;
+        }
+    ul.menu {
               list-style-type: none;
               margin: 10px;
               padding: 50px;
               overflow: hidden;
             }
-          ul.menu > li {
+    ul.menu > li {
             list-style-type: none;
             float: right;
             padding-right: 8px;
-
           }
+    ul.rmenu {
+              list-style-type: none;
+              margin: 10px;
+              padding: 10px;
+            }          
           .tooltip {
             position: relative;
             display: inline-block;
@@ -39,7 +45,7 @@
           .tooltip:hover .tooltiptext {
             visibility: visible;
           }
-          ul.menu > li a:link, a:visited {
+          ul.menu, ul.rmenu > li a:link, a:visited {
               display: block;
               background-color: white;
               padding: 5px 5px;
