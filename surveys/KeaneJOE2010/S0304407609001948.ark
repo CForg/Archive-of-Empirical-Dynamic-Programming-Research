@@ -1,0 +1,15 @@
+@article{KEANE20103,
+title = {Structural vs. atheoretic approaches to econometrics},
+journal = {Journal of Econometrics},
+volume = {156},
+number = {1},
+pages = {3-20},
+year = {2010},
+note = {Structural Models of Optimization Behavior in Labor, Aging, and Health},
+issn = {0304-4076},
+doi = {https://doi.org/10.1016/j.jeconom.2009.09.003},
+url = {https://www.sciencedirect.com/science/article/pii/S0304407609001948},
+author = {Michael P. Keane},
+keywords = {Structural models, Natural experiments, Dynamic models, Life-cycle models, Instrumental variables},
+abstract = {In this paper I attempt to lay out the sources of conflict between the so-called “structural” and “experimentalist” camps in econometrics. Critics of the structural approach often assert that it produces results that rely on too many assumptions to be credible, and that the experimentalist approach provides an alternative that relies on fewer assumptions. Here, I argue that this is a false dichotomy. All econometric work relies heavily on a priori assumptions. The main difference between structural and experimental (or “atheoretic”) approaches is not in the number of assumptions but the extent to which they are made explicit.}
+}

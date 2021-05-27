@@ -1,0 +1,14 @@
+@article{KEANE20091,
+title = {Empirical applications of discrete choice dynamic programming models},
+journal = {Review of Economic Dynamics},
+volume = {12},
+number = {1},
+pages = {1-22},
+year = {2009},
+issn = {1094-2025},
+doi = {https://doi.org/10.1016/j.red.2008.07.001},
+url = {https://www.sciencedirect.com/science/article/pii/S1094202508000318},
+author = {Michael P. Keane and Kenneth I. Wolpin},
+keywords = {Discrete choice dynamic programming models, Policy evaluation, Structural estimation},
+abstract = {The development over the past 25 years of methods for the estimation of discrete choice dynamic programming (DCDP) models opened up new frontiers for empirical research in a host of areas, including labor economics, industrial organization, economic demography, health economics, development economics, political economy and marketing. In this paper, we first describe the development of the DCDP framework, showing how it was a natural extension of static discrete choice modeling. We then summarize six papers that adopt the DCDP paradigm that address substantively important social and economic questions. Finally, we consider the issue of the credibility of empirical findings based on the structural estimation of DCDP models.}
+}

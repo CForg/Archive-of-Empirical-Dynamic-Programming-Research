@@ -24,6 +24,7 @@ struct Entry {
 	#include "JOURNALS.oxh"
 
 	static GetToke(toke);
+            Entry(fldr,arkf,f);
 			Process(f);
 			body(line);
 			scan(f,aL);
@@ -69,19 +70,19 @@ struct Related : Entry {
 struct Package : Related {
 	enum{UD=NRelatedTokens,NTokenTypes};
 	Package(fldr,a,f);
-    Attribute(item);
+    //Attribute(item);
 	}
 
 struct Site : Entry {
 	enum{UD=NRelatedTokens,NTokenTypes};
 	Site(fldr,a,f);
-    Attribute(item);
+    //Attribute(item);
 	}
 
 struct Survey : Publication {
 	enum{UD=NPubTokens,NTokenTypes};
 	Survey(fldr,a,f);
-	Attribute(item);
+	//Attribute(item);
 	}
 	
 struct DPArchive {

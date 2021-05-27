@@ -1,0 +1,13 @@
+@package{niqlow,
+ URL = {https://ferrall.github.io/niqlow},
+ author = {Christopher Ferrall},
+ title = {Design, Solve and Estimate Dynamic Programs},
+ language = {Ox}
+ area = {Labor}
+ area = {Macro}
+ area = {I/O}
+ area = {Development}
+ area = {Public}    
+ area = {Education}
+ area = {Health}
+}

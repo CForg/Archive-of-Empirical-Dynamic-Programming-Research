@@ -1,4 +1,4 @@
-@article{10.2307/20007526,
+@survey{10.2307/20007526,
  ISSN = {09331433, 14321475},
  URL = {http://www.jstor.org/stable/20007526},
  abstract = {We review existing approaches to the specification and estimation of dynamic microeconomic models of fertility. Dynamic fertility models explain the evolution of fertility variates over the life-cycle as the solution to a dynamic programming model involving economic choices. Dynamic models may be classified into structural and reduced-form models. Structural models generally require solution of the underlying dynamic programming problem. Reduced-form models, while based on a structural specification, do not. Recent innovations in estimation methodologies make both types practical and realistic alternatives to static models of lifetime fertility.},

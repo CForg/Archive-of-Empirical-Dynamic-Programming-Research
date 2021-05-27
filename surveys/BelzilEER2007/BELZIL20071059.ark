@@ -1,0 +1,28 @@
+@article{BELZIL20071059,
+title = {The return to schooling in structural dynamic models: a survey},
+journal = {European Economic Review},
+volume = {51},
+number = {5},
+pages = {1059-1105},
+year = {2007},
+issn = {0014-2921},
+doi = {https://doi.org/10.1016/j.euroecorev.2007.01.008},
+url = {https://www.sciencedirect.com/science/article/pii/S001429210700013X},
+author = {Christian Belzil},
+keywords = {Returns to schooling, Human capital, Structural estimation, Ability bias, Dynamic programming, Dynamic
+self-selection, Natural experiments, IV estimation},
+abstract = {This papers contains a survey of the recent literature devoted to returns to schooling within a dynamic
+structural framework. I present a historical perspective on the evolution of the literature, from early static models
+set in a selectivity framework [Willis, T., Rosen, S., 1979. Education and self-selection. Journal of Political Economy
+87, S7–S36] to the recent literature, stimulated by [Keane, M.P., Wolpin, K., 1997. The career decisions of young men.
+Journal of Political Economy 105(3) 473–522], and which uses stochastic dynamic programming techniques. After reviewing
+the literature thoroughly, I compare the structural approach with the IV (experimental) approach. I present their
+commonalities and I also discuss their fundamental differences. To get an order of magnitude, most structural estimates
+reported for the US range between 4% and 7% per year. On the other hand, IV estimates between 10% and 15% per year are
+often reported. The discrepancy prevails even when comparable (if not identical) data sets are used. The discussion is
+focussed on understanding this divergence. The distinction between static and dynamic model specifications is a
+recurrent theme in the analysis. I show that structural and IV approaches differ mainly at the level of (i) the
+compatibility of the underlying models with dynamic behavior, (ii) the role of behavioral and statistical assumptions,
+(iii) the role of heterogeneity in ability and tastes, (iv) the consideration of post-schooling opportunities, and (v)
+the specification (and interpretation) of the Mincer wage equation.}
+}

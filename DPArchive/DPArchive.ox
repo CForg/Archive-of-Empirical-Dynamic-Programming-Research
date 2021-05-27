@@ -41,9 +41,14 @@ Entry::body(line) {
 Entry::scan(f,aL) {
  	return isfile(f) ? fscan(f,"%z",aL) : sscan(f,"%z",aL);
 	}
+
+Entry::Attribute(aIT) {
+	aIT[0][TAG] = match(this.tlabels,aIT[0][FIELD]);
+    }
 	
 Article::Attribute(aIT) {
-	aIT[0][TAG] = match(tlabels,aIT[0][FIELD]);
+    Entry::Attribute(aIT);
+//	aIT[0][TAG] = match(tlabels,aIT[0][FIELD]);
 	decl g;
 	switch_single(aIT[0][TAG]) {
 		case UR : ;
@@ -84,26 +89,33 @@ Entry::Process(f) {
  		} while (eos>=0);
 	}
 
-
-Article::Article(fldr,arkf,f) {
-	tlabels = clabels | plabels | alabels;
-    tokens =  new array[NTokenTypes];	 //different types by item
+Entry::Entry(fldr,arkf,f) {
 	entrytag = fldr;
 	arkfile = arkf;
+    tlabels = NOMATCH;
+    }
+
+Article::Article(fldr,arkf,f) {
+    Entry(fldr,arkf,f);
+	tlabels = clabels | plabels | alabels;
+    tokens =  new array[NTokenTypes];	 //different types by item
 	hascode = sizeof(getfolders("code"))>0;
 	}
 	
 Package::Package(fldr,arkf,f) {
+    Entry(fldr,arkf,f);
 	if (isint(tlabels)) tlabels = clabels;
     tokens =  new array[NTokenTypes];
 	}
 
 Site::Site(fldr,arkf,f) {
+    Entry(fldr,arkf,f);
 	tlabels = clabels;
     tokens =  new array[NTokenTypes];
 	}
 
 Survey::Survey(fldr,arkf,f) {
+    Entry(fldr,arkf,f);
 	tlabels = clabels | plabels;
     tokens =  new array[NTokenTypes];		
 	}
@@ -111,15 +123,21 @@ Survey::Survey(fldr,arkf,f) {
 Entry::GetToke(toke) {
 	return toke==.Null ? "." : toke[0][VALUE];
 	}
-Article::Write(ifile) {
-	decl t, j, i, k, detailf;
-//	println(tokens);
-	fprint(ifile,"<tr><td>");
+
+Entry::Write(ifile) {
+	fprint(ifile,"<tr class=\"item\" id=\"",entrytag,"\"><td>");
 	if (tokens[UR]==.Null)
 		fprint(ifile,entrytag);
 	else
 		fprint(ifile,"<a target=\"_blank\" href=\"",tokens[UR][0][VALUE],"\">",entrytag,"</a>");
-	fprintln(ifile,"</td><td>",tokens[YR][0][VALUE],
+    fprint(ifile,"</td>");
+    }
+
+Article::Write(ifile) {
+	decl t, j, i, k, detailf;
+    Entry::Write(ifile);
+//	println(tokens);
+	fprintln(ifile,"<td>",tokens[YR][0][VALUE],
 				   "</td><td>",GetToke(tokens[AR]),
 				   "</td><td>",jabb[tokens[JO][0][CODE]],
 				   "</td><td>",GetToke(tokens[LG]),
@@ -182,18 +200,18 @@ DPArchive::CreateArchive(rootdir,todo)  {
 
 	//delete docs/fldr
 	rfiles[t] = fopen(docdir+fldr+".html","w");
-	fprintln(rfiles[t],"<HTML><head>",stylesheets,"</head><body><table class=\"niqsum\">");
+	fprintln(rfiles[t],"<HTML><head>",stylesheets,"</head><body><script src=\"https://www.kryogenix.org/code/browser/sorttable/sorttable.js\"></script><table class=\"niqsum sortable\" id=\"",fldr,"\">");
 	fprintln(rfiles[t],"<tr><th>Tag</th><th>Year</th><th>Area</th><th>JO</th><th>Lang.</th><th>Code</th><th>Details</th></tr>");
  	chdir(fldr);
 	folders = getfolders("*");
     numitems = 0;
 	foreach (item in folders) {
 		chdir(item);
-        if (chdir("articles")) {                // articles subdirectory exists ...
+/*        if (chdir("articles")) {                // articles subdirectory exists ...
             chdir("..");                        // go back up
             systemcall("erase /q /s articles");
             systemcall("rmdir /q /s articles");
-            }
+            }*/
         apath = fldr+"/"+item;                  // name of detail file over in docs (used both relative and as anchor)
 		arks = getfiles("*."+EXT);
 		foreach (a in arks) {
@@ -204,9 +222,9 @@ DPArchive::CreateArchive(rootdir,todo)  {
                 }
 			switch_single(t) {
 				case Item_art : n = new Article(item,a,f);
-				case Item_surv: n = new Survey(f);
-				case Item_pack: n = new Package(f);
-				case Item_site: n = new Site(f);
+				case Item_surv: n = new Survey(item,a,f);
+				case Item_pack: n = new Package(item,a,f);
+				case Item_site: n = new Site(item,a,f);
 				}
             ++numitems;
 			n -> Process(f);
@@ -219,13 +237,13 @@ DPArchive::CreateArchive(rootdir,todo)  {
 		chdir(uplevel);
 		}
 	 chdir(uplevel);
-     fprintln(tocf,"<li class=\"tooltip\"><a href=\"",fldr,".html\" target=\"content\">",fldr,"<br/>[",numitems,"]</li>");
-	 fprintln(rfiles[t],"</table></body></html>");
+     fprintln(tocf,"<li class=\"tooltip\"><a href=\"",fldr,".html\" target=\"content\">",fldr,"<br/>&nbsp;[",numitems,"]&nbsp;</li>");
+     fprintln(rfiles[t],"</table></body></html>");
 	 fclose(rfiles[t]); rfiles[t]=0;
 
  	}
   fclose(rootf);
-  fprintln(tocf,"</UL>");
+  fprintln(tocf,"</UL></div>");
   fclose(tocf);
   }	
 	
