@@ -243,6 +243,11 @@ DPArchive::CreateArchive(rootdir,todo)  {
 
  	}
   fclose(rootf);
+  /* afiles = new array[AREACODES];
+    for (a=0;a<AREACODES) afiles[a] = fopen("areas.html","w");
+    fprintln(afiles[a],"<HTML><head>",stylesheets,"</head><body><script src=\"https://www.kryogenix.org/code/browser/sorttable/sorttable.js\"></script><table class=\"niqsum sortable\" id=\"",fldr,"\">");
+    fprintln(afiles[a],"</table></body></html>");
+  */
   fprintln(tocf,"</UL></div>");
   fclose(tocf);
   }	

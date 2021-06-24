@@ -1,0 +1,3008 @@
+33 Patch Control
+
+0
+0
+1
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\misc\WstarTestc.ox
+999
+17
+8
+
+C:\Users\Chris\Desktop\QC\Main.ox
+Ox:UNIX
+1147890 0 23 78 58 19 0 0 960 631 0 0 325 420 -1 -1 0 0 13 1 1 13 1 0 19 58  0 0 0
+DPArchive\AREAS.oxh
+Ox
+1049586 1 3 5 3 70 0 0 960 631 0 0 1081 84 -1 -1 0 0 42 0 0 42 1 0 70 3  0 0 0
+DPArchive\collect.ox
+Ox
+1049586 0 0 1 0 1 0 0 960 631 0 0 31 0 -1 -1 0 0 21 0 0 21 1 0 1 0  0 0 0
+DPArchive\DPArchive.ox
+Ox
+1049586 0 249 21 249 5 960 0 1920 631 0 0 87 560 -1 -1 0 0 25 0 0 25 1 0 5 249  0 0 0
+docs\doc.css
+DATA:CSS
+1048818 2 347 7 347 13 0 0 960 631 1 0 283 588 -1 -1 0 0 29 0 0 29 1 0 13 347  0 0 0
+packages\niqlow\niqlow.ark
+DATA:UNIX
+5341426 0 6 9 9 21 0 0 960 631 1 0 395 252 -1 -1 0 0 17 0 0 17 1 0 21 9  0 0 0
+docs\index.html
+HTML
+17827835 0 -1 3016 -1 3012 0 0 960 631 0 1 104 276 -1 -1 0 0 15 -1 -1 15 1 0 3012 -1  0 -1 0
+docs\about.html
+HTML
+1050619 0 -1 2094 -1 2094 0 0 960 631 0 1 49 115 -1 -1 0 0 38 -1 -1 38 1 0 2094 -1  0 -1 0
+docs\title.html
+HTML
+286263291 1 -1 539 -1 609 0 0 960 631 0 1 885 184 -1 -1 0 0 15 -1 -1 15 1 0 609 -1  0 -1 0
+DPArchive\DPArchive.oxh
+Ox
+1049586 1 1 28 1 21 0 0 960 631 0 0 563 28 -1 -1 0 0 19 0 0 19 1 0 21 1  0 0 0
+DPArchive\JOURNALS.oxh
+Ox
+1049586 0 0 1 0 1 0 0 960 631 0 0 31 0 -1 -1 0 0 42 0 0 42 1 0 1 0  0 0 0
+DPArchive\LANGUAGES.oxh
+Ox
+1049586 0 0 1 0 1 0 0 960 631 0 0 31 0 -1 -1 0 0 42 0 0 42 1 0 1 0  0 0 0
+DPArchive\main.ox
+Ox
+1049586 2 4 5 4 6 0 0 960 631 0 0 101 112 -1 -1 0 0 20 0 0 20 1 0 6 4  0 0 0
+DPArchive\parse.ox
+Ox
+1049586 0 5 37 5 34 0 0 960 631 0 0 493 140 -1 -1 0 0 19 0 0 19 1 0 34 5  0 0 0
+docs\archive.html
+HTML
+1050619 0 -1 0 -1 0 0 0 960 631 0 1 49 0 -1 -1 0 0 0 -1 -1 0 1 0 0 -1  0 0 0
+DPArchive\ReadCSV.h
+Ox
+1049586 0 0 1 0 1 0 0 960 631 0 0 31 0 -1 -1 0 0 19 0 0 19 1 0 1 0  0 0 0
+DPArchive\ReadCSV.ox
+Ox
+1049586 0 0 1 0 1 0 0 960 631 0 0 31 0 -1 -1 0 0 21 0 0 21 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\Shared.h
+Ox
+269485042 0 289 16 72 25 0 0 960 631 0 0 367 364 -1 -1 0 0 104 0 0 104 1 0 25 72  0 0 0
+C:\Users\Chris\Desktop\QC\source\QCShared.ox
+Ox
+269485042 2 122 60 122 64 0 0 960 631 0 0 997 280 -1 -1 0 0 1 0 0 1 1 0 64 122  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\DDPShared.h
+Ox
+269485042 4 404 20 404 21 0 0 960 631 0 0 311 280 -1 -1 0 0 17 0 0 17 1 0 21 404  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\Predictions.h
+Ox
+269485042 0 72 49 72 5 0 0 960 631 0 0 87 532 -1 -1 0 0 19 0 0 19 1 0 5 72  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\Predictions.ox
+Ox
+269485042 2 173 42 173 49 0 0 960 631 0 0 703 280 -1 -1 0 0 25 0 0 25 1 0 49 173  0 0 0
+surveys\ArroyoZhangJPopE1997\10.2307_20007526.ark
+DATA
+273678578 0 0 2 0 8 0 0 960 631 1 0 213 0 -1 -1 0 0 26 0 0 26 1 0 8 0  0 0 0
+C:\Users\Chris\Desktop\QC\text\Quality_Constraints.tex
+TeX:UNIX
+269594619 0 -1 14944 -1 2476 0 0 960 631 0 1 1215 308 -1 -1 0 0 30 -1 -1 30 1 0 2476 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\Shared\Shared.ox
+Ox
+269485042 0 325 45 329 23 0 0 960 631 0 0 339 252 -1 -1 0 0 20 0 0 20 1 0 23 329  0 0 0
+C:\Users\Chris\Desktop\QC\Main.h
+Ox
+269485042 0 2 1 2 19 0 0 960 631 0 0 283 56 -1 -1 0 0 1 4 4 1 1 0 19 2  0 0 0
+C:\Users\Chris\Desktop\QC\data\shared.do
+DATA
+273678578 2 17 10 17 14 0 0 960 631 1 0 297 476 -1 -1 0 0 40 0 0 40 1 0 14 17  0 0 0
+C:\Users\Chris\Desktop\QC\include\QCVariables.h
+Ox
+269485042 0 20 1 20 1 0 0 960 631 0 0 31 84 -1 -1 0 0 55 0 0 55 1 0 1 20  0 0 0
+C:\Users\Chris\Desktop\QC\Multi.hetero.optobj
+ASCII:UNIX
+273786746 0 2 1 2 2 0 0 960 631 1 0 129 56 -1 -1 0 0 8 0 0 8 1 0 2 2  0 0 0
+C:\Users\Chris\Desktop\QC\include\QCShared.h
+Ox
+269485042 0 226 1 236 10 0 0 960 631 0 0 157 280 -1 -1 0 0 1 1 1 1 1 0 10 236  0 0 0
+C:\Users\Chris\Desktop\QC\include\QC.h
+Ox
+269485042 2 12 13 12 19 0 0 960 631 0 0 283 140 -1 -1 0 0 1 0 0 1 1 0 19 12  0 0 0
+C:\Users\Chris\Desktop\QC\source\QCVariables.ox
+Ox
+269485042 2 11 5 11 10 0 0 960 631 0 0 157 84 -1 -1 0 0 1 13 13 1 1 0 10 11  0 0 0
+C:\Users\Chris\Desktop\QC\source\Makefile
+TeX
+269496315 0 -1 231 -1 328 0 0 960 631 0 1 529 364 -1 -1 0 0 416 -1 -1 416 1 0 328 -1  0 0 0
+C:\Users\Chris\Desktop\QC\source\QC.ox
+Ox
+269485042 2 38 5 38 8 0 0 960 631 0 0 129 140 -1 -1 0 0 1 264 264 1 1 0 8 38  0 0 0
+surveys\KeaneToddWolpinHLE2011\keane_todd_wolpin.ark
+DATA
+273678578 0 0 2 0 8 0 0 960 631 1 0 213 0 -1 -1 0 0 -1 -1 -1 -1 1 0 8 0  0 0 0
+surveys\EcksteinWolpnJHR1989\10.2307_145996.ark
+DATA
+273678578 0 0 9 0 8 0 0 960 631 1 0 213 0 -1 -1 0 0 -1 -1 -1 -1 1 0 8 0  0 0 0
+surveys\WolpinAER1996\10.2307_2118164.ark
+DATA
+273678578 0 0 2 0 8 0 0 960 631 1 0 213 0 -1 -1 0 0 -1 -1 -1 -1 1 0 8 0  0 0 0
+surveys\BelzilEER2007\BELZIL20071059.ark
+DATA
+273678578 0 0 24 0 1 0 0 960 631 1 0 115 -181 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+docs\screen.css
+DATA:CSS
+269484274 0 13 1 0 1 0 0 960 631 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\ConfigEx\Switches.ini
+DATA:INI:EDT
+269485050 0 171 9 180 10 0 0 799 631 1 1 161 442 -1 -1 0 0 -1 -1 -1 -1 1 0 10 180  0 -1 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\ConfigEx\ColorGrid.ini
+DATA:INI:EDT
+269485050 0 0 1 0 1 0 0 799 631 1 1 89 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\ConfigEx\ColorEffects.ini
+DATA:INI:EDT
+269485050 0 0 1 0 1 0 0 799 631 1 1 89 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\ConfigEx\FilterSets.ini
+DATA:INI:EDT
+269485050 0 878 9 874 20 0 0 799 631 1 1 241 544 -1 -1 0 0 -1 -1 -1 -1 1 0 20 874  0 -1 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\ConfigEx\Keywords.ini
+DATA:INI:EDT
+269485050 0 10 40 10 40 0 0 799 631 1 1 401 170 -1 -1 0 0 -1 -1 -1 -1 1 0 40 10  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\docs\index.html
+HTML:UNIX
+269584379 1 -1 0 -1 512 0 0 799 631 0 1 137 184 -1 -1 0 0 -1 -1 -1 -1 1 0 512 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\FiveO\ParallelObjective.ox
+Ox
+269485042 0 42 29 41 27 0 0 960 668 0 0 395 252 -1 -1 0 0 72 0 0 72 1 0 27 41  0 0 0
+C:\Users\Chris\Desktop\QC\text\Paper\Quality_Constraints.tex
+TeX:UNIX
+269594619 0 -1 66798 -1 13650 0 0 960 600 0 1 557 336 -1 -1 0 0 30 -1 -1 30 1 0 13650 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\ParallelObjective.ox
+Ox
+269485042 0 41 1 23 1 681 0 1362 324 0 0 31 224 -1 -1 0 0 4 15 15 4 1 0 1 23  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--17-05-2021-12-46-40.log
+DATA
+273678578 0 0 1 1182 878 0 0 612 1003 1 0 1060 952 -1 -1 0 0 -1 -1 -1 -1 1 0 878 1182  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--16-05-2021-14-59-51.log
+DATA
+273678578 0 429 1 916 1 52 52 1314 286 1 0 115 252 -1 -1 0 0 26 0 0 26 1 0 1 916  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--15-05-2021-15-47-50.log
+DATA
+273678578 0 0 1 602 1 26 26 1288 260 1 0 115 -392 -1 -1 0 0 -1 -1 -1 -1 1 0 1 602  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\methods\lecture\html\source\bootcamp.toc
+TeX:AUX
+269496306 0 0 1 158 1 26 26 1764 444 0 0 31 56 -1 -1 0 0 21 0 0 21 1 0 1 158  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\Econ452demo\tourc.smcl
+DATA:UNIX
+273776882 0 0 1 0 1 104 104 1842 522 1 0 115 0 -1 -1 0 0 7 0 0 7 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\docs\stata\Tournament\FakeC.pkg
+DATA
+273678578 0 0 1 0 1 52 52 1790 470 1 0 115 0 -1 -1 0 0 4 0 0 4 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\docs\stata\Tournament\lab10.pkg
+DATA
+273678578 0 0 1 0 1 78 78 1816 496 1 0 115 0 -1 -1 0 0 4 0 0 4 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\KWtest.ox
+Ox
+269485042 0 0 1 0 1 960 0 1920 600 0 0 31 0 -1 -1 0 0 20 0 0 20 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\replications.ox
+Ox
+269485042 2 14 32 14 40 960 0 1920 600 0 0 577 336 -1 -1 0 0 110 0 0 110 1 0 40 14  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\RunAhn.ox
+Ox
+269485042 0 0 1 0 1 960 0 1920 600 0 0 31 0 -1 -1 0 0 22 0 0 22 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\docs\stata\Demo\week6.pkg
+DATA
+273678578 0 0 1 0 1 960 0 1920 600 1 0 115 0 -1 -1 0 0 4 0 0 4 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\docs\niqlow.ox.html
+HTML
+269486075 0 -1 1652 -1 1520 960 0 1920 600 0 1 236 92 -1 -1 0 0 38 -1 -1 38 1 0 1520 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\C4E\build.ox
+Ox
+269485042 0 0 1 3 5 960 0 1920 600 0 0 87 84 -1 -1 0 0 89 0 0 89 1 0 5 3  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\Parameters.h
+Ox
+269485042 1 152 22 152 8 960 0 1920 600 0 0 129 56 -1 -1 0 0 17 0 0 17 1 0 8 152  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\StateVariable.h
+Ox
+269485042 0 505 32 521 36 960 0 1920 600 0 0 563 56 -1 -1 0 0 20 0 0 20 1 0 36 521  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\ActionVariable.ox
+Ox
+269485042 2 18 9 18 11 960 0 1920 600 0 0 171 308 -1 -1 0 0 28 0 0 28 1 0 11 18  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\TimeInvariant.ox
+Ox
+269485042 1 107 10 107 70 960 0 1920 600 0 0 997 56 -1 -1 0 0 27 0 0 27 1 0 70 107  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\TimeInvariant.h
+Ox
+269485042 2 125 2 125 5 960 0 1920 600 0 0 87 264 -1 -1 0 0 24 0 0 24 1 0 5 125  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\StateVariable.ox
+Ox
+269485042 0 99 6 99 6 960 0 1920 600 0 0 101 56 -1 -1 0 0 27 0 0 27 1 0 6 99  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OODP\OODP.htm
+HTML
+286263291 2 -1 22849 -1 22854 960 0 1920 600 0 1 528 92 -1 -1 0 0 77 -1 -1 77 1 0 22854 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\methods\lecture\html\source\numcamp.toc
+TeX:AUX
+269496306 1 7 1 25 1 52 52 1790 470 0 0 31 336 -1 -1 0 0 15 0 0 15 1 0 1 25  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\source\exer\Disection.htm
+HTML
+269486075 0 -1 109 -1 114 52 52 1334 243 0 1 104 92 -1 -1 0 0 81 -1 -1 81 1 0 114 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\methods\lecture\docs\book.html
+HTML
+269486075 0 -1 22129 -1 22608 156 156 1894 574 0 1 214 69 -1 -1 0 0 21 -1 -1 21 1 0 22608 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\methods\lecture\docs\index.html
+HTML
+269486075 0 -1 0 -1 0 130 130 1868 548 0 1 49 0 -1 -1 0 0 15 -1 -1 15 1 0 0 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\methods\lecture\docs\css\book.css
+DATA:CSS
+269549810 0 190 1 193 8 78 78 1816 496 1 0 213 56 -1 -1 0 0 7 0 0 7 1 0 8 193  0 0 0
+C:\Users\Chris\Desktop\QC\options.txt
+ASCII
+273688443 0 0 10 1 14 960 0 1920 600 1 0 297 28 -1 -1 0 0 1 0 0 1 1 0 14 1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\niqlow.oxdoc
+HTML
+286263291 1 -1 1122 -1 1204 960 0 1920 600 0 1 665 207 -1 -1 0 0 89 -1 -1 89 1 0 1204 -1  0 -1 0
+C:\Users\Chris\Desktop\QC\logs\Data--12-05-2021-20-34-34.log
+DATA
+273678578 2 249 1 249 19 130 130 1868 548 1 0 367 168 -1 -1 0 0 26 0 0 26 1 0 19 249  0 0 0
+C:\Users\Chris\Desktop\QC\QCmain.optobj
+DATA
+273678578 0 45 4 30 4 0 0 683 429 1 0 157 840 -1 -1 0 0 9 0 0 9 1 0 4 30  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--12-05-2021-20-10-09.log
+DATA
+273678578 0 0 1 0 1 52 52 1790 470 1 0 115 -2100 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--12-05-2021-18-35-14.log
+DATA
+273678578 0 0 1 0 1 0 0 1738 418 1 0 115 -3908 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\DP-QC-12-05-2021-18-35-14.log
+DATA
+273678578 0 0 1 0 1 182 182 1920 600 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Downloads\452 (1).log
+DATA:UNIX
+273776882 1 16 67 17 5 338 338 950 1291 1 0 171 -49136 -1 -1 0 0 -1 -1 -1 -1 1 0 5 17  0 0 0
+C:\Users\Chris\Downloads\452.log
+DATA:UNIX
+273776882 0 0 1 100 1 26 26 1764 444 1 0 115 2716 -1 -1 0 0 -1 -1 -1 -1 1 0 1 100  0 0 0
+C:\Users\Chris\Desktop\QC\data\mproc_restart_full.do
+ASCII
+273688442 0 18 18 18 21 960 0 1920 600 1 0 395 504 -1 -1 0 0 1 4 4 1 1 0 21 18  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\methods\lecture\docs\toc.html
+HTML
+269486075 0 -1 22286 -1 22286 104 104 1842 522 0 1 665 299 -1 -1 0 0 -1 -1 -1 -1 1 0 22286 -1  0 -1 0
+C:\Users\Chris\Desktop\QC\logs\s0x.txt
+DATA:Hard
+273678578 1 0 1 12 1 960 0 1920 600 1 0 115 336 -1 -1 0 0 25 0 0 25 1 0 1 12  0 0 0
+C:\Users\Chris\AppData\Local\MiKTeX\2.9\miktex\log\pdflatex.log
+DATA
+273678578 1 120 63 120 126 960 0 1920 600 1 0 885 504 -1 -1 0 0 152 0 0 152 1 0 126 120  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--30-03-2021-14-03-04.log
+DATA:UNIX
+273776886 1 904 11 905 66 960 0 1920 600 1 0 1025 420 -1 -1 0 0 26 0 0 26 1 0 66 905  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\docs\stata\Tournament\stata.toc
+TeX:AUX
+269496306 0 0 1 4 5 156 156 1542 574 0 0 87 112 -1 -1 0 0 -1 -1 -1 -1 1 0 5 4  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\docs\stata\Tournament\D.pkg
+DATA
+273678578 0 7 1 7 1 130 130 1868 548 1 0 115 196 -1 -1 0 0 -1 -1 -1 -1 1 0 1 7  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\source\exer\LevittationD.htm
+HTML
+269486075 0 -1 2679 -1 2677 182 182 1568 600 0 1 247 1058 -1 -1 0 0 -1 -1 -1 -1 1 0 2677 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\source\exer\Levittation.htm
+HTML
+269486075 0 -1 134 -1 2473 182 182 1920 600 0 1 49 552 -1 -1 0 0 -1 -1 -1 -1 1 0 2473 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\docs\stata\Demo\stata.toc
+TeX:AUX
+269496306 0 0 1 6 15 960 0 1920 600 0 0 227 168 -1 -1 0 0 4 0 0 4 1 0 15 6  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\docs\stata\Tournament\B.pkg
+DATA
+273678578 0 0 1 0 1 130 130 1868 548 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Program Files\WinEdt Team\WinEdt 10\Exec\PDF\PDFCloseDoc.edt
+ASCII:EDT
+269494138 7 52 1 51 1 960 0 1920 600 1 0 73 289 -1 -1 0 0 21 0 0 21 1 0 1 51  0 0 0
+C:\Users\Chris\Desktop\QC\text\Paper\Quality_Constraints.aux
+TeX:AUX
+269496306 0 0 1 0 1 78 78 1816 496 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\text\MBarber_JMP.synctex.gz
+DATA
+273744114 0 0 1 0 1 52 52 1790 470 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\docs\stata\Demo\HomerSimpson.pkg
+DATA
+273678578 0 6 28 6 2 130 130 1868 548 1 0 129 168 -1 -1 0 0 4 0 0 4 1 0 2 6  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\docs\stata\TakeHome\HomerSimpson.pkg
+DATA
+273678578 0 0 1 0 1 130 130 1868 548 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\AppEc\docs\stata\Demo\quiz2.pkg
+DATA
+273678578 0 4 15 4 18 156 156 1894 574 1 0 353 112 -1 -1 0 0 4 0 0 4 1 0 18 4  0 0 0
+C:\Users\Chris\Desktop\QC\text\qc.tex
+TeX
+269496315 2 -1 67712 -1 67714 78 78 1336 338 0 1 81 29596 -1 -1 0 0 1 -1 -1 1 1 0 67714 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\DP.oxdoc
+HTML
+269486075 0 -1 6466 -1 5548 175 175 1561 648 0 1 115 391 -1 -1 0 0 89 -1 -1 89 1 0 5548 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\DDP.oxdoc
+HTML
+269486075 0 -1 16007 -1 3335 78 78 1456 558 0 1 93 713 -1 -1 0 0 86 -1 -1 86 1 0 3335 -1  0 -1 0
+C:\Users\Chris\Desktop\QC\logs\Data--27-01-2021-12-02-11.log
+DATA
+273678578 0 0 1 0 1 0 0 1920 353 1 0 -27 -21909 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\data\mproc_restart_next.do
+DATA
+5243122 0 43 33 5 1 0 0 1920 353 1 0 115 56 -1 -1 0 0 1 2 2 1 1 0 1 5  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\ConfigEx\MainMenu.ini
+DATA:INI:EDT
+1049594 0 3296 139 3324 29 0 0 1920 353 1 1 313 170 -1 -1 0 0 83 0 0 83 1 0 29 3324  0 -1 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\Exec\Ox\OxRun.edt
+ASCII:EDT
+1058682 0 3 60 5 36 0 0 1598 353 1 0 353 85 -1 -1 0 0 91 0 0 91 1 0 36 5  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\Exec\Ox\OxRunLOUD.edt
+ASCII:EDT
+1058682 0 2 60 6 37 0 0 1598 353 1 0 361 102 -1 -1 0 0 83 0 0 83 1 0 37 6  0 0 0
+C:\Users\Chris\Desktop\QC\Single.hetero.optobj
+DATA:UNIX
+273776882 0 40 25 40 1 0 0 1262 252 1 0 115 1120 -1 -1 0 0 9 0 0 9 1 0 1 40  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\C4E\source\part2\LinearAlgebra.htm
+HTML
+269486075 4 -1 14791 -1 14790 0 0 1262 230 0 1 104 322 -1 -1 0 0 20 -1 -1 20 1 0 14790 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\midterm1.html
+HTML
+269486075 1 -1 1259 -1 1642 0 0 960 603 0 1 49 161 -1 -1 0 0 21 -1 -1 21 1 0 1642 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\midtermW20.html
+HTML
+269486075 1 -1 5362 -1 5704 234 234 1920 706 0 1 49 299 -1 -1 0 0 21 -1 -1 21 1 0 5704 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\midterm2F18.html
+HTML
+269486075 0 -1 774 -1 21 234 234 1620 703 0 1 280 0 -1 -1 0 0 21 -1 -1 21 1 0 21 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\midterm2F17.html
+HTML
+269486075 0 -1 0 -1 0 234 234 1920 703 0 1 49 0 -1 -1 0 0 21 -1 -1 21 1 0 0 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\midterm1F18makeup.html
+HTML
+286263291 1 -1 921 -1 1084 0 0 683 253 0 1 49 460 -1 -1 0 0 21 -1 -1 21 1 0 1084 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\midterm1F18b.html
+HTML
+269486075 0 -1 738 -1 1910 0 0 960 603 0 1 49 345 -1 -1 0 0 21 -1 -1 21 1 0 1910 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\midterm1F18.html
+HTML
+269486075 0 -1 1033 -1 3085 0 0 960 603 0 1 49 506 -1 -1 0 0 21 -1 -1 21 1 0 3085 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\midterm1F17b.html
+HTML
+269486075 0 -1 0 -1 677 960 0 1920 622 0 1 401 184 -1 -1 0 0 21 -1 -1 21 1 0 677 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\midterm1F17.html
+HTML
+269486075 1 -1 1458 -1 1621 960 0 1920 622 0 1 599 115 -1 -1 0 0 21 -1 -1 21 1 0 1621 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\midterm2.html
+HTML
+269486075 1 -1 2154 -1 2159 130 130 1842 606 0 1 434 322 -1 -1 0 0 21 -1 -1 21 1 0 2159 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\ValueIteration.ox
+Ox
+1049586 2 381 60 381 62 0 0 960 668 0 0 885 168 -1 -1 0 0 11 0 0 11 1 0 62 381  0 0 0
+C:\Users\Chris\Desktop\QC\toggles.oxh
+Ox:UNIX
+1147890 0 12 26 5 46 0 0 960 668 0 0 661 140 -1 -1 0 0 35 0 0 35 1 0 46 5  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\ReservationValues.ox
+Ox
+1049586 2 118 40 118 43 0 0 960 668 0 0 619 168 -1 -1 0 0 11 0 0 11 1 0 43 118  0 0 0
+C:\Users\Chris\Desktop\QC\data\mproc12.do
+DATA
+5243122 2 7 42 7 46 960 0 1920 668 1 0 745 196 -1 -1 0 0 18 0 0 18 1 0 46 7  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\FiveO\Parameters.ox
+Ox
+1049586 2 559 20 559 25 0 0 960 668 0 0 367 168 -1 -1 0 0 24 0 0 24 1 0 25 559  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\Outcomes.h
+Ox
+1049586 4 13 92 13 91 960 0 1920 722 0 0 1333 252 -1 -1 0 0 19 0 0 19 1 0 91 13  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\Outcomes.ox
+Ox
+1049586 0 253 1 257 1 0 0 960 668 0 0 31 84 -1 -1 0 0 22 0 0 22 1 0 1 257  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\FiveO\Objective.ox
+Ox
+1049586 0 292 2 291 6 0 0 960 668 0 0 101 112 -1 -1 0 0 23 0 0 23 1 0 6 291  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\Methods.ox
+Ox
+1049586 2 195 34 195 42 0 0 960 668 0 0 605 168 -1 -1 0 0 1 187 187 1 1 0 42 195  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OODP\Makefile
+DATA
+5243122 0 14 1 5 40 52 52 1314 285 1 0 661 140 -1 -1 0 0 53 0 0 53 1 0 40 5  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\KeaneWolpinJPE1997.h
+Ox
+1049586 2 77 1 77 19 0 0 960 668 0 0 283 560 -1 -1 0 0 14 0 0 14 1 0 19 77  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\DP.h
+Ox
+1049586 2 336 18 336 24 0 0 960 668 0 0 353 168 -1 -1 0 0 20 0 0 20 1 0 24 336  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\DP.ox
+Ox
+1049586 0 249 1 236 1 0 0 960 668 0 0 31 140 -1 -1 0 0 16 0 0 16 1 0 1 236  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\DDPShared.ox
+Ox
+1049586 2 126 49 126 56 0 0 960 668 0 0 801 336 -1 -1 0 0 23 0 0 23 1 0 56 126  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\Data.ox
+Ox
+1049586 2 28 55 28 57 0 0 960 668 0 0 815 168 31 280 1 0 1 945 945 1 1 0 57 28  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\Bellman.ox
+Ox
+1049586 2 472 10 472 19 0 0 960 668 0 0 283 168 -1 -1 0 0 21 0 0 21 1 0 19 472  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\Bellman.h
+Ox
+1049586 2 78 6 78 15 0 0 960 668 0 0 437 168 -1 -1 0 0 13 0 0 13 1 0 15 78  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\AuxiliaryValues.h
+Ox
+1049586 0 57 5 12 1 0 0 960 668 0 0 31 56 -1 -1 0 0 20 0 0 20 1 0 1 12  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\AuxiliaryValues.ox
+Ox
+1049586 2 95 1 95 3 0 0 960 668 0 0 59 168 -1 -1 0 0 29 0 0 29 1 0 3 95  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\DDP\AllTest.h
+Ox
+1049586 0 125 1 120 43 0 0 960 668 0 0 619 336 -1 -1 0 0 40 0 0 40 1 0 43 120  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\Algorithms.h
+Ox
+1049586 1 145 2 146 56 0 0 960 668 0 0 843 140 -1 -1 0 0 17 0 0 17 1 0 56 146  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\FiveO\Algorithms.ox
+Ox
+1049586 0 999 21 999 20 0 0 960 668 0 0 297 336 -1 -1 0 0 24 0 0 24 1 0 20 999  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow_exercises\Nam\aiyagari_main.ox
+Ox
+1049586 0 0 26 4 1 0 0 960 668 0 0 31 112 -1 -1 0 0 23 0 0 23 1 0 1 4  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\ActionVariable.h
+Ox
+1049586 0 23 13 23 20 0 0 960 668 0 0 297 112 -1 -1 0 0 20 0 0 20 1 0 20 23  0 0 0
+C:\Users\Chris\Downloads\QED Timetable v2 - Feed.tsv
+DATA
+273678578 0 74 1 74 1 0 0 1712 479 1 0 115 2072 -1 -1 0 0 -1 -1 -1 -1 1 0 1 74  0 0 0
+C:\Users\Chris\Downloads\QED Timetable v2 - Feed (2).tsv
+DATA
+273678578 0 74 1 74 1 208 208 1920 687 1 0 115 588 -1 -1 0 0 -1 -1 -1 -1 1 0 1 74  0 0 0
+C:\Users\Chris\Documents\OFFICE\PROF\VITAE\cv_exper.htm
+HTML
+269486075 0 -1 0 -1 0 156 156 1542 616 0 1 49 0 -1 -1 0 0 55 -1 -1 55 1 0 0 -1  0 -1 0
+C:\Users\Chris\Desktop\QC\logs\Data--8-07-2020-13-04-25.log
+DATA
+273678578 0 0 1 0 1 104 104 1366 356 1 0 115 0 -1 -1 0 0 26 0 0 26 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\Single.hetero.optobj_X
+DATA
+273678578 0 0 1 0 1 0 0 1262 252 1 0 115 0 -1 -1 0 0 9 0 0 9 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\head.htm
+HTML
+269486075 0 -1 0 -1 0 104 104 1366 356 0 1 49 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\othpub.htm
+HTML
+269486075 0 -1 0 -1 0 0 0 1262 252 0 1 49 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\rfpub.htm
+HTML
+269486075 0 -1 0 -1 0 52 52 1314 304 0 1 49 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\stud.html
+HTML
+286263291 0 -1 5855 -1 6078 0 0 1262 252 0 1 423 2162 -1 -1 0 0 -1 -1 -1 -1 1 0 6078 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\class.htm
+HTML
+269486075 0 -1 912 -1 0 52 52 1314 304 0 1 49 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\super.html
+HTML
+269486075 0 -1 1797 -1 0 78 78 1340 330 0 1 49 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\current.html
+HTML
+269486075 0 -1 0 -1 0 104 104 1366 356 0 1 49 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\govt.htm
+HTML
+269486075 0 -1 0 -1 0 52 52 1314 304 0 1 49 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\proj.htm
+HTML
+269486075 1 -1 54 -1 387 26 26 1288 278 0 1 49 276 -1 -1 0 0 -1 -1 -1 -1 1 0 387 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\wkpap.htm
+HTML
+269486075 0 -1 425 -1 2381 104 104 1366 356 0 1 49 828 -1 -1 0 0 -1 -1 -1 -1 1 0 2381 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\exper.html
+HTML
+286263291 0 -1 1672 -1 494 26 26 1288 278 0 1 436 46 -1 -1 0 0 4 -1 -1 4 1 0 494 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\conf.htm
+HTML
+269486075 0 -1 1780 -1 1780 78 78 1340 330 0 1 88 46 -1 -1 0 0 0 -1 -1 0 1 0 1780 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\grant.htm
+HTML
+269486075 0 50 2 -1 1747 78 78 1340 330 0 1 89 115 -1 -1 0 0 -1 -1 -1 -1 1 0 1747 -1  0 0 0
+C:\Users\Chris\Downloads\FixUserNames1.csv
+DATA
+273678578 0 0 33 0 33 0 0 960 668 1 0 563 0 -1 -1 0 0 33 0 0 33 1 0 33 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\educ.html
+HTML
+269486075 0 -1 0 -1 0 0 0 1262 252 0 1 49 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\_includes\cv\admin.htm
+HTML
+269486075 0 -1 0 -1 0 26 26 1288 278 0 1 49 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OODP\css\reveal.css
+DATA:CSS
+269484274 0 1120 726 0 1 0 0 960 668 1 0 115 0 -1 -1 0 0 4 0 0 4 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OODP\css\slide.css
+DATA:CSS
+269484274 0 28 1 27 18 0 0 960 668 1 0 353 168 -1 -1 0 0 8 0 0 8 1 0 18 27  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\templates\DynamicPrograms\MyModelMain.ox
+Ox
+269485042 2 41 5 41 10 0 0 960 668 0 0 199 252 -1 -1 0 0 17 0 0 17 1 0 10 41  0 0 0
+C:\Users\Chris\Desktop\QC\Main.oxdoc
+HTML
+286263291 0 -1 36 -1 36 0 0 960 668 0 1 49 46 -1 -1 0 0 32 -1 -1 32 1 0 36 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\KeaneWolpinREStat1994.h
+Ox
+269485042 2 20 14 20 20 0 0 960 668 0 0 297 140 -1 -1 0 0 14 0 0 14 1 0 20 20  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\KeaneWolpinJPE1997.ox
+Ox
+269485042 0 19 40 67 13 0 0 960 668 0 0 227 528 -1 -1 0 0 32 0 0 32 1 0 13 67  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\KeaneWolpinREStat1994.ox
+Ox
+269485042 2 16 2 16 7 0 0 960 668 0 0 157 252 -1 -1 0 0 35 0 0 35 1 0 7 16  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\CFMPI\ClientServerTestA.ox
+Ox
+269485042 0 0 1 0 1 0 0 960 668 0 0 31 0 -1 -1 0 0 77 0 0 77 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OODP\css\reveal.min.css
+DATA:CSS
+269484274 2 136 23 136 27 0 0 960 668 1 0 479 252 -1 -1 0 0 21 0 0 21 1 0 27 136  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-06-2020-16-16-35.log
+DATA
+273678578 0 0 1 0 1 0 0 960 668 1 0 115 0 -1 -1 0 0 26 0 0 26 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OODP\css\doc.css
+DATA:CSS
+269484274 0 397 1 446 1 130 130 1314 526 1 0 115 84 -1 -1 0 0 29 0 0 29 1 0 1 446  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\AiyagariAgent.ox
+Ox
+269485042 2 36 87 36 93 130 130 1516 590 0 0 1319 252 -1 -1 0 0 88 0 0 88 1 0 93 36  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OODP\month.bat
+Application
+269485042 0 0 1 0 1 0 0 1262 233 0 0 31 0 -1 -1 0 0 10 0 0 10 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\academicpages.github.io\README.md
+HTML
+269486075 0 -1 750 -1 1096 104 104 1816 564 0 1 550 23 -1 -1 0 0 160 -1 -1 160 1 0 1096 -1  0 0 0
+C:\Users\Chris\Desktop\kahn.txt
+ASCII
+273688443 0 5 1 4 1 208 208 906 772 1 0 115 112 -1 -1 0 0 -1 -1 -1 -1 1 0 1 4  0 0 0
+C:\Users\Chris\Desktop\activate.txt
+ASCII
+273688443 0 0 1 36 1 208 208 1920 668 1 0 115 168 -1 -1 0 0 -1 -1 -1 -1 1 0 1 36  0 0 0
+C:\Users\Chris\Documents\OFFICE\PROF\VITAE\cv_info.htm
+HTML
+269486075 1 -1 2 -1 881 182 182 1894 642 0 1 49 299 -1 -1 0 0 -1 -1 -1 -1 1 0 881 -1  0 -1 0
+C:\Users\Chris\Google Drive\ier-review.txt
+ASCII
+273688443 1 0 1 128 1 26 26 1412 486 1 0 115 616 -1 -1 0 0 49 9 9 49 1 0 1 128  0 0 0
+C:\Users\Chris\Desktop\QC\Single.ability-trans.optobj
+DATA
+273678578 0 0 1 0 1 0 0 960 668 1 0 115 -504 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\data\mproc_restart.do
+DATA
+5243122 0 20 5 27 6 960 0 1920 890 1 0 185 756 -1 -1 0 0 1 2 2 1 1 0 6 27  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--15-05-2020-17-03-57.log
+DATA
+273678578 0 0 1 0 1 960 0 1920 741 1 0 115 -4148 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--15-05-2020-16-08-15.log
+DATA
+273678578 0 0 1 0 1 960 0 1920 741 1 0 115 -4116 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--15-05-2020-13-15-31.log
+DATA
+273678578 2 154 169 154 174 0 0 1764 388 1 0 1865 252 -1 -1 0 0 -1 -1 -1 -1 1 0 174 154  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--2-08-2019-15-27-22.log
+DATA
+273678578 0 138 63 31 1 156 156 1920 544 1 0 -390 -2777 -1 -1 0 0 -1 -1 -1 -1 1 0 1 31  0 0 0
+C:\Users\Chris\Desktop\QC\Single.ability-retry.optobj
+DATA
+273678578 0 26 5 26 5 0 0 683 429 1 0 171 -700 -1 -1 0 0 9 0 0 9 1 0 5 26  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\DDP\AllTest.ox
+Ox
+269485042 0 63 2 63 28 0 0 960 412 0 0 451 252 -1 -1 0 0 21 0 0 21 1 0 28 63  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-05-2020-14-08-23.log
+DATA
+273678578 0 0 1 0 1 52 52 1094 412 1 0 115 -1848 -1 -1 0 0 26 0 0 26 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-05-2020-14-16-06.log
+DATA
+273678578 0 0 1 0 1 104 104 1868 492 1 0 115 -3780 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-05-2020-14-00-45.log
+DATA
+273678578 0 0 1 0 1 26 26 1790 414 1 0 115 -3897 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-05-2020-13-23-08.log
+DATA
+273678578 1 97 27 97 28 0 0 1764 388 1 0 493 364 -1 -1 0 0 -1 -1 -1 -1 1 0 28 97  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-05-2020-12-49-08.log
+DATA
+273678578 0 0 1 555 1 130 130 1894 518 1 0 115 -1876 -1 -1 0 0 -1 -1 -1 -1 1 0 1 555  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-05-2020-11-33-30.log
+DATA
+273678578 0 0 1 571 25 26 26 1790 414 1 0 451 252 -1 -1 0 0 -1 -1 -1 -1 1 0 25 571  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-05-2020-12-15-55.log
+DATA
+273678578 0 0 1 0 1 78 78 1842 466 1 0 115 -9001 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-05-2020-10-28-27.log
+DATA
+273678578 0 0 1 0 1 130 130 1358 498 1 0 115 -2900 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-05-2020-11-24-43.log
+DATA
+273678578 0 0 1 0 1 156 156 1920 544 1 0 115 -4032 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-05-2020-10-59-00.log
+DATA
+273678578 0 36 73 83 26 52 52 1816 440 1 0 465 -280 -1 -1 0 0 -1 -1 -1 -1 1 0 26 83  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-05-2020-11-13-01.log
+DATA
+273678578 0 0 1 0 1 104 104 1868 492 1 0 115 -2016 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-05-2020-10-49-11.log
+DATA
+273678578 0 0 1 0 1 26 26 1790 414 1 0 115 -4233 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\templates\DynamicPrograms\MyModel.ox
+Ox
+269485042 0 0 1 0 1 52 52 1816 440 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--5-05-2020-18-17-04.log
+DATA
+273678578 0 0 1 62 31 52 52 1816 415 1 0 535 140 -1 -1 0 0 26 0 0 26 1 0 31 62  0 0 0
+C:\Users\Chris\Desktop\QC\savedoutput\Data--30-04-2020-16-17-21.log
+DATA
+273678578 0 0 1 62 18 182 182 1894 672 1 0 353 168 -1 -1 0 0 26 0 0 26 1 0 18 62  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--5-05-2020-19-14-49.log
+DATA
+273678578 0 0 1 0 1 78 78 1894 340 1 0 115 0 -1 -1 0 0 26 0 0 26 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OODP\talk.html
+HTML
+269486075 0 -1 31540 -1 31543 78 78 1262 474 0 1 49 161 -1 -1 0 0 15 -1 -1 15 1 0 31543 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OODP\css\screen.css
+DATA:CSS
+269484274 0 0 1 0 1 78 78 1262 474 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\F2019\assign3b.htm
+HTML
+286263291 1 -1 3917 -1 4777 26 26 1366 126 0 1 357 759 -1 -1 0 0 21 -1 -1 21 1 0 4777 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\F2019\searchdata.txt
+ASCII
+273688443 0 0 1 0 1 130 130 1764 753 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\F2019\assign3.htm
+HTML
+269486075 0 -1 3010 -1 0 26 26 1366 126 0 1 49 0 -1 -1 0 0 21 -1 -1 21 1 0 0 -1  0 -1 0
+C:\Users\Chris\Desktop\QC\logs\Data--10-11-2019-16-16-23.log
+DATA
+273678578 0 0 1 0 1 78 78 1868 379 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\output\Non-Stationary_Search.txt
+ASCII
+273688443 0 0 1 0 1 208 208 1842 831 1 0 115 -1905 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow_exercises\Nam\aiyagari.ox
+Ox
+269485042 0 53 6 28 4 0 0 960 412 0 0 115 280 -1 -1 0 0 17 0 0 17 1 0 4 28  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Obj-Single-ability-retry-9-11-2019-10-34-52.log
+DATA
+273678578 0 0 1 0 1 0 0 960 412 1 0 115 0 -1 -1 0 0 94 0 0 94 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\savedoutput\Data-Single.ability-retry.log.txt
+ASCII:UNIX
+5351291 0 0 1 0 1 960 0 1920 909 1 0 115 -3907 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--8-11-2019-10-10-32.log
+DATA
+5243122 0 0 1 0 1 0 0 960 909 1 0 115 -3907 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--7-11-2019-9-47-24.log
+DATA:UNIX
+273776882 0 0 1 150 1 104 104 949 472 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 150  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--6-11-2019-9-57-19.log
+DATA:UNIX
+273776882 0 0 1 134 79 26 26 1816 327 1 0 702 976 -1 -1 0 0 -1 -1 -1 -1 1 0 79 134  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\test7Pinf.csv
+DATA:UNIX
+273776882 0 0 1 0 1 26 26 1660 649 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\F2019\doc.css
+DATA:CSS
+269549810 0 183 4 183 12 52 52 1236 467 1 0 269 280 -1 -1 0 0 -1 -1 -1 -1 1 0 12 183  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\F2019\assign2.htm
+HTML
+269486075 0 -1 278 -1 97 0 0 1184 415 0 1 49 46 -1 -1 0 0 -1 -1 -1 -1 1 0 97 -1  0 -1 0
+C:\Users\Chris\Desktop\QC\logs\Data--2-08-2019-18-18-24.log
+DATA
+273678578 0 0 1 0 1 0 0 1262 280 1 0 115 0 -1 -1 0 0 26 0 0 26 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\Single.ability-Scaling.optobj
+DATA:UNIX
+273776882 0 4 2 3 4 0 0 683 429 1 0 157 -756 -1 -1 0 0 9 0 0 9 1 0 4 3  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 9\Exec\Ox\OxRun.edt
+ASCII:EDT
+269494138 0 5 143 5 1 0 0 681 370 1 0 73 85 -1 -1 0 0 83 0 0 83 1 0 1 5  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 9\Exec\Ox\OxRunLOUD.edt
+ASCII:EDT
+269494138 0 1 53 5 27 681 0 1362 370 1 0 281 85 -1 -1 0 0 83 0 0 83 1 0 27 5  0 0 0
+C:\Users\Chris\Desktop\QC\.gitignore
+DATA
+273678578 0 0 1 7 5 78 78 1456 404 1 0 171 196 -1 -1 0 0 6 0 0 6 1 0 5 7  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--9-07-2019-12-09-33.log
+DATA
+273678578 0 0 1 0 1 130 130 1842 618 1 0 115 -3780 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--9-07-2019-11-59-15.log
+DATA
+273678578 0 0 1 0 1 78 78 1790 566 1 0 115 -2100 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\Single.ability-Scaling.optobj.hold4
+DATA
+273678578 0 3 5 5 3 26 26 1738 514 1 0 143 140 -1 -1 0 0 -1 -1 -1 -1 1 0 3 5  0 0 0
+C:\Users\Chris\Desktop\QC\SimulatedAnnealing-IterStart-ability-Scaling.optobj
+DATA
+273678578 0 0 1 0 1 52 52 1314 332 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\Wmat.ox
+Ox
+269485042 0 0 1 4 1 52 52 1314 332 0 0 31 112 -1 -1 0 0 19 0 0 19 1 0 1 4  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\Makefile.inc
+DATA
+273678578 0 5 1 7 26 683 0 1366 315 1 0 507 196 -1 -1 0 0 22 0 0 22 1 0 26 7  0 0 0
+C:\Users\Chris\Desktop\QC\Makefile.inc
+DATA
+273678578 0 6 21 6 21 0 0 683 429 1 0 395 112 -1 -1 0 0 22 0 0 22 1 0 21 6  0 0 0
+C:\Users\Chris\Desktop\QC\Makefile
+TeX
+269496315 0 -1 49 -1 95 0 0 683 429 0 1 277 168 -1 -1 0 0 20 -1 -1 20 1 0 95 -1  0 0 0
+C:\Users\Chris\Desktop\QC\Single.ability.optobj
+DATA:UNIX
+273776882 0 1 10 1 15 0 0 683 429 1 0 311 28 -1 -1 0 0 9 0 0 9 1 0 15 1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\CFMPI.ox
+Ox
+269485042 0 229 68 229 74 960 0 1920 684 0 0 1053 168 -1 -1 0 0 20 0 0 20 1 0 74 229  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\Variables.h
+Ox
+269485042 0 0 1 11 1 0 0 683 429 0 0 31 308 -1 -1 0 0 74 0 0 74 1 0 1 11  0 0 0
+C:\Users\Chris\Desktop\QC\Single.restart.optobj
+DATA
+273678578 0 2 2 7 23 0 0 683 429 1 0 423 196 -1 -1 0 0 6 0 0 6 1 0 23 7  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--27-05-2019-22-02-48.log
+DATA
+273678578 0 0 1 77 1 0 0 683 429 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 77  0 0 0
+C:\Users\Chris\Desktop\QC\savedoutput\restart_single_Data--21-05-2019-9-37-17.log.txt
+ASCII:UNIX
+273786747 0 0 1 85 1 130 130 1366 429 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 85  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\C4E\source\part2\Optimization1.htm
+HTML
+269486075 0 -1 0 -1 0 78 78 1314 377 0 1 49 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-04-2019-12-52-52.log
+DATA
+273678578 0 0 1 54 1 0 0 683 429 1 0 115 364 -1 -1 0 0 -1 -1 -1 -1 1 0 1 54  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-04-2019-12-02-17.log
+DATA
+273678578 0 0 1 0 1 0 0 683 429 1 0 115 -1260 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-04-2019-11-46-05.log
+DATA
+273678578 0 0 1 0 1 0 0 683 429 1 0 115 -1680 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-04-2019-11-27-59.log
+DATA
+273678578 0 0 1 0 1 0 0 683 429 1 0 115 -2304 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-04-2019-11-24-18.log
+DATA
+273678578 0 0 1 141 8 0 0 683 429 1 0 213 364 -1 -1 0 0 -1 -1 -1 -1 1 0 8 141  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-04-2019-11-15-14.log
+DATA
+273678578 0 0 1 0 6 0 0 683 429 1 0 185 0 -1 -1 0 0 -1 -1 -1 -1 1 0 6 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--17-04-2019-13-31-54.log
+DATA
+5243122 0 0 1 0 1 0 0 683 429 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--17-04-2019-13-24-20.log
+DATA
+273678578 0 7 12 37 7 104 104 1340 403 1 0 199 308 -1 -1 0 0 -1 -1 -1 -1 1 0 7 37  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--16-04-2019-15-31-50.log
+DATA
+273678578 2 30 8 30 12 0 0 683 429 1 0 269 -896 -1 -1 0 0 26 0 0 26 1 0 12 30  0 0 0
+C:\Users\Chris\Desktop\QC\data\Graphs.do
+DATA
+273678578 0 1 14 27 1 683 0 1366 315 1 0 115 28 -1 -1 0 0 10 0 0 10 1 0 1 27  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--16-04-2019-15-22-19.log
+DATA
+273678578 0 14 30 9 15 0 0 683 429 1 0 311 56 -1 -1 0 0 -1 -1 -1 -1 1 0 15 9  0 0 0
+C:\Users\Chris\Desktop\QC\source\QC.oxdoc
+HTML
+286263291 2 -1 1452 -1 1458 683 0 1366 315 0 1 1068 207 -1 -1 0 0 14741 -1 -1 14741 1 0 1458 -1  0 0 0
+C:\Users\Chris\Desktop\QC\Fit.linear20.optobj
+DATA
+273678578 0 100 89 0 1 0 0 677 684 1 0 115 0 -1 -1 0 0 1 78 78 1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\include\QCShared.h.hold
+Ox
+269485042 0 92 64 93 9 52 52 1288 351 0 0 143 224 -1 -1 0 0 -1 -1 -1 -1 1 0 9 93  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\DDP.ox
+Ox
+269485042 0 0 1 1 1 234 234 1620 703 0 0 31 28 -1 -1 0 0 17 0 0 17 1 0 1 1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\DDP.h
+Ox
+269485042 0 0 1 0 1 78 78 1013 338 0 0 31 0 -1 -1 0 0 18 0 0 18 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\docs\Makefile
+DATA
+273678578 0 24 1 24 2 960 0 1920 741 1 0 171 581 -1 -1 0 0 1 0 0 1 1 0 2 24  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\docs\oxdoc.sed
+DATA
+273678578 0 0 1 0 1 78 78 1314 377 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\docs\CFMPI\Makefile
+DATA
+273678578 0 0 1 10 13 52 52 1288 351 1 0 325 280 -1 -1 0 0 -1 -1 -1 -1 1 0 13 10  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\Exec\Ox\Examples.edt
+ASCII:EDT
+269494138 0 3 60 3 54 52 52 966 325 1 0 497 51 -1 -1 0 0 83 0 0 83 1 0 54 3  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\Exec\Ox\DebugExamples.edt
+ASCII:EDT
+269494138 0 2 60 2 54 52 52 966 370 1 0 497 34 -1 -1 0 0 83 0 0 83 1 0 54 2  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\Exec\Ox\OxDoc.edt
+ASCII:EDT
+269494138 0 0 1 0 1 0 0 914 318 1 0 73 0 -1 -1 0 0 64 0 0 64 1 0 1 0  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\Exec\Ox\OxCompile.edt
+ASCII:EDT
+269494138 0 2 60 2 54 130 130 1044 448 1 0 497 34 -1 -1 0 0 83 0 0 83 1 0 54 2  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\Exec\Ox\GCC.edt
+ASCII:EDT
+269494138 0 0 1 0 1 104 104 1018 422 1 0 73 0 -1 -1 0 0 93 0 0 93 1 0 1 0  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 9\Exec\Ox\OxCompile.edt
+ASCII:EDT
+269494138 0 4 35 2 54 519 0 1039 370 1 0 497 34 -1 -1 0 0 83 0 0 83 1 0 54 2  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 9\Exec\Ox\Examples.edt
+ASCII:EDT
+269494138 2 2 53 2 57 75 75 1453 475 1 0 521 34 -1 -1 0 0 83 0 0 83 1 0 57 2  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 9\Exec\Ox\DebugExamples.edt
+ASCII:EDT
+269494138 0 0 1 2 54 52 52 1288 370 1 0 497 34 -1 -1 0 0 -1 -1 -1 -1 1 0 54 2  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\misc\WstarTestc.ox
+Ox
+269485042 2 9 11 9 23 960 0 1920 741 0 0 381 252 -1 -1 0 0 24 0 0 24 1 0 23 9  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\misc\WstarTestc.h
+Ox
+1049586 2 4 16 4 31 960 0 1920 741 0 0 451 112 -1 -1 0 0 14 0 0 14 1 0 31 4  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\misc\WstarTestb.h
+Ox
+1049586 2 4 16 4 31 960 0 1920 741 0 0 451 112 -1 -1 0 0 14 0 0 14 1 0 31 4  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\misc\WstarTest.h
+Ox
+1049586 2 6 17 6 32 960 0 1920 741 0 0 465 112 -1 -1 0 0 14 0 0 14 1 0 32 6  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\WolpinJPE1984.oxdoc
+HTML
+17827835 2 -1 1349 -1 1364 960 0 1920 741 0 1 489 115 -1 -1 0 0 97 -1 -1 97 1 0 1364 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\WolpinJPE1984.ox
+Ox
+1049586 2 15 7 15 16 960 0 1920 741 0 0 283 308 -1 -1 0 0 27 0 0 27 1 0 16 15  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\WolpinJPE1984.h
+Ox
+1049586 0 3 35 3 27 960 0 1920 741 0 0 395 84 -1 -1 0 0 14 0 0 14 1 0 27 3  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\Variables.oxdoc
+HTML
+1050619 2 -1 48468 -1 48475 960 0 1920 722 0 1 214 253 -1 -1 0 0 93 -1 -1 93 1 0 48475 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\Variables.ox
+Ox
+1049586 1 0 1 10 1 104 104 1362 340 0 0 31 280 -1 -1 0 0 23 0 0 23 1 0 1 10  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\ValueIteration.h
+Ox
+1049586 0 100 20 100 26 960 0 1920 741 0 0 381 168 -1 -1 0 0 18 0 0 18 1 0 26 100  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\RustRothwellJAE1995.ox
+Ox
+1049586 0 8 63 8 34 960 0 1920 741 0 0 535 224 -1 -1 0 0 33 0 0 33 1 0 34 8  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\RustRothwellJAE1995.h
+Ox
+1049586 2 4 23 4 30 960 0 1920 741 0 0 437 112 -1 -1 0 0 14 0 0 14 1 0 30 4  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\RosenzweigWolpinJPE1993.oxdoc
+HTML
+1050619 0 -1 79 -1 150 960 0 1920 741 0 1 49 115 -1 -1 0 0 124 -1 -1 124 1 0 150 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\RosenzweigWolpinJPE1993.ox
+Ox
+1049586 2 53 30 53 33 960 0 1920 741 0 0 479 168 -1 -1 0 0 37 0 0 37 1 0 33 53  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\RosenzweigWolpinJPE1993.h
+Ox
+1049586 0 5 32 3 1 960 0 1920 741 0 0 31 84 -1 -1 0 0 14 0 0 14 1 0 1 3  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\ReservationValues.h
+Ox
+1049586 2 37 52 37 67 960 0 1920 741 0 0 955 112 -1 -1 0 0 79 0 0 79 1 0 67 37  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\FiveO\Parameters.oxdoc
+HTML
+1050619 2 -1 3660 -1 3666 78 78 1464 585 0 1 918 345 -1 -1 0 0 60 -1 -1 60 1 0 3666 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\ParallelObjective.h
+Ox
+1049586 2 10 43 10 55 958 0 1916 676 0 0 787 280 -1 -1 0 0 16 0 0 16 1 0 55 10  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\wolpin1997.txt
+ASCII
+5252987 0 0 1 0 1 0 0 1288 194 1 0 115 0 -1 -1 0 0 42 0 0 42 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\wolpin1987match.do
+ASCII
+5252986 0 0 1 13 19 78 78 1366 272 1 0 367 336 -1 -1 0 0 74 0 0 74 1 0 19 13  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\WolpinEmet1987.oxdoc
+HTML
+17827835 2 -1 1691 -1 1694 960 0 1920 741 0 1 478 253 -1 -1 0 0 100 -1 -1 100 1 0 1694 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\WolpinEmet1987.ox
+Ox
+1049586 0 42 1 44 1 960 0 1920 741 0 0 31 461 -1 -1 0 0 28 0 0 28 1 0 1 44  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\WolpinEmet1987.h
+Ox
+1049586 1 7 85 7 76 960 0 1920 741 0 0 1165 196 -1 -1 0 0 14 0 0 14 1 0 76 7  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\pubcss\dist\acm-sigchi\templates\acm-sigchi-sample.html
+HTML
+1050619 0 -1 21121 -1 14797 104 104 1490 696 0 1 236 345 -1 -1 0 0 15 -1 -1 15 1 0 14797 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\pubcss\README.md
+HTML
+1050619 1 -1 929 -1 954 182 182 1568 658 0 1 676 368 -1 -1 0 0 8 -1 -1 8 1 0 954 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\pubcss\dist\css\pubcss-acm-sig.css
+DATA:CSS
+1048818 0 183 5 178 18 683 0 1366 315 1 0 353 280 -1 -1 0 0 18 0 0 18 1 0 18 178  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\FiveO\Objective.oxdoc
+HTML
+1050619 2 -1 2087 -1 2093 78 78 1336 319 0 1 929 368 -1 -1 0 0 60 -1 -1 60 1 0 2093 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\Objective.h
+Ox
+1049586 2 107 24 107 27 960 0 1920 722 0 0 479 140 -1 -1 0 0 21 0 0 21 1 0 27 107  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\Methods.h
+Ox
+1049586 2 50 50 50 52 960 0 1920 722 0 0 745 168 -1 -1 0 0 1 110 110 1 1 0 52 50  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\Makefile
+DATA
+5243122 0 0 1 0 1 960 0 1920 741 1 0 115 0 -1 -1 0 0 31 0 0 31 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\FiveO\Makefile
+TeX
+1060859 0 -1 580 -1 580 26 26 1412 445 0 1 95 336 -1 -1 0 0 23 -1 -1 23 1 0 580 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OODP\css\oxdoc-lite.css
+DATA:CSS
+1114354 0 6 1 0 1 960 0 1920 722 1 0 115 0 -1 -1 0 0 1 0 0 1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OODP\lunch.html
+HTML
+17827835 1 -1 16454 -1 16639 0 0 960 741 0 1 49 368 -1 -1 0 0 15 -1 -1 15 1 0 16639 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\LSemp_main.ox
+Ox
+1049586 0 5 1 5 1 960 0 1920 722 0 0 31 140 -1 -1 0 0 20 0 0 20 1 0 1 5  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\LSemp.ox
+Ox
+1049586 2 17 25 17 31 960 0 1920 722 0 0 451 168 -1 -1 0 0 17 0 0 17 1 0 31 17  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\LS_main.ox
+Ox
+1049586 2 5 5 5 12 960 0 1920 722 0 0 185 140 -1 -1 0 0 17 0 0 17 1 0 12 5  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\LS.ox
+Ox
+1049586 2 30 1 30 8 960 0 1920 722 0 0 129 498 -1 -1 0 0 17 0 0 17 1 0 8 30  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\KennetJAE1994.ox
+Ox
+1049586 0 66 16 66 15 960 0 1920 741 0 0 227 364 -1 -1 0 0 27 0 0 27 1 0 15 66  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\KennetJAE1994.h
+Ox
+1049586 0 24 30 30 19 960 0 1920 741 0 0 535 153 -1 -1 0 0 14 0 0 14 1 0 19 30  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\KeaneWolpinREStat1994.oxdoc
+HTML
+1050619 0 -1 0 -1 0 182 182 1568 670 0 1 49 0 -1 -1 0 0 86 -1 -1 86 1 0 0 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\IJCEmet2009.ox
+Ox
+1049586 2 53 6 53 14 960 0 1920 741 0 0 255 308 -1 -1 0 0 67 0 0 67 1 0 14 53  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\FiveO\GetStartedFiveO.ox
+Ox
+1049586 0 0 1 17 23 234 234 1620 741 0 0 339 224 -1 -1 0 0 12 0 0 12 1 0 23 17  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\DDP\GetStartedData.ox
+Ox
+1049586 2 24 15 24 24 960 0 1920 703 0 0 353 336 -1 -1 0 0 90 0 0 90 1 0 24 24  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\FiveO\GetStarted
+TeX
+1060859 0 -1 16548 -1 16133 52 52 1310 293 0 1 613 84 -1 -1 0 0 57 -1 -1 57 1 0 16133 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\FiveO\FiveO.oxdoc
+HTML
+1050619 0 -1 11233 -1 11239 26 26 1284 267 0 1 445 138 -1 -1 0 0 60 -1 -1 60 1 0 11239 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\FiveO\FiveO.ox
+Ox
+1049586 0 0 1 0 1 182 182 1568 689 0 0 31 0 -1 -1 0 0 19 0 0 19 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\Data.oxdoc
+HTML
+1050619 0 -1 11434 -1 11475 960 0 1920 703 0 1 258 207 -1 -1 0 0 4740 -1 -1 4740 1 0 11475 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\Data.h
+Ox
+1049586 1 2 11 2 1 960 0 1920 703 0 0 31 56 -1 -1 0 0 1 6 6 1 1 0 1 2  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\CFMPI.oxh
+Ox
+1049586 0 64 45 64 58 960 0 1920 703 0 0 829 364 -1 -1 0 0 20 0 0 20 1 0 58 64  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\Bellman.oxdoc
+HTML
+1050619 2 -1 6112 -1 6118 960 0 1920 684 0 1 1028 115 -1 -1 0 0 120 -1 -1 120 1 0 6118 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\FiveO\Algorithms.oxdoc
+HTML
+1050619 0 -1 0 -1 0 234 234 1620 741 0 1 49 0 -1 -1 0 0 66 -1 -1 66 1 0 0 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\Ahn1995.oxdoc
+HTML
+1050619 0 -1 7903 -1 5164 26 26 1412 495 0 1 49 253 -1 -1 0 0 59 -1 -1 59 1 0 5164 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\Ahn1995.ox
+Ox
+1049586 0 41 1 41 1 0 0 1386 469 0 0 31 364 -1 -1 0 0 21 0 0 21 1 0 1 41  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\Ahn1995.h
+Ox
+1049586 1 7 97 7 102 234 234 1620 703 0 0 1319 196 -1 -1 0 0 14 0 0 14 1 0 102 7  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\pubcss\dist\acm-sig\templates\acm-sig-sample-word.html
+HTML
+269486075 0 -1 5203 -1 5213 156 156 1868 632 0 1 485 2346 -1 -1 0 0 -1 -1 -1 -1 1 0 5213 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\test.css
+DATA:CSS
+269549810 0 259 6 0 1 683 0 1366 315 1 0 115 0 -1 -1 0 0 7 0 0 7 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\C4E\source\part1\Plans.htm
+HTML
+269486075 0 194 52 -1 11404 26 26 1288 256 0 1 236 184 -1 -1 0 0 -1 -1 -1 -1 1 0 11404 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\C4E\source\part2\Optimization2.htm
+HTML
+269486075 0 25 98 -1 1446 26 26 1288 256 0 1 884 69 -1 -1 0 0 -1 -1 -1 -1 1 0 1446 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\C4E\source\part1\Puzzle.htm
+HTML
+269486075 0 -1 486 -1 0 104 104 1366 353 0 1 49 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\doc-build\doc-build.ox
+Ox
+269485042 0 371 30 7 1 0 0 1288 194 0 0 31 196 -1 -1 0 0 25 0 0 25 1 0 1 7  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\doc-build\doc-build.oxh
+Ox
+269485042 0 32 430 0 13 960 0 1920 703 0 0 199 0 -1 -1 0 0 19 0 0 19 1 0 13 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\doc-build\Makefile
+DATA
+273678578 0 22 1 22 1 208 208 1920 684 1 0 115 448 -1 -1 0 0 -1 -1 -1 -1 1 0 1 22  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\Makefile
+TeX
+269496315 0 -1 822 -1 428 683 0 1366 315 0 1 431 420 -1 -1 0 0 23 -1 -1 23 1 0 428 -1  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 9\Exec\Ox\OxDoc.edt
+ASCII:EDT
+269494138 0 0 1 0 1 104 104 1362 364 1 0 73 0 -1 -1 0 0 64 0 0 64 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\doc-build\oxdoc.xml
+DATA
+273678578 0 4 59 1 33 78 78 1790 554 1 0 563 28 -1 -1 0 0 -1 -1 -1 -1 1 0 33 1  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\finalF18.html
+HTML
+286263291 0 91 45 -1 4269 104 104 1366 353 0 1 148 1978 -1 -1 0 0 -1 -1 -1 -1 1 0 4269 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\EMTEX\globals.tex
+TeX
+269496315 0 -1 565 -1 1139 104 104 1366 334 0 1 487 84 -1 -1 0 0 -1 -1 -1 -1 1 0 1139 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\EMTEX\section.tex
+TeX
+286273531 0 -1 759 -1 0 0 0 1378 764 0 1 53 0 -1 -1 0 0 56 -1 -1 56 1 0 0 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\EMTEX\pdfslides.tex
+TeX
+286273530 0 35 23 0 1 0 0 1095 487 0 1 53 0 -1 -1 0 0 22 0 0 22 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\EMTEX\eqlist.tex
+TeX
+269496315 0 -1 0 -1 0 78 78 1340 308 0 1 53 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\EMTEX\EQUATE.TEX
+TeX
+269496315 2 -1 401 -1 406 104 104 1366 334 0 1 683 140 -1 -1 0 0 -1 -1 -1 -1 1 0 406 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\EMTEX\lecture.tex
+TeX
+269496315 0 -1 1146 -1 1539 26 26 1288 256 0 1 459 280 -1 -1 0 0 -1 -1 -1 -1 1 0 1539 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\C4E\book\css\mathjax.js
+DATA
+273678578 0 9 35 3 34 78 78 1340 327 1 0 577 84 -1 -1 0 0 -1 -1 -1 -1 1 0 34 3  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\C4E\book\book.log
+DATA
+273678578 0 0 1 0 1 0 0 1262 249 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\C4E\index.html
+HTML
+269486075 0 -1 151 -1 141 104 104 1816 580 0 1 588 46 -1 -1 0 0 -1 -1 -1 -1 1 0 141 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\takehome18_practice\Q3func.h
+Ox
+269485042 0 2 9 2 10 104 104 1816 580 0 0 157 56 -1 -1 0 0 -1 -1 -1 -1 1 0 10 2  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\takehome18_practice\q3.ox
+Ox
+269485042 0 1 13 1 16 26 26 1738 502 0 0 241 28 -1 -1 0 0 55 0 0 55 1 0 16 1  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\takehome18_practice\q1.ox
+Ox
+269485042 0 4 32 4 34 208 208 1920 684 0 0 493 112 -1 -1 0 0 -1 -1 -1 -1 1 0 34 4  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\takehome18_practice\q2.ox
+Ox
+269485042 0 8 43 8 45 0 0 1712 476 0 0 647 224 -1 -1 0 0 -1 -1 -1 -1 1 0 45 8  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\takehome3.zip
+DATA:UNIX
+273776882 0 0 1 0 1 182 182 1894 658 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\takehomeF17.html
+HTML
+269486075 0 -1 0 -1 0 26 26 1738 502 0 1 49 -552 -1 -1 0 0 6 -1 -1 6 1 0 0 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\Data--14-11-2018-12-37-44.log
+DATA
+273678578 0 0 1 0 1 130 130 1816 599 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\Data--14-11-2018-12-44-30.log
+DATA
+273678578 0 0 1 0 1 156 156 1842 625 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\DP-DDP-14-11-2018-13-09-50.log
+DATA
+273678578 0 0 1 0 1 182 182 1868 651 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\Ahn1995b.h
+Ox
+269485042 0 33 19 9 88 234 234 1920 703 0 0 1249 252 -1 -1 0 0 -1 -1 -1 -1 1 0 88 9  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\Ahn1995b.ox
+Ox
+269485042 1 31 2 31 36 0 0 1686 469 0 0 591 364 -1 -1 0 0 -1 -1 -1 -1 1 0 36 31  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\RustEmet1987.ox
+Ox
+269485042 1 47 1 58 1 960 0 1920 741 0 0 31 1624 -1 -1 0 0 26 0 0 26 1 0 1 58  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\RustEmet1987.h
+Ox
+269485042 1 4 1 5 1 960 0 1920 741 0 0 31 140 -1 -1 0 0 14 0 0 14 1 0 1 5  0 0 0
+C:\Users\Chris\Documents\barber.doc
+ANSI
+286279547 0 -1 1469 -1 1449 182 182 1568 670 0 0 31 476 -1 -1 0 0 93 -1 -1 93 1 0 1449 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\LS0.ox
+Ox
+269485042 0 0 1 0 1 104 104 1790 592 0 0 31 -504 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\RustEmet1987.oxdoc
+HTML
+269486075 0 -1 10229 -1 10132 960 0 1920 741 0 1 643 276 -1 -1 0 0 81 -1 -1 81 1 0 10132 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\output\WolpinJPE1984.txt
+ASCII
+273688443 1 117 1 143 49 130 130 1816 618 1 0 787 1568 -1 -1 0 0 -1 -1 -1 -1 1 0 49 143  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\FiveO\NonLinearSystem.oxdoc
+HTML
+269486075 0 -1 0 -1 0 26 26 1712 533 0 1 49 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\Shared\visualize.ox
+Ox
+1049586 0 5 18 0 1 960 0 1920 741 0 0 31 0 -1 -1 0 0 19 0 0 19 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\SolveAsSystem.ox
+Ox
+1049586 2 24 5 24 12 960 0 1920 741 0 0 185 112 -1 -1 0 0 27 0 0 27 1 0 12 24  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\SolveAsSystem.h
+Ox
+1049586 0 21 8 22 32 960 0 1920 741 0 0 507 505 -1 -1 0 0 16 0 0 16 1 0 32 22  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\pubcss\dist\css\screen.css
+DATA:CSS:UNIX
+1147122 0 0 1 4 4 960 0 1920 741 1 0 157 112 -1 -1 0 0 16 0 0 16 1 0 4 4  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\RustEmet1987.data
+DATA
+5243122 0 0 1 36 1 960 0 1920 741 1 0 115 168 -1 -1 0 0 18 0 0 18 1 0 1 36  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\RustEmet1987mle.ox
+Ox
+1049586 0 24 29 24 29 960 0 1920 741 0 0 423 308 -1 -1 0 0 29 0 0 29 1 0 29 24  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\misc\WstarTest.ox
+Ox
+1049586 0 162 25 0 1 960 0 1920 741 0 0 31 0 -1 -1 0 0 24 0 0 24 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\replications.h
+Ox
+1049586 4 14 33 14 34 960 0 1920 722 0 0 493 392 -1 -1 0 0 17 0 0 17 1 0 34 14  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\misc\ReEmpExp.h
+Ox
+1049586 0 0 1 0 1 960 0 1920 722 0 0 31 0 -1 -1 0 0 14 0 0 14 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\ParallelPredict.h
+Ox
+1049586 2 7 16 7 24 960 0 1920 722 0 0 353 140 -1 -1 0 0 14 0 0 14 1 0 24 7  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\docs\oxdoc.css
+DATA:CSS
+1114354 2 19 17 19 24 960 0 1920 722 1 0 437 140 -1 -1 0 0 7 0 0 7 1 0 24 19  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\Methods.oxdoc
+HTML
+1050619 2 -1 1032 -1 1040 960 0 1920 722 0 1 137 161 -1 -1 0 0 48 -1 -1 48 1 0 1040 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OxMenu\source\menu.ox
+Ox
+1049586 1 51 26 51 80 960 0 1920 722 0 0 899 140 -1 -1 0 0 18 0 0 18 1 0 80 51  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\main.ox
+Ox
+1049586 0 12 24 6 28 960 0 1920 722 0 0 409 168 -1 -1 0 0 18 0 0 18 1 0 28 6  0 0 0
+C:\Users\Chris\Documents\OFFICE\DATA\schools\learning.ox
+Ox
+1049586 2 39 2 39 10 960 0 1920 722 0 0 199 168 -1 -1 0 0 22 0 0 22 1 0 10 39  0 0 0
+C:\Users\Chris\Documents\OFFICE\DATA\schools\learning.h
+Ox
+1049586 2 8 21 8 29 960 0 1920 703 0 0 423 168 -1 -1 0 0 16 0 0 16 1 0 29 8  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\text\index.html
+HTML
+1050619 2 -1 33414 -1 33422 960 0 1920 703 0 1 577 253 -1 -1 0 0 15 -1 -1 15 1 0 33422 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\ImaiJainChing.ox
+Ox
+1049586 0 0 1 90 1 960 0 1920 703 0 0 31 618 -1 -1 0 0 27 0 0 27 1 0 1 90  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\ImaiJainChing.h
+Ox
+1049586 0 8 24 8 37 960 0 1920 703 0 0 535 224 -1 -1 0 0 16 0 0 16 1 0 37 8  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\IJCEmet2009.h
+Ox
+1049586 0 0 23 0 13 960 0 1920 703 0 0 199 0 -1 -1 0 0 14 0 0 14 1 0 13 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\HotzMiller.ox
+Ox
+1049586 2 52 30 52 39 960 0 1920 703 0 0 605 140 -1 -1 0 0 24 0 0 24 1 0 39 52  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\HotzMiller.h
+Ox
+1049586 2 8 57 8 62 960 0 1920 703 0 0 885 140 -1 -1 0 0 15 0 0 15 1 0 62 8  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\DDP\GetStartedMain.ox
+Ox
+1049586 0 0 1 0 1 960 0 1920 703 0 0 31 0 -1 -1 0 0 25 0 0 25 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\DDP\GetStarted.ox
+Ox
+1049586 0 15 5 24 10 960 0 1920 703 0 0 199 422 -1 -1 0 0 71 0 0 71 1 0 10 24  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\GetStarted
+HTML
+17827835 0 -1 18243 -1 33532 960 0 1920 703 0 1 903 161 -1 -1 0 0 70 -1 -1 70 1 0 33532 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\About\features
+HTML
+17827835 0 -1 3 -1 26 960 0 1920 703 0 1 280 23 -1 -1 0 0 3 -1 -1 3 1 0 26 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\misc\DynamicWstar.h
+Ox
+1049586 0 0 19 0 13 960 0 1920 703 0 0 199 0 -1 -1 0 0 14 0 0 14 1 0 13 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\DPSystems.html
+HTML
+1050619 0 -1 1029 -1 4254 960 0 1920 703 0 1 49 272 -1 -1 0 0 62 -1 -1 62 1 0 4254 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\Clock.ox
+Ox
+1049586 1 168 1 168 6 960 0 1920 703 0 0 101 56 -1 -1 0 0 19 0 0 19 1 0 6 168  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\CFMPIexternal.oxh
+Ox
+1049586 0 0 1 0 1 960 0 1920 703 0 0 31 0 -1 -1 0 0 66 0 0 66 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\CFMPI\CFMPI.oxdoc
+HTML
+1050619 2 -1 4072 -1 4077 960 0 1920 703 0 1 621 253 -1 -1 0 0 101 -1 -1 101 1 0 4077 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\CFMPI.h
+Ox
+1049586 2 7 26 7 29 960 0 1920 684 0 0 423 196 -1 -1 0 0 19 0 0 19 1 0 29 7  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\CFdraw\CFdraw.ox
+Ox
+1049586 2 144 19 144 24 960 0 1920 684 0 0 395 506 -1 -1 0 0 20 0 0 20 1 0 24 144  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\CFdraw\CFdraw.h
+Ox
+1049586 2 32 38 32 43 960 0 1920 684 0 0 661 310 -1 -1 0 0 21 0 0 21 1 0 43 32  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\doc-build\build.ox
+Ox
+1049586 0 10 1 1 1 960 0 1920 684 0 0 31 28 -1 -1 0 0 20 0 0 20 1 0 1 1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OODP\build.ox
+Ox
+1049586 0 0 1 0 13 960 0 1920 684 0 0 199 0 -1 -1 0 0 33 0 0 33 1 0 13 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\AguirregabiriaMira2002.ox
+Ox
+1049586 0 41 5 43 7 960 0 1920 684 0 0 157 364 -1 -1 0 0 36 0 0 36 1 0 7 43  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\AguirregabiriaMira2002.h
+Ox
+1049586 0 0 1 0 1 960 0 1920 684 0 0 31 0 -1 -1 0 0 23 0 0 23 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\KennetJAE1994.oxdoc
+HTML
+269486075 0 -1 0 -1 268 104 104 1816 580 0 1 148 69 -1 -1 0 0 -1 -1 -1 -1 1 0 268 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\DP-DDP-29-10-2018-11-53-09.log
+DATA
+273678578 0 0 1 0 1 156 156 1542 613 1 0 115 0 -1 -1 0 0 1 0 0 1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\GilleskieEmet1998.ox
+Ox
+269485042 2 39 27 39 35 683 0 1366 315 0 0 717 308 -1 -1 0 0 31 0 0 31 1 0 35 39  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\GilleskieEmet1998.h
+Ox
+269485042 2 2 21 2 27 683 0 1366 315 0 0 395 56 -1 -1 0 0 14 0 0 14 1 0 27 2  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\BerkovecSternEmet1991.h
+Ox
+269485042 0 0 1 0 1 26 26 1738 483 0 0 31 -1088 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\BerkovecSternEmet1991.oxdoc
+HTML
+269486075 0 -1 2864 -1 4134 52 52 1764 509 0 1 49 1173 -1 -1 0 0 -1 -1 -1 -1 1 0 4134 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\BerkovecSternEmet1991.ox
+Ox
+269485042 0 34 5 9 34 683 0 1366 315 0 0 535 252 -1 -1 0 0 35 0 0 35 1 0 34 9  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\RustEmet1987readdata.ox
+Ox
+269485042 4 38 27 38 26 52 52 1314 263 0 0 423 56 -1 -1 0 0 19 0 0 19 1 0 26 38  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\replications\a530875.mat
+DATA
+273678578 0 0 1 261 1 0 0 1262 211 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 261  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\niqlow-license.txt
+ASCII
+273688443 0 1 13 0 24 683 0 1366 334 1 0 437 0 -1 -1 0 0 63 0 0 63 1 0 24 0  0 0 0
+C:\Users\Chris\Desktop\Niqs\agg\source\agg.ox
+Ox
+269485042 2 17 25 17 28 683 0 1366 315 0 0 409 224 -1 -1 0 0 17 0 0 17 1 0 28 17  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\Makefile
+TeX
+269496315 2 -1 1028 -1 1034 683 0 1366 315 0 1 347 196 -1 -1 0 0 20 -1 -1 20 1 0 1034 -1  0 0 0
+C:\Users\Chris\Desktop\Niqs\agg\source\Makefile
+DATA
+273678578 0 4 1 4 1 683 0 1366 315 1 0 115 0 -1 -1 0 0 24 0 0 24 1 0 1 4  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\DPSystems.oxdoc
+HTML
+269486075 1 -1 1234 -1 4256 683 0 1366 315 0 1 49 138 -1 -1 0 0 -1 -1 -1 -1 1 0 4256 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\niqlow.h
+Ox
+1049586 0 3 1 3 1 0 0 960 603 0 0 31 84 -1 -1 0 0 74 0 0 74 1 0 1 3  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\W2018\ass2.ox
+Ox
+269485042 0 16 37 0 1 260 260 1646 883 0 0 31 0 -1 -1 0 0 19 0 0 19 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\misc\DynamicWstar.ox
+Ox
+269485042 0 0 1 36 63 0 0 1288 175 0 0 941 112 -1 -1 0 0 -1 -1 -1 -1 1 0 63 36  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\misc\WstarTestb.ox
+Ox
+269485042 0 0 1 0 1 26 26 1314 201 0 0 31 0 -1 -1 0 0 24 0 0 24 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\W2016\Eric Richert_167179_assignsubmission_file_econ861a1_richert.zip
+DATA:UNIX
+273776882 0 0 1 0 1 130 130 1868 551 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\oxdoc.log
+DATA:UNIX
+273776882 0 43 6 238 1 0 0 888 365 1 0 115 196 -1 -1 0 0 38 0 0 38 1 0 1 238  0 0 0
+C:\Users\Chris\Desktop\Niqs\agg\Makefile.inc
+DATA
+273678578 2 13 1 13 4 960 0 1920 622 1 0 157 364 -1 -1 0 0 22 0 0 22 1 0 4 13  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\samplemidterm1keyF18.html
+HTML
+269486075 0 -1 2073 -1 2464 683 0 1366 291 0 1 115 207 -1 -1 0 0 21 -1 -1 21 1 0 2464 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\samplemidterm1F18.html
+HTML
+269486075 0 -1 3875 -1 4450 683 0 1366 291 0 1 49 230 -1 -1 0 0 21 -1 -1 21 1 0 4450 -1  0 -1 0
+C:\Users\Chris\Desktop\barber-comments.doc
+ANSI
+286279547 0 -1 1644 -1 0 683 0 1366 291 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\DATA\norge\norge_text\jhc_draw.ox
+Ox
+269485042 0 0 1 18 1 26 26 1764 466 0 0 31 -1008 -1 -1 0 0 19 0 0 19 1 0 1 18  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\README.txt
+ASCII
+273688443 0 3 44 0 62 0 0 1288 194 1 0 969 0 -1 -1 0 0 62 0 0 62 1 0 62 0  0 0 0
+C:\Users\Chris\Desktop\QC\data\mproc10.do
+DATA
+273678578 0 47 18 5 2 78 78 1340 327 1 0 129 140 -1 -1 0 0 18 0 0 18 1 0 2 5  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\C4E\source\book2018.toc
+TeX:AUX
+269496306 0 0 1 0 1 26 26 1314 220 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\OODP\source\book.toc
+TeX:AUX
+269496306 0 6 6 6 2 130 130 1340 514 0 0 45 168 -1 -1 0 0 -1 -1 -1 -1 1 0 2 6  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\pubcss\dist\css\pubcss-ieee.css
+DATA:CSS
+269484274 2 176 18 176 23 182 182 1366 559 1 0 423 112 -1 -1 0 0 -1 -1 -1 -1 1 0 23 176  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\pubcss\dist\css\mypubcss.css
+DATA:CSS
+269484274 2 161 22 161 30 182 182 1340 619 1 0 521 252 -1 -1 0 0 -1 -1 -1 -1 1 0 30 161  0 0 0
+C:\Users\Chris\Desktop\h.html
+HTML
+286263291 0 -1 245 -1 236 26 26 1236 410 0 1 610 138 -1 -1 0 0 6 -1 -1 6 1 0 236 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\pubcss\dist\css\pubcss-acm-sigchi-ea.css
+DATA:CSS
+269484274 0 0 1 0 1 130 130 1340 514 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-07-2018-10-05-37.log
+DATA
+273678578 0 0 1 184 1 26 26 1314 239 1 0 115 224 -1 -1 0 0 -1 -1 -1 -1 1 0 1 184  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 10\Upgrade20180507.log
+DATA
+307233010 0 0 1 190 13 104 104 966 481 1 0 283 0 -1 -1 0 0 -1 -1 -1 -1 1 0 13 190  0 0 0
+C:\Users\Chris\Desktop\Niqs\agg\Main.ox
+Ox:UNIX
+269583346 0 0 1 1 1 104 104 1366 334 0 0 31 28 -1 -1 0 0 -1 -1 -1 -1 1 0 1 1  0 0 0
+C:\Users\Chris\Desktop\QC\Fit.bad12.optobj
+DATA
+273678578 0 45 53 4 1 0 0 677 684 1 0 115 112 -1 -1 0 0 1 76 76 1 1 0 1 4  0 0 0
+C:\Users\Chris\Desktop\QC\Fit.linear14.optobj
+DATA:UNIX
+273776882 0 0 1 0 1 130 130 1842 587 1 0 115 -1512 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\Niqs\agg\source\basics.ox
+Ox:UNIX
+269583346 0 36 14 40 17 52 52 1314 282 0 0 255 252 -1 -1 0 0 -1 -1 -1 -1 1 0 17 40  0 0 0
+C:\Users\Chris\Desktop\Niqs\agg\include\agg.h
+Ox:UNIX
+269583346 2 4 60 4 66 52 52 1314 282 0 0 1011 112 -1 -1 0 0 -1 -1 -1 -1 1 0 66 4  0 0 0
+C:\Users\Chris\Desktop\Niqs\agg\source\jw.ox
+Ox:UNIX
+269583346 2 222 18 222 22 78 78 1340 308 0 0 367 140 -1 -1 0 0 16 0 0 16 1 0 22 222  0 0 0
+C:\Users\Chris\Desktop\Niqs\agg\source\TV.ox
+Ox:UNIX
+269583346 0 0 1 0 1 0 0 1262 230 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\Niqs\agg\Makefile
+DATA:UNIX
+273776882 0 0 1 10 1 0 0 1262 230 1 0 115 140 -1 -1 0 0 -1 -1 -1 -1 1 0 1 10  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\WolpinJPE1984b.ox
+Ox
+269485042 0 35 16 35 5 208 208 1916 627 0 0 87 196 -1 -1 0 0 28 0 0 28 1 0 5 35  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\W2018\TakeHome.htm
+HTML
+269486075 2 -1 427 -1 429 78 78 1340 327 0 1 1072 115 -1 -1 0 0 21 -1 -1 21 1 0 429 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\RustEmet1987mle.ox
+Ox
+269485042 0 37 14 37 21 26 26 1404 402 0 0 311 112 -1 -1 0 0 29 0 0 29 1 0 21 37  0 0 0
+C:\Users\Chris\Desktop\QC\Fit.linear13.optobj
+DATA
+273678578 0 2 2 2 6 0 0 677 684 1 0 185 56 -1 -1 0 0 1 76 76 1 1 0 6 2  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\RustEmet1987.ox
+Ox
+269485042 0 46 57 60 1 156 156 1542 613 0 0 31 476 -1 -1 0 0 26 0 0 26 1 0 1 60  0 0 0
+C:\Users\Chris\Desktop\stranglehold.txt
+ASCII
+273688443 0 51 1 0 1 52 52 1314 301 1 0 115 0 -1 -1 0 0 22 0 0 22 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\Fit.bad13.optobj
+DATA:UNIX
+273776882 0 2 1 3 20 0 0 677 684 1 0 381 84 -1 -1 0 0 1 76 76 1 1 0 20 3  0 0 0
+C:\Users\Chris\Documents\Fit.bad13.optobj
+DATA:UNIX
+273776882 0 2 1 3 20 0 0 677 684 1 0 381 84 -1 -1 0 0 1 76 76 1 1 0 20 3  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\W2018\A3\197092-110844 - A3 2 - Nikola Milutinovic - Apr 4, 2018 233 PM - Part B and C log - Nikola Milutinovic and Emily Shorrock.log
+DATA
+273678578 0 0 1 50 1 52 52 1314 301 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 50  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Exams\makeup.html
+HTML
+269486075 0 -1 1196 -1 699 26 26 1288 275 0 1 357 0 -1 -1 0 0 -1 -1 -1 -1 1 0 699 -1  0 -1 0
+C:\Users\Chris\Desktop\QC\Fit.mom12.optobj
+DATA:UNIX
+5341426 0 2 2 3 7 0 0 677 684 1 0 199 84 -1 -1 0 0 1 72 72 1 1 0 7 3  0 0 0
+C:\Users\Chris\Desktop\QC\QCmain_hold.optobj
+DATA
+273678578 0 0 1 64 24 26 26 1284 267 1 0 479 252 -1 -1 0 0 6 0 0 6 1 0 24 64  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\MPItest.ox
+Ox
+1049586 0 38 17 43 2 958 0 1916 636 0 0 87 504 -1 -1 0 0 51 0 0 51 1 0 2 43  0 0 0
+C:\Users\Chris\Desktop\QC\Fit.fixeddelta.optobj
+DATA:UNIX
+273776882 0 84 164 128 51 958 0 1916 676 1 0 815 588 -1 -1 0 0 8 0 0 8 1 0 51 128  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\C\cshared.h
+Ox
+269485042 0 0 1 0 1 234 234 1620 718 0 0 31 0 -1 -1 0 0 19 0 0 19 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\Clock.h
+Ox
+269485042 2 409 13 409 22 0 0 1378 352 0 0 325 168 -1 -1 0 0 24 0 0 24 1 0 22 409  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\PUMF-Individual\th18.do
+Ox
+269485042 0 9 42 12 15 52 52 1314 301 0 0 227 252 -1 -1 0 0 14 0 0 14 1 0 15 12  0 0 0
+C:\Users\Chris\Desktop\QC\Fit.mom11.optobj
+DATA:UNIX
+273776882 0 2 2 9 6 130 130 1314 526 1 0 185 252 -1 -1 0 0 1 103 103 1 1 0 6 9  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\PUMF-Individual\hocc.do
+Ox
+269485042 0 9 4 7 12 0 0 1262 249 0 0 185 196 -1 -1 0 0 -1 -1 -1 -1 1 0 12 7  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\PUMF-Individual\occ2.do
+Ox
+269485042 0 3 32 7 12 104 104 1366 353 0 0 185 196 -1 -1 0 0 -1 -1 -1 -1 1 0 12 7  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\PUMF-Individual\occ1.do
+Ox
+269485042 0 6 12 1 1 78 78 1340 327 0 0 31 28 -1 -1 0 0 -1 -1 -1 -1 1 0 1 1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\CFMPI\Makefile
+DATA
+273678578 0 31 9 22 7 52 52 1314 335 1 0 199 112 -1 -1 0 0 11 2 2 11 1 0 7 22  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\Makefile
+DATA
+273678578 0 3 1 3 1 52 52 1314 335 1 0 115 84 -1 -1 0 0 31 0 0 31 1 0 1 3  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\W2017\Assign2W17\TakeHome.htm
+HTML
+269486075 0 -1 0 -1 0 78 78 1340 327 0 1 49 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\W2017\jbesboth.dta
+DATA
+273744114 0 0 1 0 1 52 52 1314 301 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\W2018\A#2\192061-100130 - A2 4 - Matthew Edwards - Mar 6, 2018 1042 PM - 861_a2.log
+DATA
+273678578 0 1599 40 1403 1 52 52 1314 301 1 0 115 -6216 -1 -1 0 0 -1 -1 -1 -1 1 0 1 1403  0 0 0
+C:\Users\Chris\Desktop\QC\include\QCShared_hold.h
+Ox
+269485042 0 221 71 221 76 26 26 1284 286 0 0 1081 168 -1 -1 0 0 17 0 0 17 1 0 76 221  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\DP-DDP-29-03-2018-22-33-38.log
+DATA
+273678578 0 0 1 123 1 0 0 1262 249 1 0 115 308 -1 -1 0 0 -1 -1 -1 -1 1 0 1 123  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\DP-DDP-29-03-2018-22-37-05.log
+DATA
+273678578 0 0 1 62 16 26 26 1288 275 1 0 325 -168 -1 -1 0 0 -1 -1 -1 -1 1 0 16 62  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\DP-DDP-29-03-2018-22-40-22.log
+DATA
+273678578 0 0 1 177 1 52 52 1314 282 1 0 115 280 -1 -1 0 0 -1 -1 -1 -1 1 0 1 177  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\DP-DDP-29-03-2018-22-45-26.log
+DATA
+273678578 0 0 1 70 1 78 78 1340 308 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 70  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\DP-DDP-29-03-2018-18-15-43.log
+DATA
+273678578 0 0 1 13 1 104 104 1366 353 1 0 115 308 -1 -1 0 0 -1 -1 -1 -1 1 0 1 13  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\W2018\assign3.htm
+HTML
+286263291 0 -1 3050 -1 3140 26 26 1288 275 0 1 1193 828 -1 -1 0 0 -1 -1 -1 -1 1 0 3140 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\DP-DDP-29-03-2018-11-39-03.log
+DATA
+273678578 0 0 1 0 5 0 0 1262 249 1 0 171 0 -1 -1 0 0 -1 -1 -1 -1 1 0 5 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\Alg-Broyden-On-R-29-03-2018-11-39-03.log
+DATA
+273678578 0 0 1 159 1 52 52 1314 301 1 0 115 308 -1 -1 0 0 8 0 0 8 1 0 1 159  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\Alg-SysMax-On-R-29-03-2018-11-39-03.log
+DATA
+273678578 0 0 1 0 1 78 78 1340 327 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--29-03-2018-10-01-30.log
+DATA
+273678578 0 0 1 778 1 26 26 1288 275 1 0 115 280 -1 -1 0 0 -1 -1 -1 -1 1 0 1 778  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--28-03-2018-22-22-10.log
+DATA
+273678578 0 0 1 748 8 0 0 1262 249 1 0 213 196 -1 -1 0 0 -1 -1 -1 -1 1 0 8 748  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\WstarTestb.ox
+Ox
+269485042 0 4 91 4 81 52 52 1336 242 0 0 1193 112 -1 -1 0 0 24 0 0 24 1 0 81 4  0 0 0
+C:\Users\Chris\Documents\OFFICE\DATA\norge\norge_text\authors.tex
+TeX
+269496315 1 -1 228 -1 232 78 78 1340 327 0 1 249 -280 -1 -1 0 0 -1 -1 -1 -1 1 0 232 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\DATA\norge\norge_text\workplace_preamble.tex
+TeX
+269496315 0 -1 1780 -1 1669 104 104 1366 353 0 1 445 196 -1 -1 0 0 -1 -1 -1 -1 1 0 1669 -1  0 0 0
+C:\Users\Chris\Desktop\QC\Fit.mom10.optobj
+DATA
+273678578 0 38 1 38 1 130 130 1314 526 1 0 115 308 -1 -1 0 0 1 101 101 1 1 0 1 38  0 0 0
+C:\Users\Chris\Desktop\QC\data\Earnings.pdf
+DATA:UNIX
+273776882 0 0 1 0 1 52 52 1314 301 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\FiveO\Separable.ox
+Ox
+269485042 0 192 12 193 10 130 130 1516 549 0 0 199 196 -1 -1 0 0 23 0 0 23 1 0 10 193  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\Separable.h
+Ox
+269485042 2 35 10 35 14 26 26 1288 290 0 0 255 168 -1 -1 0 0 20 0 0 20 1 0 14 35  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\CFMPI\CFMPI.c
+DATA
+273678578 0 19 14 32 1 130 130 1516 621 1 0 115 168 -1 -1 0 0 19 0 0 19 1 0 1 32  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\MPIinterface.ox
+Ox
+269485042 0 57 1 0 1 681 0 1362 324 0 0 31 0 -1 -1 0 0 72 0 0 72 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--24-03-2018-12-04-46.log
+DATA
+273678578 0 0 1 417 1 130 130 1366 403 1 0 115 336 -1 -1 0 0 -1 -1 -1 -1 1 0 1 417  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\Hybrids\Hybrids.ox
+Ox
+269485042 0 0 1 0 1 52 52 1310 274 0 0 31 0 -1 -1 0 0 21 0 0 21 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\Fit.demos.optobj
+DATA
+273678578 0 122 1 0 1 958 0 1916 676 1 0 115 0 -1 -1 0 0 8 0 0 8 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\data\mproc8_Demos.do
+DATA
+273678578 0 67 20 4 18 78 78 1340 361 1 0 353 112 -1 -1 0 0 167 0 0 167 1 0 18 4  0 0 0
+C:\Users\Chris\Desktop\QC\data\mproc7_ByType.do
+Ox
+269485042 2 1 159 1 162 104 104 1340 405 0 0 1865 28 -1 -1 0 0 185 0 0 185 1 0 162 1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\UseMPI.ox
+Ox
+269485042 0 0 1 0 1 78 78 1110 307 0 0 31 0 -1 -1 0 0 76 0 0 76 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\Econ452demo\week5.smcl
+DATA:UNIX
+273776882 0 6 1 0 1 26 26 1288 309 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\Econ452demo\week5partB.smcl
+DATA:UNIX
+273776882 0 323 1 323 1 104 104 1366 387 1 0 115 140 -1 -1 0 0 -1 -1 -1 -1 1 0 1 323  0 0 0
+C:\Users\Chris\Desktop\Econ452demo\week5part2.smcl
+DATA:UNIX
+273776882 0 0 1 0 1 0 0 1262 283 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\CFMPI\Makefile_sharc
+DATA
+273678578 0 0 1 0 1 78 78 1340 361 1 0 115 0 -1 -1 0 0 1 0 0 1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--12-02-2018-17-46-06.log
+DATA
+273678578 1 0 35 0 56 78 78 1790 569 1 0 885 -168 -1 -1 0 0 -1 -1 -1 -1 1 0 56 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\FiveO.h
+Ox
+269485042 0 0 1 0 1 208 208 1916 627 0 0 31 0 -1 -1 0 0 21 0 0 21 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\main.h
+Ox
+269485042 0 0 1 0 1 52 52 1310 320 0 0 31 0 -1 -1 0 0 25 0 0 25 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\ier.txt
+ASCII
+290465659 1 -1 0 -1 3104 182 182 1868 666 1 0 115 336 -1 -1 0 0 -1 -1 -1 -1 1 0 3104 -1  0 0 0
+C:\Users\Chris\Desktop\opres.txt
+ASCII
+273688443 0 54 47 63 1 26 26 1236 342 1 0 115 112 -1 -1 0 0 1 0 0 1 1 0 1 63  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-10-2017-17-52-35.log
+DATA
+273678578 0 0 1 281 1 52 52 1314 335 1 0 115 336 -1 -1 0 0 56 0 0 56 1 0 1 281  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-10-2017-17-19-02.log
+DATA
+273678578 0 0 1 48 79 104 104 1366 387 1 0 1207 0 -1 -1 0 0 -1 -1 -1 -1 1 0 79 48  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\C4E\book\code\numlimits.ox
+Ox
+269485042 2 9 10 9 12 208 208 1586 722 0 0 185 252 -1 -1 0 0 19 0 0 19 1 0 12 9  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--11-10-2017-10-15-37.log
+DATA
+273678578 0 0 1 0 1 78 78 1288 400 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-09-2017-15-00-43.log
+DATA
+273678578 0 0 1 78 1 26 26 1262 313 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 78  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-09-2017-14-20-18.log
+DATA
+273678578 0 0 1 463 1 0 0 1236 287 1 0 115 364 -1 -1 0 0 -1 -1 -1 -1 1 0 1 463  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-09-2017-10-56-20.log
+DATA
+273678578 0 0 1 462 1 78 78 1314 365 1 0 115 364 -1 -1 0 0 -1 -1 -1 -1 1 0 1 462  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-09-2017-19-35-23.log
+DATA
+273678578 0 0 1 449 793 130 130 1366 436 1 0 1319 364 -1 -1 0 0 -1 -1 -1 -1 1 0 793 449  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-09-2017-17-18-03.log
+DATA
+273678578 0 0 1 136 1 26 26 1366 145 1 0 115 364 -1 -1 0 0 56 0 0 56 1 0 1 136  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\Fit.demos.optobj
+DATA
+273678578 2 85 23 85 27 958 0 1916 676 1 0 479 527 -1 -1 0 0 8 0 0 8 1 0 27 85  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\Alg-NelderMead-On-Test of Blackbox.chkpt
+DATA
+273678578 0 0 1 0 1 208 208 1916 676 1 0 115 0 -1 -1 0 0 21 0 0 21 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\Fit.types.optobj
+ASCII
+273688442 0 2 2 34 4 958 0 1916 676 1 0 157 616 -1 -1 0 0 8 0 0 8 1 0 4 34  0 0 0
+C:\Users\Chris\Documents\OFFICE\DATA\schools\classroom4.tex
+TeX
+135278587 2 -1 29635 -1 29638 52 52 1310 312 0 1 95 84 -1 -1 0 0 27 -1 -1 27 1 0 29638 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\Alg-NelderMead-On-TestofBlackbox-25-07-2017-13-12-57.log
+DATA
+273678578 0 0 1 88 1 104 104 1340 427 1 0 115 392 -1 -1 0 0 -1 -1 -1 -1 1 0 1 88  0 0 0
+C:\Users\Chris\Desktop\QC\submity
+DATA
+273678578 0 0 1 0 1 52 52 1430 318 1 0 115 0 -1 -1 0 0 13 0 0 13 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\data\mproc6_ByType.do
+Ox
+269485042 0 35 15 52 3 104 104 1340 405 0 0 59 112 -1 -1 0 0 -1 -1 -1 -1 1 0 3 52  0 0 0
+C:\Users\Chris\Desktop\QC\doc\Makefile
+TeX
+269496315 0 -1 0 -1 0 52 52 1430 520 0 1 53 0 -1 -1 0 0 0 -1 -1 0 1 0 0 -1  0 0 0
+C:\Users\Chris\Desktop\QC\doc\source\Makefile
+TeX
+269496315 0 -1 0 -1 0 0 0 1378 468 0 1 53 0 -1 -1 0 0 0 -1 -1 0 1 0 0 -1  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-06-2017-10-41-49.log
+DATA
+273678578 0 0 1 213 1 0 0 1236 282 1 0 115 1708 -1 -1 0 0 -1 -1 -1 -1 1 0 1 213  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-06-2017-8-55-46.log
+DATA
+273678578 0 0 1 277 1 78 78 1037 351 1 0 115 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 277  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-06-2017-19-51-48.log
+DATA
+273678578 0 0 1 84 1 130 130 1366 431 1 0 115 168 -1 -1 0 0 -1 -1 -1 -1 1 0 1 84  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-06-2017-18-39-30.log
+DATA
+273678578 0 0 1 110 6 78 78 1314 379 1 0 185 168 -1 -1 0 0 -1 -1 -1 -1 1 0 6 110  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-06-2017-19-05-45.log
+DATA
+273678578 0 0 1 186 1 104 104 1340 386 1 0 115 364 -1 -1 0 0 -1 -1 -1 -1 1 0 1 186  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--17-06-2017-12-06-41.log
+DATA
+273678578 0 0 1 238 7 104 104 1362 345 1 0 193 28 -1 -1 0 0 -1 -1 -1 -1 1 0 7 238  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-SimulatedAnnealing-On-types-17-06-2017-21-04-41.log.optobj
+DATA
+273678578 0 0 1 40 1 52 52 1310 293 1 0 109 252 -1 -1 0 0 -1 -1 -1 -1 1 0 1 40  0 0 0
+C:\Users\Chris\Desktop\QC\Fit.grants.optobj
+DATA:UNIX
+273776882 0 1 2 0 1 958 0 1916 676 1 0 109 0 -1 -1 0 0 8 0 0 8 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-SimulatedAnnealing-On-grants-16-06-2017-15-49-17.log.optobj
+DATA
+273678578 0 0 1 5 22 78 78 1336 319 1 0 403 140 -1 -1 0 0 6 0 0 6 1 0 22 5  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--16-06-2017-14-17-34.log
+DATA
+273678578 0 0 1 461 9 26 26 1284 267 1 0 221 280 -1 -1 0 0 -1 -1 -1 -1 1 0 9 461  0 0 0
+C:\Users\Chris\Desktop\st.txt
+ASCII
+273688443 0 0 1 0 1 0 0 1258 241 1 0 109 0 -1 -1 0 0 1 0 0 1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-SimulatedAnnealing-On-grants-13-06-2017-17-07-16.log
+DATA
+273678578 0 0 1 40 1 26 26 1284 267 1 0 109 168 -1 -1 0 0 8 0 0 8 1 0 1 40  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Obj-Fit-grants-13-06-2017-17-07-16.log
+DATA
+273678578 0 0 1 0 1 52 52 1310 293 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\osap.txt
+ASCII
+273688443 0 0 1 0 1 52 52 1310 312 1 0 109 0 -1 -1 0 0 21 0 0 21 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\source\oxdoc.xml
+DATA
+273678578 0 4 35 4 1 0 0 935 260 1 0 109 112 -1 -1 0 0 8 0 0 8 1 0 1 4  0 0 0
+C:\Users\Chris\Desktop\QC\QCFit.grants.optobj
+DATA
+273678578 0 1 2 36 1 958 0 1916 676 1 0 109 308 -1 -1 0 0 8 0 0 8 1 0 1 36  0 0 0
+C:\Users\Chris\Desktop\QC\oxdoc.xml
+DATA
+273678578 0 4 35 2 28 0 0 935 260 1 0 487 56 -1 -1 0 0 8 0 0 8 1 0 28 2  0 0 0
+C:\Users\Chris\Desktop\QC\doc\source\oxdoc.sed
+DATA
+273678578 0 0 1 1 1 26 26 1734 494 1 0 109 28 -1 -1 0 0 -1 -1 -1 -1 1 0 1 1  0 0 0
+C:\Users\Chris\AppData\Roaming\WinEdt Team\WinEdt 9\ConfigEx\MainMenu.ini
+DATA:INI:EDT
+269485050 4 3315 117 3315 116 681 0 1362 370 1 1 780 221 -1 -1 0 0 83 0 0 83 1 0 116 3315  0 -1 0
+C:\Users\Chris\Desktop\QC\BFGS-IterStart-noloans.optobj
+DATA
+273678578 0 0 1 0 1 52 52 1310 312 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Program Files\WinEdt Team\WinEdt 9\Exec\PDF\PDFCloseDoc.edt
+ASCII:EDT
+269494138 7 51 1900 51 1 156 156 1864 624 1 0 73 323 -1 -1 0 0 21 0 0 21 1 0 1 51  0 0 0
+C:\Users\Chris\Documents\OFFICE\DATA\schools\classroom2.tex
+TeX
+269496315 1 -1 17072 -1 17194 156 156 1336 586 0 1 333 252 -1 -1 0 0 -1 -1 -1 -1 1 0 17194 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\DATA\schools\wolpin_UT-coordination-game-2015.pdf
+DATA
+273744114 0 0 1 0 1 26 26 1284 286 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\doc\oxdoc.sed
+DATA
+273678578 0 0 1 0 249 26 26 961 286 1 0 1005 0 -1 -1 0 0 -1 -1 -1 -1 1 0 249 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\BlackBox.h
+Ox
+269485042 0 16 13 17 17 26 26 1284 267 0 0 297 112 -1 -1 0 0 20 0 0 20 1 0 17 17  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\AllTestOpt.h
+Ox
+269485042 0 57 18 57 8 52 52 1310 320 0 0 171 280 -1 -1 0 0 42 0 0 42 1 0 8 57  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\ParallelObjectiveTest2.ox
+Ox
+269485042 2 16 13 16 21 681 0 1362 324 0 0 311 140 -1 -1 0 0 32 0 0 32 1 0 21 16  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\Text\source\start\schedule.htm
+HTML
+286263291 2 -1 540 -1 545 958 0 1916 676 0 1 48 44 -1 -1 0 0 4 -1 -1 4 1 0 545 -1  0 0 0
+C:\Users\Chris\Desktop\QC\mproc4.do
+DATA
+273678578 0 19 12 20 14 958 0 1916 657 1 0 291 84 -1 -1 0 0 15 4 4 15 1 0 14 20  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-12-2016-19-37-36.log
+DATA
+273678578 0 0 1 81 66 78 78 1336 300 1 0 1019 140 -1 -1 0 0 -1 -1 -1 -1 1 0 66 81  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-12-2016-14-02-03.log
+DATA
+273678578 0 0 1 0 1 26 26 1284 248 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--19-12-2016-12-54-41.log
+DATA
+273678578 0 0 1 0 1 208 208 1586 657 1 0 109 0 -1 -1 0 0 45 0 0 45 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--19-12-2016-13-26-00.log
+DATA
+273678578 0 0 1 0 1 0 0 1378 449 1 0 109 0 -1 -1 0 0 45 0 0 45 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\QCFit.loans.optobj
+DATA:UNIX
+273776882 0 30 9 7 21 958 0 1916 676 1 0 389 196 -1 -1 0 0 8 0 0 8 1 0 21 7  0 0 0
+C:\Users\Chris\Desktop\QC\mproc3a.do
+DATA
+273678578 1 0 9 0 15 958 0 1916 657 1 0 305 0 -1 -1 0 0 15 0 0 15 1 0 15 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\DPDebug.ox
+Ox
+269485042 0 0 1 0 1 156 156 1890 574 0 0 31 0 -1 -1 0 0 21 0 0 21 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\ParallelObjectiveTest.ox
+Ox
+269485042 0 28 1900 0 1 681 0 1362 324 0 0 31 0 -1 -1 0 0 32 0 0 32 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\Obj-PanelBB-ZurcherMLE-14-12-2016-18-29-44.log
+DATA
+273678578 0 0 1 8818 1 52 52 1310 274 1 0 109 280 -1 -1 0 0 8 0 0 8 1 0 1 8818  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\PanelBB.ZurcherMLE.optobj
+DATA
+273678578 0 0 1 0 1 104 104 1362 326 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\Alg-NelderMead-On-ZurcherMLE-14-12-2016-18-29-44.log
+DATA
+273678578 0 0 1 210 1 26 26 1284 267 1 0 109 420 -1 -1 0 0 -1 -1 -1 -1 1 0 1 210  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\Obj-PanelBB-ZurcherMLE-14-12-2016-17-16-57.log
+DATA
+273678578 0 0 1 47555 1 104 104 1362 345 1 0 109 280 -1 -1 0 0 -1 -1 -1 -1 1 0 1 47555  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\Alg-NelderMead-On-ZurcherMLE-14-12-2016-17-16-57.log
+DATA
+273678578 0 29 32 1207 19 0 0 1258 222 1 0 361 0 -1 -1 0 0 -1 -1 -1 -1 1 0 19 1207  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\Obj-PanelBB-ZurcherMLE-14-12-2016-16-38-06.log
+DATA
+273678578 0 19510 8 47551 14 78 78 1336 300 1 0 291 168 -1 -1 0 0 -1 -1 -1 -1 1 0 14 47551  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\Alg-NelderMead-On-ZurcherMLE-14-12-2016-16-38-06.log
+DATA
+273678578 0 0 1 1955 1 52 52 1310 293 1 0 109 280 -1 -1 0 0 -1 -1 -1 -1 1 0 1 1955  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\logs\Alg-NelderMead-On-ZurcherMLE-14-12-2016-16-28-09.log
+DATA
+273678578 0 0 1 849 1 26 26 1284 267 1 0 109 280 -1 -1 0 0 -1 -1 -1 -1 1 0 1 849  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\NelderMead-IterStart-ZurcherMLE.optobj
+DATA
+273678578 0 0 1 0 1 0 0 1258 241 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\ParallelPredict.ox
+Ox
+269485042 0 3 1 2 1 0 0 958 676 0 0 31 56 -1 -1 0 0 73 0 0 73 1 0 1 2  0 0 0
+C:\Users\Chris\Desktop\QC\Data--12-12-2016-10-59-24.log
+DATA:UNIX
+273776882 1 22 166 22 117 958 0 1916 657 1 0 1733 364 -1 -1 0 0 -1 -1 -1 -1 1 0 117 22  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--10-12-2016-11-10-07.log
+DATA
+273678578 0 0 1 34 174 681 0 1362 364 1 0 1313 308 -1 -1 0 0 -1 -1 -1 -1 1 0 174 34  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--9-12-2016-9-25-15.log
+DATA
+273678578 0 0 1 27 1 78 78 1336 338 1 0 109 140 -1 -1 0 0 45 0 0 45 1 0 1 27  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\fmopt\fmopt2\client_nmsimp.pas
+DATA
+273678578 0 37 93 46 21 26 26 1284 286 1 0 389 140 -1 -1 0 0 66 0 0 66 1 0 21 46  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\lrmsim.ado
+DATA
+273678578 0 0 1 0 1 104 104 1362 345 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\stata.toc
+TeX:AUX
+269496306 0 0 1 12 2 52 52 1310 312 0 0 45 252 -1 -1 0 0 -1 -1 -1 -1 1 0 2 12  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\CF452.pkg
+DATA
+273678578 0 18 1 7 1 78 78 1336 338 1 0 109 84 -1 -1 0 0 -1 -1 -1 -1 1 0 1 7  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\checkout.pkg
+DATA
+273678578 0 0 1 0 1 0 0 1258 241 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\myseed.ado
+DATA
+273678578 0 0 1 0 1 52 52 1310 293 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\MCsetup.ado
+DATA
+273678578 0 0 1 3 1 0 0 1258 241 1 0 109 84 -1 -1 0 0 -1 -1 -1 -1 1 0 1 3  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\HomerSimpson.pkg
+DATA
+273678578 0 1 64 0 3 26 26 1284 267 1 0 137 0 -1 -1 0 0 -1 -1 -1 -1 1 0 3 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\log452.ado
+DATA
+273678578 0 0 1 7 25 78 78 1336 319 1 0 445 196 -1 -1 0 0 -1 -1 -1 -1 1 0 25 7  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\joe.ado
+DATA
+273678578 0 0 1 0 1 52 52 1310 293 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\id452.ado
+DATA
+273678578 0 0 1 0 1 26 26 1284 267 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\get.ado
+DATA
+273678578 0 0 1 8 1 104 104 1362 345 1 0 109 224 -1 -1 0 0 -1 -1 -1 -1 1 0 1 8  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\close452.ado
+DATA
+273678578 0 0 27 1 1 52 52 1310 312 1 0 109 28 -1 -1 0 0 -1 -1 -1 -1 1 0 1 1  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\check452.ado
+DATA
+273678578 0 0 1 0 1 26 26 1284 286 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\CFform.ado
+DATA
+273678578 0 0 1 0 1 0 0 1258 260 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\CF452.ado
+DATA
+273678578 0 10 1 13 5 104 104 1362 364 1 0 165 243 -1 -1 0 0 -1 -1 -1 -1 1 0 5 13  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\BillyJoel.pkg
+DATA
+273678578 0 1 53 12 1 104 104 1362 345 1 0 109 299 -1 -1 0 0 -1 -1 -1 -1 1 0 1 12  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\monte-carlo.pkg
+DATA
+273678578 0 0 1 2 1 52 52 1310 274 1 0 109 56 -1 -1 0 0 -1 -1 -1 -1 1 0 1 2  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\lab10.pkg
+DATA
+273678578 0 0 1 0 1 26 26 1284 248 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\lab8.pkg
+DATA
+273678578 0 0 1 0 1 0 0 1258 222 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\lab7.pkg
+DATA
+273678578 0 0 1 4 1 104 104 1362 326 1 0 109 112 -1 -1 0 0 -1 -1 -1 -1 1 0 1 4  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\lab3.pkg
+DATA
+273678578 0 0 1 11 1 78 78 1336 319 1 0 109 299 -1 -1 0 0 -1 -1 -1 -1 1 0 1 11  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\lab2.pkg
+DATA
+273678578 0 4 52 12 1 52 52 1310 293 1 0 109 299 -1 -1 0 0 -1 -1 -1 -1 1 0 1 12  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\use452.ado
+DATA
+273678578 0 0 1 0 49 104 104 1362 345 1 0 781 0 -1 -1 0 0 -1 -1 -1 -1 1 0 49 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\save452.ado
+DATA
+273678578 0 0 1 8 1 52 52 1310 293 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 8  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\probit452.ado
+DATA
+273678578 0 0 1 17 1 26 26 1284 267 1 0 109 299 -1 -1 0 0 -1 -1 -1 -1 1 0 1 17  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\ols452.ado
+DATA
+273678578 0 0 1 10 1 0 0 1258 241 1 0 109 75 -1 -1 0 0 -1 -1 -1 -1 1 0 1 10  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\ols.ado
+DATA
+273678578 0 0 1 0 1 104 104 1362 345 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\notes452.ado
+DATA
+273678578 0 0 1 5 4 78 78 1336 319 1 0 151 140 -1 -1 0 0 -1 -1 -1 -1 1 0 4 5  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\stats-entry-quiz.txt
+ASCII
+273688443 0 0 1 0 1 78 78 1336 300 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\menu452.ado
+DATA
+273678578 0 0 1 0 1 26 26 1284 267 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\disable452.ado
+DATA
+273678578 0 0 1 0 1 78 78 1336 338 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--8-12-2016-13-44-47.log
+DATA
+273678578 0 0 1 109 8 52 52 1310 293 1 0 207 224 -1 -1 0 0 -1 -1 -1 -1 1 0 8 109  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--8-12-2016-13-53-14.log
+DATA
+273678578 0 0 1 107 1 78 78 1336 319 1 0 109 532 -1 -1 0 0 -1 -1 -1 -1 1 0 1 107  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\hidelrm.ado
+DATA
+273678578 0 0 1 0 1 0 0 1258 241 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\seed452.ado
+DATA
+273678578 0 0 57 0 36 78 78 1336 319 1 0 599 0 -1 -1 0 0 -1 -1 -1 -1 1 0 36 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\view452.ado
+DATA
+273678578 0 0 1 0 1 0 0 1258 241 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ452\StataW17\week1.ado
+DATA
+273678578 0 0 1 0 1 26 26 1284 267 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--7-12-2016-17-40-01.log
+DATA
+273678578 0 0 1 0 1 130 130 1508 598 1 0 109 -2925 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\DDPShared.oxdoc
+HTML
+269486075 0 -1 0 -1 1787 26 26 1284 286 0 1 48 330 -1 -1 0 0 -1 -1 -1 -1 1 0 1787 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\DynProg
+HTML
+286263291 0 -1 42878 -1 63535 52 52 1284 315 0 1 48 286 -1 -1 0 0 81 -1 -1 81 1 0 63535 -1  0 -1 0
+C:\Users\Chris\Desktop\QC\logs\Data--7-12-2016-14-58-44.log
+DATA
+273678578 0 0 1 0 1 104 104 1812 572 1 0 109 -2785 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--7-12-2016-14-48-52.log
+DATA
+273678578 0 0 1 0 1 78 78 1786 546 1 0 109 -2785 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--7-12-2016-11-21-17.log
+DATA
+273678578 0 0 1 0 1 0 0 1708 468 1 0 109 -2785 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--7-12-2016-9-46-13.log
+DATA
+273678578 0 0 1 126 1 52 52 1310 312 1 0 109 312 -1 -1 0 0 -1 -1 -1 -1 1 0 1 126  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--7-12-2016-9-43-15.log
+DATA
+273678578 0 0 1 105 26 26 26 1284 286 1 0 459 0 -1 -1 0 0 -1 -1 -1 -1 1 0 26 105  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--7-12-2016-9-35-53.log
+DATA
+273678578 0 0 1 107 7 104 104 1362 364 1 0 193 56 -1 -1 0 0 -1 -1 -1 -1 1 0 7 107  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-SimulatedAnnealing-On-loans-6-12-2016-23-35-13.log.optobj
+DATA
+273678578 0 0 1 0 1 0 0 1258 260 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--6-12-2016-23-07-06.log
+DATA
+273678578 0 0 1 118 31 52 52 1310 312 1 0 529 280 -1 -1 0 0 45 0 0 45 1 0 31 118  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--6-12-2016-14-08-00.log
+DATA
+273678578 0 0 1 116 8 26 26 1284 286 1 0 207 168 -1 -1 0 0 45 0 0 45 1 0 8 116  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--6-12-2016-23-19-21.log
+DATA
+273678578 0 0 1 107 7 78 78 1336 338 1 0 193 308 -1 -1 0 0 45 0 0 45 1 0 7 107  0 0 0
+C:\Users\Chris\Desktop\QC\QCFit.obsskill.optobj
+DATA:UNIX
+273776882 0 20 2 8 1 52 52 1362 227 1 0 109 224 -1 -1 0 0 8 0 0 8 1 0 1 8  0 0 0
+C:\Users\Chris\Desktop\ct.txt
+ASCII
+273688443 0 25 17 0 1 78 78 1456 546 1 0 109 0 -1 -1 0 0 11 0 0 11 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-23-29-18.log
+DATA
+273678578 0 0 1 30 48 78 78 1362 296 1 0 767 224 -1 -1 0 0 -1 -1 -1 -1 1 0 48 30  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-22-35-46.log
+DATA
+273678578 2 106 213 106 222 0 0 1284 218 1 0 133 56 -1 -1 0 0 -1 -1 -1 -1 1 0 222 106  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-22-58-43.log
+DATA
+273678578 0 0 1 127 36 26 26 1310 244 1 0 599 224 -1 -1 0 0 -1 -1 -1 -1 1 0 36 127  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-23-15-52.log
+DATA
+273678578 0 0 1 126 248 52 52 1336 270 1 0 1313 224 -1 -1 0 0 -1 -1 -1 -1 1 0 248 126  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-17-49-36.log
+DATA
+273678578 0 0 1 0 1 0 0 1284 218 1 0 109 -2969 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-17-26-26.log
+DATA
+273678578 2 106 213 106 222 26 26 1310 244 1 0 513 112 -1 -1 0 0 -1 -1 -1 -1 1 0 222 106  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-17-34-33.log
+DATA
+273678578 0 0 1 112 429 52 52 1336 270 1 0 3794 168 -1 -1 0 0 -1 -1 -1 -1 1 0 429 112  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-17-23-27.log
+DATA
+273678578 0 0 1 106 1 0 0 1284 218 1 0 109 140 -1 -1 0 0 -1 -1 -1 -1 1 0 1 106  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-17-19-42.log
+DATA
+273678578 0 0 1 0 1 78 78 1362 296 1 0 109 -2872 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-17-04-13.log
+DATA
+273678578 0 0 1 115 99 52 52 1336 270 1 0 699 140 -1 -1 0 0 -1 -1 -1 -1 1 0 99 115  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-15-17-18.log
+DATA
+273678578 0 0 1 113 430 78 78 1362 296 1 0 6115 3136 -1 -1 0 0 -1 -1 -1 -1 1 0 430 113  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-16-59-19.log
+DATA
+273678578 0 0 1 113 1 26 26 1310 244 1 0 109 224 -1 -1 0 0 -1 -1 -1 -1 1 0 1 113  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-16-48-52.log
+DATA
+273678578 0 0 1 30 1 0 0 1284 218 1 0 109 168 -1 -1 0 0 -1 -1 -1 -1 1 0 1 30  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-14-57-08.log
+DATA
+273678578 2 28 36 28 42 52 52 1336 270 1 0 683 112 -1 -1 0 0 -1 -1 -1 -1 1 0 42 28  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-14-51-30.log
+DATA
+273678578 0 106 217 120 222 26 26 1310 244 1 0 1313 224 -1 -1 0 0 -1 -1 -1 -1 1 0 222 120  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-14-46-31.log
+DATA
+273678578 0 106 204 106 210 0 0 1284 218 1 0 791 -196 -1 -1 0 0 -1 -1 -1 -1 1 0 210 106  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-12-40-47.log
+DATA
+273678578 0 0 1 113 9 26 26 1310 244 1 0 221 28 -1 -1 0 0 -1 -1 -1 -1 1 0 9 113  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-12-2016-12-56-55.log
+DATA
+273678578 0 0 1 113 1 52 52 1336 270 1 0 109 224 -1 -1 0 0 -1 -1 -1 -1 1 0 1 113  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--30-11-2016-16-49-21.log
+DATA
+273678578 0 0 1 0 1 52 52 1760 471 1 0 109 -34 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--30-11-2016-13-11-38.log
+DATA
+273678578 0 0 1 0 1 208 208 1916 627 1 0 -579 -874 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--30-11-2016-12-00-39.log
+DATA
+273678578 0 0 1 0 1 156 156 1864 575 1 0 109 -2806 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--30-11-2016-11-52-52.log
+DATA
+273678578 0 0 1 0 1 104 104 1812 572 1 0 109 -2533 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--29-11-2016-16-32-20.log
+DATA
+273678578 0 0 1 121 8 26 26 1284 286 1 0 207 2791 -1 -1 0 0 -1 -1 -1 -1 1 0 8 121  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--29-11-2016-14-20-16.log
+DATA
+273678578 0 0 1 122 1 0 0 1258 260 1 0 109 308 -1 -1 0 0 -1 -1 -1 -1 1 0 1 122  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--29-11-2016-13-18-21.log
+DATA
+273678578 0 0 1 102 186 104 104 1362 364 1 0 1313 308 -1 -1 0 0 -1 -1 -1 -1 1 0 186 102  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--29-11-2016-12-16-17.log
+DATA
+273678578 0 0 1 103 1 52 52 1310 312 1 0 109 84 -1 -1 0 0 -1 -1 -1 -1 1 0 1 103  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--29-11-2016-10-25-51.log
+DATA
+273678578 2 6 1 6 8 26 26 1284 286 1 0 207 168 -1 -1 0 0 -1 -1 -1 -1 1 0 8 6  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--29-11-2016-10-06-48.log
+DATA
+273678578 0 0 1 111 7 104 104 1362 345 1 0 193 280 -1 -1 0 0 -1 -1 -1 -1 1 0 7 111  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--29-11-2016-10-08-04.log
+DATA
+273678578 0 0 1 120 8 0 0 1258 241 1 0 207 243 -1 -1 0 0 -1 -1 -1 -1 1 0 8 120  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--29-11-2016-9-53-08.log
+DATA
+273678578 0 0 1 112 1 78 78 1336 319 1 0 109 280 -1 -1 0 0 -1 -1 -1 -1 1 0 1 112  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--29-11-2016-0-23-42.log
+DATA
+273678578 0 0 1 110 8 26 26 1284 267 1 0 207 140 -1 -1 0 0 -1 -1 -1 -1 1 0 8 110  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-SimulatedAnnealing-On-obsskill-29-11-2016-0-25-53.log.optobj
+DATA
+273678578 2 1 5 1 10 52 52 1310 293 1 0 235 28 -1 -1 0 0 -1 -1 -1 -1 1 0 10 1  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-SimulatedAnnealing-On-obsskill-28-11-2016-16-58-10.log.optobj
+DATA
+273678578 0 0 1 0 1 182 182 1890 650 1 0 109 -84 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\SimulatedAnnealing-IterStart-obsskill.optobj
+DATA
+273678578 0 0 1 0 1 208 208 1916 657 1 0 109 -252 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-SimulatedAnnealing-On-obsskill-28-11-2016-16-37-45.log.optobj
+DATA
+273678578 0 0 1 0 1 156 156 1864 624 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\DP-QC-28-11-2016-15-47-16.log
+DATA
+273678578 0 19846 1 4922 1 130 130 1838 598 1 0 109 336 -1 -1 0 0 -1 -1 -1 -1 1 0 1 4922  0 0 0
+C:\Users\Chris\Desktop\QC\logs\DP-QC-28-11-2016-15-41-52.log
+DATA
+273678578 0 0 1 0 1 104 104 1812 572 1 0 109 -1119 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\DP-QC-28-11-2016-15-14-21.log
+DATA
+273678578 0 0 1 0 1 26 26 1734 494 1 0 123 -2999076 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\DP-QC-28-11-2016-14-58-15.log
+DATA
+273678578 0 0 1 0 1 0 0 1708 468 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\QCFit.noloans.optobj
+DATA
+273678578 0 2 4 43 7 52 52 1362 227 1 0 221 280 -1 -1 0 0 8 0 0 8 1 0 7 43  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--25-11-2016-10-08-31.log
+DATA
+273678578 0 0 1 12 8 52 52 1362 227 1 0 207 -56 -1 -1 0 0 -1 -1 -1 -1 1 0 8 12  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-SimulatedAnnealing-On-noloans-25-11-2016-11-49-45.log.optobj
+DATA
+273678578 0 0 1 0 1 104 104 1362 345 1 0 109 -1576 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-SimulatedAnnealing-On-noloans-24-11-2016-14-47-17.log.optobj
+DATA
+273678578 0 0 1 3 20 52 52 1362 227 1 0 375 84 -1 -1 0 0 -1 -1 -1 -1 1 0 20 3  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--24-11-2016-9-11-14.log
+DATA
+273678578 0 30 1 108 8 52 52 1362 227 1 0 207 1596 -1 -1 0 0 45 0 0 45 1 0 8 108  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--24-11-2016-12-32-27.log
+DATA
+273678578 0 0 1 0 1 26 26 1336 201 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-11-2016-22-55-49.log
+DATA
+273678578 0 0 1 120 7 0 0 1310 175 1 0 193 140 -1 -1 0 0 -1 -1 -1 -1 1 0 7 120  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-11-2016-22-41-15.log
+DATA
+273678578 0 0 1 25 1 26 26 1336 201 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 25  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-11-2016-22-54-46.log
+DATA
+273678578 0 0 1 121 1 52 52 1362 227 1 0 109 84 -1 -1 0 0 -1 -1 -1 -1 1 0 1 121  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-11-2016-22-22-57.log
+DATA
+273678578 0 0 1 128 1 52 52 1362 227 1 0 109 168 -1 -1 0 0 -1 -1 -1 -1 1 0 1 128  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-11-2016-22-31-55.log
+DATA
+273678578 0 0 1 12 1 0 0 1310 175 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 12  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-11-2016-22-15-15.log
+DATA
+273678578 0 36 1 143 1 26 26 1336 201 1 0 109 532 -1 -1 0 0 -1 -1 -1 -1 1 0 1 143  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-11-2016-20-21-17.log
+DATA
+273678578 0 0 1 126 1 0 0 1310 175 1 0 109 168 -1 -1 0 0 -1 -1 -1 -1 1 0 1 126  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Obj-QCFit-noloans-23-11-2016-14-53-55.log
+DATA
+273678578 0 0 1 0 1 104 104 1838 480 1 0 109 -94659 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Obj-QCFit-noloans-23-11-2016-17-24-40.log
+DATA
+273678578 0 0 1 0 1 104 104 1838 480 1 0 109 -80230 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\REhold.ox
+Ox
+269485042 0 0 1 0 1 26 26 1760 402 0 0 31 -504 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Obj-QCFit-noloans-23-11-2016-14-34-10.log
+DATA
+273678578 0 0 1 0 1 52 52 1786 428 1 0 109 -93858 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Obj-QCFit-noloans-23-11-2016-14-43-18.log
+DATA
+273678578 0 0 1 0 1 78 78 1812 454 1 0 109 -93959 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Obj-QCFit-noloans-23-11-2016-14-06-36.log
+DATA
+273678578 0 0 1 5 27 0 0 1734 376 1 0 473 0 -1 -1 0 0 8 0 0 8 1 0 27 5  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-11-2016-12-14-56.log
+DATA
+273678578 0 0 1 0 1 156 156 1890 532 1 0 109 -8337 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-11-2016-11-14-09.log
+DATA
+273678578 0 0 1 0 1 0 0 1734 376 1 0 109 -420 -1 -1 0 0 45 0 0 45 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\DP-QC-23-11-2016-12-09-05.log
+DATA
+273678578 0 0 1 0 1 130 130 1864 506 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-11-2016-10-40-52.log
+DATA
+273678578 0 0 1 0 1 26 26 1760 402 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\DP-QC-23-11-2016-10-29-40.log
+DATA
+273678578 0 0 1 0 1 182 182 1916 558 1 0 123 -4398177 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\QCFit.reset.optobj
+DATA
+273678578 0 27 11 53 16 52 52 1362 227 1 0 347 504 -1 -1 0 0 8 0 0 8 1 0 16 53  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-11-2016-15-15-07.log
+DATA
+273678578 2 8 1 8 7 104 104 1838 480 1 0 193 224 -1 -1 0 0 -1 -1 -1 -1 1 0 7 8  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-11-2016-16-00-55.log
+DATA
+273678578 0 0 1 0 1 52 52 1786 428 1 0 109 -8783 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-11-2016-15-10-29.log
+DATA
+273678578 0 0 1 0 1 52 52 1786 428 1 0 109 -4866 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-11-2016-14-25-57.log
+DATA
+273678578 0 0 1 342 47 156 156 1890 532 1 0 753 280 -1 -1 0 0 -1 -1 -1 -1 1 0 47 342  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-11-2016-14-23-52.log
+DATA
+273678578 2 45 48 45 54 182 182 1916 558 1 0 851 640 -1 -1 0 0 -1 -1 -1 -1 1 0 54 45  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-11-2016-14-12-23.log
+DATA
+273678578 0 0 1 0 1 130 130 1864 506 1 0 109 -9287 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-11-2016-12-38-57.log
+DATA
+273678578 0 0 1 0 1 156 156 1890 532 1 0 -195 -2520 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-11-2016-12-34-58.log
+DATA
+273678578 0 0 1 346 1 130 130 1864 506 1 0 109 1848 -1 -1 0 0 -1 -1 -1 -1 1 0 1 346  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Q-HumanCapital-skill--22-11-2016-11-10-42.log
+DATA
+273678578 0 0 1 0 1 156 156 1890 532 1 0 109 -3108 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Q-HumanCapital-skill--22-11-2016-11-06-15.log
+DATA
+273678578 0 0 1 0 1 130 130 1864 506 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Q-HumanCapital-skill--22-11-2016-11-05-07.log
+DATA
+273678578 0 0 1 0 1 104 104 1838 480 1 0 109 -5040 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Q-HumanCapital-skill--22-11-2016-11-01-08.log
+DATA
+273678578 0 0 1 0 1 52 52 1786 428 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Q-HumanCapital-skill--22-11-2016-11-03-30.log
+DATA
+273678578 0 0 1 0 1 78 78 1812 454 1 0 109 -9074 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-11-2016-23-38-25.log
+DATA
+273678578 0 0 1 331 7 0 0 1284 168 1 0 193 168 -1 -1 0 0 -1 -1 -1 -1 1 0 7 331  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-11-2016-23-39-24.log
+DATA
+273678578 0 0 1 330 109 26 26 1336 201 1 0 1313 140 -1 -1 0 0 -1 -1 -1 -1 1 0 109 330  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-11-2016-23-33-39.log
+DATA
+273678578 0 0 1 335 109 26 26 1310 194 1 0 1313 284 -1 -1 0 0 -1 -1 -1 -1 1 0 109 335  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-11-2016-23-37-18.log
+DATA
+273678578 0 0 1 330 7 52 52 1362 227 1 0 193 140 -1 -1 0 0 -1 -1 -1 -1 1 0 7 330  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-11-2016-23-36-38.log
+DATA
+273678578 0 0 1 328 109 52 52 1336 220 1 0 1313 56 -1 -1 0 0 -1 -1 -1 -1 1 0 109 328  0 0 0
+C:\Users\Chris\Desktop\QC\logs\DP-QC-21-11-2016-23-09-23.log
+DATA
+273678578 0 0 1 0 1 0 0 1284 168 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\ParallelSimAnneal.ox
+Ox
+269485042 0 8 25 11 1 681 0 1362 324 0 0 31 168 -1 -1 0 0 25 1 1 25 1 0 1 11  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\Rosenbrock.ox
+Ox
+269485042 0 0 1 0 1 681 0 1362 324 0 0 31 0 -1 -1 0 0 16 0 0 16 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-11-2016-22-53-12.log
+DATA
+273678578 0 0 1 342 6 26 26 1336 201 1 0 179 140 -1 -1 0 0 -1 -1 -1 -1 1 0 6 342  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--21-11-2016-22-32-48.log
+DATA
+273678578 0 0 1 330 109 0 0 1310 175 1 0 1313 140 -1 -1 0 0 -1 -1 -1 -1 1 0 109 330  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-SimulatedAnnealing-On-reset-21-11-2016-22-15-21.log.optobj
+DATA
+273678578 0 0 1 0 1 52 52 1362 227 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-SimulatedAnnealing-On-reset-21-11-2016-22-16-37.log.optobj
+DATA
+273678578 0 0 1 0 1 52 52 1362 227 1 0 109 0 -1 -1 0 0 8 0 0 8 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-SimulatedAnnealing-On-reset-21-11-2016-16-59-53.log.optobj
+DATA
+273678578 0 0 1 0 1 26 26 1336 201 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-SimulatedAnnealing-On-reset-21-11-2016-17-05-40.log.optobj
+DATA
+273678578 0 0 1 0 1 0 0 1310 175 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\NelderMead-IterStart-reset.optobj
+DATA
+273678578 0 0 1 0 1 52 52 1362 227 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\holdNelderMead-IterStart-reset.optobj
+DATA
+273678578 1 2 1 2 7 26 26 1336 201 1 0 193 56 -1 -1 0 0 -1 -1 -1 -1 1 0 7 2  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\C4E\book\css\test.css
+DATA
+273744114 0 203 11 219 4 104 104 1336 409 1 0 151 448 -1 -1 0 0 -1 -1 -1 -1 1 0 4 219  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\C4E\Econ354\takehome37.html
+HTML
+269486075 0 -1 0 -1 2229 0 0 1258 220 0 1 48 22 -1 -1 0 0 -1 -1 -1 -1 1 0 2229 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\C4E\Econ354\takehome75.html
+HTML
+269486075 1 -1 2071 -1 2384 26 26 1284 246 0 1 48 88 -1 -1 0 0 -1 -1 -1 -1 1 0 2384 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\C4E\book\Week7Mon.html
+HTML
+269486075 0 -1 688 -1 1227 0 0 1032 229 0 1 103 154 -1 -1 0 0 21 -1 -1 21 1 0 1227 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\C4E\book\midterm2.html
+HTML
+269486075 0 161 42 -1 7024 104 104 1362 324 0 1 48 0 -1 -1 0 0 -1 -1 -1 -1 1 0 7024 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\C4E\book\midterm1.html
+HTML
+269486075 0 -1 0 -1 0 104 104 1362 324 0 1 48 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\C4E\Econ354\Bliss.png
+DATA
+273678578 0 0 1 0 1 78 78 1336 298 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\RosenbrockMain.ox
+Ox
+269485042 0 0 1 0 1 104 104 1812 561 0 0 31 0 -1 -1 0 0 25 0 0 25 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-1-11-2016-14-54-33.log.optobj
+DATA
+273678578 0 0 1 0 1 130 130 1838 558 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-11-2016-13-06-56.log
+DATA
+273678578 0 0 1 333 30 104 104 1812 532 1 0 515 168 -1 -1 0 0 -1 -1 -1 -1 1 0 30 333  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-11-2016-12-35-20.log
+DATA
+273678578 0 0 1 0 1 78 78 1786 506 1 0 109 -9153 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-11-2016-12-27-47.log
+DATA
+273678578 0 0 1 14 79 52 52 1760 480 1 0 1201 -7921 -1 -1 0 0 -1 -1 -1 -1 1 0 79 14  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-11-2016-12-11-23.log
+DATA
+273678578 0 0 1 106 76 0 0 1708 428 1 0 1159 448 -1 -1 0 0 -1 -1 -1 -1 1 0 76 106  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--1-11-2016-11-54-16.log
+DATA
+273678578 2 29 132 29 138 156 156 1838 625 1 0 1859 476 -1 -1 0 0 -1 -1 -1 -1 1 0 138 29  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--31-10-2016-23-12-50.log
+DATA
+273678578 0 0 1 331 12 0 0 1232 261 1 0 263 228 -1 -1 0 0 -1 -1 -1 -1 1 0 12 331  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--31-10-2016-23-15-20.log
+DATA
+273678578 0 0 1 0 1 26 26 1258 287 1 0 109 -9030 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--31-10-2016-22-42-54.log
+DATA
+273678578 0 0 1 335 1 78 78 1310 339 1 0 109 308 -1 -1 0 0 -1 -1 -1 -1 1 0 1 335  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--31-10-2016-22-59-38.log
+DATA
+273678578 0 0 1 334 7 52 52 1310 320 1 0 193 280 -1 -1 0 0 -1 -1 -1 -1 1 0 7 334  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--31-10-2016-23-08-09.log
+DATA
+273678578 0 0 1 334 7 130 130 1362 391 1 0 193 280 -1 -1 0 0 -1 -1 -1 -1 1 0 7 334  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--31-10-2016-22-36-10.log
+DATA
+273678578 0 0 1 333 193 52 52 1284 313 1 0 1313 308 -1 -1 0 0 -1 -1 -1 -1 1 0 193 333  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--31-10-2016-22-12-01.log
+DATA
+273678578 0 0 1 331 30 26 26 1258 287 1 0 515 252 -1 -1 0 0 -1 -1 -1 -1 1 0 30 331  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--31-10-2016-21-49-38.log
+DATA
+273678578 0 0 1 120 1 0 0 1232 261 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 120  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--31-10-2016-14-53-26.log
+DATA
+273678578 0 0 1 0 2 156 156 1838 625 1 0 123 -84 -1 -1 0 0 -1 -1 -1 -1 1 0 2 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-27-10-2016-12-32-29.log.optobj
+DATA
+273678578 0 0 1 0 1 78 78 1332 356 1 0 109 0 -1 -1 0 0 8 0 0 8 1 0 1 0  0 0 0
+C:\Users\Chris\Downloads\2015_PM25_BAM35.HLY
+DATA:UNIX
+273776882 1 0 10 0 16 130 130 1812 599 1 0 319 -918649 -1 -1 0 0 -1 -1 -1 -1 1 0 16 0  0 0 0
+C:\Users\Chris\Google Drive\coal
+ASCII
+273688443 1 0 1 68 1 52 52 1284 313 1 0 109 672 -1 -1 0 0 -1 -1 -1 -1 1 0 1 68  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--26-10-2016-12-05-55.log
+DATA
+273678578 0 0 1 0 1 104 104 1004 347 1 0 109 -9060 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\group-week7.html
+HTML
+269486075 1 -1 893 -1 974 104 104 1110 326 0 1 48 484 -1 -1 0 0 57 -1 -1 57 1 0 974 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\HTMLversion\code\NonLinearEquations.ox
+Ox
+269485042 0 0 1 9 1 0 0 1006 222 0 0 31 252 -1 -1 0 0 19 0 0 19 1 0 1 9  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--25-10-2016-14-54-05.log
+DATA
+273678578 0 327 65 328 39 78 78 1110 307 1 0 641 131 -1 -1 0 0 -1 -1 -1 -1 1 0 39 328  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\C4E\book\Week1Mon.html
+HTML
+269486075 0 -1 0 -1 0 0 0 1032 229 0 1 48 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 -1 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-23-10-2016-19-13-58.log.optobj
+DATA
+273678578 0 0 1 54 1 78 78 1084 300 1 0 109 140 -1 -1 0 0 8 0 0 8 1 0 1 54  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-23-10-2016-10-20-05.log.optobj
+DATA
+273678578 0 0 1 2 1 104 104 1110 326 1 0 109 -196 -1 -1 0 0 8 0 0 8 1 0 1 2  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-10-2016-9-29-50.log
+DATA
+273678578 0 331 151 115 7 26 26 1258 287 1 0 193 336 -1 -1 0 0 -1 -1 -1 -1 1 0 7 115  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-10-2016-18-57-21.log
+DATA
+273678578 0 315 164 346 1 130 130 1362 391 1 0 109 336 -1 -1 0 0 -1 -1 -1 -1 1 0 1 346  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-10-2016-18-40-25.log
+DATA
+273678578 0 0 1 66 138 26 26 1258 287 1 0 1313 336 -1 -1 0 0 -1 -1 -1 -1 1 0 138 66  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-10-2016-18-52-14.log
+DATA
+273678578 0 0 1 329 184 104 104 1336 365 1 0 1313 0 -1 -1 0 0 -1 -1 -1 -1 1 0 184 329  0 0 0
+C:\Users\Chris\Desktop\QC\QCFit.weighted071.optobj
+DATA
+273678582 0 2 21 0 1 -30 153 1342 490 1 0 109 0 -1 -1 0 0 8 0 0 8 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-22-10-2016-12-12-20.log.optobj
+DATA
+273678578 0 0 1 0 1 0 0 1232 261 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-10-2016-12-03-15.log
+DATA
+273678578 0 315 164 0 1 130 130 1362 391 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-10-2016-11-16-39.log
+DATA
+273678578 1 219 65 220 63 0 0 1232 261 1 0 977 84 -1 -1 0 0 -1 -1 -1 -1 1 0 63 220  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-10-2016-11-47-00.log
+DATA
+273678578 0 315 164 329 169 78 78 1310 339 1 0 1313 280 -1 -1 0 0 -1 -1 -1 -1 1 0 169 329  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-10-2016-15-13-52.log
+DATA
+273678578 0 0 1 0 1 0 0 1232 261 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-10-2016-9-13-24.log
+DATA
+273678578 0 0 1 242 102 78 78 748 288 1 0 1313 196 -1 -1 0 0 -1 -1 -1 -1 1 0 102 242  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--19-10-2016-11-43-07.log
+DATA
+273678578 0 0 1 0 1 52 52 1734 521 1 0 109 -2436 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--19-10-2016-11-38-12.log
+DATA
+273678578 0 0 1 0 1 26 26 1708 495 1 0 109 -8918 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--19-10-2016-11-12-13.log
+DATA
+273678578 0 0 1 342 1 234 234 1916 703 1 0 109 980 -1 -1 0 0 45 0 0 45 1 0 1 342  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--19-10-2016-10-24-53.log
+DATA
+273678578 0 0 1 0 1 156 156 1838 625 1 0 109 -336 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\QCFit.weightedXX.optobj
+DATA
+273678582 0 2 21 2 6 -30 153 1342 490 1 0 179 56 -1 -1 0 0 8 0 0 8 1 0 6 2  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--19-10-2016-10-13-12.log
+DATA
+273678578 0 0 1 0 1 130 130 1812 599 1 0 109 -840 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--18-10-2016-22-00-59.log
+DATA
+273678578 0 0 1 104 1 130 130 1362 391 1 0 109 224 -1 -1 0 0 -1 -1 -1 -1 1 0 1 104  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--18-10-2016-15-48-12.log
+DATA
+273678578 0 0 1 0 1 52 52 722 281 1 0 109 0 -1 -1 0 0 45 0 0 45 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ860\outline.html
+HTML
+269486075 0 -1 0 -1 20 52 52 1734 521 0 1 246 22 -1 -1 0 0 -1 -1 -1 -1 1 0 20 -1  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--18-10-2016-12-46-04.log
+DATA
+273678578 0 0 1 0 1 78 78 1760 547 1 0 109 -8890 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--17-10-2016-15-26-33.log
+DATA
+5243122 0 0 1 0 1 52 52 1734 521 1 0 109 -382151 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--17-10-2016-15-23-01.log
+DATA
+5243122 0 0 1 0 1 234 234 1916 703 1 0 109 -252 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--17-10-2016-15-09-31.log
+DATA
+5243122 0 0 1 0 1 182 182 1864 651 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-15-10-2016-21-56-51.log.optobj
+DATA
+273678578 0 0 1 18 1 130 130 1356 391 1 0 109 224 -1 -1 0 0 8 0 0 8 1 0 1 18  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-15-10-2016-21-56-51.log
+DATA
+273678578 0 0 1 190 1 0 0 1226 261 1 0 109 224 -1 -1 0 0 8 0 0 8 1 0 1 190  0 0 0
+C:\Users\Chris\Desktop\QC\QCEst-IterStart-weighted.optobj
+DATA
+273678578 0 0 1 0 1 0 0 1232 261 1 0 109 0 -1 -1 0 0 8 0 0 8 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-15-10-2016-18-59-07.log.optobj
+DATA
+273678578 0 0 1 22 1 130 130 1356 391 1 0 109 308 -1 -1 0 0 -1 -1 -1 -1 1 0 1 22  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-15-10-2016-17-08-02.log.optobj
+DATA
+273678578 0 0 1 0 1 130 130 1356 391 1 0 109 -840 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-15-10-2016-17-08-02.log
+DATA
+273678578 0 0 1 0 1 104 104 1330 365 1 0 109 -11974 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-15-10-2016-13-23-16.log
+DATA
+273678578 0 0 1 960 1 26 26 1258 287 1 0 109 336 -1 -1 0 0 8 0 0 8 1 0 1 960  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Obj-QCFit-weighted-15-10-2016-13-23-16.log
+DATA
+273678578 0 0 1 1477 1 26 26 1258 287 1 0 109 336 -1 -1 0 0 -1 -1 -1 -1 1 0 1 1477  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-15-10-2016-13-23-16.log.optobj
+DATA
+273678578 0 0 1 53 1 78 78 1310 339 1 0 109 336 -1 -1 0 0 8 0 0 8 1 0 1 53  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Obj-QCFit-weighted-15-10-2016-13-04-33.log
+DATA
+273678578 0 0 1 0 1 26 26 1258 287 1 0 109 0 -1 -1 0 0 8 0 0 8 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-15-10-2016-13-04-33.log.optobj
+DATA
+273678578 0 32 35 0 1 0 0 1232 261 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Q-HumanCapital-skill--12-10-2016-14-33-59.log
+DATA
+5243122 0 0 1 0 1 0 0 1916 352 1 0 109 -131332 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Q-HumanCapital-skill--12-10-2016-14-14-34.log
+DATA
+5243122 0 0 1 0 1 0 0 1916 352 1 0 109 -153099 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\ReEmpExp.h
+Ox
+269485042 0 0 1 0 1 52 52 1310 301 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\MNP.h
+Ox
+269485042 0 0 1 0 1 78 78 1336 346 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\StataMNP.h
+Ox
+269485042 0 0 1 0 1 26 26 1284 275 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\makeupmessage.txt
+ASCII
+273688443 0 0 1 0 1 26 26 1708 495 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\To File\sabbat2016.txt
+ASCII
+273688443 1 0 1 18 1 52 52 1734 521 1 0 109 420 -1 -1 0 0 -1 -1 -1 -1 1 0 1 18  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\HeteroData.ox
+Ox
+269485043 0 30 17 24 50 52 52 1310 307 0 0 759 252 -1 -1 0 0 52 0 0 52 1 0 50 24  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\Data--7-10-2016-8-58-29.log
+DATA
+273678578 0 0 1 16 1 0 0 1258 268 1 0 109 409 -1 -1 0 0 -1 -1 -1 -1 1 0 1 16  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--6-10-2016-11-38-07.log
+DATA
+273678578 0 0 1 0 1 104 104 1362 372 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\To File\sabbat.txt
+ASCII
+273688443 0 0 1 0 1 52 52 1734 521 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\SCData.ox
+Ox:UNIX
+269583346 0 6 4 0 1 681 0 1362 370 0 0 31 0 -1 -1 0 0 22 0 0 22 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\SCData.oxh
+Ox:UNIX
+269583346 1 4 33 4 17 681 0 1362 370 0 0 255 112 -1 -1 0 0 24 1 1 24 1 0 17 4  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\TestGHK.h
+Ox
+269485042 0 0 1 0 1 52 52 1310 301 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\MVNormal.h
+Ox
+269485042 0 0 1 0 1 0 0 1258 268 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\MortTest.h
+Ox
+269485042 0 0 1 0 1 104 104 1362 372 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\KWtest.h
+Ox
+269485042 0 0 1 0 1 26 26 1284 294 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\ClientServerTestA.h
+Ox
+269485042 0 0 1 0 1 104 104 1362 372 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\BerkovecSternEmet1991.h
+Ox
+269485042 0 59 23 59 21 78 78 1336 346 0 0 479 308 -1 -1 0 0 -1 -1 -1 -1 1 0 21 59  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\Ahn1995.h
+Ox
+269485042 0 37 23 37 18 26 26 1284 296 0 0 311 308 -1 -1 0 0 14 0 0 14 1 0 18 37  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\AllTest.h
+Ox
+269485042 0 0 1 0 1 52 52 1284 313 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\AguirregabiriaMira2002.h
+Ox
+269485042 0 0 1 0 1 0 0 1232 261 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\RustEmet1987.h
+Ox
+269485042 0 0 1 0 1 78 78 1336 327 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\RustEmet1987mle.h
+Ox
+269485042 0 0 1 0 1 104 104 1362 353 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\PeerCommunicationTestA.h
+Ox
+269485042 0 0 1 0 1 26 26 1284 294 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\IJCEmet2009.h
+Ox
+269485042 0 0 1 0 1 78 78 1336 346 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\GilleskieEmet1998.h
+Ox
+269485042 0 46 27 46 22 52 52 1310 320 0 0 409 308 -1 -1 0 0 -1 -1 -1 -1 1 0 22 46  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\FrenchREStud2005.h
+Ox
+269485042 0 63 23 63 21 26 26 1284 294 0 0 479 308 -1 -1 0 0 -1 -1 -1 -1 1 0 21 63  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\DynamicWstar.h
+Ox
+269485042 0 0 1 5 1 104 104 1362 374 0 0 31 112 -1 -1 0 0 20 0 0 20 1 0 1 5  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\RustEmet1987new.h
+Ox
+269485042 0 0 1 0 1 0 0 1258 249 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\WstarTestc.h
+Ox
+269485042 0 0 1 0 1 78 78 1336 327 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\WstarTestb.h
+Ox
+269485042 1 3 1 13 1 78 78 1362 268 0 0 31 168 -1 -1 0 0 20 0 0 20 1 0 1 13  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\WolpinJPE1984b.h
+Ox
+269485042 2 30 7 30 13 78 78 1310 339 0 0 269 168 -1 -1 0 0 20 0 0 20 1 0 13 30  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\WolpinEmet1987.h
+Ox
+269485042 0 15 5 15 23 26 26 1310 216 0 0 451 84 -1 -1 0 0 20 0 0 20 1 0 23 15  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\GetStartedData.ox
+Ox
+269485042 0 21 15 3 1 52 52 1310 307 0 0 31 84 -1 -1 0 0 91 0 0 91 1 0 1 3  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\ActualV.ox
+Ox
+269485042 0 0 1 0 1 234 234 1916 703 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\BobsChoice.ox
+Ox
+269485042 0 0 1 15 48 182 182 1890 660 0 0 689 420 -1 -1 0 0 14 0 0 14 1 0 48 15  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\classreference.ox
+Ox
+269485042 0 0 1 0 1 52 52 1760 528 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\ClientServerTest.ox
+Ox
+269485042 0 0 1 0 1 78 78 1786 554 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\ClientServerTestA.ox
+Ox
+269485042 0 0 1 0 1 104 104 1812 580 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\GetStartedFiveO.ox
+Ox
+269485042 0 0 1 0 1 0 0 1708 476 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\GetStartedMain.ox
+Ox
+269485042 0 0 1 0 1 26 26 1734 502 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\IJCEmet2009.ox
+Ox
+269485042 0 0 1 13 2 104 104 1812 580 0 0 87 -1005 -1 -1 0 0 -1 -1 -1 -1 1 0 2 13  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\KWtest.ox
+Ox
+269485042 0 0 1 0 1 182 182 1890 639 0 0 31 -333 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\LoadRosenbrock.ox
+Ox
+269485042 0 0 1 0 1 208 208 1916 665 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\memory-leak.ox
+Ox
+269485042 0 0 1 0 1 26 26 1734 483 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\MNP.ox
+Ox
+269485042 0 0 1 0 1 52 52 1760 509 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\MVNormal.ox
+Ox
+269485042 0 0 1 0 1 130 130 1838 587 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\ParallelObjectiveMNP.ox
+Ox
+269485042 0 0 1 0 1 182 182 1890 639 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\PeerCommunicationTestA.ox
+Ox
+269485042 0 0 1 0 1 0 0 1708 457 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\readbus.ox
+Ox
+269485042 0 0 1 0 1 26 26 1734 483 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\RunAhn.ox
+Ox
+269485042 0 0 1 5 1 104 104 1362 374 0 0 31 140 -1 -1 0 0 22 0 0 22 1 0 1 5  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\RustEmet1987readdata.ox
+Ox
+269485042 0 0 1 0 1 0 0 1708 438 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\S1.ox
+Ox
+269485042 0 9 1 0 1 26 26 1760 434 0 0 31 0 -1 -1 0 0 17 0 0 17 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\S1a.ox
+Ox
+269485042 0 0 1 0 1 156 156 1838 625 1 0 109 0 -1 -1 0 0 17 0 0 17 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\S2a.ox
+Ox
+269485042 0 0 1 0 1 182 182 1864 651 1 0 109 0 -1 -1 0 0 56 0 0 56 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\S4a.ox
+Ox
+269485042 0 0 1 0 1 26 26 1708 495 1 0 109 0 -1 -1 0 0 56 0 0 56 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\S5a.ox
+Ox
+269485042 0 0 1 0 1 78 78 1760 547 1 0 109 0 -1 -1 0 0 56 0 0 56 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\S6a.ox
+Ox
+269485042 0 0 1 0 1 104 104 1786 573 1 0 109 0 -1 -1 0 0 56 0 0 56 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\SQPobj.ox
+Ox
+269485042 0 0 1 0 1 104 104 1812 542 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\StataMNP.ox
+Ox
+269485042 0 0 1 0 1 130 130 1838 568 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\SysExample.ox
+Ox
+269485042 0 0 1 0 1 156 156 1864 594 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\TestGHK.ox
+Ox
+269485042 0 0 1 0 1 182 182 1890 620 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\testSystem.ox
+Ox
+269485042 0 0 1 0 1 208 208 1916 646 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\TestSystemSolve.ox
+Ox
+269485042 0 0 1 0 1 0 0 1708 438 0 0 31 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\WolpinEmet1987.ox
+Ox
+269485042 0 35 55 51 2 0 0 1284 190 0 0 87 588 -1 -1 0 0 28 0 0 28 1 0 2 51  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\S2.ox
+Ox
+269485042 2 34 5 34 20 0 0 1734 408 0 0 297 588 -1 -1 0 0 17 0 0 17 1 0 20 34  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\S3.ox
+Ox
+269485042 2 28 5 28 20 52 52 1064 306 0 0 297 588 -1 -1 0 0 17 0 0 17 1 0 20 28  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\S3a.ox
+Ox
+269485042 2 18 6 18 21 234 234 1916 703 1 0 389 504 -1 -1 0 0 56 0 0 56 1 0 21 18  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\S4.ox
+Ox
+269485042 2 37 5 37 20 52 52 1064 306 0 0 297 329 -1 -1 0 0 17 0 0 17 1 0 20 37  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\S5.ox
+Ox
+269485042 2 68 5 68 20 52 52 1734 521 1 0 375 588 -1 -1 0 0 17 0 0 17 1 0 20 68  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\TestTransit2.ox
+Ox
+269485042 0 32 57 31 40 52 52 1760 490 0 0 577 448 -1 -1 0 0 -1 -1 -1 -1 1 0 40 31  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\TommyChoice1.ox
+Ox
+269485042 0 41 1 41 1 130 130 1812 599 1 0 109 364 -1 -1 0 0 14 0 0 14 1 0 1 41  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\TommysChoice.ox
+Ox
+269485042 0 30 29 31 6 156 156 1864 632 1 0 179 560 -1 -1 0 0 14 0 0 14 1 0 6 31  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\TommysChoice1.ox
+Ox
+269485042 0 44 45 44 35 182 182 1890 658 1 0 585 588 -1 -1 0 0 14 0 0 14 1 0 35 44  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\BobsChoiceC.ox
+Ox
+269485042 0 30 12 30 20 52 52 1310 322 0 0 297 588 -1 -1 0 0 14 0 0 14 1 0 20 30  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\FrenchREStud2005.ox
+Ox
+269485042 2 43 27 43 35 156 156 1864 632 0 0 549 420 -1 -1 0 0 -1 -1 -1 -1 1 0 35 43  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\WstarTestc.ox
+Ox
+269485042 0 5 94 5 96 52 52 1760 471 0 0 1361 140 -1 -1 0 0 -1 -1 -1 -1 1 0 96 5  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\BerkovecSternEmet1991.ox
+Ox
+269485042 0 75 41 75 39 104 104 1786 573 0 0 605 308 -1 -1 0 0 -1 -1 -1 -1 1 0 39 75  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\BobsChoiceB.ox
+Ox
+269485042 4 32 41 32 40 208 208 1916 686 0 0 577 550 -1 -1 0 0 14 0 0 14 1 0 40 32  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\BobsChoiceD.ox
+Ox
+269485042 0 35 63 35 61 52 52 1310 322 0 0 871 562 -1 -1 0 0 14 0 0 14 1 0 61 35  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\BobsChoiceD1.ox
+Ox
+269485042 0 47 34 47 32 52 52 1310 322 0 0 465 476 -1 -1 0 0 14 0 0 14 1 0 32 47  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\DynamicWstar.ox
+Ox
+269485042 2 12 18 12 21 78 78 1336 348 0 0 311 308 -1 -1 0 0 26 0 0 26 1 0 21 12  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\GilleskieEmet1998.ox
+Ox
+269485042 0 58 23 58 21 52 52 1336 242 0 0 395 254 -1 -1 0 0 31 0 0 31 1 0 21 58  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\iGetStarted.ox
+Ox
+269485042 4 34 45 34 46 78 78 1786 554 0 0 703 562 -1 -1 0 0 -1 -1 -1 -1 1 0 46 34  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\MortTest.ox
+Ox
+269485042 4 19 72 19 71 78 78 1786 535 0 0 1053 532 -1 -1 0 0 -1 -1 -1 -1 1 0 71 19  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\normal-search.ox
+Ox
+269485042 0 28 34 28 32 156 156 1864 613 0 0 507 551 -1 -1 0 0 -1 -1 -1 -1 1 0 32 28  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\ReEmpExp.ox
+Ox
+269485042 0 81 25 81 23 52 52 1760 509 0 0 381 560 -1 -1 0 0 -1 -1 -1 -1 1 0 23 81  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\RustEmet1987new.ox
+Ox
+269485042 0 32 25 32 23 208 208 1916 665 0 0 381 308 -1 -1 0 0 -1 -1 -1 -1 1 0 23 32  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\S0.ox
+Ox
+269485042 4 20 43 20 42 78 78 1812 486 0 0 647 364 -1 -1 0 0 14 0 0 14 1 0 42 20  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\TestTransit.ox
+Ox
+269485042 0 27 65 27 63 26 26 1734 464 0 0 941 560 -1 -1 0 0 -1 -1 -1 -1 1 0 63 27  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\Ahn1995.ox
+Ox
+269485042 2 27 26 27 34 52 52 1310 322 0 0 535 308 -1 -1 0 0 21 0 0 21 1 0 34 27  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\AguirregabiriaMira2002.ox
+Ox
+269485042 2 56 11 56 19 0 0 1682 469 0 0 325 504 -1 -1 0 0 -1 -1 -1 -1 1 0 19 56  0 0 0
+C:\Users\Chris\Desktop\QC\mproc2.do
+DATA:UNIX
+273776882 2 6 8 6 16 52 52 1734 521 1 0 319 168 -1 -1 0 0 -1 -1 -1 -1 1 0 16 6  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--5-10-2016-11-03-10.log
+DATA
+273678578 2 23 12 23 18 26 26 1708 495 1 0 347 644 -1 -1 0 0 -1 -1 -1 -1 1 0 18 23  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--3-10-2016-9-23-59.log
+DATA
+273678578 0 0 1 25 59 234 234 1916 703 1 0 921 448 -1 -1 0 0 45 0 0 45 1 0 59 25  0 0 0
+C:\Users\Chris\Desktop\QC\QCmain Copy.optobj
+DATA
+273678578 0 0 1 0 1 104 104 1336 365 1 0 109 0 -1 -1 0 0 8 0 0 8 1 0 1 0  0 0 0
+C:\Users\Chris\Google Drive\Work\CPP-ADP-2016054-editor.txt
+ASCII
+290465643 0 -1 139 -1 141 0 0 1708 476 1 0 109 168 -1 -1 0 0 -1 -1 -1 -1 1 0 141 -1  0 0 0
+C:\Users\Chris\Google Drive\Work\CPP-ADP-2016054-review.txt
+ASCII
+290465659 0 -1 3630 -1 3208 208 208 1916 684 1 0 837 952 -1 -1 0 0 -1 -1 -1 -1 1 0 3208 -1  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Q-HumanCapital-skill--27-09-2016-13-28-49.log
+DATA
+273678578 0 0 1 0 1 182 182 1890 658 1 0 109 -10920 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Q-HumanCapital-skill--27-09-2016-11-43-13
+TeX
+269496315 0 -1 0 -1 253626 156 156 1864 632 0 1 53 111860 -1 -1 0 0 -1 -1 -1 -1 1 0 253626 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\doc\Makefile
+TeX
+269496315 0 -1 0 -1 0 104 104 1362 372 0 1 53 0 -1 -1 0 0 0 -1 -1 0 1 0 0 -1  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--25-09-2016-21-22-21.log
+DATA
+273678578 0 0 1 0 1 156 156 1838 625 1 0 109 -5418 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--25-09-2016-20-54-04.log
+DATA
+273678578 0 0 1 99 1 0 0 1258 268 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 99  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\doc\oxdoc.sed
+DATA
+273678578 0 0 1 0 1 78 78 1336 346 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\doc\DDP\oxdoc.sed
+DATA
+273678578 0 0 1 0 1 26 26 1284 294 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\doc\FiveO\oxdoc.sed
+DATA
+273678578 0 0 1 0 1 78 78 1336 346 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\doc\Hybrids\oxdoc.sed
+DATA
+273678578 0 0 1 0 1 52 52 1310 320 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--24-09-2016-15-57-53.log
+DATA
+273678578 0 0 1 55 1 52 52 1310 320 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 55  0 0 0
+C:\Users\Chris\Desktop\QC\QCFit.weighted67again.optobj
+DATA
+273678578 0 2 10 3 1 26 26 610 682 1 0 109 84 -1 -1 0 0 8 0 0 8 1 0 1 3  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--24-09-2016-15-06-39.log
+DATA
+273678578 0 0 1 0 1 0 0 1232 261 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-09-2016-12-27-36.log
+DATA
+273678578 0 0 1 0 1 26 26 1258 287 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\QC67.optobj
+DATA
+273678578 0 2 10 28 7 26 26 610 682 1 0 221 0 -1 -1 0 0 8 0 0 8 1 0 7 28  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-09-2016-11-49-26.log
+DATA
+273678578 0 0 1 0 1 78 78 1310 339 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-09-2016-11-54-15.log
+DATA
+273678578 0 0 1 0 1 130 130 1362 391 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--23-09-2016-12-23-00.log
+DATA
+273678578 0 0 1 44 1 0 0 1232 261 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 44  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-09-2016-13-57-04.log
+DATA
+273678578 0 0 1 0 1 104 104 1362 372 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\CGI\oxcgi.ox
+Ox
+269485042 0 0 1 7 1 104 104 1336 365 0 0 31 196 -1 -1 0 0 14 0 0 14 1 0 1 7  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-09-2016-13-49-57.log
+DATA
+273678578 2 0 30 0 40 156 156 1534 625 1 0 655 0 -1 -1 0 0 -1 -1 -1 -1 1 0 40 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-09-2016-13-04-58.log
+DATA
+273678578 0 0 1 7 1 78 78 1310 339 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 7  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-09-2016-13-09-31.log
+DATA
+273678578 0 0 1 240 1 104 104 1336 365 1 0 109 308 -1 -1 0 0 -1 -1 -1 -1 1 0 1 240  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-09-2016-13-47-44.log
+DATA
+273678578 0 0 1 335 7 26 26 1284 294 1 0 193 308 -1 -1 0 0 -1 -1 -1 -1 1 0 7 335  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--22-09-2016-13-52-36.log
+DATA
+273678578 0 0 1 83 138 78 78 1336 346 1 0 1313 168 -1 -1 0 0 -1 -1 -1 -1 1 0 138 83  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-09-2016-13-43-49.log
+DATA
+273678578 0 0 1 0 1 104 104 1786 573 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\DP-QC-13-07-2016-17-22-23.log
+DATA
+273678578 0 0 1 0 1 156 156 1838 625 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-07-2016-17-16-13.log
+DATA
+273678578 0 0 1 0 1 130 130 1812 599 1 0 109 -672 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-07-2016-17-02-52.log
+DATA
+273678578 0 0 1 0 1 52 52 1734 521 1 0 109 -2532 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--13-07-2016-17-07-04.log
+DATA
+273678578 0 0 1 0 1 104 104 1786 573 1 0 109 -2772 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\CGI\CGI.ox
+Ox
+269485042 0 45 31 67 1 78 78 1336 346 0 0 31 308 -1 -1 0 0 19 0 0 19 1 0 1 67  0 0 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\CGI\CGI.oxh
+Ox
+269485042 0 0 1 19 38 104 104 1362 372 0 0 549 112 -1 -1 0 0 19 0 0 19 1 0 38 19  0 0 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\CGI\QEDHD1.ox
+Ox
+269485042 0 19 31 27 1 52 52 1310 320 0 0 31 308 -1 -1 0 0 19 0 0 19 1 0 1 27  0 0 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\QEDHD1.html
+HTML
+269486075 1 -1 448 -1 423 104 104 1362 372 0 1 92 198 -1 -1 0 0 6 -1 -1 6 1 0 423 -1  0 -1 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\title.html
+HTML
+269486075 0 -1 0 -1 1054 130 130 1362 391 0 1 125 308 -1 -1 0 0 21 -1 -1 21 1 0 1054 -1  0 -1 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\toc.html
+HTML
+269486075 0 -1 896 -1 1068 0 0 1232 261 0 1 48 308 -1 -1 0 0 21 -1 -1 21 1 0 1068 -1  0 -1 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\index.html
+HTML
+269486075 0 -1 79 -1 143 130 130 1362 391 0 1 653 44 -1 -1 0 0 15 -1 -1 15 1 0 143 -1  0 -1 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\README
+ASCII
+273688443 0 14 17 0 1 104 104 1482 573 1 0 109 0 -1 -1 0 0 36 0 0 36 1 0 1 0  0 0 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\summary.html
+HTML
+269486075 2 -1 2792 -1 2799 52 52 1284 313 0 1 785 330 -1 -1 0 0 21 -1 -1 21 1 0 2799 -1  0 -1 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\status.html
+HTML
+286263291 0 -1 1017 -1 1361 52 52 1284 313 0 1 939 198 -1 -1 0 0 21 -1 -1 21 1 0 1361 -1  0 -1 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\links.html
+HTML
+269486075 1 -1 947 -1 922 0 0 1232 261 0 1 587 198 -1 -1 0 0 21 -1 -1 21 1 0 922 -1  0 -1 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\CGI\oxcgi
+TeX
+269496315 0 -1 729 -1 763 0 0 1258 268 0 1 53 336 -1 -1 0 0 11 -1 -1 11 1 0 763 -1  0 0 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\team.html
+HTML
+269486075 0 -1 851 -1 1320 78 78 1310 339 0 1 48 330 -1 -1 0 0 21 -1 -1 21 1 0 1320 -1  0 -1 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\oxcgi.html
+HTML
+269486075 0 -1 0 -1 0 78 78 1336 346 0 1 48 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\Shared\CGI.ox
+Ox:UNIX
+269583346 0 0 1 0 1 26 26 1258 287 0 0 31 0 -1 -1 0 0 19 0 0 19 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\include\CGI.oxh
+Ox
+269485042 0 0 1 22 1 0 0 1258 268 0 0 31 224 -1 -1 0 0 -1 -1 -1 -1 1 0 1 22  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\Shared\oxcgi-script
+TeX
+269496315 0 -1 131 -1 148 0 0 1232 261 0 1 263 140 -1 -1 0 0 -1 -1 -1 -1 1 0 148 -1  0 0 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\StudentProject\Ox Output
+TeX:UNIX
+269594619 0 -1 351 -1 1202 78 78 1310 339 0 1 53 336 -1 -1 0 0 -1 -1 -1 -1 1 0 1202 -1  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\C4E\book\toc.html
+HTML
+269486075 0 -1 1404 -1 1364 26 26 1258 287 0 1 48 110 -1 -1 0 0 -1 -1 -1 -1 1 0 1364 -1  0 -1 0
+C:\Users\Chris\Google Drive\Work\HumDimChal\QEDHD\README.md
+HTML
+269486075 0 -1 0 -1 0 78 78 1760 547 0 1 48 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--27-06-2016-13-47-41.log
+DATA
+273678578 0 0 1 0 1 52 52 1734 521 1 0 109 -2856 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--27-06-2016-13-40-28.log
+DATA
+273678578 0 0 1 0 1 26 26 1708 495 1 0 109 -2772 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--27-06-2016-13-36-37.log
+DATA
+273678578 0 0 1 0 1 0 0 1682 469 1 0 109 -7476 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--27-06-2016-13-34-18.log
+DATA
+273678578 0 0 1 0 1 234 234 1916 703 1 0 109 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\SPobj.Simp.optobj
+DATA
+273678578 0 0 1 6 35 104 104 1482 573 1 0 585 168 -1 -1 0 0 8 0 0 8 1 0 35 6  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\Hybrids\DPSystems.oxdoc
+HTML
+269486075 2 -1 1637 -1 1640 104 104 1362 374 0 1 884 110 -1 -1 0 0 62 -1 -1 62 1 0 1640 -1  0 -1 0
+C:\Users\Chris\Desktop\QC\logs\DP-QC-16-06-2016-9-35-45.log
+DATA
+273678578 0 0 1 74 1 52 52 1310 320 1 0 109 252 -1 -1 0 0 -1 -1 -1 -1 1 0 1 74  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--16-06-2016-8-52-07.log
+DATA
+273678578 0 0 1 49 1 78 78 1336 346 1 0 109 308 -1 -1 0 0 -1 -1 -1 -1 1 0 1 49  0 0 0
+C:\Users\Chris\Desktop\QC\logs\DP-QC-16-06-2016-8-52-07.log
+DATA
+273678578 0 0 1 2 1 26 26 1258 287 1 0 109 56 -1 -1 0 0 -1 -1 -1 -1 1 0 1 2  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--15-06-2016-20-18-16.log
+DATA
+273678578 0 0 1 35 1 104 104 1336 365 1 0 109 308 -1 -1 0 0 44 0 0 44 1 0 1 35  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--15-06-2016-20-05-57.log
+DATA
+273678578 0 0 1 132 1 78 78 1336 346 1 0 109 308 -1 -1 0 0 -1 -1 -1 -1 1 0 1 132  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--15-06-2016-19-22-10.log
+DATA
+273678578 0 0 1 132 1 52 52 1310 320 1 0 109 308 -1 -1 0 0 -1 -1 -1 -1 1 0 1 132  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--15-06-2016-15-31-59.log
+DATA
+273678578 0 0 1 107 274 0 0 1258 268 1 0 1313 84 -1 -1 0 0 -1 -1 -1 -1 1 0 274 107  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--15-06-2016-18-41-14.log
+DATA
+273678578 0 0 1 114 1 26 26 1284 294 1 0 109 308 -1 -1 0 0 -1 -1 -1 -1 1 0 1 114  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--10-05-2016-7-08-49.log
+DATA
+273678578 2 5 1 5 7 104 104 984 337 1 0 193 140 -1 -1 0 0 -1 -1 -1 -1 1 0 7 5  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--29-04-2016-10-44-12.log
+DATA
+273678578 0 0 1 65 1 104 104 1362 372 1 0 103 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 65  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--29-04-2016-10-40-27.log
+DATA
+273678578 0 0 1 304 1 78 78 1336 346 1 0 103 312 -1 -1 0 0 -1 -1 -1 -1 1 0 1 304  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--29-04-2016-10-29-18.log
+DATA
+273678578 0 328 1 337 1 0 0 1038 226 1 0 103 312 -1 -1 0 0 -1 -1 -1 -1 1 0 1 337  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\output\S3trimmed.txt
+ASCII
+273688447 0 21 1 19 1 182 182 1916 590 1 0 103 456 -1 -1 0 0 -1 -1 -1 -1 1 0 1 19  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\output\S4trimmed.txt
+ASCII
+273688443 0 36 1 5 1 130 130 1864 538 1 0 103 120 -1 -1 0 0 -1 -1 -1 -1 1 0 1 5  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\output\S1trimmed.txt
+ASCII
+273688443 0 0 1 0 1 104 104 1838 512 1 0 103 0 -1 -1 0 0 42 0 0 42 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\output\S0.txt
+ASCII
+273688443 0 0 1 0 1 104 104 1838 512 1 0 103 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\output\S0trimmed.txt
+ASCII
+273688443 0 0 1 5 1 130 130 1864 538 1 0 103 120 -1 -1 0 0 -1 -1 -1 -1 1 0 1 5  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\output\S3.txt
+ASCII
+273688443 0 0 1 0 1 182 182 1916 590 1 0 103 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\output\S4.txt
+ASCII
+273688443 0 0 1 0 1 130 130 1864 538 1 0 103 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\output\S1.txt
+ASCII
+273688443 0 0 1 0 1 104 104 1838 512 1 0 103 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\Niqs\agg\jw2.h
+Ox:UNIX
+269583346 0 79 33 79 26 52 52 1284 315 0 0 394 168 -1 -1 0 0 -1 -1 -1 -1 1 0 26 79  0 0 0
+C:\Users\Chris\Desktop\Niqs\agg\basics.ox
+Ox:UNIX
+269583346 0 19 17 4 17 78 78 1310 341 0 0 238 24 -1 -1 0 0 -1 -1 -1 -1 1 0 17 4  0 0 0
+C:\Users\Chris\Desktop\Niqs\agg\jw2.ox
+Ox:UNIX
+269583346 0 24 42 26 37 26 26 1258 289 0 0 576 240 -1 -1 0 0 -1 -1 -1 -1 1 0 37 26  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Obj-QCFit-weighted-20-04-2016-23-00-31.log
+DATA
+273678578 0 0 1 23 1 78 78 1310 341 1 0 103 312 -1 -1 0 0 -1 -1 -1 -1 1 0 1 23  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-04-2016-23-00-31.log
+DATA
+273678578 0 0 1 228 145 26 26 1258 289 1 0 1312 24 -1 -1 0 0 -1 -1 -1 -1 1 0 145 228  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-20-04-2016-23-00-31.log
+DATA
+273678578 0 0 1 0 1 52 52 1284 315 1 0 103 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-04-2016-22-38-59.log
+DATA
+273678578 0 0 1 332 145 0 0 1232 263 1 0 1312 24 -1 -1 0 0 -1 -1 -1 -1 1 0 145 332  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\source\DDP\QCFit.weighted-Grow.optobj
+DATA
+273678578 0 83 43 83 1 26 26 610 682 1 0 103 288 -1 -1 0 0 -1 -1 -1 -1 1 0 1 83  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-04-2016-20-42-13.log
+DATA
+273678578 0 0 1 326 6 78 78 1310 341 1 0 168 312 -1 -1 0 0 -1 -1 -1 -1 1 0 6 326  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-04-2016-20-53-52.log
+DATA
+273678578 0 0 1 63 1 104 104 1336 367 1 0 103 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 63  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-04-2016-21-00-02.log
+DATA
+273678578 0 0 1 347 7 104 104 1362 374 1 0 181 288 -1 -1 0 0 -1 -1 -1 -1 1 0 7 347  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-04-2016-20-56-05.log
+DATA
+273678578 0 0 1 346 6 130 130 1362 393 1 0 168 264 -1 -1 0 0 -1 -1 -1 -1 1 0 6 346  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-04-2016-20-40-13.log
+DATA
+273678578 0 0 1 340 6 0 0 1258 270 1 0 168 307 -1 -1 0 0 -1 -1 -1 -1 1 0 6 340  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-04-2016-20-33-39.log
+DATA
+273678578 0 0 1 188 3 26 26 1258 289 1 0 129 288 -1 -1 0 0 -1 -1 -1 -1 1 0 3 188  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-04-2016-17-47-41.log
+DATA
+273678578 1 2404 1 2419 1 78 78 1769 558 1 0 103 384 -1 -1 0 0 -1 -1 -1 -1 1 0 1 2419  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-04-2016-20-27-07.log
+DATA
+273678578 0 0 1 325 9 0 0 1232 263 1 0 207 288 -1 -1 0 0 -1 -1 -1 -1 1 0 9 325  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-04-2016-17-33-00.log
+DATA
+5243122 0 0 1 0 1 26 26 1717 506 1 0 103 -144 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\RustEmet1987mle.oxdoc
+HTML
+269486075 0 -1 0 -1 0 52 52 1310 322 0 1 48 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1  0 -1 0
+C:\Users\Chris\Documents\OFFICE\software\Microeconometrics\niqlow\examples\Ahn1995.oxdoc
+HTML:UNIX
+269584379 0 -1 3593 -1 5237 26 26 1284 296 0 1 48 330 -1 -1 0 0 -1 -1 -1 -1 1 0 5237 -1  0 -1 0
+C:\Users\Chris\Desktop\QC\QCFit.NA=3-Zweighted.optobj
+DATA
+273678578 0 0 1 0 1 0 0 1708 478 1 0 103 -216 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--20-04-2016-11-14-46.log
+DATA
+273678578 0 0 1 91 1 104 104 1362 374 1 0 103 313 -1 -1 0 0 -1 -1 -1 -1 1 0 1 91  0 0 0
+C:\Users\Chris\Desktop\Niqs\ReplicationV2\Ahn1995.oxdoc
+HTML:UNIX
+269584379 0 -1 421 -1 117 26 26 1284 296 0 1 48 44 -1 -1 0 0 -1 -1 -1 -1 1 0 117 -1  0 0 0
+C:\Users\Chris\Desktop\Niqs\ReplicationV2\Ahn1995.ox
+Ox:UNIX
+269583346 0 16 1 26 1 52 52 1310 322 0 0 30 0 -1 -1 0 0 21 0 0 21 1 0 1 26  0 0 0
+C:\Users\Chris\Desktop\Niqs\ReplicationV2\RunProg.ox
+Ox:UNIX
+269583346 0 0 1 3 20 104 104 1362 374 0 0 277 72 -1 -1 0 0 22 0 0 22 1 0 20 3  0 0 0
+C:\Users\Chris\Desktop\Niqs\ReplicationV2\Ahn1995.h
+Ox:UNIX
+269583346 0 4 1 4 1 26 26 1284 296 0 0 30 96 -1 -1 0 0 -1 -1 -1 -1 1 0 1 4  0 0 0
+C:\Users\Chris\Desktop\Niqs\ReplicationV2\Data--19-04-2016-13-14-35.log
+DATA
+273678578 0 0 1 58 1 78 78 1336 348 1 0 103 312 -1 -1 0 0 -1 -1 -1 -1 1 0 1 58  0 0 0
+C:\Users\Chris\Desktop\Niqs\ReplicationV2\Data--19-04-2016-13-27-55.log
+DATA
+273678578 0 0 1 485 1 104 104 1362 374 1 0 103 120 -1 -1 0 0 -1 -1 -1 -1 1 0 1 485  0 0 0
+C:\Users\Chris\Desktop\Niqs\ReplicationV2\DP-DDP-19-04-2016-13-12-24.log
+DATA
+273678578 0 0 1 923 1 52 52 1310 322 1 0 103 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 923  0 0 0
+C:\Users\Chris\Desktop\Niqs\ReplicationV2\README.md
+DATA:UNIX
+273776882 0 0 1 0 1 78 78 1336 348 1 0 103 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Documents\OFFICE\CLASSES\Econ354\Projects\Philippa\FinalProject_ECON354\FinalProject.ox
+Ox:UNIX
+269583346 0 0 1 182 1 182 182 1560 653 0 0 30 336 -1 -1 0 0 19 0 0 19 1 0 1 182  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--19-04-2016-10-20-31.log
+DATA
+273678578 0 0 1 171 12 52 52 1310 322 1 0 246 144 -1 -1 0 0 44 0 0 44 1 0 12 171  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--19-04-2016-10-47-32.log
+DATA
+273678578 0 0 1 0 1 104 104 1362 374 1 0 103 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--18-04-2016-17-27-23.log
+DATA
+273678578 0 0 1 0 1 52 52 1430 530 1 0 103 0 -1 -1 0 0 44 0 0 44 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--18-04-2016-17-33-11.log
+DATA
+273678578 0 0 1 20 20 104 104 1482 582 1 0 350 168 -1 -1 0 0 44 0 0 44 1 0 20 20  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Alg-QCEst-On-weighted-18-04-2016-17-33-11.log
+DATA
+273678578 0 0 1 0 1 78 78 1786 556 1 0 103 0 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--18-04-2016-17-20-24.log
+DATA
+273678578 0 0 1 0 1 26 26 1734 504 1 0 103 -2376 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--18-04-2016-16-40-28.log
+DATA
+273678578 0 0 1 0 1 0 0 1708 478 1 0 103 -1512 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+C:\Users\Chris\Desktop\QC\logs\Data--18-04-2016-16-33-41.log
+DATA
+273678578 0 0 1 0 1 208 208 1916 686 1 0 103 -38880 -1 -1 0 0 -1 -1 -1 -1 1 0 1 0  0 0 0
+
