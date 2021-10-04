@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 <link href='http://fonts.googleapis.com/css?family=PT+Mono|Open+Sans:400italic,700italic,400,700,800,300&subset=latin,latin-ext,greek-ext,greek' rel='stylesheet' type='text/css'><link rel="icon" href="icons/favicon16.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"></link>
 <link rel="stylesheet" type="text/css" href="doc.css">
 <link rel="stylesheet" type="text/css" href="screen.css">
 <link rel="stylesheet" type="text/css" media="print" href="print.css">
@@ -46,10 +47,10 @@
 <body>
 <h2>How does a work get into the Archive?</h2>
 <UL class="faq"><LI>An archive item  is a folder named using the convention <code>Author1Author2&hellip;JournalYYYY</code> in the AEDP
-  github repository. For example, <code>WolpinJPE1984</code> is the folder for <a target=_blank href="http://www.jstor.org/stable/1831086?origin=JSTOR-pdf">Wolpin (1984)</a>.</LI>
+  github repository. For example, <code>WolpinJPE1984</code> is the folder for <a target="details" href="http://www.jstor.org/stable/1831086?origin=JSTOR-pdf">Wolpin (1984)</a>.</LI>
   <LI>A BibTex citation in a file with extension <code>.ark</code> is placed in the folder.  For example,
      the <em>original</em> (not necessarily current) contents of the ark file in <code>WolpinJPE1984</code>
-    come from <a href="https://www.jstor.org/citation/text/10.2307/3663546">here</a>. The extension is changed
+    come from <a href="https://www.jstor.org/citation/text/10.2307/3663546" target="details">here</a>. The extension is changed
     to <code>.ark</code>.
     <Details><summary>Click here</summary>Contents of 10.2307/1831086.ark
   <pre>@article{10.2307/1831086,
@@ -67,12 +68,12 @@
     }</pre></details>
     </LI>
   <LI>Software recreates the database regularly based on the contents of the <code>.ark</code> files.
-    The current archive entry for Wolpin (1984) is <a target="_blank" href="??#??">here</a></DD>
+    The current archive entry for Wolpin (1984) is <a target="details" href="??#??">here</a></DD>
   </LI>
   <LI>Addtions to the archive can bemade by:
-     <DD>A <a href="">AEDP Team</a> member</DD>
+     <DD>A <a href="" target="details">AEDP Team</a> member</DD>
      <DD>A user of github through a <dfn title="def">pull request</dfn></DD>
-     <DD>Anyone by filling out this <a target="_blank" href="https://www.econ.queensu.ca/research/aedp-submission">form</a></dd></LI>
+     <DD>Anyone by filling out this <a target="details" href="https://www.econ.queensu.ca/research/aedp-submission">form</a></dd></LI>
   </UL>
   <h2>Is AEDP Just an Elaborate Bibliography?</h2>
   <UL  class="faq">
@@ -81,7 +82,7 @@
     example, <code>WolpinJPE1984</code> can have this additional attribute:
     <pre> clock = {NormalAging {("t",30)}}</pre>
   which says the model has a finite horizon clock over 30 periods.</LI>
-  <LI>Works are classified by <a href="#">Research Area</a>, and each area is a "branch" in the
+  <LI>Works are classified by <a href="#" target="details">Research Area</a>, and each area is a "branch" in the
     git repository. Each area has curators to ensure a coherent organization. Areas can be split,
     merged, and added. For example, <code>WolpinJPE1984</code> has the attribute
     <code>area = {Development}</code></DD></LI>
@@ -93,14 +94,14 @@
       <em>starter code</em> for solving the paper's model(s)
       using <a href="https://ferrall.github.io/niqlow/">niqlow</a> is generated.</LI>
     <LI>Users can push edits of the starter code to the repository.  Eventually, code can qualify
-      for includion in the  <a href="https://ferrall.github.io/niqlow/">niqlow replications</a> folder.</LI>
+      for inclusion in the  <a href="https://ferrall.github.io/niqlow/" target="details">niqlow replications</a> folder.</LI>
     <LI>Github <a href="#">Issue</a> and <a href="#">Discussion</a> posts can be used to ask for help
       by people in the AEDP community.</LI>
   </UL>
 <h2>What Criteria are used for Including a Work?</h2>
 <UL class="faq">
   <li>Includes one or more dynamic programs as part of a model</LI>
-  <li>Published:<DD> in an Economics-related journal or volume archived in <a href="http://jstor.org">JSTOR.org</a></DD></li>
+  <li>Published:<DD> in an Economics-related journal or volume archived in <a target="details" href="http://jstor.org">JSTOR.org</a></DD></li>
   <li>Computed: <DD> results not based solely on closed form solutions</DD></li>
   <LI>Non-trivial:
       <DD>$\delta\gt 0$ (static optimization only excluded)</dd></li>

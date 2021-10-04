@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Archive of Empirical Dynamic Programming</title>
+  <meta name=\"author\" content=\"Christopher Ferrall\"></meta>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"></link>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+<!--      <link rel="stylesheet" type="text/css" href="doc.css">
+  <link rel="stylesheet" type="text/css" href="screen.css">
+    <link rel="stylesheet" type="text/css" media="print" href="print.css"> -->
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config( {
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]], processEscapes: true},
+    CommonHTML: {
+        scale : 90
+        },
+    TeX: {
+        packages: ['base','eplain'],
+        equationNumbers: {autoNumber:"none" },
+        extensions: ["color.js"],
+        Macros: {
+            RR: "{\\bf R}",
+            bold: ["{\\bf #1}",1],
+            th : "\\theta", al : "\\alpha",
+            thmle : "\\hat\\theta^{mle}",
+            thp : "\\theta^{\\,\\prime}",
+            vv : "v(\\alpha,\\theta)",
+            st : "(\\theta^{\\,\\prime};\\alpha,\\theta)",
+            Pstar : "P^{\\star}(\\alpha;\\theta)",
+            ar : ["{\\overrightarrow #1}",1],
+            rr : "\\rightarrow\\rightarrow",
+            eps: "\\epsilon",
+            l : "\\left",
+            r : "\\right",
+            pdist : "{\\ {\\buildrel  pseudo \\over \\sim}\\ }",
+            iid : "{\\ {\\buildrel  iid \\over \\sim}\\ }",
+            Dto : "{\\ {\\buildrel D \\over \\to}\\ }",
+            Pto : "{\\ {\\buildrel P \\over \\to}\\ }",
+            sc : ["{\\buildrel #1 \\over \\to}",1],
+            uu : ["{u_{#1}(a_{#1}^{\\sigma^\\star},s_{#1}^{\\sigma^\\star})}",1],
+            ll : ["{\\ln \\mathcal{L}}"]
+                }
+    }});
+    </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+</head>
+<body>
+<div class="container-fluid p-5 bg-primary text-white text-center" >
+<h1 class="counter-skip">AEDP: Archive of Empirical Dynamic Programming</h1>
+<h2 class="counter-skip">
+$$\forall\ \theta\in\Theta,\
+ V(\theta)\  =\
+ \int_{\zeta}{\ \max_{\ \alpha\in A(\theta)\ }\left\{\ U\left(\alpha,\theta\right) + \zeta_\alpha + \delta E_{\,\alpha,\theta\,}V\left(\theta^\prime\right)\ \right\}
+ \ f\left(\zeta\right)d\zeta}$$
+</h2></div>
+<div class="dropdown text-center">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+    MENU
+  </button>
+    <UL class="dropdown-menu">
+    <li ><a href="about.html" target="content" class="dropdown-item">About AEDP</a></li>
+    <LI class="nav-item"><a  target="content" class="dropdown-item nav-link" href="https://ferrall.github.io/niqlow/">{niqlow}</a></LI>
+     <LI class="nav-item"><a href="related.html"  class="dropdown-item nav-link" target="content">Related</a></LI>
+     <LI class="nav-item"><a target="content" class="dropdown-item nav-link" href="https://github.com/CForg/Archive-of-Empirical-Dynamic-Programming-Research/pulls">Pulls</a></LI>
+     <LI class="nav-item"><a  target="content" class="dropdown-item nav-link" href="title.html">Home</a></LI>
+    </UL>
+  <button type="button" 
+    class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+    ARCHIVE ITEMS  </button>
+    <UL class="dropdown-menu">
+    <li><a href="articles.html" class="dropdown-item" target="content">articles<br/>&nbsp;[107]&nbsp;</li>
+    <li><a href="surveys.html" class="dropdown-item" target="content">surveys<br/>&nbsp;[4]&nbsp;</li>
+    <li><a href="packages.html" class="dropdown-item" target="content">packages<br/>&nbsp;[2]&nbsp;</li>
+    <li><a href="sites.html" class="dropdown-item" target="content">sites<br/>&nbsp;[1]&nbsp;</li>
+    </UL>
+    </div></li>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-7"><h3>ITEMS</h3>
+        <iframe src="details.html" name="content" style="height:60vh;width:100%;vertical-align:top;" ></iframe>
+    </div>
+    <div class="col-md-5">
+      <h3>DETAILS</h3>
+      <iframe src="details.html" name="details" style="height:60vh;width:100%;vertical-align:top;">
+    </div>
+    </div>
+  </div>
+
+</body></html>
+
+
+
+
