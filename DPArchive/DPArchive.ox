@@ -45,10 +45,9 @@ Entry::scan(f,aL) {
 Entry::Attribute(aIT) {
 	aIT[0][TAG] = match(this.tlabels,aIT[0][FIELD]);
     }
-	
-Article::Attribute(aIT) {
+
+Publication::Attribute(aIT) {
     Entry::Attribute(aIT);
-//	aIT[0][TAG] = match(tlabels,aIT[0][FIELD]);
 	decl g;
 	switch_single(aIT[0][TAG]) {
 		case UR : ;
@@ -59,6 +58,13 @@ Article::Attribute(aIT) {
 					{aIT[0][CODE] = match(alabels,aIT[0][VALUE],3);}
 		case YR :
 					{sscan(aIT[0][VALUE],"%i",&g); aIT[0][CODE]=g;}
+		default :
+		}
+    }	
+Article::Attribute(aIT) {
+    Publication::Attribute(aIT);
+	decl g;
+	switch_single(aIT[0][TAG]) {
 		case LG :	// Look for coding language
 					{aIT[0][CODE] = match(llabels,aIT[0][VALUE]+"  ",3);}
 		default :
@@ -72,6 +78,10 @@ Entry::Process(f) {
  		eos = scan(f,&line);
 		if (eos>=0) {
 			lc = sscan(&line," %t",&fld);	//find token skipping whitespace
+            if (isint(fld)) {
+                oxwarning("Problem reading line \n--- "+line);
+                return TRUE;
+                }
 			if (fld==RC)
 				break;  //end of entry, } first token
 			newitem = new array[NBib];
@@ -84,15 +94,19 @@ Entry::Process(f) {
 				tokens[newitem[TAG]] |= {newitem};
 			++N;
 			}
-	  	else
+	  	else {
 	  		oxwarning("closing bracket for entry not found");
+            return TRUE;
+            }
  		} while (eos>=0);
+    return FALSE;
 	}
 
 Entry::Entry(fldr,arkf,f) {
 	entrytag = fldr;
 	arkfile = arkf;
     tlabels = NOMATCH;
+    ind = numitems;
     }
 
 Article::Article(fldr,arkf,f) {
@@ -118,6 +132,7 @@ Survey::Survey(fldr,arkf,f) {
     Entry(fldr,arkf,f);
 	tlabels = clabels | plabels;
     tokens =  new array[NTokenTypes];		
+	hascode = FALSE;
 	}
 
 Entry::GetToke(toke) {
@@ -125,24 +140,14 @@ Entry::GetToke(toke) {
 	}
 
 Entry::Write(ifile) {
-	fprint(ifile,"<tr class=\"item\" id=\"",entrytag,"\"><td>");
+	fprint(ifile,"<tr class=\"item\" id=\"",entrytag,"\"><td>",ind,"</td><td>");
 	if (tokens[UR]==.Null)
 		fprint(ifile,entrytag);
 	else
-		fprint(ifile,"<a target=\"_blank\" href=\"",tokens[UR][0][VALUE],"\">",entrytag,"</a>");
+		fprint(ifile,"<a target=\"details\" href=\"",tokens[UR][0][VALUE],"\">",entrytag,"</a>");
     fprint(ifile,"</td>");
-    }
-
-Article::Write(ifile) {
+    if (!isclass(this,"Publication")) fprintln(ifile,"</tr>");
 	decl t, j, i, k, detailf;
-    Entry::Write(ifile);
-//	println(tokens);
-	fprintln(ifile,"<td>",tokens[YR][0][VALUE],
-				   "</td><td>",GetToke(tokens[AR]),
-				   "</td><td>",jabb[tokens[JO][0][CODE]],
-				   "</td><td>",GetToke(tokens[LG]),
-				   "</td><td>",hascode ? "Y" : "N","</td>");
-	fprintln(ifile,"<td><a href=\"",apath,".html\""," target=\"details\">&#8227;</a></td></tr>");
     detailf = fopen("../../"+docdir+apath+".html","w");      //current directory is no
 	for(j=0;j<sizeof(tokens);++j) if (!ismissing(tokens[j])) {
 		t = tokens[j];
@@ -155,7 +160,23 @@ Article::Write(ifile) {
 			}
 		}
     fclose(detailf);
+    }
+
+Article::Write(ifile) {
+    Publication::Write(ifile);
+    fprintln(ifile,
+		"</td><td>",ismissing(tokens[LG]) ? "." : GetToke(tokens[LG]),
+		"</td><td>",hascode ? "Y" : "N","</td></tr>");
+    }
+
+Publication::Write(ifile) {
+    Entry::Write(ifile);
+	fprintln(ifile,"<td><a href=\"",apath,".html\""," target=\"details\">&#8227;ARK</a></td>");
+	fprintln(ifile,"<td>",tokens[YR][0][VALUE],"</td><td>",GetToke(tokens[AR]),
+    	"</td><td>",ismissing(tokens[JO]) ? "." : jabb[tokens[JO][0][CODE]],"</td>");
+    if (!isclass(this,"Article")) fprintln(ifile,"</tr>");
 	}
+
 	
 Article::MakeStarterCode() {
    //open .oxh for writing and MyModel.oxh for reading
@@ -184,7 +205,7 @@ DPArchive::CheckType(f,t,atag) {
 	
 DPArchive::CreateArchive(rootdir,todo)  {
  if (!isint(archive)) oxrunerror("Archive already created");
- decl root,t,a,tag,fldr,arks,f,n,folders,rootf,rfiles,item,tocf,numitems,artexists;
+ decl root,t,a,tag,fldr,arks,f,n,folders,rootf,rfiles,item,tocf,artexists;
 
  archive = new array[sizeof(tlabels)];
  rfiles  = new array[sizeof(tlabels)];
@@ -192,7 +213,7 @@ DPArchive::CreateArchive(rootdir,todo)  {
  chdir(rootdir);
  rootf = fopen(docdir+"archive.html","w");
  tocf = fopen(docdir+"toc.html","w");
- fprintln(tocf,"<HTML><head>",stylesheets,"</head><body><div><UL class=\"rmenu\">");
+ fprintln(tocf,"<HTML><head>",stylesheets,"</head><body><div class=\"dropdown\"><button type=\"button\" class=\"btn btn-primary dropdown-toggle\" data-bs-toggle=\"dropdown\">   ARCHIVE ITEMS </button><UL class=\"dropdown-menu\">");
  foreach(root in tlabels[t]) if (todo==DOALL || t==todo) {
  	archive[t] = {};  // intialize list of this type
 
@@ -200,8 +221,8 @@ DPArchive::CreateArchive(rootdir,todo)  {
 
 	//delete docs/fldr
 	rfiles[t] = fopen(docdir+fldr+".html","w");
-	fprintln(rfiles[t],"<HTML><head>",stylesheets,"</head><body><script src=\"https://www.kryogenix.org/code/browser/sorttable/sorttable.js\"></script><table class=\"niqsum sortable\" id=\"",fldr,"\">");
-	fprintln(rfiles[t],"<tr><th>Tag</th><th>Year</th><th>Area</th><th>JO</th><th>Lang.</th><th>Code</th><th>Details</th></tr>");
+	fprintln(rfiles[t],"<HTML><head>",stylesheets,"</head><body><script src=\"https://www.kryogenix.org/code/browser/sorttable/sorttable.js\"></script><div class=\"table-responsive\"><table class=\"table-striped niqsum sortable\" id=\"",fldr,"\">");
+	fprintln(rfiles[t],"<tr><th>#</th><th>Tag</th><th>Details</th><th>Year</th><th>Area</th><th>JO</th><th>Lang.</th><th>Code</th></tr>");
  	chdir(fldr);
 	folders = getfolders("*");
     numitems = 0;
@@ -217,7 +238,7 @@ DPArchive::CreateArchive(rootdir,todo)  {
 		foreach (a in arks) {
 			f = fopen(a);
 			if (!isfile(f) || !CheckType(f,t,&tag)) {
-				oxwarning("File not opened or Type Does Not Match: "+a);
+				oxwarning("File not opened or Type Does Not Match: "+item+"/"+a);
                 continue;
                 }
 			switch_single(t) {
@@ -227,18 +248,23 @@ DPArchive::CreateArchive(rootdir,todo)  {
 				case Item_site: n = new Site(item,a,f);
 				}
             ++numitems;
-			n -> Process(f);
-			n.folder = fldr;
-			n.arkfile = a;
-			archive[t] |= n;
+			if (n -> Process(f)) {
+                oxwarning("Error occurs in ark file, skipping entry ");
+                println(root," / ",item," / ",a);
+                }
+            else {
+			     n.folder = fldr;
+			     n.arkfile = a;
+			     archive[t] |= n;
+			     n->Write(rfiles[t]); //uplevel+"/docs/"+fldr+"/"+item+".html",
+                 }
 			fclose(f); f = 0;
-			n->Write(rfiles[t]); //uplevel+"/docs/"+fldr+"/"+item+".html",
 			}
 		chdir(uplevel);
 		}
 	 chdir(uplevel);
-     fprintln(tocf,"<li class=\"tooltip\"><a href=\"",fldr,".html\" target=\"content\">",fldr,"<br/>&nbsp;[",numitems,"]&nbsp;</li>");
-     fprintln(rfiles[t],"</table></body></html>");
+     fprintln(tocf,"<li><a href=\"",fldr,".html\" target=\"content\"  class=\"dropdown-item\">",fldr,"<br/>&nbsp;[",numitems,"]&nbsp;</li>");
+     fprintln(rfiles[t],"</table></div></body></html>");
 	 fclose(rfiles[t]); rfiles[t]=0;
 
  	}

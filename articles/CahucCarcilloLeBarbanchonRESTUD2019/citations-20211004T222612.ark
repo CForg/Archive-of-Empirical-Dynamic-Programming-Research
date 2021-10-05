@@ -1,0 +1,16 @@
+@article{10.1093/restud/rdy011,
+    author = {Cahuc, Pierre and Carcillo, Stéphane and Le Barbanchon, Thomas},
+    title = "{The Effectiveness of Hiring Credits}",
+    journal = {The Review of Economic Studies},
+    volume = {86},
+    number = {2},
+    pages = {593-626},
+    year = {2018},
+    month = {01},
+    abstract = "{This article analyses the effectiveness of hiring credits. Using comprehensive administrative data, we show that the French hiring credit, implemented during the Great Recession, had significant positive employment effects and no effects on wages. Relying on the quasi-experimental variation in labour cost triggered by the hiring credit, we estimate a structural search and matching model. Simulations of counterfactual policies show that the effectiveness of the hiring credit relied to a large extent on three features: it was non-anticipated, temporary and targeted at jobs with rigid wages. We estimate that the cost per job created by permanent hiring credits, either countercyclical or time-invariant, in an environment with flexible wages would have been much higher.}",
+    issn = {0034-6527},
+    doi = {10.1093/restud/rdy011},
+    url = {https://doi.org/10.1093/restud/rdy011},
+    eprint = {https://academic.oup.com/restud/article-pdf/86/2/593/27980341/rdy011.pdf},
+}
+

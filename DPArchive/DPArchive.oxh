@@ -5,18 +5,18 @@
 						enum{ NRelatedTokens=NCommon}
 static const decl clabels= {"title","author","url","area","abstract","language"},
 				  plabels= {"doi","journal","year"},
-                  stylesheets = "<link rel=\"stylesheet\" href=\"./screen.css\"/><link rel=\"stylesheet\" href=\"./doc.css\"/>",
+                  stylesheets = "<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css\" rel=\"stylesheet\"></link><link rel=\"stylesheet\" href=\"./screen.css\"/><link rel=\"stylesheet\" href=\"./doc.css\"/>",
 				 EXT="ark", AT = '@', LC="{", RC="}",QT='"', EQ="=",CM=",",
 				 SRC="source", INC="include", LAQ="«", RAQ="»",
                  uplevel="..",docdir="docs/"
                 ;
 
-static decl apath;
+static decl apath, numitems;
 		
 struct Entry {
  	enum{ FIELD, TAG, VALUE, CODE, NBib}
 
-	const decl tlabels, tokens, entrytag, folder, arkfile, hascode ;
+	const decl ind, tlabels, tokens, entrytag, folder, arkfile, hascode ;
 	decl N;
 
 	#include "AREAS.oxh"		
@@ -34,13 +34,16 @@ struct Entry {
 	}
 
 struct Publication : Entry {
+				
+    virtual Attribute(item);
+ 	virtual Write(ifile);
+
 	}
 
 	
 struct Article : Publication {
 
-				enum{ LG = NPubTokens, EO , BE , CL , AV , SV, FG, UT, MT , UD, NTokenTypes }
-	
+        enum{ LG = NPubTokens, EO , BE , CL , AV , SV, FG, UT, MT , UD, NTokenTypes }	
 	static const decl
 		alabels =  {"language","parameter-selection","bellman","clock","action","state","group","utility","method"};
 
@@ -60,7 +63,7 @@ struct Article : Publication {
 			Article(fldr,a,f);
     		Attribute(item);
 			MakeStarterCode();
- 	virtual Write(ifile);
+ 	        Write(ifile);
 
 	}
 

@@ -1,0 +1,15 @@
+@survey{doi:10.1146/annurev-economics-111809-125038,
+author = {Arcidiacono, Peter and Ellickson, Paul B.},
+title = {Practical Methods for Estimation of Dynamic Discrete Choice Models},
+journal = {Annual Review of Economics},
+volume = {3},
+number = {1},
+pages = {363-394},
+year = {2011},
+doi = {10.1146/annurev-economics-111809-125038},
+URL = { https://doi.org/10.1146/annurev-economics-111809-125038},
+eprint = { https://doi.org/10.1146/annurev-economics-111809-125038},
+abstract = { Many discrete decisions are made with an eye toward how they will affect future outcomes. Formulating and estimating the underlying models that generate these decisions is difficult. Conditional choice probability (CCP) estimators often provide simpler ways to estimate dynamic discrete choice problems. Recent work shows how to frame dynamic discrete choice problems in a way that is conducive to CCP estimation and demonstrates that CCP estimators can be adapted to handle rich patterns of unobserved state variables. }
+}
+
+

@@ -1,0 +1,13 @@
+@survey{NBERw28698,
+ title = "Structural Models: Inception and Frontier",
+ author = "Galiani, Sebastian and Pantano, Juan",
+ institution = "National Bureau of Economic Research",
+ type = "Working Paper",
+ series = "Working Paper Series",
+ number = "28698",
+ year = "2021",
+ month = "April",
+ doi = {10.3386/w28698},
+ URL = "http://www.nber.org/papers/w28698",
+ abstract = {We discuss the past, present and future of the structural approach in empirical microeconomics, starting with its inception in the 1970s and 1980s. Our focus is on the use of the structural approach in labor economics, broadly defined to include population economics, human capital and related fields. In the hopes to reach a wider audience that might not be as familiar with the pillars of the structural approach, we first provide an overview of well-known features, setting the stage for a more up-to-date discussion of current developments. We discuss how to identify the need for a structural model, and key steps involved in how to formulate one. We also discuss issues of identification and estimation and highlight advantages and disadvantages of this approach, including the controversial issue of external validity. We then describe the current frontier of this approach, which increasingly reflects integration efforts with “design-based” strategies. This integration provides opportunities to both, validate structural models and enhance the credibility of their identification. We highlight why, whenever possible, it is best to pursue both of these goals, reserving some of the credible exogenous variation for identification and some for validation. While quasi-experimental variation can be useful in pursuit of both of these goals, we discuss why RCTs provide a first best opportunity in terms of out-of-sample validation. We conclude with thoughts about the future of the structural approach.},
+}
