@@ -1,0 +1,14 @@
+@article{10.2307/41057407,
+ ISSN = {08837252, 10991255},
+ URL = {http://www.jstor.org/stable/41057407},
+ abstract = {This paper introduces a dynamic model of investment decisions in mainframe computer systems. I estimate and test the model using detailed micro data from a company in the telecommunications industry. The model accounts for 'technological depreciation' which distinguishes computers from other investment goods where physical depreciation is typically a key factor underlying replacement investment decisions. The company increased its installed mainframe computer capacity by over 30-fold over the 10-year sample period. Part of this growth was undoubtedly due to the huge increase in performance and the corresponding drop in the per unit cost of processing capacity of mainframes, a consequence of 'Moore's law'. However, there was also tremendous growth in the need for computers for billing, account processing and other tasks, due to the rapid growth in the telecommunications industry over this same time period. I estimate the unknown parameters of the investment model using a nonlinear least squares-nested fixed-point algorithm (NLSNFXP), which solves the Bellman equation underlying the dynamic model of investment and replacement of mainframe computers by nonlinear least squares. I demonstrate that it is feasible to estimate this model on an ordinary PC, whereas standard discretization approaches to solving the firm's optimal investment policy might not even be feasible using supercomputers. I show that the estimated model fits the data very well, and accurately captures the large growth in installed mainframe capacity, the timing and magnitude of replacement investment, as well as periodic upgrades of existing mainframe units. I use the model to decompose how much of the 30-fold increase in mainframe computer capacity is due to 'Moore's law' (i.e. the huge drop in the unit cost of installed mainframe capacity), and how much is due to the growth in demand for services of mainframes, due to the rapid growth in demand for telecommunications services (particularly cell phone accounts) by the firm's customers.},
+ author = {SUNG-JIN CHO},
+ journal = {Journal of Applied Econometrics},
+ number = {1},
+ pages = {122--150},
+ publisher = {Wiley},
+ title = {AN EMPIRICAL MODEL OF MAINFRAME COMPUTER INVESTMENT},
+ volume = {26},
+ year = {2011}
+}
+

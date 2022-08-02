@@ -1,0 +1,14 @@
+@article{10.2307/43616973,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/43616973},
+ abstract = {This paper develops a new model for empirically analyzing dynamic matching in the marriage market and then applies that model to recent changes in the U.S. marriage distribution. Its primary objective is to estimate gains by age from being married today (till death of at least one spouse) relative to remaining single for that same time period. An empirical methodology that relies on the model's equilibrium outcomes identifies the marriage gains using a single cross-section of observed aggregate matches. This behavioral dynamic model rationalizes a new marriage matching function. The model also solves the inverse problem of computing the vector of aggregate marriages, given a new distribution of available single individuals and estimated preferences. Finally, this paper develops a simple test of the model's empirical validity. Using aggregate data of new marriages and available single men and women in the United States over two decades from 1970 to 1990,I investigate the changes in marriage gains over this period.},
+ author = {Eugene Choo},
+ journal = {Econometrica},
+ number = {4},
+ pages = {1373--1423},
+ publisher = {[Wiley, The Econometric Society]},
+ title = {DYNAMIC MARRIAGE MATCHING: AN EMPIRICAL FRAMEWORK},
+ volume = {83},
+ year = {2015}
+}
+

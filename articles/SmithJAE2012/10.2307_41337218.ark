@@ -1,0 +1,14 @@
+@article{10.2307/41337218,
+ ISSN = {08837252, 10991255},
+ URL = {http://www.jstor.org/stable/41337218},
+ abstract = {This paper develops and estimates a dynamic equilibrium model of the market for new and used commercial aircraft. The model is estimated by maximum simulated likelihood using data on wide-body aircraft owners and prices for transactions occurring 1978-1997. The importance of explicitly modeling dynamics and equilibrium in new and used markets for durable goods is illustrated in two counterfactual experiments. Estimates of the structural model are used to show that implementing an investment tax credit not only increases demand for new wide-body aircraft by the airlines that receive the tax credit, but also increases the number of new wide-body aircraft owned by airlines not directly affected by the policy. Further, the model indicates that a policy which improves the efficiency of secondary markets for used wide-body aircraft will also stimulate demand for new wide-body aircraft.},
+ author = {LOREN K. SMITH},
+ journal = {Journal of Applied Econometrics},
+ number = {1},
+ pages = {1--33},
+ publisher = {Wiley},
+ title = {DYNAMICS AND EQUILIBRIUM IN A STRUCTURAL MODEL OF WIDE-BODY COMMERCIAL AIRCRAFT MARKETS},
+ volume = {27},
+ year = {2012}
+}
+

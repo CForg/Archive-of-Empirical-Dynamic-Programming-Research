@@ -1,0 +1,14 @@
+@article{10.2307/2678562,
+ ISSN = {08837252, 10991255},
+ URL = {http://www.jstor.org/stable/2678562},
+ abstract = {This paper discusses the problems that are encountered when dynamic, discrete choice models are specified with continuous, serially correlated state variables. A variety of approximation methods that can deal with these problems is examined, and an empirical example that allows continuous variables to be serially correlated is presented.},
+ author = {Todd R. Stinebrickner},
+ journal = {Journal of Applied Econometrics},
+ number = {6},
+ pages = {595--624},
+ publisher = {Wiley},
+ title = {Serially Correlated Variables in Dynamic, Discrete Choice Models},
+ volume = {15},
+ year = {2000}
+}
+

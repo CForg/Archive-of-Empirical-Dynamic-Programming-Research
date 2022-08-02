@@ -1,0 +1,14 @@
+@article{10.2307/23271445,
+ ISSN = {00129682, 14680262},
+ URL = {http://www.jstor.org/stable/23271445},
+ abstract = {Estimating structural models is often viewed as computationally difficult, an impression partly due to a focus on the nested fixed-point (NFXP) approach. We propose a new constrained optimization approach for structural estimation. We show that our approach and the NFXP algorithm solve the same estimation problem, and yield the same estimates. Computationally, our approach can have speed advantages because we do not repeatedly solve the structural equation at each guess of structural parameters. Monte Carlo experiments on the canonical Zurcher bus-repair model demonstrate that the constrained optimization approach can be significantly faster.},
+ author = {Che-Lin Su and Kenneth L. Judd},
+ journal = {Econometrica},
+ number = {5},
+ pages = {2213--2230},
+ publisher = {[Wiley, Econometric Society]},
+ title = {CONSTRAINED OPTIMIZATION APPROACHES TO ESTIMATION OF STRUCTURAL MODELS},
+ volume = {80},
+ year = {2012}
+}
+

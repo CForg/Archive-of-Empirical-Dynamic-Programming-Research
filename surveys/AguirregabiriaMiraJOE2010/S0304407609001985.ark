@@ -1,0 +1,15 @@
+@survey{AGUIRREGABIRIA201038,
+title = {Dynamic discrete choice structural models: A survey},
+journal = {Journal of Econometrics},
+volume = {156},
+number = {1},
+pages = {38-67},
+year = {2010},
+note = {Structural Models of Optimization Behavior in Labor, Aging, and Health},
+issn = {0304-4076},
+doi = {https://doi.org/10.1016/j.jeconom.2009.09.007},
+url = {https://www.sciencedirect.com/science/article/pii/S0304407609001985},
+author = {Victor Aguirregabiria and Pedro Mira},
+keywords = {Dynamic structural models, Discrete choice, Estimation methods},
+abstract = {This paper reviews methods for the estimation of dynamic discrete choice structural models and discusses related econometric issues. We consider single-agent models, competitive equilibrium models and dynamic games. The methods are illustrated with descriptions of empirical studies which have applied these techniques to problems in different areas of economics. Programming codes for some of the estimation methods are available in a companion web page.}
+}

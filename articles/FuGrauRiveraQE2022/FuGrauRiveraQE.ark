@@ -1,0 +1,14 @@
+@article{https://doi.org/10.3982/QE1722,
+author = {Chao Fu, Nicolás Grau, Jorge Rivera},
+title = {Wandering astray: Teenagers’ choices of schooling and crime},
+journal = {Quantitative Economics},
+volume = {13},
+number = {2},
+pages = {387–424},
+keywords = {Teenage crime, education, information friction, institutional friction,
+dynamic model, structural estimation. I2, K42.},
+doi = {https://doi.org/10.3982/QE1722},
+url = {https://qeconomics.org/ojs/index.php/qe/article/view/1619},
+abstract = {We build and estimate a dynamic model of teenagers’ choices of schooling and crime, incorporating four factors that may contribute to the different paths taken by different teenagers: heterogeneous endowments, unequal opportunities, uncertainties about one’s own ability, and contemporaneous shocks. We estimate the model using administrative panel data from Chile that link school records with juvenile criminal records. Counterfactual policy experiments suggest that, for teenagers with disadvantaged backgrounds, interventions that combine mild improvement in their schooling opportunities with free tuition (by adding 157 USD per teenager-year to the existing high school voucher) would lead to an 11% decrease in the fraction of those ever arrested by age 18 and a 13% increase in the fraction of those consistently enrolled throughout primary and secondary education.},
+year = {2022}
+}
